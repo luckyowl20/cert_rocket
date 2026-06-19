@@ -1,0 +1,130 @@
+;Proteus Design Interchange Format
+(PDIF
+ (vendor "SamacSys Limited")
+ (version 1 0)
+ (library
+  (part "AFS14A04-1575.42-T3"
+   (description "Signal Conditioning 1575.42MHz BW=40MHz 5-Pad")
+   (family "ANA")
+   (package "AFS14A04157542T3")
+   (attribute "Datasheet Link" "https://datasheet.datasheetarchive.com/originals/dk/DKDS-11/202926.pdf")
+   (attribute "Geometry.Height" "0.7mm")
+   (attribute "Mouser Part Number" "815-AFS14A04-1575-T3")
+   (attribute "Mouser Price/Stock" "https://www.mouser.co.uk/ProductDetail/ABRACON/AFS14A04-1575.42-T3?qs=tfZGHB2PWd3aRd4qy%2Fp2mg%3D%3D")
+   (attribute "Manufacturer_Name" "ABRACON")
+   (attribute "Manufacturer_Part_Number" "AFS14A04-1575.42-T3")
+   (gate
+    (symbol "AFS14A04-1575.42-T3")
+    (pin "OUTPUT" A1 PS)
+    (pin "GROUND_1" B1 PS)
+    (pin "INPUT" C1 PS)
+    (pin "GROUND_2" D1 PS)
+    (pin "GROUND_3" E1 PS)
+   )
+  )
+  (symbol "AFS14A04-1575.42-T3"
+   (units THOU)
+   (origin (pt 0 0))
+   (graphic
+    (stroke 10)
+    (path (pt 200 600) (pt 1200 600) (pt 1200 -700) (pt 200 -700) (pt 200 600) (closed))
+   )
+   (terminal
+    (body (symbol "PIN") (pt 1400 0) (rot 0) (mir X) (visible true))
+    (name (pt 230 0) (rot 0) (just MIDDLE LEFT) (visible true))
+    (number (pt 140 20) (rot 0) (just BOTTOM RIGHT) (visible true)))
+   (terminal
+    (body (symbol "PIN") (pt 700 800) (rot 90) (mir X) (visible true))
+    (name (pt 230 0) (rot 0) (just MIDDLE LEFT) (visible true))
+    (number (pt 140 20) (rot 0) (just BOTTOM RIGHT) (visible true)))
+   (terminal
+    (body (symbol "PIN") (pt 0 0) (rot 0) (mir 0) (visible true))
+    (name (pt 230 0) (rot 0) (just MIDDLE LEFT) (visible true))
+    (number (pt 140 20) (rot 0) (just BOTTOM RIGHT) (visible true)))
+   (terminal
+    (body (symbol "PIN") (pt 700 -900) (rot 90) (mir 0) (visible true))
+    (name (pt 230 0) (rot 0) (just MIDDLE LEFT) (visible true))
+    (number (pt 140 20) (rot 0) (just BOTTOM RIGHT) (visible true)))
+   (terminal
+    (body (symbol "PIN") (pt 1400 -100) (rot 0) (mir X) (visible true))
+    (name (pt 230 0) (rot 0) (just MIDDLE LEFT) (visible true))
+    (number (pt 140 20) (rot 0) (just BOTTOM RIGHT) (visible true)))
+  )
+  (symbol "PIN"
+   (units THOU)
+   (origin (pt 0 0))
+   (graphic
+    (stroke 10)
+    (path (pt 0 0) (pt 200 0))))
+  (symbol "PINSHORT"
+   (units THOU)
+   (origin (pt 0 0))
+   (graphic
+    (stroke 10)
+    (path (pt 0 0) (pt 100 0))))
+  (package "AFS14A04157542T3"
+   (units MM)
+   (layer TASM
+    (graphic
+     (stroke 0.2)
+     (path
+      (closed true)
+      (pt -0.7 0.55)
+      (pt 0.7 0.55)
+      (pt 0.7 -0.55)
+      (pt -0.7 -0.55)
+      (pt -0.7 0.55))))
+   (layer OCCA
+    (graphic
+     (stroke 0.1)
+     (path
+      (closed true)
+      (pt -1.8 1.65)
+      (pt 1.801 1.65)
+      (pt 1.801 -1.65)
+      (pt -1.8 -1.65)
+      (pt -1.8 1.65))))
+   (layer OCCA
+    (graphic
+     (stroke 0.1)
+     (path
+      (closed true)
+      (pt -1.8 1.65)
+      (pt 1.801 1.65)
+      (pt 1.801 -1.65)
+      (pt -1.8 -1.65)
+      (pt -1.8 1.65))))
+   (layer TSLK
+    (graphic
+     (stroke 0.1)
+     (path
+      (closed true)
+      (pt 1.4 0.288)
+      (arc (pt 1.400 0.288) (pt 1.300 0.237) (pt 1.400 0.338) (start 180.0) (sweep .0))
+      (pt 1.3 0.288)
+      (arc (pt 1.300 0.288) (pt 1.300 0.237) (pt 1.400 0.338) (start 180.0) (sweep 180.0))
+      (pt 1.4 0.288))))
+   (leg A1 (pt 0.588 0.288) (padstack 0))
+   (leg B1 (pt 0.000 0.388) (padstack 2))
+   (leg C1 (pt -0.588 0.000) (padstack 0))
+   (leg D1 (pt 0.000 -0.387) (padstack 4))
+   (leg E1 (pt 0.588 -0.287) (padstack 0))
+   (padstack 0
+    (plated false)
+    (pad (layer TCOP) (rectf 0.325 0.425 0 0 0.000))
+   )
+   (padstack 2
+    (plated false)
+    (pad (layer TCOP) (rectf 0.250 0.525 0 0 90.000))
+   )
+   (padstack 4
+    (plated false)
+    (pad (layer TCOP) (rectf 0.250 0.525 0 0 90.000))
+   )
+   (model "AFS14A04-1575.42-T3.stp"
+    (euler 90 180 180)
+    (offset 0 0 0.36000001430511475)
+   )
+  )
+ )
+)

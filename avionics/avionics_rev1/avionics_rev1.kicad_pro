@@ -416,7 +416,7 @@
         "uuid": "c491fe45-d2ff-414d-a846-7eed12d2b763"
       }
     ],
-    "used_designators": "R2-5,D1,#PWR17-18",
+    "used_designators": "U4-7,C17-21,AE1,#PWR19-32,R6-9,FL1,TP1",
     "variants": []
   },
   "sheets": [
@@ -435,6 +435,22 @@
     [
       "9718484e-0212-4c3b-a95d-910af7c3bbe9",
       "accelerometer"
+    ],
+    [
+      "1c5f1389-ee2b-4976-9dc4-8d9138e86094",
+      "IMU"
+    ],
+    [
+      "f45fe430-843e-4e1f-a9c3-0ae2e95afcf3",
+      "barometer"
+    ],
+    [
+      "46467519-296a-41eb-a8e7-4a6bd1ebdc4c",
+      "GPS"
+    ],
+    [
+      "8f4c2467-28af-4dca-878e-eaeca6b2507c",
+      "Radio"
     ]
   ],
   "text_variables": {},

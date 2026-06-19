@@ -1,0 +1,9 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP AFS14A04-1575.42-T3
+D Signal Conditioning 1575.42MHz BW=40MHz 5-Pad
+K
+F https://datasheet.datasheetarchive.com/originals/dk/DKDS-11/202926.pdf
+$ENDCMP
+#
+#End Doc Library

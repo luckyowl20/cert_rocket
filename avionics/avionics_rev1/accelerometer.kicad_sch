@@ -161,6 +161,160 @@
 			)
 			(embedded_fonts no)
 		)
+		(symbol "Device:R_Small_US"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0.254)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "R"
+				(at 0.762 0.508 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Value" "R_Small_US"
+				(at 0.762 -1.016 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "Resistor, small US symbol"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_keywords" "r resistor"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_fp_filters" "R_*"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "R_Small_US_1_1"
+				(polyline
+					(pts
+						(xy 0 1.524) (xy 1.016 1.143) (xy 0 0.762) (xy -1.016 0.381) (xy 0 0)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 0) (xy 1.016 -0.381) (xy 0 -0.762) (xy -1.016 -1.143) (xy 0 -1.524)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(pin passive line
+					(at 0 2.54 270)
+					(length 1.016)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -2.54 90)
+					(length 1.016)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "power:+3.3V"
 			(power global)
 			(pin_numbers
@@ -784,7 +938,7 @@
 	)
 	(text "The datasheet calls for tantalum caps (pg 26)\ncheck if this makes a difference between\nceramic capacitors"
 		(exclude_from_sim no)
-		(at 115.316 113.792 0)
+		(at 140.462 115.57 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -798,6 +952,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "76821c32-605c-400a-a504-c9f7bee15012")
+	)
+	(junction
+		(at 118.11 121.92)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "7d660962-086f-48d4-8216-49e15cd4058a")
 	)
 	(junction
 		(at 125.73 96.52)
@@ -848,6 +1008,26 @@
 			(type default)
 		)
 		(uuid "0633782e-cdfc-4f7a-bf17-8a90760404b0")
+	)
+	(wire
+		(pts
+			(xy 127 121.92) (xy 127 104.14)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "08b7c738-5bce-4984-bf6e-a1a4e9bd912f")
+	)
+	(wire
+		(pts
+			(xy 118.11 110.49) (xy 118.11 113.03)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "09633c0b-e134-40aa-84f8-1198f84dec4d")
 	)
 	(wire
 		(pts
@@ -911,7 +1091,17 @@
 	)
 	(wire
 		(pts
-			(xy 125.73 104.14) (xy 128.27 104.14)
+			(xy 118.11 121.92) (xy 127 121.92)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "67c73809-f3fa-45a5-b44f-7fd7b151794f")
+	)
+	(wire
+		(pts
+			(xy 113.03 121.92) (xy 118.11 121.92)
 		)
 		(stroke
 			(width 0)
@@ -958,6 +1148,16 @@
 			(type default)
 		)
 		(uuid "a5170954-0327-4038-88cc-989b0bce5e85")
+	)
+	(wire
+		(pts
+			(xy 127 104.14) (xy 128.27 104.14)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a94482a1-1f7f-48a8-b3dd-dfe91275f456")
 	)
 	(wire
 		(pts
@@ -1018,6 +1218,16 @@
 			(type default)
 		)
 		(uuid "d40a48bc-1a51-4f4a-8780-f82e81a1bd36")
+	)
+	(wire
+		(pts
+			(xy 118.11 118.11) (xy 118.11 121.92)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f4fb5ba5-e514-4ad9-a1bf-a3bfbfa0b680")
 	)
 	(wire
 		(pts
@@ -1103,7 +1313,7 @@
 	)
 	(global_label "CS_ACCEL"
 		(shape input)
-		(at 125.73 104.14 180)
+		(at 113.03 121.92 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -1113,7 +1323,7 @@
 		)
 		(uuid "d91cd830-8534-47ae-ad4e-ca091d9fde61")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 113.492 104.14 0)
+			(at 100.792 121.92 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1316,6 +1526,84 @@
 			(project "avionics_rev1"
 				(path "/c491fe45-d2ff-414d-a846-7eed12d2b763/9718484e-0212-4c3b-a95d-910af7c3bbe9"
 					(reference "#PWR014")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+3.3V")
+		(at 118.11 110.49 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "2030142b-ec2b-45b4-9ab5-e33a521df2ce")
+		(property "Reference" "#PWR025"
+			(at 118.11 114.3 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "+3.3V"
+			(at 118.11 105.41 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 118.11 110.49 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 118.11 110.49 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+3.3V\""
+			(at 118.11 110.49 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "1238efb4-d236-4631-84c3-e8e83f933c9c")
+		)
+		(instances
+			(project "avionics_rev1"
+				(path "/c491fe45-d2ff-414d-a846-7eed12d2b763/9718484e-0212-4c3b-a95d-910af7c3bbe9"
+					(reference "#PWR025")
 					(unit 1)
 				)
 			)
@@ -1632,6 +1920,89 @@
 			(project "avionics_rev1"
 				(path "/c491fe45-d2ff-414d-a846-7eed12d2b763/9718484e-0212-4c3b-a95d-910af7c3bbe9"
 					(reference "C15")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R_Small_US")
+		(at 118.11 115.57 0)
+		(mirror x)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "ea9ecd45-f815-479a-9f48-8b411ac0b7f1")
+		(property "Reference" "R7"
+			(at 115.57 114.2999 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "47k"
+			(at 115.57 116.8399 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0201_0603Metric"
+			(at 118.11 115.57 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 118.11 115.57 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Resistor, small US symbol"
+			(at 118.11 115.57 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "366c1fdd-d03a-4668-b4a6-9c1b0ecf55db")
+		)
+		(pin "2"
+			(uuid "d6ab9704-cbd4-4825-9c4e-e3089853289c")
+		)
+		(instances
+			(project "avionics_rev1"
+				(path "/c491fe45-d2ff-414d-a846-7eed12d2b763/9718484e-0212-4c3b-a95d-910af7c3bbe9"
+					(reference "R7")
 					(unit 1)
 				)
 			)

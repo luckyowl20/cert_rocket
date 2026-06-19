@@ -1,0 +1,11 @@
+FILE_TYPE = MULTI_PHYS_TABLE;
+
+PART 'AFS14A04_1575.42_T3'
+CLASS = DISCRETE
+{========================================================================================}
+:"MANUFACTURER_NAME", "MANUFACTURER_PART_NUMBER"= "PART_NUMBER", "JEDEC_TYPE", "PACK_TYPE", "MOUSER_PART_NUMBER", "MOUSER_PRICE/STOCK", "DESCRIPTION", "DATASHEET", "HEIGHT";
+{========================================================================================}
+ "ABRACON", "AFS14A04-1575.42-T3" (!) = "", "AFS14A04157542T3", "Other", "815-AFS14A04-1575-T3", "https://www.mouser.co.uk/ProductDetail/ABRACON/AFS14A04-1575.42-T3?qs=tfZGHB2PWd3aRd4qy%2Fp2mg%3D%3D", "Signal Conditioning 1575.42MHz BW=40MHz 5-Pad", "https://datasheet.datasheetarchive.com/originals/dk/DKDS-11/202926.pdf", "0.7 mm"
+END_PART
+
+END.

@@ -1,0 +1,9 @@
+Manufacturer=ABRACON
+PartNumber=AFS14A04-1575.42-T3
+PartCategory=Filter
+PackageCategory=Other
+PinCount=5
+Version=1.3
+Released=2020-11-12 11:15:03
+Downloaded=2026-06-19 06:13:17
+3D=Y

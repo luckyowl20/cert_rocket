@@ -959,8 +959,8 @@
 			(on_board yes)
 			(in_pos_files yes)
 			(duplicate_pin_numbers_are_jumpers no)
-			(property "Reference" "U1"
-				(at 21.59 10.16 0)
+			(property "Reference" "U"
+				(at 21.082 8.89 0)
 				(show_name no)
 				(do_not_autoplace no)
 				(effects
@@ -970,7 +970,7 @@
 				)
 			)
 			(property "Value" "LMR604065SRAKRQ1"
-				(at 21.59 7.62 0)
+				(at 21.082 6.35 0)
 				(show_name no)
 				(do_not_autoplace no)
 				(effects
@@ -979,7 +979,7 @@
 					)
 				)
 			)
-			(property "Footprint" "avionics_footprints:RAK0009A-MFG"
+			(property "Footprint" "RAK0009A-MFG"
 				(at 21.336 13.97 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -1120,7 +1120,7 @@
 					)
 				)
 				(pin open_collector line
-					(at 43.18 -15.24 180)
+					(at 0 -10.16 0)
 					(length 5.08)
 					(name "PG"
 						(effects
@@ -3240,7 +3240,7 @@
 				)
 			)
 		)
-		(property "Footprint" "avionics_footprints:RAK0009A-MFG"
+		(property "Footprint" "RAK0009A-MFG"
 			(at 157.226 67.31 0)
 			(hide yes)
 			(show_name no)

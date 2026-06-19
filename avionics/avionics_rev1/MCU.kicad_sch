@@ -334,26 +334,26 @@
 			(on_board yes)
 			(in_pos_files yes)
 			(duplicate_pin_numbers_are_jumpers no)
-			(property "Reference" "U2"
-				(at -3.1181 -50.8 0)
+			(property "Reference" "U"
+				(at -15.24 46.99 0)
 				(show_name no)
 				(do_not_autoplace no)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(justify right)
+					(justify left)
 				)
 			)
 			(property "Value" "STM32G474RETx"
-				(at -3.1181 -48.26 0)
+				(at 10.16 46.99 0)
 				(show_name no)
 				(do_not_autoplace no)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(justify right)
+					(justify left)
 				)
 			)
 			(property "Footprint" "Package_QFP:LQFP-64_10x10mm_P0.5mm"
@@ -790,7 +790,7 @@
 					(alternate "USART2_TX" bidirectional line)
 				)
 				(pin power_in line
-					(at 7.62 48.26 270)
+					(at 0 -48.26 90)
 					(length 2.54)
 					(name "VSS"
 						(effects
@@ -1135,7 +1135,7 @@
 					(alternate "TIM5_CH1" bidirectional line)
 				)
 				(pin power_in line
-					(at -17.78 -35.56 0)
+					(at 2.54 -48.26 90)
 					(length 2.54)
 					(name "VSSA"
 						(effects
@@ -1153,7 +1153,7 @@
 					)
 				)
 				(pin input line
-					(at -17.78 -33.02 0)
+					(at -17.78 40.64 0)
 					(length 2.54)
 					(name "VREF+"
 						(effects
@@ -1172,7 +1172,7 @@
 					(alternate "VREFBUF_OUT" bidirectional line)
 				)
 				(pin power_in line
-					(at -17.78 -30.48 0)
+					(at 7.62 48.26 270)
 					(length 2.54)
 					(name "VDDA"
 						(effects
@@ -2469,7 +2469,7 @@
 		)
 		(uuid "b379cb32-8e86-455f-85fa-1d2473940447")
 	)
-	(text "TODO: \npins for SPI / I2C devices\npins for buzzer / status LED(s)\npins for pyro channels\npins for battery monitoring / current draw\n\n"
+	(text "TODO: \npins for SPI / I2C devices\npins for buzzer / status LED(s)\npins for pyro channels\npins for battery monitoring / current draw\nfix symbol power connections\n"
 		(exclude_from_sim no)
 		(at 71.628 60.96 0)
 		(effects
@@ -3002,6 +3002,16 @@
 	)
 	(wire
 		(pts
+			(xy 156.21 92.71) (xy 160.02 92.71)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a5cce11c-f310-482b-a874-e3c31f65bb97")
+	)
+	(wire
+		(pts
 			(xy 186.69 43.18) (xy 194.31 43.18)
 		)
 		(stroke
@@ -3182,6 +3192,16 @@
 	)
 	(wire
 		(pts
+			(xy 156.21 95.25) (xy 160.02 95.25)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "eec1af4a-7b45-46f1-a0e6-979b4f89c9bf")
+	)
+	(wire
+		(pts
 			(xy 173.99 140.97) (xy 182.88 140.97)
 		)
 		(stroke
@@ -3230,6 +3250,102 @@
 		)
 		(uuid "fbe64579-e151-4358-8259-18b2edcdc476")
 	)
+	(global_label "UART_RX"
+		(shape input)
+		(at 160.02 92.71 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "109984b8-83e5-4f8d-b205-a8de037a9673")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 171.109 92.71 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+	)
+	(global_label "UART_TX"
+		(shape input)
+		(at 160.02 95.25 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "13c1cac4-9fe4-40f3-b60d-12f8e20ca340")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 170.8066 95.25 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+	)
+	(global_label "CS_BARO"
+		(shape input)
+		(at 93.98 105.41 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "6da892e7-b2c3-4eb9-8937-769f6a6a2ab9")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 82.5886 105.41 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+	)
+	(global_label "CS_IMU"
+		(shape input)
+		(at 92.71 97.79 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "76709309-0808-415d-890b-de9861ae26d1")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 82.891 97.79 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+	)
 	(global_label "SPI1_MOSI"
 		(shape input)
 		(at 115.57 110.49 180)
@@ -3267,6 +3383,30 @@
 		(uuid "7eba6200-3821-44df-9632-2128a52c9521")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 83.3749 86.36 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+	)
+	(global_label "GPS_RESET"
+		(shape input)
+		(at 93.98 92.71 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "9de634fc-fed8-47e5-bce9-605319782ee5")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 80.5326 92.71 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)

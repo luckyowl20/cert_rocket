@@ -1,0 +1,13 @@
+(unit MM)
+
+(package "AFS14A04-1575_42-T3"
+    (type UNDEF)
+    (uver 2)
+    (cuser "SamacSys")
+    (uuser "SamacSys")
+    (utime 2020-11-12-11:15:03)
+    (mountForm default
+        (footprintRef "AFS14A04157542T3")
+        (spec "System")
+    )
+)

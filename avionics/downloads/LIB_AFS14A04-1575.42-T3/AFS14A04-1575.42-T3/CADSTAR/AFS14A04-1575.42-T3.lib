@@ -1,0 +1,17 @@
+.AFS14A04-1575.42-T3 :1 ;Signal Conditioning 1575.42MHz BW=40MHz 5-Pad
+AFS14A04157542T3
+*STM FL
+*NGS
+*PNM 1=A1 2=B1 3=C1 4=D1 5=E1
+*PLB 1="OUTPUT" 2="GROUND_1" 3="INPUT" 4="GROUND_2" 5="GROUND_3"
+*MXP 5
+*DFN AFS14A04-1575.42-T3
+~!Mouser Part Number (815-AFS14A04-1575-T3)
+~!Link Mouser Price/Stock (https://www.mouser.co.uk/ProductDetail/ABRACON/AFS14A04-1575.42-T3?qs=tfZGHB2PWd3aRd4qy%2Fp2mg%3D%3D)
+~!Manufacturer_Name (ABRACON)
+~!Manufacturer_Part_Number (AFS14A04-1575.42-T3)
+~!Link Datasheet (https://datasheet.datasheetarchive.com/originals/dk/DKDS-11/202926.pdf)
+~!Height (0.7mm)
+~!3D_Model (AFS14A04-1575.42-T3)
+AFS14A04-1575.42-T3
+1.1!U 2.1!U 3.1!U 4.1!U 5.1!U 
