@@ -1,0 +1,590 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>38 mm Motor Mount Interface Visualizer</title>
+<style>
+  :root{
+    color-scheme: light;
+    --bg:#f2f4ef;
+    --bg-2:#e5e9e2;
+    --paper:#fbfcf8;
+    --paper-2:#eef2ec;
+    --ink:#17231d;
+    --ink-soft:#2d3b34;
+    --muted:#68736d;
+    --rule:rgba(23,35,29,.22);
+    --rule-strong:rgba(23,35,29,.52);
+    --shadow:#26302b;
+    --stage-bg:#ebefea;
+    --label-bg:rgba(251,252,248,.94);
+    --canvas-line:rgba(23,35,29,.055);
+    --canvas-dot:rgba(23,35,29,.16);
+    --button:#f4f7f1;
+    --button-hover:#ffffff;
+
+    --airframe:#2f6f83;
+    --mmt:#d8942f;
+    --motor:#2f3740;
+    --grain:#d85f38;
+    --thrust:#d94336;
+    --retainer:#7254a3;
+    --rings:#2c7f59;
+    --epoxy:#d4bd57;
+    --load:#e34f8f;
+    --gas:#5c7df0;
+    --cut:#f4e7cc;
+  }
+  body[data-theme="dark"]{
+    color-scheme: dark;
+    --bg:#0d1210;
+    --bg-2:#151d19;
+    --paper:#151b18;
+    --paper-2:#101612;
+    --ink:#e8eee9;
+    --ink-soft:#c9d4cd;
+    --muted:#97a49d;
+    --rule:rgba(232,238,233,.17);
+    --rule-strong:rgba(232,238,233,.44);
+    --shadow:#050807;
+    --stage-bg:#0f1512;
+    --label-bg:rgba(21,27,24,.94);
+    --canvas-line:rgba(232,238,233,.08);
+    --canvas-dot:rgba(232,238,233,.15);
+    --button:#18211d;
+    --button-hover:#202b26;
+
+    --airframe:#76c3d4;
+    --mmt:#f2b94a;
+    --motor:#b8c3cc;
+    --grain:#f17b58;
+    --thrust:#ff6a5e;
+    --retainer:#ae91ff;
+    --rings:#77c89d;
+    --epoxy:#ead66b;
+    --load:#ff6dad;
+    --gas:#86a6ff;
+    --cut:#675840;
+  }
+  *{box-sizing:border-box}
+  html,body{height:100%}
+  body{
+    margin:0;
+    min-height:100vh;
+    background:
+      radial-gradient(circle at 18% 12%, rgba(47,111,131,.10), transparent 25%),
+      radial-gradient(circle at 86% 6%, rgba(114,84,163,.11), transparent 30%),
+      repeating-linear-gradient(0deg, transparent 0, transparent 31px, rgba(23,35,29,.035) 32px),
+      linear-gradient(135deg, var(--bg), var(--bg-2));
+    color:var(--ink);
+    font-family:Georgia, Cambria, "Times New Roman", serif;
+    overflow:hidden;
+  }
+  .app{display:grid; grid-template-columns:minmax(620px,1fr) 455px; height:100vh}
+  .stage{
+    position:relative;
+    min-width:0;
+    background:
+      linear-gradient(90deg, transparent 0 23%, var(--canvas-line) 23% 23.2%, transparent 23.2% 100%),
+      linear-gradient(180deg, transparent 0 59%, var(--canvas-line) 59% 59.2%, transparent 59.2% 100%),
+      var(--stage-bg);
+    border-right:2px solid var(--ink);
+    box-shadow:inset -6px 0 0 rgba(23,35,29,.07);
+  }
+  canvas{position:absolute; inset:0; width:100%; height:100%; display:block; cursor:grab}
+  canvas:active{cursor:grabbing}
+  .hud{
+    position:absolute; left:22px; top:22px;
+    width:min(650px, calc(100% - 44px));
+    background:var(--label-bg);
+    border:2px solid var(--ink);
+    border-radius:2px;
+    padding:14px 16px 13px;
+    box-shadow:5px 5px 0 var(--shadow);
+  }
+  h1{font-size:22px; line-height:1.03; margin:0 0 7px; font-weight:700; letter-spacing:-.025em}
+  .subtitle{font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace; font-size:12px; color:var(--muted); margin:0; line-height:1.42}
+  .kicker{display:inline-block; font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace; text-transform:uppercase; letter-spacing:.12em; font-size:10px; color:var(--ink-soft); border-bottom:1px solid var(--rule-strong); margin-bottom:7px}
+  .hint{
+    position:absolute; left:22px; bottom:22px;
+    color:var(--muted); background:var(--label-bg); border:1.5px solid var(--ink); border-radius:2px;
+    padding:9px 11px; font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace; font-size:11px; box-shadow:3px 3px 0 var(--shadow)
+  }
+  .legend{
+    position:absolute; right:22px; bottom:22px; display:grid; grid-template-columns:1fr 1fr; gap:8px 12px;
+    background:var(--label-bg); border:1.5px solid var(--ink); border-radius:2px; padding:12px;
+    font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace; font-size:11px; color:var(--muted); box-shadow:3px 3px 0 var(--shadow)
+  }
+  .legend .item{display:flex; align-items:center; gap:8px; white-space:nowrap}
+  .swatch{width:18px; height:7px; border:1px solid var(--ink); background:white}
+  .side{overflow:auto; padding:20px 20px 24px; background:linear-gradient(180deg, rgba(255,255,255,.15), transparent 42%), var(--paper-2)}
+  .card{background:var(--paper); border:2px solid var(--ink); border-radius:2px; padding:16px; margin-bottom:15px; box-shadow:5px 5px 0 var(--shadow)}
+  .card.tight{padding:13px 14px}
+  .controlHeader{display:flex; align-items:center; justify-content:space-between; gap:12px; margin-bottom:12px}
+  .edition{font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace; font-size:10px; text-transform:uppercase; letter-spacing:.13em; color:var(--muted)}
+  label{display:block; font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace; font-size:10px; color:var(--muted); margin-bottom:7px; letter-spacing:.12em; text-transform:uppercase}
+  button, select, input[type=range]{width:100%}
+  select, button{
+    color:var(--ink); background:var(--button); border:1.5px solid var(--ink); border-radius:2px; padding:10px 11px;
+    font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace; font-size:12px; outline:none; box-shadow:2px 2px 0 var(--shadow)
+  }
+  select:focus, button:focus-visible{outline:2px dashed var(--retainer); outline-offset:3px}
+  button{cursor:pointer; transition:.12s ease; margin-top:8px; text-transform:uppercase; letter-spacing:.06em}
+  button:hover{background:var(--button-hover); transform:translate(-1px,-1px); box-shadow:3px 3px 0 var(--shadow)}
+  .buttonRow{display:grid; grid-template-columns:1fr 1fr; gap:10px}
+  .themeButton{width:auto; white-space:nowrap; margin-top:0; padding:8px 10px; font-size:11px}
+  input[type=range]{accent-color:var(--ink); cursor:pointer}
+  .propTitle{font-size:25px; line-height:1.02; font-weight:700; letter-spacing:-.03em; margin:0 0 6px}
+  .propNote{font-size:14px; color:var(--ink-soft); line-height:1.44; margin:0 0 12px}
+  .checkboxLine{display:flex; gap:10px; align-items:flex-start; margin-top:11px; color:var(--ink-soft); font-size:13px; line-height:1.35}
+  .checkboxLine input{margin-top:2px; accent-color:var(--ink)}
+  .miniGrid{display:grid; grid-template-columns:1fr 1fr; gap:10px; margin-top:12px}
+  .mini{background:var(--paper-2); border:1.5px solid var(--ink); border-radius:2px; padding:10px}
+  .mini b{display:block; font-size:14px; margin-bottom:4px}
+  .mini span{display:block; color:var(--muted); font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace; font-size:11px; line-height:1.35}
+  .step{display:grid; grid-template-columns:28px 1fr; gap:10px; margin:10px 0; align-items:start}
+  .bubble{width:24px; height:24px; display:grid; place-items:center; border:1.5px solid var(--ink); background:var(--paper-2); font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace; font-size:11px; font-weight:700; color:var(--load)}
+  .step b{display:block; font-size:14px; margin-bottom:2px}
+  .step span{display:block; color:var(--muted); font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace; font-size:11px; line-height:1.35}
+  .source{font-size:12px; color:var(--muted); line-height:1.45; font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace}
+  code{font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace; color:var(--ink)}
+  @media (max-width: 1040px){body{overflow:auto}.app{height:auto; min-height:100vh; display:block}.stage{height:62vh; min-height:470px; border-right:none; border-bottom:2px solid var(--ink)}.side{overflow:visible}}
+  @media (max-width: 700px){.legend{position:static; margin:0 22px 22px; grid-template-columns:1fr}.hint{display:none}.miniGrid{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+<div class="app">
+  <section class="stage">
+    <canvas id="scene"></canvas>
+    <div class="hud">
+      <span class="kicker">38 mm motor mount inside 2.6 in fiberglass airframe</span>
+      <h1>Motor thrust ring / retainer load-path visualizer</h1>
+      <p class="subtitle">Illustrative sectional 3D model: thrust ring → retainer base / motor mount tube → centering rings → airframe. Not a manufacturing drawing.</p>
+    </div>
+    <div class="hint">Drag to orbit · Shift-drag / middle-drag to pan target · Scroll to zoom</div>
+    <div class="legend">
+      <div class="item"><span class="swatch" style="background:var(--airframe)"></span> 2.6 in airframe</div>
+      <div class="item"><span class="swatch" style="background:var(--mmt)"></span> 38 mm motor mount</div>
+      <div class="item"><span class="swatch" style="background:var(--motor)"></span> motor case</div>
+      <div class="item"><span class="swatch" style="background:var(--thrust)"></span> thrust ring</div>
+      <div class="item"><span class="swatch" style="background:var(--retainer)"></span> retainer</div>
+      <div class="item"><span class="swatch" style="background:var(--rings)"></span> centering rings</div>
+      <div class="item"><span class="swatch" style="background:var(--epoxy)"></span> epoxy fillets</div>
+      <div class="item"><span class="swatch" style="background:var(--load)"></span> thrust load path</div>
+    </div>
+  </section>
+
+  <aside class="side">
+    <div class="card tight">
+      <div class="controlHeader">
+        <div class="edition">Interactive figure · standard mounting method</div>
+        <button class="themeButton" id="themeToggle">Dark mode</button>
+      </div>
+      <label for="motorChoice">Motor shown in long mount</label>
+      <select id="motorChoice">
+        <option value="short">Short H motor, ~155 mm / 6.1 in</option>
+        <option value="mid">Intermediate motor, ~300 mm / 11.8 in</option>
+        <option value="long">Long motor, ~500 mm / 19.7 in</option>
+      </select>
+      <div class="buttonRow">
+        <button id="resetView">Reset view</button>
+        <button id="spin">Spin: off</button>
+      </div>
+      <div class="buttonRow">
+        <button id="focusCenter">Center model</button>
+        <button id="focusAft">Center aft/nozzle</button>
+      </div>
+      <div class="checkboxLine"><input id="section" type="checkbox" checked /><span>Sectional view: remove the upper/front half so the cut plane passes through the motor center axis.</span></div>
+      <div class="checkboxLine"><input id="loadPath" type="checkbox" checked /><span>Show thrust load path arrows from the motor thrust ring into the airframe.</span></div>
+      <div class="checkboxLine"><input id="labels" type="checkbox" checked /><span>Show floating part labels and interface notes.</span></div>
+      <div class="checkboxLine"><input id="gasPath" type="checkbox" /><span>Show optional motor-ejection gas path through the open motor mount tube.</span></div>
+    </div>
+
+    <div class="card">
+      <span class="kicker">What you are seeing</span>
+      <div class="propTitle">The motor does not fill the whole tube</div>
+      <p class="propNote">The 38 mm motor slides in from the aft end. A short motor sits at the back of the long motor mount. The empty tube volume forward of the motor is normal when you design for longer future motors.</p>
+      <div class="miniGrid">
+        <div class="mini"><b>Forward</b><span>Left side of the figure. Recovery volume and nose direction are forward.</span></div>
+        <div class="mini"><b>Aft</b><span>Right side of the figure. Nozzle, retainer cap, and motor insertion direction are aft.</span></div>
+        <div class="mini"><b>No motor block</b><span>There is no glued stop inside the long tube. The aft thrust ring/retainer defines motor position.</span></div>
+        <div class="mini"><b>Open front</b><span>Forward motor-mount end remains open unless you use electronics-only deployment and intentionally isolate volumes.</span></div>
+        <div class="mini"><b>Camera target</b><span>Use Center aft/nozzle to put the motor aft end on the zoom/orbit axis. Shift-drag or middle-drag pans that target.</span></div>
+      </div>
+    </div>
+
+    <div class="card">
+      <span class="kicker">Thrust-ring / retainer interface</span>
+      <div class="step"><div class="bubble">1</div><div><b>Motor thrust ring bears forward</b><span>The motor case pushes on its aft thrust ring. The thrust ring’s forward face bears on the fixed retainer base / aft motor-mount shoulder.</span></div></div>
+      <div class="step"><div class="bubble">2</div><div><b>Retainer base loads the motor tube</b><span>The fixed base is bonded/screwed to the 38 mm motor mount tube. This is the local structural interface, not the outer airframe wall.</span></div></div>
+      <div class="step"><div class="bubble">3</div><div><b>Centering rings bridge outward</b><span>The motor mount tube passes thrust into the centering rings, which spread the load into the larger 2.6 in fiberglass airframe.</span></div></div>
+      <div class="step"><div class="bubble">4</div><div><b>Retainer cap captures rearward motion</b><span>The threaded cap keeps the motor from sliding out during ejection, coast, landing shock, or handling. The cap is not the primary forward thrust stop.</span></div></div>
+    </div>
+
+    <div class="card source">
+      <div class="propTitle" style="font-size:20px">Model notes</div>
+      This visualization is intentionally simplified: dimensions are scaled for clarity, colors are non-physical, and epoxy fillets are shown as idealized load-transfer bands. Use the retainer manufacturer’s installation instructions for real dimensions, clearances, and bonding requirements.
+    </div>
+  </aside>
+</div>
+
+<script>
+const canvas = document.getElementById('scene');
+const ctx = canvas.getContext('2d');
+let W=0,H=0,DPR=1;
+function css(name){return getComputedStyle(document.body).getPropertyValue(name).trim();}
+function hexToRgb(hex){
+  hex=String(hex).trim();
+  if(hex.startsWith('#')) hex=hex.slice(1);
+  if(hex.length===3) hex=hex.split('').map(c=>c+c).join('');
+  const n=parseInt(hex,16);
+  return {r:(n>>16)&255,g:(n>>8)&255,b:n&255};
+}
+function rgba(cssColor, alpha){
+  if(cssColor.startsWith('rgba') || cssColor.startsWith('rgb')) return cssColor;
+  const c=hexToRgb(cssColor);
+  return `rgba(${c.r},${c.g},${c.b},${alpha})`;
+}
+function shadeColor(cssColor, amount){
+  const c=hexToRgb(cssColor);
+  const f = amount >= 0 ? 255 : 0;
+  const p = Math.abs(amount);
+  const r=Math.round(c.r+(f-c.r)*p), g=Math.round(c.g+(f-c.g)*p), b=Math.round(c.b+(f-c.b)*p);
+  return `rgb(${r},${g},${b})`;
+}
+function cutFaceColor(base){
+  // Keep sectioned faces visually tied to their parent part color rather than a generic cut tint.
+  // Slightly brighten in light mode and slightly darken in dark mode so the face reads as a flat surface.
+  return document.body.dataset.theme === 'dark' ? shadeColor(base, -0.06) : shadeColor(base, 0.08);
+}
+
+let rx=-0.34, ry=0.78, rz=0.0, zoom=1.0;
+let cameraTarget=[0,0,0];
+let dragging=false, panMode=false, lastX=0, lastY=0, spin=false;
+let sectional=true, showLoad=true, showLabels=true, showGas=false, motorChoice='short';
+const parts = [];
+
+function resize(){
+  DPR=Math.min(2, window.devicePixelRatio || 1);
+  const r=canvas.getBoundingClientRect();
+  W=Math.max(1,Math.floor(r.width*DPR)); H=Math.max(1,Math.floor(r.height*DPR));
+  canvas.width=W; canvas.height=H;
+}
+window.addEventListener('resize', resize); resize();
+
+canvas.addEventListener('contextmenu', e=>e.preventDefault());
+canvas.addEventListener('pointerdown', e=>{
+  dragging=true;
+  panMode = e.shiftKey || e.button===1 || e.button===2;
+  canvas.setPointerCapture(e.pointerId);
+  lastX=e.clientX; lastY=e.clientY;
+});
+canvas.addEventListener('pointermove', e=>{
+  if(!dragging) return;
+  const dx=e.clientX-lastX, dy=e.clientY-lastY;
+  lastX=e.clientX; lastY=e.clientY;
+  const doPan = panMode || e.shiftKey;
+  if(doPan){
+    panCameraTarget(dx, dy);
+  }else{
+    ry += dx*0.008;
+    rx += dy*0.008;
+    rx=Math.max(-1.35, Math.min(1.35, rx));
+  }
+});
+canvas.addEventListener('pointerup', ()=>{dragging=false; panMode=false;});
+canvas.addEventListener('pointercancel', ()=>{dragging=false; panMode=false;});
+canvas.addEventListener('wheel', e=>{
+  e.preventDefault();
+  zoom *= Math.exp(-e.deltaY*0.001);
+  zoom=Math.max(0.52, Math.min(2.25, zoom));
+},{passive:false});
+
+document.getElementById('resetView').addEventListener('click',()=>{rx=-0.34; ry=0.78; rz=0; zoom=1; cameraTarget=[0,0,0];});
+document.getElementById('focusCenter').addEventListener('click',()=>{cameraTarget=[0,0,0];});
+document.getElementById('focusAft').addEventListener('click',()=>{cameraTarget=[3.32,0,0];});
+document.getElementById('spin').addEventListener('click', e=>{spin=!spin; e.target.textContent='Spin: '+(spin?'on':'off');});
+document.getElementById('section').addEventListener('change', e=>sectional=e.target.checked);
+document.getElementById('loadPath').addEventListener('change', e=>showLoad=e.target.checked);
+document.getElementById('labels').addEventListener('change', e=>showLabels=e.target.checked);
+document.getElementById('gasPath').addEventListener('change', e=>showGas=e.target.checked);
+document.getElementById('motorChoice').addEventListener('change', e=>motorChoice=e.target.value);
+const themeToggle=document.getElementById('themeToggle');
+function setTheme(theme){
+  document.body.dataset.theme=theme;
+  themeToggle.textContent = theme==='dark' ? 'Light mode' : 'Dark mode';
+  try{localStorage.setItem('motor_mount_theme', theme);}catch(e){}
+}
+let initialTheme='light';
+try{initialTheme=localStorage.getItem('motor_mount_theme') || (matchMedia('(prefers-color-scheme: dark)').matches?'dark':'light');}catch(e){}
+setTheme(initialTheme);
+themeToggle.addEventListener('click',()=>setTheme(document.body.dataset.theme==='dark'?'light':'dark'));
+
+function rot(p){
+  let [x,y,z]=p;
+  let cy=Math.cos(rx), sy=Math.sin(rx);
+  let y1=y*cy-z*sy, z1=y*sy+z*cy; y=y1; z=z1;
+  cy=Math.cos(ry); sy=Math.sin(ry);
+  let x1=x*cy+z*sy, z2=-x*sy+z*cy; x=x1; z=z2;
+  cy=Math.cos(rz); sy=Math.sin(rz);
+  x1=x*cy-y*sy; y1=x*sy+y*cy; x=x1; y=y1;
+  return [x,y,z];
+}
+function invRot(v){
+  let [x,y,z]=v;
+  let cy=Math.cos(-rz), sy=Math.sin(-rz);
+  let x1=x*cy-y*sy, y1=x*sy+y*cy; x=x1; y=y1;
+  cy=Math.cos(-ry); sy=Math.sin(-ry);
+  x1=x*cy+z*sy; let z1=-x*sy+z*cy; x=x1; z=z1;
+  cy=Math.cos(-rx); sy=Math.sin(-rx);
+  y1=y*cy-z*sy; z1=y*sy+z*cy; y=y1; z=z1;
+  return [x,y,z];
+}
+function panCameraTarget(dx, dy){
+  const scale=Math.min(W,H)*0.165*zoom;
+  const camDelta=[-(dx*DPR)/scale, (dy*DPR)/scale, 0];
+  const worldDelta=invRot(camDelta);
+  cameraTarget=[
+    cameraTarget[0]+worldDelta[0],
+    cameraTarget[1]+worldDelta[1],
+    cameraTarget[2]+worldDelta[2]
+  ];
+}
+function project(p){
+  const shifted=[p[0]-cameraTarget[0], p[1]-cameraTarget[1], p[2]-cameraTarget[2]];
+  const r=rot(shifted);
+  const scale=Math.min(W,H)*0.165*zoom;
+  const dist=8.0;
+  const f=dist/(dist-r[2]);
+  return {x:W/2+r[0]*scale*f, y:H/2-r[1]*scale*f, z:r[2], f};
+}
+function cylPoint(x,theta,R){return [x, Math.cos(theta)*R, Math.sin(theta)*R];}
+function meanDepth(pts){return pts.reduce((s,p)=>s+rot(p)[2],0)/pts.length;}
+function addPoly(pts, fill, alpha=1, stroke=null, width=1){parts.push({pts, fill, alpha, stroke, width, z:meanDepth(pts)});}
+function drawPoly(poly){
+  ctx.save();
+  ctx.globalAlpha=poly.alpha;
+  ctx.fillStyle=poly.fill;
+  ctx.beginPath();
+  poly.pts.forEach((p,i)=>{const q=project(p); if(i===0) ctx.moveTo(q.x,q.y); else ctx.lineTo(q.x,q.y);});
+  ctx.closePath(); ctx.fill();
+  if(poly.stroke){ctx.strokeStyle=poly.stroke; ctx.lineWidth=poly.width*DPR; ctx.stroke();}
+  ctx.restore();
+}
+function addTubeSegment({x0,x1,R,r=0,color,alpha=1,stroke=true,name='',thetaStart=null,thetaEnd=null,capStart=true,capEnd=true,innerAlpha=0.72,cutAlpha=0.95,shading=true}){
+  const cut = sectional && thetaStart===null;
+  let t0 = thetaStart, t1 = thetaEnd;
+  if(t0===null){
+    if(cut){ t0=Math.PI/2; t1=3*Math.PI/2; }
+    else { t0=0; t1=2*Math.PI; }
+  }
+  const nTheta = cut ? 42 : 74;
+  const nX = Math.max(2, Math.ceil((x1-x0)*7));
+  const base=color;
+  for(let i=0;i<nX;i++){
+    const xa=x0+(x1-x0)*i/nX, xb=x0+(x1-x0)*(i+1)/nX;
+    for(let j=0;j<nTheta;j++){
+      const a=t0+(t1-t0)*j/nTheta, b=t0+(t1-t0)*(j+1)/nTheta;
+      const light=.46+.34*Math.max(0, Math.cos((a+b)/2-0.65));
+      const fill=shading ? shadeColor(base, (light-.55)*0.45) : base;
+      addPoly([cylPoint(xa,a,R),cylPoint(xb,a,R),cylPoint(xb,b,R),cylPoint(xa,b,R)], fill, alpha, stroke?rgba(css('--ink'),.8):null, 0.25);
+    }
+  }
+  if(r>0){
+    // inner wall, most visible in the sectioned model
+    for(let i=0;i<nX;i++){
+      const xa=x0+(x1-x0)*i/nX, xb=x0+(x1-x0)*(i+1)/nX;
+      for(let j=0;j<nTheta;j++){
+        const a=t0+(t1-t0)*j/nTheta, b=t0+(t1-t0)*(j+1)/nTheta;
+        const fill=shadeColor(base, .15);
+        addPoly([cylPoint(xa,b,r),cylPoint(xb,b,r),cylPoint(xb,a,r),cylPoint(xa,a,r)], fill, cut?innerAlpha:alpha*.32, stroke?rgba(css('--ink'),.65):null, 0.22);
+      }
+    }
+    function capFace(x){
+      for(let j=0;j<nTheta;j++){
+        const a=t0+(t1-t0)*j/nTheta, b=t0+(t1-t0)*(j+1)/nTheta;
+        addPoly([cylPoint(x,a,R),cylPoint(x,b,R),cylPoint(x,b,r),cylPoint(x,a,r)], shadeColor(base,.08), alpha*.95, stroke?css('--ink'):null, 0.55);
+      }
+    }
+    if(capStart) capFace(x0);
+    if(capEnd) capFace(x1);
+    if(cut){
+      // Exposed section cut faces: match the part color so the section reads clearly.
+      for(const t of [t0,t1]){
+        const fill=cutFaceColor(base);
+        addPoly([cylPoint(x0,t,R),cylPoint(x1,t,R),cylPoint(x1,t,r),cylPoint(x0,t,r)], fill, cutAlpha, css('--ink'), 0.7);
+      }
+    }
+  } else {
+    function disk(x){
+      const c=[x,0,0];
+      for(let j=0;j<nTheta;j++){
+        const a=t0+(t1-t0)*j/nTheta, b=t0+(t1-t0)*(j+1)/nTheta;
+        addPoly([c,cylPoint(x,a,R),cylPoint(x,b,R)], shadeColor(base,.05), alpha*.95, stroke?css('--ink'):null, 0.45);
+      }
+    }
+    if(capStart) disk(x0);
+    if(capEnd) disk(x1);
+    if(cut){
+      for(const t of [t0,t1]){
+        addPoly([cylPoint(x0,t,R),cylPoint(x1,t,R),[x1,0,0],[x0,0,0]], cutFaceColor(base), cutAlpha, css('--ink'), 0.7);
+      }
+    }
+  }
+}
+function addEpoxyBand(x, side){
+  const c=css('--epoxy');
+  const width=.055;
+  const xa=x + side*0.10, xb=x + side*0.16;
+  addTubeSegment({x0:xa,x1:xb,R:1.15,r:.60,color:c,alpha:sectional?.65:.35,stroke:false,capStart:false,capEnd:false,shading:false});
+}
+function addSceneGeometry(){
+  parts.length=0;
+  // structural sizes, normalized for clarity, not exact dimensions
+  const airOuter=1.36, airInner=1.22;
+  const mmtOuter=.56, mmtInner=.47;
+  const motorR=.425, grainR=.32, boreR=.08;
+  const xAir0=-3.55, xAir1=3.55, xMmt0=-3.15, xMmt1=3.10;
+  const aftBodyX=3.02;
+  const lengths={short:1.20, mid:2.35, long:3.85};
+  const mLen=lengths[motorChoice] || lengths.short;
+  const xMotor0=aftBodyX-mLen, xMotor1=aftBodyX;
+
+  // Airframe, motor mount, centering rings
+  addTubeSegment({x0:xAir0,x1:xAir1,R:airOuter,r:airInner,color:css('--airframe'),alpha:sectional?.88:.34,stroke:false,innerAlpha:.36});
+  addTubeSegment({x0:xMmt0,x1:xMmt1,R:mmtOuter,r:mmtInner,color:css('--mmt'),alpha:sectional?.94:.72,stroke:false,innerAlpha:.82});
+  for(const x of [-2.55,-0.45,2.35]){
+    addTubeSegment({x0:x-.08,x1:x+.08,R:airInner,r:mmtOuter,color:css('--rings'),alpha:sectional?.96:.78,stroke:true,cutAlpha:.97});
+    addEpoxyBand(x,-1); addEpoxyBand(x,1);
+  }
+
+  // Motor body. In section mode, draw motor case as tube, propellant grain as solid, and bore as negative-looking center.
+  addTubeSegment({x0:xMotor0,x1:xMotor1,R:motorR,r:sectional?grainR:0,color:css('--motor'),alpha:.96,stroke:true,cutAlpha:.95});
+  if(sectional){
+    addTubeSegment({x0:xMotor0+.10,x1:xMotor1-.08,R:grainR,r:boreR,color:css('--grain'),alpha:.92,stroke:false,capStart:true,capEnd:true,cutAlpha:.95});
+    addTubeSegment({x0:xMotor0+.10,x1:xMotor1-.08,R:boreR,r:0,color:css('--stage-bg'),alpha:.98,stroke:false,capStart:false,capEnd:false,cutAlpha:.95});
+  }
+
+  // Thrust ring, fixed retainer base, retainer cap, and nozzle.
+  addTubeSegment({x0:2.98,x1:3.13,R:.66,r:motorR,color:css('--thrust'),alpha:.98,stroke:true,cutAlpha:.98});
+  addTubeSegment({x0:2.80,x1:3.08,R:.74,r:mmtOuter,color:css('--retainer'),alpha:.94,stroke:true,cutAlpha:.98});
+  addTubeSegment({x0:3.08,x1:3.38,R:.77,r:.50,color:css('--retainer'),alpha:.92,stroke:true,cutAlpha:.98});
+  addTubeSegment({x0:3.16,x1:3.50,R:.25,r:.11,color:'#111111',alpha:.97,stroke:true,cutAlpha:.98});
+
+  // Light aft flange face line to show motor insertion stop geometry.
+  addTubeSegment({x0:3.075,x1:3.095,R:.79,r:.48,color:css('--load'),alpha:.85,stroke:false,capStart:false,capEnd:false,shading:false});
+}
+function drawBackground(){
+  ctx.clearRect(0,0,W,H);
+  ctx.fillStyle=css('--stage-bg'); ctx.fillRect(0,0,W,H);
+  ctx.save();
+  ctx.strokeStyle=css('--canvas-line'); ctx.lineWidth=1*DPR;
+  const spacing=42*DPR;
+  for(let x=((W*.03)%spacing);x<W;x+=spacing){ctx.beginPath();ctx.moveTo(x,0);ctx.lineTo(x,H);ctx.stroke();}
+  for(let y=((H*.02)%spacing);y<H;y+=spacing){ctx.beginPath();ctx.moveTo(0,y);ctx.lineTo(W,y);ctx.stroke();}
+  ctx.restore();
+  ctx.save(); ctx.fillStyle=css('--canvas-dot');
+  for(let i=0;i<90;i++){const x=(i*173%W), y=(i*331%H), r=(i%2+1)*.42*DPR; ctx.beginPath();ctx.arc(x,y,r,0,Math.PI*2);ctx.fill();}
+  ctx.restore();
+}
+function stroke3D(points,color,width=2,alpha=1,dash=null){
+  ctx.save(); ctx.globalAlpha=alpha; ctx.strokeStyle=color; ctx.lineWidth=width*DPR; ctx.lineCap='round'; ctx.lineJoin='round';
+  if(dash) ctx.setLineDash(dash.map(v=>v*DPR));
+  ctx.beginPath();
+  points.forEach((p,i)=>{const q=project(p); if(i===0)ctx.moveTo(q.x,q.y); else ctx.lineTo(q.x,q.y);});
+  ctx.stroke(); ctx.restore();
+}
+function drawArrow3D(p1,p2,color,label='',opts={}){
+  const a=project(p1), b=project(p2);
+  ctx.save(); ctx.globalAlpha=opts.alpha??1; ctx.strokeStyle=color; ctx.lineWidth=(opts.width||3.0)*DPR; ctx.lineCap='round';
+  if(opts.dash) ctx.setLineDash(opts.dash.map(v=>v*DPR));
+  ctx.beginPath(); ctx.moveTo(a.x,a.y); ctx.lineTo(b.x,b.y); ctx.stroke();
+  const ang=Math.atan2(b.y-a.y,b.x-a.x); const size=(opts.head||12)*DPR;
+  ctx.fillStyle=color; ctx.beginPath(); ctx.moveTo(b.x,b.y);
+  ctx.lineTo(b.x-size*Math.cos(ang-Math.PI/6), b.y-size*Math.sin(ang-Math.PI/6));
+  ctx.lineTo(b.x-size*Math.cos(ang+Math.PI/6), b.y-size*Math.sin(ang+Math.PI/6));
+  ctx.closePath(); ctx.fill(); ctx.restore();
+  if(label && showLabels) drawLabel(label,b.x+(opts.labelDx||8)*DPR,b.y+(opts.labelDy||-8)*DPR,color);
+}
+function drawLoadPath(){
+  const c=css('--load');
+  // thrust ring to fixed retainer/motor tube shoulder
+  drawArrow3D([3.13,-.78,.04],[2.86,-.78,.04],c,'1 thrust ring → fixed retainer base',{width:3.4,head:12,labelDx:10,labelDy:-12});
+  // along motor mount tube forward
+  stroke3D([[2.72,-.64,.10],[1.9,-.64,.10],[.2,-.64,.10],[-1.6,-.64,.10]],c,3.0,.92,[10,5]);
+  drawArrow3D([-1.6,-.64,.10],[-2.42,-.64,.10],c,'2 load travels through 38 mm MMT',{width:3.0,head:11,labelDx:10,labelDy:-10,dash:[10,5]});
+  // radial transfer at rings
+  for(const x of [2.35,-.45,-2.55]){
+    drawArrow3D([x,-.58,.08],[x,-1.12,.13],c,'',{width:2.8,head:10});
+  }
+  drawArrow3D([-2.55,-1.12,.13],[-3.05,-1.28,.13],c,'3 centering rings spread load into airframe',{width:2.8,head:10,labelDx:10,labelDy:-10});
+  // airframe carries thrust globally
+  drawArrow3D([2.55,-1.45,-.18],[-2.95,-1.45,-.18],c,'4 airframe carries thrust forward',{width:3.1,head:12,labelDx:10,labelDy:-10,dash:[12,5]});
+}
+function drawGasPath(){
+  const c=css('--gas');
+  const xMotor0=(motorChoice==='short'?3.02-1.20:(motorChoice==='mid'?3.02-2.35:3.02-3.85));
+  drawArrow3D([xMotor0+.05,.10,.10],[-.5,.10,.10],c,'optional ejection gas path through open MMT',{width:2.6,head:10,dash:[7,6],alpha:.9,labelDx:10,labelDy:-12});
+  drawArrow3D([-.5,.10,.10],[-3.05,.10,.10],c,'',{width:2.6,head:10,dash:[7,6],alpha:.9});
+}
+function drawLabel(text,x,y,color){
+  ctx.save();
+  ctx.font=`${11*DPR}px ui-monospace, SFMono-Regular, Menlo, Consolas, monospace`;
+  const pad=6*DPR, h=23*DPR;
+  const w=ctx.measureText(text).width+pad*2;
+  ctx.fillStyle=css('--label-bg'); ctx.strokeStyle=css('--ink'); ctx.lineWidth=1.25*DPR;
+  ctx.beginPath(); ctx.rect(x,y-h/2,w,h); ctx.fill(); ctx.stroke();
+  ctx.fillStyle=color; ctx.fillText(text,x+pad,y+4*DPR);
+  ctx.restore();
+}
+function label3D(text,p,color,dx=8,dy=-8){
+  if(!showLabels) return;
+  const q=project(p); drawLabel(text,q.x+dx*DPR,q.y+dy*DPR,color);
+}
+function drawLabels(){
+  label3D('2.6 in fiberglass airframe',[-2.1,1.30,.65],css('--airframe'),8,-8);
+  label3D('38 mm motor mount tube',[.2,.58,.36],css('--mmt'),8,-8);
+  label3D('centering ring',[2.35,1.12,.28],css('--rings'),8,-8);
+  label3D('epoxy fillets',[2.51,1.05,-.42],css('--epoxy'),8,14);
+  label3D('motor case',[1.95,.30,.16],css('--motor'),8,14);
+  label3D('thrust ring / forward stop',[3.05,.78,.15],css('--thrust'),8,-8);
+  label3D('fixed retainer base',[2.78,.86,-.30],css('--retainer'),8,12);
+  label3D('threaded retainer cap',[3.33,.92,.15],css('--retainer'),8,-8);
+  label3D('nozzle / aft',[3.52,.28,.05],css('--ink'),8,14);
+  label3D('empty space is OK',[-.95,.16,.08],css('--muted'),8,-8);
+}
+function drawAxes(){
+  const c=css('--ink');
+  drawArrow3D([-3.65,-1.88,-.30],[-2.85,-1.88,-.30],css('--airframe'),'forward',{width:1.8,head:8,labelDx:5,labelDy:-6,alpha:.8});
+  drawArrow3D([3.05,-1.88,-.30],[3.75,-1.88,-.30],c,'aft / motor inserted here',{width:1.8,head:8,labelDx:5,labelDy:-6,alpha:.75});
+}
+function drawSectionBanner(){
+  if(!sectional) return;
+  ctx.save();
+  ctx.font=`${10*DPR}px ui-monospace, SFMono-Regular, Menlo, Consolas, monospace`;
+  const text='SECTION CUT: plane passes through motor center axis';
+  const pad=7*DPR, w=ctx.measureText(text).width+2*pad, h=25*DPR;
+  const x=22*DPR, y=(H-84*DPR);
+  ctx.fillStyle=css('--label-bg'); ctx.strokeStyle=css('--ink'); ctx.lineWidth=1.2*DPR;
+  ctx.beginPath(); ctx.rect(x,y,w,h); ctx.fill(); ctx.stroke();
+  ctx.fillStyle=css('--muted'); ctx.fillText(text,x+pad,y+17*DPR);
+  ctx.restore();
+}
+function draw(){
+  if(spin && !dragging) ry += 0.006;
+  drawBackground();
+  addSceneGeometry();
+  parts.sort((a,b)=>a.z-b.z);
+  parts.forEach(drawPoly);
+  drawAxes();
+  if(showLoad) drawLoadPath();
+  if(showGas) drawGasPath();
+  drawLabels();
+  drawSectionBanner();
+  requestAnimationFrame(draw);
+}
+requestAnimationFrame(draw);
+</script>
+</body>
+</html>

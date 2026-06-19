@@ -1,0 +1,421 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Von Mises Yield Surface Visualizer — Principal Stress Coordinates</title>
+<style>
+  :root{
+    color-scheme: light;
+    --bg:#f2f4ef;
+    --bg-2:#e5e9e2;
+    --paper:#fbfcf8;
+    --paper-2:#eef2ec;
+    --ink:#17231d;
+    --ink-soft:#2d3b34;
+    --muted:#68736d;
+    --rule:rgba(23,35,29,.20);
+    --rule-strong:rgba(23,35,29,.52);
+    --shadow:#26302b;
+    --sigma1:#0e513d;
+    --sigma2:#4f666c;
+    --sigma3:#2f7354;
+    --hydro:#1f5f66;
+    --deviator:#777f79;
+    --surface-1:#c8d0c7;
+    --surface-2:#87938c;
+    --surface-3:#e3e8e1;
+    --inside:#0e513d;
+    --outside:#8a4d3b;
+    --warn:#6f6246;
+    --button:#f4f7f1;
+    --button-hover:#ffffff;
+    --bar-track:#dfe5dd;
+    --stage-bg:#ebefea;
+    --label-bg:rgba(251,252,248,.94);
+    --canvas-line:rgba(23,35,29,.13);
+    --canvas-dot:rgba(23,35,29,.17);
+  }
+  body[data-theme="dark"]{
+    color-scheme: dark;
+    --bg:#0d1210;
+    --bg-2:#151d19;
+    --paper:#151b18;
+    --paper-2:#101612;
+    --ink:#e8eee9;
+    --ink-soft:#c9d4cd;
+    --muted:#97a49d;
+    --rule:rgba(232,238,233,.17);
+    --rule-strong:rgba(232,238,233,.40);
+    --shadow:#050807;
+    --sigma1:#76b99e;
+    --sigma2:#8ea0a3;
+    --sigma3:#8fd0a9;
+    --hydro:#7ec7c9;
+    --deviator:#b8c3bd;
+    --surface-1:#4a5951;
+    --surface-2:#2b3631;
+    --surface-3:#18221d;
+    --inside:#76b99e;
+    --outside:#d08d76;
+    --warn:#d3c48b;
+    --button:#18211d;
+    --button-hover:#202b26;
+    --bar-track:#0a0f0d;
+    --stage-bg:#0f1512;
+    --label-bg:rgba(21,27,24,.94);
+    --canvas-line:rgba(232,238,233,.105);
+    --canvas-dot:rgba(232,238,233,.14);
+  }
+  *{box-sizing:border-box}
+  html,body{height:100%}
+  body{
+    margin:0;
+    min-height:100vh;
+    background:
+      radial-gradient(circle at 18% 12%, rgba(14,81,61,.10), transparent 25%),
+      radial-gradient(circle at 86% 6%, rgba(79,102,108,.11), transparent 30%),
+      repeating-linear-gradient(0deg, transparent 0, transparent 31px, rgba(23,35,29,.035) 32px),
+      linear-gradient(135deg, var(--bg), var(--bg-2));
+    color:var(--ink);
+    font-family:Georgia, Cambria, "Times New Roman", serif;
+    overflow:hidden;
+  }
+  body[data-theme="dark"]{
+    background:
+      radial-gradient(circle at 18% 12%, rgba(118,185,158,.10), transparent 25%),
+      radial-gradient(circle at 86% 6%, rgba(142,160,163,.10), transparent 30%),
+      repeating-linear-gradient(0deg, transparent 0, transparent 31px, rgba(232,238,233,.030) 32px),
+      linear-gradient(135deg, var(--bg), var(--bg-2));
+  }
+  .app{display:grid; grid-template-columns:minmax(560px, 1fr) 440px; height:100vh}
+  .stage{
+    position:relative;
+    min-width:0;
+    background:
+      linear-gradient(90deg, transparent 0 23%, var(--canvas-line) 23% 23.2%, transparent 23.2% 100%),
+      linear-gradient(180deg, transparent 0 59%, var(--canvas-line) 59% 59.2%, transparent 59.2% 100%),
+      var(--stage-bg);
+    border-right:2px solid var(--ink);
+    box-shadow:inset -6px 0 0 rgba(23,35,29,.07);
+  }
+  canvas{position:absolute; inset:0; width:100%; height:100%; display:block; cursor:grab}
+  canvas:active{cursor:grabbing}
+  .hud{
+    position:absolute; left:22px; top:22px;
+    width:min(610px, calc(100% - 44px));
+    background:var(--label-bg);
+    border:2px solid var(--ink);
+    border-radius:2px;
+    padding:14px 16px 13px;
+    box-shadow:5px 5px 0 var(--shadow);
+  }
+  h1{font-size:22px; line-height:1.03; margin:0 0 7px; font-weight:700; letter-spacing:-.025em}
+  .subtitle{font-family:ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; font-size:12px; color:var(--muted); margin:0; line-height:1.42}
+  .kicker{display:inline-block; font-family:ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; text-transform:uppercase; letter-spacing:.12em; font-size:10px; color:var(--ink-soft); border-bottom:1px solid var(--rule-strong); margin-bottom:7px}
+  .hint{position:absolute; left:22px; bottom:22px; color:var(--muted); background:var(--label-bg); border:1.5px solid var(--ink); border-radius:2px; padding:9px 11px; font-family:ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; font-size:11px; box-shadow:3px 3px 0 var(--shadow)}
+  .legend{position:absolute; right:22px; bottom:22px; display:grid; gap:8px; background:var(--label-bg); border:1.5px solid var(--ink); border-radius:2px; padding:12px; font-family:ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; font-size:11px; color:var(--muted); box-shadow:3px 3px 0 var(--shadow)}
+  .legend .item{display:flex; align-items:center; gap:8px; white-space:nowrap}
+  .swatch{width:18px; height:6px; border:1px solid var(--ink); background:white}
+  .side{overflow:auto; padding:20px 20px 22px; background:linear-gradient(180deg, rgba(255,255,255,.15), transparent 42%), var(--paper-2)}
+  .card{background:var(--paper); border:2px solid var(--ink); border-radius:2px; padding:16px; margin-bottom:15px; box-shadow:5px 5px 0 var(--shadow)}
+  .card.tight{padding:13px 14px}
+  .controlHeader{display:flex; align-items:center; justify-content:space-between; gap:12px; margin-bottom:12px}
+  .edition{font-family:ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; font-size:10px; text-transform:uppercase; letter-spacing:.13em; color:var(--muted)}
+  label{display:block; font-family:ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; font-size:10px; color:var(--muted); margin-bottom:7px; letter-spacing:.12em; text-transform:uppercase}
+  select, button, input[type=range]{width:100%}
+  select, button{color:var(--ink); background:var(--button); border:1.5px solid var(--ink); border-radius:2px; padding:10px 11px; font-family:ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; font-size:12px; outline:none; box-shadow:2px 2px 0 var(--shadow)}
+  select:focus, button:focus-visible{outline:2px dashed var(--sigma2); outline-offset:3px}
+  button{cursor:pointer; transition:.12s ease; margin-top:8px; text-transform:uppercase; letter-spacing:.06em}
+  button:hover{background:var(--button-hover); transform:translate(-1px,-1px); box-shadow:3px 3px 0 var(--shadow)}
+  .buttonRow{display:grid; grid-template-columns:1fr 1fr; gap:10px}
+  .themeButton{width:auto; white-space:nowrap; margin-top:0; padding:8px 10px; font-size:11px}
+  input[type=range]{accent-color:var(--ink); cursor:pointer}
+  .propTitle{font-size:25px; line-height:1.02; font-weight:700; letter-spacing:-.03em; margin:0 0 6px}
+  .propNote{font-size:14px; color:var(--ink-soft); line-height:1.44; margin:0 0 14px}
+  .formula{font-family:ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; font-size:12px; line-height:1.48; color:var(--ink-soft); background:var(--paper-2); border:1.5px solid var(--ink); padding:10px; margin:12px 0; overflow:auto}
+  .metric{margin-top:14px}
+  .metricTop{display:flex; align-items:baseline; justify-content:space-between; gap:12px; margin-bottom:6px}
+  .metricName{font-weight:700; font-size:14px}
+  .metricValue{font-family:ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; font-variant-numeric:tabular-nums; color:var(--ink); font-weight:700; font-size:12px; white-space:nowrap}
+  .barTrack{height:12px; border-radius:0; background:var(--bar-track); border:1.5px solid var(--ink); overflow:hidden}
+  .barFill{height:100%; width:50%; border-right:1.5px solid var(--ink)}
+  .pillRow{display:flex; flex-wrap:wrap; gap:8px; margin-top:13px}
+  .pill{font-family:ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; font-size:11px; color:var(--ink-soft); padding:6px 8px; background:var(--paper-2); border:1px solid var(--rule-strong); border-radius:999px}
+  .infoGrid{display:grid; grid-template-columns:1fr 1fr; gap:10px; margin-top:12px}
+  .mini{background:var(--paper-2); border:1.5px solid var(--ink); border-radius:2px; padding:10px}
+  .mini b{display:block; font-size:14px; margin-bottom:4px}
+  .mini span{display:block; color:var(--muted); font-family:ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; font-size:11px; line-height:1.35}
+  .sliderGrid{display:grid; grid-template-columns:1fr 60px; gap:10px; align-items:center; margin-top:10px}
+  .sliderValue{font-family:ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; font-size:12px; color:var(--ink); text-align:right; border:1px solid var(--rule-strong); padding:5px 6px; background:var(--paper-2)}
+  .checkboxLine{display:flex; gap:10px; align-items:flex-start; margin-top:11px; color:var(--ink-soft); font-size:13px; line-height:1.35}
+  .checkboxLine input{margin-top:2px; accent-color:var(--ink)}
+  .source{font-size:12px; color:var(--muted); line-height:1.45; font-family:ui-monospace, SFMono-Regular, Menlo, Consolas, monospace}
+  .sourceTitle{font-family:Georgia, Cambria, "Times New Roman", serif; color:var(--ink); margin-bottom:8px}
+  .sourceLink{color:var(--sigma1); font-weight:700; text-decoration-thickness:1.5px; text-underline-offset:3px}
+  .sourceLink:hover{color:var(--sigma3)}
+  code{font-family:ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; color:var(--ink)}
+  @media (max-width: 980px){body{overflow:auto}.app{height:auto; min-height:100vh; display:block}.stage{height:58vh; min-height:430px; border-right:none; border-bottom:2px solid var(--ink)}.side{overflow:visible}}
+  @media (max-width: 620px){.legend{position:static; margin:0 22px 22px}.hint{display:none}.infoGrid{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+<div class="app">
+  <section class="stage">
+    <canvas id="scene"></canvas>
+    <div class="hud">
+      <span class="kicker">Von Mises / principal stress space</span>
+      <h1>Yield-surface tube around the hydrostatic axis</h1>
+      <p class="subtitle">Drag to inspect the cylinder in σ₁–σ₂–σ₃ coordinates. The tube radius is √(2/3)σᵧ, and the centerline is the hydrostatic axis σ₁ = σ₂ = σ₃.</p>
+    </div>
+    <div class="hint">Drag to orbit · Scroll to zoom · Move σ sliders to test a stress state</div>
+    <div class="legend">
+      <div class="item"><span class="swatch" style="background:var(--sigma1)"></span> σ₁ principal-stress axis</div>
+      <div class="item"><span class="swatch" style="background:var(--sigma2)"></span> σ₂ principal-stress axis</div>
+      <div class="item"><span class="swatch" style="background:var(--sigma3)"></span> σ₃ principal-stress axis</div>
+      <div class="item"><span class="swatch" style="background:var(--hydro)"></span> Hydrostatic axis</div>
+      <div class="item"><span class="swatch" style="background:var(--deviator)"></span> Deviatoric section</div>
+    </div>
+  </section>
+
+  <aside class="side">
+    <div class="card tight">
+      <div class="controlHeader">
+        <div class="edition">Interactive figure · article axes</div>
+        <button class="themeButton" id="themeToggle">Dark mode</button>
+      </div>
+      <label for="mode">What to highlight</label>
+      <select id="mode"></select>
+      <div class="buttonRow">
+        <button id="resetView">Reset view</button>
+        <button id="spin">Spin: off</button>
+      </div>
+      <div class="checkboxLine">
+        <input id="showAll" type="checkbox" checked />
+        <span>Show all reference axes, even when only one feature is selected.</span>
+      </div>
+      <div class="checkboxLine">
+        <input id="planeStress" type="checkbox" checked />
+        <span>Show the σ₃ = 0 plane-stress ellipse from the article’s reduced equation.</span>
+      </div>
+    </div>
+
+    <div class="card">
+      <span class="kicker">Stress point, normalized by σᵧ</span>
+      <div class="propTitle" style="font-size:20px">Try a stress state</div>
+      <p class="propNote">The sliders set σ₁/σᵧ, σ₂/σᵧ, and σ₃/σᵧ. The marker turns outside the yield tube when σᵥ/σᵧ &gt; 1.</p>
+      <label for="s1">σ₁ / σᵧ</label>
+      <div class="sliderGrid"><input id="s1" type="range" min="-1.5" max="1.5" step="0.01" value="1.00" /><div class="sliderValue" id="s1v">1.00</div></div>
+      <label for="s2" style="margin-top:12px">σ₂ / σᵧ</label>
+      <div class="sliderGrid"><input id="s2" type="range" min="-1.5" max="1.5" step="0.01" value="0.00" /><div class="sliderValue" id="s2v">0.00</div></div>
+      <label for="s3" style="margin-top:12px">σ₃ / σᵧ</label>
+      <div class="sliderGrid"><input id="s3" type="range" min="-1.5" max="1.5" step="0.01" value="0.00" /><div class="sliderValue" id="s3v">0.00</div></div>
+    </div>
+
+    <div class="card" id="propertyCard"></div>
+
+    <div class="card source">
+      <div class="propTitle sourceTitle" style="font-size:20px">Data source</div>
+      Wikipedia, <a class="sourceLink" href="https://en.wikipedia.org/wiki/Von_Mises_yield_criterion" target="_blank" rel="noopener noreferrer">“Von Mises yield criterion”</a>. The geometry in this viewer follows the article’s principal-stress-coordinate description: the yield surface is a circular cylinder around the hydrostatic axis with radius √(2/3)σᵧ. This visualization is normalized by tensile yield strength σᵧ.
+    </div>
+
+    <div class="card">
+      <div class="propTitle" style="font-size:20px">How to read the axes</div>
+      <div class="infoGrid">
+        <div class="mini"><b>σ₁, σ₂, σ₃</b><span>The three principal stresses. A point in this 3D space is one principal stress state.</span></div>
+        <div class="mini"><b>Hydrostatic axis</b><span>The centerline σ₁ = σ₂ = σ₃. Moving along it adds equal pressure/tension to all directions.</span></div>
+        <div class="mini"><b>Deviatoric plane</b><span>A plane perpendicular to the hydrostatic axis. The cylinder cuts this plane as a circle.</span></div>
+        <div class="mini"><b>Yield tube</b><span>The material reaches yield when the stress point reaches the tube surface: σᵥ = σᵧ.</span></div>
+      </div>
+      <p class="propNote" style="margin-top:12px">Important caveat: Von Mises is primarily a ductile-metal yield model. It is useful for understanding equivalent stress, but it is not a full composite failure model for G10/fiberglass airframes.</p>
+    </div>
+  </aside>
+</div>
+
+<script>
+const canvas = document.getElementById('scene');
+const ctx = canvas.getContext('2d');
+let W=0,H=0,DPR=1;
+function css(name){ return getComputedStyle(document.body).getPropertyValue(name).trim(); }
+function colorOf(tone){
+  const map={sigma1:'--sigma1', sigma2:'--sigma2', sigma3:'--sigma3', hydro:'--hydro', deviator:'--deviator', inside:'--inside', outside:'--outside', warn:'--warn', ink:'--ink'};
+  return css(map[tone] || '--ink');
+}
+const modes = [
+  {id:'surface', title:'Yield surface tube', focus:['surface'], note:'The Von Mises surface is a circular cylinder in principal-stress coordinates. The plotted tube is normalized to σᵧ = 1, so its radius is √(2/3).'},
+  {id:'hydro', title:'Hydrostatic axis', focus:['hydro'], note:'The hydrostatic axis is the cylinder centerline where σ₁ = σ₂ = σ₃. Von Mises yield is independent of motion along this axis.'},
+  {id:'principal', title:'Principal stress axes', focus:['principal'], note:'The coordinate axes are the principal stresses σ₁, σ₂, and σ₃. A point in this space represents a principal stress state.'},
+  {id:'deviatoric', title:'Deviatoric plane and circle', focus:['deviatoric'], note:'The plane perpendicular to the hydrostatic axis removes the equal-pressure component. The yield tube intersects this plane in a circle.'},
+  {id:'plane', title:'Plane stress slice σ₃ = 0', focus:['plane'], note:'When σ₃ = 0 and shear terms are zero, the Von Mises criterion becomes σ₁² − σ₁σ₂ + σ₂² = σᵧ², an ellipse in the σ₁–σ₂ plane.'},
+  {id:'point', title:'Stress point and utilization', focus:['point'], note:'The current stress point is decomposed into its hydrostatic projection and its deviatoric radius. Yield occurs when σᵥ/σᵧ reaches 1.'}
+];
+const modeSelect = document.getElementById('mode');
+modes.forEach(p=>{ const opt=document.createElement('option'); opt.value=p.id; opt.textContent=p.title; modeSelect.appendChild(opt); });
+let mode = modes[0];
+let showAll = true;
+let showPlaneStress = true;
+let spin = false;
+let rx = -0.42, ry = 0.78, rz = -0.10, zoom = 1.0;
+let dragging=false, lastX=0, lastY=0;
+const propertyCard = document.getElementById('propertyCard');
+const showAllBox = document.getElementById('showAll');
+const planeStressBox = document.getElementById('planeStress');
+const sliders = {
+  s1: document.getElementById('s1'), s2: document.getElementById('s2'), s3: document.getElementById('s3'),
+  s1v: document.getElementById('s1v'), s2v: document.getElementById('s2v'), s3v: document.getElementById('s3v')
+};
+modeSelect.addEventListener('change', ()=>{ mode = modes.find(p=>p.id===modeSelect.value) || modes[0]; renderPropertyCard(); });
+showAllBox.addEventListener('change', e=>{showAll=e.target.checked;});
+planeStressBox.addEventListener('change', e=>{showPlaneStress=e.target.checked;});
+for(const k of ['s1','s2','s3']) sliders[k].addEventListener('input', renderPropertyCard);
+document.getElementById('resetView').addEventListener('click', ()=>{rx=-0.42; ry=0.78; rz=-0.10; zoom=1;});
+document.getElementById('spin').addEventListener('click', e=>{spin=!spin; e.target.textContent='Spin: '+(spin?'on':'off');});
+const themeToggle = document.getElementById('themeToggle');
+function setTheme(theme){ document.body.dataset.theme = theme; themeToggle.textContent = theme === 'dark' ? 'Light mode' : 'Dark mode'; try{ localStorage.setItem('vm_theme', theme); }catch(e){} renderPropertyCard(); }
+let initialTheme='light'; try{ initialTheme = localStorage.getItem('vm_theme') || (matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light'); }catch(e){}
+setTheme(initialTheme);
+themeToggle.addEventListener('click',()=>setTheme(document.body.dataset.theme === 'dark' ? 'light' : 'dark'));
+function vadd(a,b){return [a[0]+b[0],a[1]+b[1],a[2]+b[2]]}
+function vsub(a,b){return [a[0]-b[0],a[1]-b[1],a[2]-b[2]]}
+function vmul(a,s){return [a[0]*s,a[1]*s,a[2]*s]}
+function vdot(a,b){return a[0]*b[0]+a[1]*b[1]+a[2]*b[2]}
+function vlen(a){return Math.sqrt(vdot(a,a))}
+function vnorm(a){const l=vlen(a)||1; return vmul(a,1/l)}
+const invSqrt2 = 1/Math.sqrt(2), invSqrt3=1/Math.sqrt(3), invSqrt6=1/Math.sqrt(6);
+const hydroAxis = [invSqrt3, invSqrt3, invSqrt3];
+const basisU = [invSqrt2, -invSqrt2, 0];
+const basisV = [invSqrt6, invSqrt6, -2*invSqrt6];
+const yieldRadius = Math.sqrt(2/3);
+function cylPoint(h, theta, r=yieldRadius){ return vadd(vmul(hydroAxis,h), vadd(vmul(basisU, Math.cos(theta)*r), vmul(basisV, Math.sin(theta)*r))); }
+function resize(){ DPR = Math.min(2, window.devicePixelRatio || 1); const r = canvas.getBoundingClientRect(); W=Math.max(1,Math.floor(r.width*DPR)); H=Math.max(1,Math.floor(r.height*DPR)); canvas.width=W; canvas.height=H; }
+window.addEventListener('resize', resize); resize();
+canvas.addEventListener('pointerdown', e=>{dragging=true; canvas.setPointerCapture(e.pointerId); lastX=e.clientX; lastY=e.clientY;});
+canvas.addEventListener('pointermove', e=>{ if(!dragging) return; const dx=e.clientX-lastX, dy=e.clientY-lastY; lastX=e.clientX; lastY=e.clientY; ry += dx*0.008; rx += dy*0.008; rx=Math.max(-1.35,Math.min(1.35,rx)); });
+canvas.addEventListener('pointerup', ()=>{dragging=false;});
+canvas.addEventListener('wheel', e=>{ e.preventDefault(); zoom *= Math.exp(-e.deltaY*0.001); zoom = Math.max(0.55, Math.min(2.3, zoom)); }, {passive:false});
+function rot(p){
+  let [x,y,z]=p; let cy=Math.cos(rx), sy=Math.sin(rx); let y1=y*cy-z*sy, z1=y*sy+z*cy; y=y1; z=z1;
+  cy=Math.cos(ry); sy=Math.sin(ry); let x1=x*cy+z*sy, z2=-x*sy+z*cy; x=x1; z=z2;
+  cy=Math.cos(rz); sy=Math.sin(rz); x1=x*cy-y*sy; y1=x*sy+y*cy; x=x1; y=y1;
+  return [x,y,z];
+}
+function project(p){ const r=rot(p); const scale=Math.min(W,H)*0.18*zoom; const dist=7.0; const f=dist/(dist-r[2]); return {x:W/2+r[0]*scale*f, y:H/2-r[1]*scale*f, z:r[2], f}; }
+function squareRect(ctx,x,y,w,h){ctx.beginPath();ctx.rect(x,y,w,h);ctx.closePath();}
+function strokeLine(points, color, width=2, alpha=1, dash=null){
+  ctx.save(); ctx.globalAlpha=alpha; ctx.strokeStyle=color; ctx.lineWidth=width*DPR; ctx.lineCap='square'; ctx.lineJoin='round'; if(dash) ctx.setLineDash(dash.map(v=>v*DPR));
+  ctx.beginPath(); points.forEach((p,i)=>{ const q=project(p); if(i===0) ctx.moveTo(q.x,q.y); else ctx.lineTo(q.x,q.y); }); ctx.stroke(); ctx.restore();
+}
+function fillPoly(points, fill, alpha=1){ ctx.save(); ctx.globalAlpha=alpha; ctx.fillStyle=fill; ctx.beginPath(); points.forEach((p,i)=>{ const q=project(p); if(i===0)ctx.moveTo(q.x,q.y); else ctx.lineTo(q.x,q.y); }); ctx.closePath(); ctx.fill(); ctx.restore(); }
+function screenLine(a,b,color,width=2,alpha=1,dash=null){ ctx.save(); ctx.globalAlpha=alpha; ctx.strokeStyle=color; ctx.lineWidth=width*DPR; ctx.lineCap='square'; if(dash) ctx.setLineDash(dash.map(v=>v*DPR)); ctx.beginPath(); ctx.moveTo(a.x,a.y); ctx.lineTo(b.x,b.y); ctx.stroke(); ctx.restore(); }
+function drawLabel(text,x,y,color){
+  ctx.save(); ctx.font=`${11*DPR}px ui-monospace, SFMono-Regular, Menlo, Consolas, monospace`; const pad=6*DPR, h=23*DPR; const w=ctx.measureText(text).width+pad*2;
+  ctx.fillStyle=css('--label-bg'); squareRect(ctx,x,y-h/2,w,h); ctx.fill(); ctx.strokeStyle=css('--ink'); ctx.lineWidth=1.3*DPR; squareRect(ctx,x,y-h/2,w,h); ctx.stroke(); ctx.fillStyle=color; ctx.fillText(text,x+pad,y+4*DPR); ctx.restore();
+}
+function drawArrow(p1,p2,color,label,opts={}){
+  const a=project(p1), b=project(p2); screenLine(a,b,color,opts.width||2.8,opts.alpha??1,opts.dash||null);
+  const ang=Math.atan2(b.y-a.y,b.x-a.x); const size=(opts.head||11)*DPR; ctx.save(); ctx.fillStyle=color; ctx.globalAlpha=opts.alpha??1; ctx.beginPath(); ctx.moveTo(b.x,b.y); ctx.lineTo(b.x-size*Math.cos(ang-Math.PI/6), b.y-size*Math.sin(ang-Math.PI/6)); ctx.lineTo(b.x-size*Math.cos(ang+Math.PI/6), b.y-size*Math.sin(ang+Math.PI/6)); ctx.closePath(); ctx.fill(); ctx.restore();
+  if(label) drawLabel(label, b.x+(opts.labelDx||8)*DPR, b.y+(opts.labelDy||-8)*DPR, color);
+}
+function drawDoubleArrow(p1,p2,color,label,opts={}){ drawArrow(p1,p2,color,null,opts); drawArrow(p2,p1,color,label,opts); }
+function drawPoint(p, color, label, radius=6, alpha=1){
+  const q=project(p); ctx.save(); ctx.globalAlpha=alpha; ctx.fillStyle=color; ctx.strokeStyle=css('--ink'); ctx.lineWidth=1.5*DPR; ctx.beginPath(); ctx.arc(q.x,q.y,radius*DPR,0,Math.PI*2); ctx.fill(); ctx.stroke(); ctx.restore(); if(label) drawLabel(label,q.x+10*DPR,q.y-10*DPR,color);
+}
+function drawBackground(){
+  ctx.clearRect(0,0,W,H); ctx.fillStyle=css('--stage-bg'); ctx.fillRect(0,0,W,H);
+  ctx.save(); ctx.strokeStyle=css('--canvas-line'); ctx.lineWidth=1*DPR; const spacing=42*DPR;
+  for(let x=((W*.03)%spacing); x<W; x+=spacing){ ctx.beginPath(); ctx.moveTo(x,0); ctx.lineTo(x,H); ctx.stroke(); }
+  for(let y=((H*.02)%spacing); y<H; y+=spacing){ ctx.beginPath(); ctx.moveTo(0,y); ctx.lineTo(W,y); ctx.stroke(); }
+  ctx.restore(); ctx.save(); ctx.fillStyle=css('--canvas-dot'); for(let i=0;i<90;i++){ const x=(i*173%W), y=(i*331%H), r=(i%2+1)*.42*DPR; ctx.beginPath(); ctx.arc(x,y,r,0,Math.PI*2); ctx.fill(); } ctx.restore();
+}
+function hexToRgb(hex){ hex=String(hex).trim(); if(hex.startsWith('#')) hex=hex.slice(1); if(hex.length===3) hex=hex.split('').map(c=>c+c).join(''); const n=parseInt(hex,16); return {r:(n>>16)&255,g:(n>>8)&255,b:n&255}; }
+function mixColor(a,b,t){ const A=hexToRgb(a), B=hexToRgb(b); return {r:Math.round(A.r+(B.r-A.r)*t),g:Math.round(A.g+(B.g-A.g)*t),b:Math.round(A.b+(B.b-A.b)*t)} }
+function drawYieldCylinder(){
+  const hMin=-2.8,hMax=2.8,nH=34,nT=96; const quads=[];
+  for(let i=0;i<nH;i++){
+    const h0=hMin+(hMax-hMin)*i/nH, h1=hMin+(hMax-hMin)*(i+1)/nH;
+    for(let j=0;j<nT;j++){
+      const t0=2*Math.PI*j/nT, t1=2*Math.PI*(j+1)/nT;
+      const pts=[cylPoint(h0,t0),cylPoint(h1,t0),cylPoint(h1,t1),cylPoint(h0,t1)];
+      const mid=(t0+t1)/2; const normal=vadd(vmul(basisU,Math.cos(mid)),vmul(basisV,Math.sin(mid)));
+      const z=pts.reduce((s,p)=>s+rot(p)[2],0)/4; const lit=.35+.40*Math.max(0,vdot(vnorm([-0.2,0.7,0.6]),normal));
+      quads.push({pts,z,lit});
+    }
+  }
+  quads.sort((a,b)=>a.z-b.z);
+  const base1=css('--surface-1'), base2=css('--surface-2');
+  quads.forEach(q=>{ const m=mixColor(base2,base1,Math.max(0,Math.min(1,q.lit))); const alpha=q.z>-.15 ? .74 : .28; fillPoly(q.pts,`rgba(${m.r},${m.g},${m.b},${alpha})`,1); });
+  for(const h of [hMin,hMax]){
+    const outer=[]; for(let j=0;j<=nT;j++){ outer.push(cylPoint(h,2*Math.PI*j/nT)); }
+    strokeLine(outer,css('--ink'),1.8,.82); strokeLine(outer,css('--surface-3'),3.5,.22);
+  }
+  for(let i=1;i<nH;i+=4){ const h=hMin+(hMax-hMin)*i/nH; const ring=[]; for(let j=0;j<=nT;j++) ring.push(cylPoint(h,2*Math.PI*j/nT)); strokeLine(ring,css('--canvas-line'),1,.9,[3,3]); }
+  for(let j=0;j<nT;j+=8){ const t=2*Math.PI*j/nT, line=[]; for(let i=0;i<=nH;i++){ const h=hMin+(hMax-hMin)*i/nH; line.push(cylPoint(h,t)); } strokeLine(line,css('--canvas-line'),1,.78); }
+}
+function should(key){ return showAll || mode.focus.includes(key) || mode.id==='surface'; }
+function drawPrincipalAxes(){
+  const L=2.25;
+  if(should('principal')){
+    drawDoubleArrow([-L,0,0],[L,0,0],colorOf('sigma1'),'σ₁',{width:2.7,head:10});
+    drawDoubleArrow([0,-L,0],[0,L,0],colorOf('sigma2'),'σ₂',{width:2.7,head:10});
+    drawDoubleArrow([0,0,-L],[0,0,L],colorOf('sigma3'),'σ₃',{width:2.7,head:10});
+  }
+}
+function drawHydroAxis(){ if(should('hydro')) drawDoubleArrow(vmul(hydroAxis,-3.15),vmul(hydroAxis,3.15),colorOf('hydro'),'hydrostatic axis σ₁=σ₂=σ₃',{width:3.3,head:11,dash:[12,5]}); }
+function drawDeviatoricPlane(){
+  if(!(should('deviatoric'))) return;
+  const R=1.15, pts=[]; for(let i=0;i<80;i++){ const t=2*Math.PI*i/80; pts.push(vadd(vmul(basisU,Math.cos(t)*R),vmul(basisV,Math.sin(t)*R))); }
+  fillPoly(pts,css('--deviator'),.12); strokeLine(pts,colorOf('deviator'),2,.85,[9,5]);
+  const circle=[]; for(let i=0;i<=120;i++) circle.push(cylPoint(0,2*Math.PI*i/120)); strokeLine(circle,colorOf('deviator'),3,.95);
+  drawLabel('deviatoric plane: σ₁+σ₂+σ₃=0', project(pts[11]).x, project(pts[11]).y-18*DPR, colorOf('deviator'));
+}
+function drawPlaneStressSlice(){
+  if(!showPlaneStress && !mode.focus.includes('plane')) return;
+  const rect=[[-1.55,-1.55,0],[1.55,-1.55,0],[1.55,1.55,0],[-1.55,1.55,0]];
+  if(should('plane')) fillPoly(rect,colorOf('warn'),.09);
+  const pts=[];
+  for(let i=0;i<=180;i++){
+    const th=2*Math.PI*i/180; const c=Math.cos(th), s=Math.sin(th); const denom=c*c+s*s-c*s; const rho=1/Math.sqrt(denom); pts.push([rho*c,rho*s,0]);
+  }
+  strokeLine(pts,colorOf('warn'),3.0,mode.focus.includes('plane')?.95:.45,[10,4]);
+  if(mode.focus.includes('plane') || showAll) drawLabel('σ₃=0 ellipse', project(pts[20]).x+5*DPR, project(pts[20]).y-18*DPR, colorOf('warn'));
+}
+function drawStressExamples(){
+  if(!(mode.focus.includes('point') || showAll)) return;
+  drawPoint([1,0,0],colorOf('sigma1'),'uniaxial: σᵥ=σᵧ',4.5,.92);
+  const tau=1/Math.sqrt(3); drawPoint([tau,-tau,0],colorOf('deviator'),'pure shear principal state',4.5,.78);
+}
+function currentStress(){ return [parseFloat(sliders.s1.value), parseFloat(sliders.s2.value), parseFloat(sliders.s3.value)]; }
+function vonMisesRatio(p){ const [s1,s2,s3]=p; return Math.sqrt(((s1-s2)**2+(s2-s3)**2+(s3-s1)**2)/2); }
+function drawCurrentPoint(){
+  const p=currentStress(); const vm=vonMisesRatio(p); const mean=(p[0]+p[1]+p[2])/3; const hproj=[mean,mean,mean]; const dev=vsub(p,hproj); const col=vm<=1?colorOf('inside'):colorOf('outside');
+  strokeLine([[0,0,0],p],col,1.2,.35,[5,5]);
+  strokeLine([hproj,p],col,3.2,.95);
+  drawPoint(hproj,colorOf('hydro'),'hydrostatic part',4.2,.76);
+  drawPoint(p,col,`current point · σᵥ/σᵧ=${vm.toFixed(2)}`,7,.98);
+  if(vlen(dev)>0.001){ const surf=vadd(hproj,vmul(dev,yieldRadius/(vlen(dev)))); drawPoint(surf,css('--ink'),'same hydrostatic line on yield surface',3.8,.75); }
+}
+function renderPropertyCard(){
+  const p=currentStress(); const vm=vonMisesRatio(p); const pct=Math.min(140,vm*100); const state=vm<.98?'Inside elastic region':(vm<=1.02?'At/near yield surface':'Outside yield surface'); const tone=vm<=1?colorOf('inside'):colorOf('outside');
+  sliders.s1v.textContent=p[0].toFixed(2); sliders.s2v.textContent=p[1].toFixed(2); sliders.s3v.textContent=p[2].toFixed(2);
+  propertyCard.innerHTML = `<span class="kicker">Selected feature</span><div class="propTitle">${mode.title}</div><p class="propNote">${mode.note}</p>
+    <div class="formula">σᵥ = √{ 1/2[(σ₁−σ₂)² + (σ₂−σ₃)² + (σ₃−σ₁)²] }<br>Yield condition: σᵥ = σᵧ<br>Tube radius in principal-stress space: √(2/3)σᵧ</div>
+    <div class="metric"><div class="metricTop"><span class="metricName">Current utilization</span><span class="metricValue">σᵥ/σᵧ = ${vm.toFixed(3)}</span></div><div class="barTrack"><div class="barFill" style="width:${Math.max(3,pct).toFixed(1)}%; background:${tone}"></div></div></div>
+    <div class="pillRow"><span class="pill">${state}</span><span class="pill">mean stress = ${((p[0]+p[1]+p[2])/3).toFixed(2)}σᵧ</span><span class="pill">deviatoric radius = ${(Math.sqrt(2/3)*vm).toFixed(2)}σᵧ</span></div>`;
+}
+function draw(){
+  if(spin && !dragging) ry += 0.006;
+  drawBackground();
+  drawYieldCylinder();
+  drawDeviatoricPlane();
+  drawPlaneStressSlice();
+  drawPrincipalAxes();
+  drawHydroAxis();
+  drawStressExamples();
+  drawCurrentPoint();
+  requestAnimationFrame(draw);
+}
+renderPropertyCard();
+requestAnimationFrame(draw);
+</script>
+</body>
+</html>

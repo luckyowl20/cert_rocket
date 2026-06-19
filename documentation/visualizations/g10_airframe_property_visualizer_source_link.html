@@ -1,0 +1,796 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>G10 Airframe Direction Visualizer — AI 2027 Inspired Theme</title>
+<style>
+  :root{
+    color-scheme: light;
+    /* AI-2027-inspired, but shifted away from sepia: cool paper, graphite rules, deep evergreen accents. */
+    --bg:#f2f4ef;
+    --bg-2:#e5e9e2;
+    --paper:#fbfcf8;
+    --paper-2:#eef2ec;
+    --ink:#17231d;
+    --ink-soft:#2d3b34;
+    --muted:#68736d;
+    --rule:rgba(23,35,29,.20);
+    --rule-strong:rgba(23,35,29,.52);
+    --shadow:#26302b;
+    --axial:#0e513d;
+    --circ:#4f666c;
+    --radial:#2f7354;
+    --edge:#6f7a75;
+    --electric:#1f5f66;
+    --neutral:#626e68;
+    --tube-1:#c8d0c7;
+    --tube-2:#87938c;
+    --tube-3:#e3e8e1;
+    --highlight:#d7e6d2;
+    --button:#f4f7f1;
+    --button-hover:#ffffff;
+    --bar-track:#dfe5dd;
+    --stage-bg:#ebefea;
+    --label-bg:rgba(251,252,248,.94);
+    --canvas-line:rgba(23, 35, 29, 0.05);
+    --canvas-dot:rgba(23,35,29,.17);
+  }
+  body[data-theme="dark"]{
+    color-scheme: dark;
+    --bg:#0d1210;
+    --bg-2:#151d19;
+    --paper:#151b18;
+    --paper-2:#101612;
+    --ink:#e8eee9;
+    --ink-soft:#c9d4cd;
+    --muted:#97a49d;
+    --rule:rgba(232,238,233,.17);
+    --rule-strong:rgba(232,238,233,.05);
+    --shadow:#050807;
+    --axial:#76b99e;
+    --circ:#8ea0a3;
+    --radial:#8fd0a9;
+    --edge:#a1aaa5;
+    --electric:#7ec7c9;
+    --neutral:#b8c3bd;
+    --tube-1:#4a5951;
+    --tube-2:#2b3631;
+    --tube-3:#18221d;
+    --highlight:#223a2f;
+    --button:#18211d;
+    --button-hover:#202b26;
+    --bar-track:#0a0f0d;
+    --stage-bg:#0f1512;
+    --label-bg:rgba(21,27,24,.94);
+    --canvas-line:rgba(232,238,233,.105);
+    --canvas-dot:rgba(232,238,233,.14);
+  }
+  *{box-sizing:border-box}
+  html,body{height:100%}
+  body{
+    margin:0;
+    min-height:100vh;
+    background:
+      radial-gradient(circle at 18% 12%, rgba(14,81,61,.10), transparent 25%),
+      radial-gradient(circle at 86% 6%, rgba(79,102,108,.11), transparent 30%),
+      repeating-linear-gradient(0deg, transparent 0, transparent 31px, rgba(23,35,29,.035) 32px),
+      linear-gradient(135deg, var(--bg), var(--bg-2));
+    color:var(--ink);
+    font-family:Georgia, Cambria, "Times New Roman", serif;
+    overflow:hidden;
+  }
+  body[data-theme="dark"]{
+    background:
+      radial-gradient(circle at 18% 12%, rgba(118,185,158,.10), transparent 25%),
+      radial-gradient(circle at 86% 6%, rgba(142,160,163,.10), transparent 30%),
+      repeating-linear-gradient(0deg, transparent 0, transparent 31px, rgba(232,238,233,.030) 32px),
+      linear-gradient(135deg, var(--bg), var(--bg-2));
+  }
+  .app{
+    display:grid;
+    grid-template-columns:minmax(560px, 1fr) 430px;
+    height:100vh;
+  }
+  .stage{
+    position:relative;
+    min-width:0;
+    background:
+      linear-gradient(90deg, transparent 0 23%, var(--canvas-line) 23% 23.2%, transparent 23.2% 100%),
+      linear-gradient(180deg, transparent 0 59%, var(--canvas-line) 59% 59.2%, transparent 59.2% 100%),
+      var(--stage-bg);
+    border-right:2px solid var(--ink);
+    box-shadow:inset -6px 0 0 rgba(23,35,29,.07);
+  }
+  canvas{
+    position:absolute; inset:0;
+    width:100%; height:100%;
+    display:block;
+    cursor:grab;
+  }
+  canvas:active{cursor:grabbing}
+  .hud{
+    position:absolute; left:22px; top:22px;
+    width:min(560px, calc(100% - 44px));
+    background:var(--label-bg);
+    border:2px solid var(--ink);
+    border-radius:2px;
+    padding:14px 16px 13px;
+    box-shadow:5px 5px 0 var(--shadow);
+  }
+  h1{
+    font-size:22px;
+    line-height:1.03;
+    margin:0 0 7px;
+    font-weight:700;
+    letter-spacing:-.025em;
+  }
+  .subtitle{
+    font-family:ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+    font-size:12px;
+    color:var(--muted);
+    margin:0;
+    line-height:1.42;
+  }
+  .kicker{
+    display:inline-block;
+    font-family:ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+    text-transform:uppercase;
+    letter-spacing:.12em;
+    font-size:10px;
+    color:var(--ink-soft);
+    border-bottom:1px solid var(--rule-strong);
+    margin-bottom:7px;
+  }
+  .hint{
+    position:absolute; left:22px; bottom:22px;
+    color:var(--muted);
+    background:var(--label-bg);
+    border:1.5px solid var(--ink);
+    border-radius:2px;
+    padding:9px 11px;
+    font-family:ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+    font-size:11px;
+    box-shadow:3px 3px 0 var(--shadow);
+  }
+  .legend{
+    position:absolute; right:22px; bottom:22px;
+    display:grid; gap:8px;
+    background:var(--label-bg);
+    border:1.5px solid var(--ink);
+    border-radius:2px;
+    padding:12px;
+    font-family:ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+    font-size:11px;
+    color:var(--muted);
+    box-shadow:3px 3px 0 var(--shadow);
+  }
+  .legend .item{display:flex; align-items:center; gap:8px; white-space:nowrap}
+  .swatch{width:18px; height:6px; border:1px solid var(--ink); background:white}
+  .side{
+    overflow:auto;
+    padding:20px 20px 22px;
+    background:
+      linear-gradient(180deg, rgba(255,255,255,.15), transparent 42%),
+      var(--paper-2);
+  }
+  .card{
+    background:var(--paper);
+    border:2px solid var(--ink);
+    border-radius:2px;
+    padding:16px;
+    margin-bottom:15px;
+    box-shadow:5px 5px 0 var(--shadow);
+  }
+  .card.tight{padding:13px 14px}
+  .controlHeader{
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    gap:12px;
+    margin-bottom:12px;
+  }
+  .edition{
+    font-family:ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+    font-size:10px;
+    text-transform:uppercase;
+    letter-spacing:.13em;
+    color:var(--muted);
+  }
+  label{
+    display:block;
+    font-family:ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+    font-size:10px;
+    color:var(--muted);
+    margin-bottom:7px;
+    letter-spacing:.12em;
+    text-transform:uppercase;
+  }
+  select, button, input[type=range]{width:100%}
+  select, button{
+    color:var(--ink);
+    background:var(--button);
+    border:1.5px solid var(--ink);
+    border-radius:2px;
+    padding:10px 11px;
+    font-family:ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+    font-size:12px;
+    outline:none;
+    box-shadow:2px 2px 0 var(--shadow);
+  }
+  select:focus, button:focus-visible{outline:2px dashed var(--circ); outline-offset:3px}
+  button{cursor:pointer; transition:.12s ease; margin-top:8px; text-transform:uppercase; letter-spacing:.06em}
+  button:hover{background:var(--button-hover); transform:translate(-1px,-1px); box-shadow:3px 3px 0 var(--shadow)}
+  .buttonRow{display:grid; grid-template-columns:1fr 1fr; gap:10px}
+  .themeButton{width:auto; white-space:nowrap; margin-top:0; padding:8px 10px; font-size:11px}
+  input[type=range]{accent-color:var(--ink); cursor:pointer}
+  .propTitle{
+    font-size:25px;
+    line-height:1.02;
+    font-weight:700;
+    letter-spacing:-.03em;
+    margin:0 0 6px;
+  }
+  .propNote{
+    font-size:14px;
+    color:var(--ink-soft);
+    line-height:1.44;
+    margin:0 0 14px;
+  }
+  .metric{margin-top:14px}
+  .metricTop{display:flex; align-items:baseline; justify-content:space-between; gap:12px; margin-bottom:6px}
+  .metricName{font-weight:700; font-size:14px}
+  .metricValue{
+    font-family:ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+    font-variant-numeric:tabular-nums;
+    color:var(--ink);
+    font-weight:700;
+    font-size:12px;
+    white-space:nowrap;
+  }
+  .barTrack{
+    height:12px;
+    border-radius:0;
+    background:var(--bar-track);
+    border:1.5px solid var(--ink);
+    overflow:hidden;
+  }
+  .barFill{height:100%; width:50%; border-right:1.5px solid var(--ink)}
+  .pillRow{display:flex; flex-wrap:wrap; gap:8px; margin-top:13px}
+  .pill{
+    font-family:ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+    font-size:11px;
+    color:var(--ink-soft);
+    padding:6px 8px;
+    background:var(--paper-2);
+    border:1px solid var(--rule-strong);
+    border-radius:999px;
+  }
+  .infoGrid{display:grid; grid-template-columns:1fr 1fr; gap:10px; margin-top:12px}
+  .mini{background:var(--paper-2); border:1.5px solid var(--ink); border-radius:2px; padding:10px}
+  .mini b{display:block; font-size:14px; margin-bottom:4px}
+  .mini span{display:block; color:var(--muted); font-family:ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; font-size:11px; line-height:1.35}
+  .checkboxLine{display:flex; gap:10px; align-items:flex-start; margin-top:11px; color:var(--ink-soft); font-size:13px; line-height:1.35}
+  .checkboxLine input{margin-top:2px; accent-color:var(--ink)}
+  .source{font-size:12px; color:var(--muted); line-height:1.45; font-family:ui-monospace, SFMono-Regular, Menlo, Consolas, monospace}
+  .sourceTitle{font-family:Georgia, Cambria, "Times New Roman", serif; color:var(--ink); margin-bottom:8px}
+  .sourceLink{color:var(--axial); font-weight:700; text-decoration-thickness:1.5px; text-underline-offset:3px}
+  .sourceLink:hover{color:var(--radial)}
+  a{color:var(--circ)}
+  code{font-family:ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; color:var(--ink)}
+  .stamp{
+    display:inline-flex;
+    align-items:center;
+    justify-content:center;
+    min-width:56px;
+    height:28px;
+    border:2px solid var(--ink);
+    transform:rotate(-3deg);
+    font-family:ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+    font-size:10px;
+    letter-spacing:.12em;
+    color:var(--axial);
+    background:transparent;
+    margin-left:8px;
+  }
+  @media (max-width: 980px){
+    body{overflow:auto}
+    .app{height:auto; min-height:100vh; display:block}
+    .stage{height:58vh; min-height:430px; border-right:none; border-bottom:2px solid var(--ink)}
+    .side{overflow:visible}
+  }
+  @media (max-width: 620px){
+    .legend{position:static; margin:0 22px 22px}
+    .hint{display:none}
+    .infoGrid{grid-template-columns:1fr}
+  }
+</style>
+</head>
+<body>
+<div class="app">
+  <section class="stage">
+    <canvas id="scene"></canvas>
+    <div class="hud">
+      <span class="kicker">G10 / GEE glass epoxy laminate</span>
+      <h1>Airframe tube property direction map </h1>
+      <!-- <p class="subtitle">A graphite-and-evergreen forecast-chart style viewer for reading lengthwise, crosswise, flatwise, edgewise, and through-wall dimensions on a rocket airframe.</p> -->
+    </div>
+    <div class="hint">Drag to orbit · Scroll to zoom · Select a property in the right panel</div>
+    <div class="legend">
+      <div class="item"><span class="swatch" style="background:var(--axial)"></span> Lengthwise = tube axis</div>
+      <div class="item"><span class="swatch" style="background:var(--circ)"></span> Crosswise = circumference</div>
+      <div class="item"><span class="swatch" style="background:var(--radial)"></span> Flatwise / dielectric = through wall</div>
+      <div class="item"><span class="swatch" style="background:var(--edge)"></span> Edgewise = in laminate plane</div>
+    </div>
+  </section>
+
+  <aside class="side">
+    <div class="card tight">
+      <div class="controlHeader">
+        <div class="edition">Interactive figure · material axes</div>
+        <button class="themeButton" id="themeToggle">Dark mode</button>
+      </div>
+      <label for="mode">Property to visualize</label>
+      <select id="mode"></select>
+      <div class="buttonRow">
+        <button id="resetView">Reset view</button>
+        <button id="spin">Spin: off</button>
+      </div>
+      <label for="wall" style="margin-top:14px">Tube wall thickness visual scale</label>
+      <input id="wall" type="range" min="0.08" max="0.30" step="0.01" value="0.18" />
+      <div class="checkboxLine">
+        <input id="showAll" type="checkbox" checked />
+        <span>Show all reference directions, even when the selected property only uses some of them.</span>
+      </div>
+    </div>
+
+    <div class="card" id="propertyCard"></div>
+
+    <div class="card source">
+      <div class="propTitle sourceTitle" style="font-size:20px">Data source</div>
+      Dielectric Manufacturing, <a class="sourceLink" href="https://dielectricmfg.com/resources/knowledge-base/glass-epoxy" target="_blank" rel="noopener noreferrer">“Material Properties of Thermoset Glass Epoxy” G10 table</a>. Values in this viewer are tied to the published G10 parameters in that table. The 3D mapping assumes tube lengthwise = axial and crosswise = circumferential.
+    </div>
+
+    <div class="card">
+      <div class="propTitle" style="font-size:20px">How to read the terms on a tube</div>
+      <div class="infoGrid">
+        <div class="mini"><b>Lengthwise</b><span>Along the rocket body axis. This is usually the direction that sees axial tension/compression and global bending stresses.</span></div>
+        <div class="mini"><b>Crosswise</b><span>Around the circumference / hoop direction. This is related to split resistance and hoop loading.</span></div>
+        <div class="mini"><b>Flatwise</b><span>Normal to laminate faces. On a tube wall, this is shown as radial through-wall compression.</span></div>
+        <div class="mini"><b>Edgewise</b><span>Compression in the laminate plane, loaded through an exposed edge. On a tube wall, this is shown tangentially along the wall edge.</span></div>
+      </div>
+      <p class="propNote" style="margin-top:12px">Important caveat: the linked data is for G10 glass-epoxy laminate stock. A real rocket airframe tube may be rolled, convolute wound, filament wound, or built with a specific cloth orientation. Use this viewer as a direction/terminology aid, not as a substitute for the exact tube manufacturer’s datasheet.</p>
+    </div>
+  </aside>
+</div>
+
+<script>
+const canvas = document.getElementById('scene');
+const ctx = canvas.getContext('2d');
+let W=0,H=0,DPR=1;
+
+function css(name){ return getComputedStyle(document.body).getPropertyValue(name).trim(); }
+function colorOf(tone){
+  const map={axial:'--axial', circ:'--circ', radial:'--radial', edge:'--edge', electric:'--electric', muted:'--neutral', ink:'--ink'};
+  return css(map[tone] || '--ink');
+}
+
+const properties = [
+  {
+    id:'tensile', title:'Tensile strength', units:'psi', focus:['axial','circ'],
+    note:'Pulling load. On this tube view, lengthwise is axial tension and crosswise is hoop/circumferential tension.',
+    metrics:[
+      {name:'Lengthwise / axial', value:40000, label:'40,000 psi', tone:'axial', dir:'axial'},
+      {name:'Crosswise / hoop', value:35000, label:'35,000 psi', tone:'circ', dir:'circ'}
+    ]
+  },
+  {
+    id:'compressive', title:'Compressive strength', units:'psi', focus:['radial','edge'],
+    note:'Crushing load. Flatwise is through-thickness / radial wall compression; edgewise is in-plane compression through the laminate edge.',
+    metrics:[
+      {name:'Flatwise / through wall', value:68000, label:'68,000 psi', tone:'radial', dir:'radial'},
+      {name:'Edgewise / in-plane edge', value:35000, label:'35,000 psi', tone:'edge', dir:'edge'}
+    ]
+  },
+  {
+    id:'flexuralStrength', title:'Flexural strength, 0.125 in specimen', units:'psi', focus:['axial','circ','bend'],
+    note:'Bending failure strength. Lengthwise means the stronger principal laminate direction is aligned with the bending span; crosswise is the transverse in-plane direction.',
+    metrics:[
+      {name:'Lengthwise bending', value:55000, label:'55,000 psi', tone:'axial', dir:'axial'},
+      {name:'Crosswise bending', value:45000, label:'45,000 psi', tone:'circ', dir:'circ'}
+    ]
+  },
+  {
+    id:'flexuralModulus', title:'Modulus of elasticity, flexural', units:'kpsi', focus:['axial','circ','bend'],
+    note:'Bending stiffness, not strength. Higher modulus means less strain/deflection for the same stress/load.',
+    metrics:[
+      {name:'Lengthwise flexural modulus', value:2700, label:'2,700 kpsi', tone:'axial', dir:'axial'},
+      {name:'Crosswise flexural modulus', value:2200, label:'2,200 kpsi', tone:'circ', dir:'circ'}
+    ]
+  },
+  {
+    id:'izod', title:'IZOD impact', units:'ft-lb/in notch', focus:['axial','circ','notch'],
+    note:'Notched impact energy. Lengthwise/crosswise describe how the notch and specimen direction are oriented relative to laminate fiber directions.',
+    metrics:[
+      {name:'Lengthwise notch orientation', value:7.0, label:'7.0 ft-lb/in of notch', tone:'axial', dir:'axial'},
+      {name:'Crosswise notch orientation', value:5.5, label:'5.5 ft-lb/in of notch', tone:'circ', dir:'circ'}
+    ]
+  },
+  {
+    id:'dielectric', title:'Dielectric strength', units:'V/mil', focus:['radial','electric'],
+    note:'Electrical breakdown is listed perpendicular to laminations, which maps to through-wall/radial direction for this simplified tube wall view.',
+    metrics:[
+      {name:'0.062 in thick, perpendicular', value:450, label:'450 V/mil', tone:'electric', dir:'radial'},
+      {name:'0.125 in thick, perpendicular', value:350, label:'350 V/mil', tone:'electric', dir:'radial'}
+    ]
+  },
+  {
+    id:'waterAbsorption', title:'Water absorption, 24 hours', units:'%', focus:['radial'],
+    note:'Percent mass gain after immersion. Displayed through the tube wall because moisture ingress is commonly discussed through exposed surfaces/edges and wall thickness.',
+    metrics:[
+      {name:'0.062 in thick', value:0.25, label:'0.25%', tone:'radial', dir:'radial'},
+      {name:'0.125 in thick', value:0.15, label:'0.15%', tone:'radial', dir:'radial'},
+      {name:'0.500 in thick', value:0.10, label:'0.10%', tone:'radial', dir:'radial'}
+    ]
+  },
+  {
+    id:'physical', title:'Physical / thermal / other scalar properties', units:'various', focus:['axial','circ','radial'],
+    note:'These values are mostly scalar material properties in this table, so the viewer shows all principal directions rather than one preferred loading direction.',
+    metrics:[
+      {name:'Rockwell hardness, M scale', value:111, label:'111', tone:'muted', dir:'all'},
+      {name:'Specific gravity', value:1.80, label:'1.80', tone:'muted', dir:'all'},
+      {name:'Bond strength', value:2000, label:'2,000 lb', tone:'muted', dir:'all'},
+      {name:'CTE', value:0.9, label:'0.9 × 10⁻⁵ cm/cm/°C', tone:'muted', dir:'all'},
+      {name:'Dissipation factor, condition A, 1 MHz max', value:0.025, label:'0.025', tone:'muted', dir:'all'},
+      {name:'Dielectric constant, condition A, 1 MHz max', value:5.2, label:'5.2', tone:'muted', dir:'all'},
+      {name:'Insulation resistance, condition C', value:200000, label:'200,000 MΩ', tone:'muted', dir:'all'},
+      {name:'Temperature index, electrical', value:130, label:'130 °C', tone:'muted', dir:'all'},
+      {name:'Temperature index, mechanical', value:140, label:'140 °C', tone:'muted', dir:'all'},
+      {name:'MIL-I-24768 / MIL type', value:2, label:'2 / GEE', tone:'muted', dir:'all'}
+    ]
+  }
+];
+
+const modeSelect = document.getElementById('mode');
+properties.forEach(p=>{
+  const opt=document.createElement('option'); opt.value=p.id; opt.textContent=p.title; modeSelect.appendChild(opt);
+});
+const propertyCard = document.getElementById('propertyCard');
+const wallSlider = document.getElementById('wall');
+const showAllBox = document.getElementById('showAll');
+const themeToggle = document.getElementById('themeToggle');
+let mode = properties[0];
+let wallThickness = parseFloat(wallSlider.value);
+let showAll = true;
+let spin = false;
+
+let rx = -0.30;
+let ry = 0.72;
+let rz = 0.0;
+let zoom = 1.0;
+let dragging=false, lastX=0, lastY=0;
+
+function setTheme(theme){
+  document.body.dataset.theme = theme;
+  themeToggle.textContent = theme === 'dark' ? 'Light mode' : 'Dark mode';
+  try{ localStorage.setItem('g10_theme', theme); }catch(e){}
+  renderPropertyCard();
+}
+let initialTheme = 'light';
+try{
+  initialTheme = localStorage.getItem('g10_theme') || (matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+}catch(e){}
+setTheme(initialTheme);
+themeToggle.addEventListener('click',()=>setTheme(document.body.dataset.theme === 'dark' ? 'light' : 'dark'));
+
+function setMode(){
+  mode = properties.find(p=>p.id===modeSelect.value) || properties[0];
+  renderPropertyCard();
+}
+modeSelect.addEventListener('change', setMode);
+wallSlider.addEventListener('input', e=>{wallThickness=parseFloat(e.target.value);});
+showAllBox.addEventListener('change', e=>{showAll=e.target.checked;});
+document.getElementById('resetView').addEventListener('click', ()=>{rx=-0.30; ry=0.72; rz=0; zoom=1;});
+document.getElementById('spin').addEventListener('click', (e)=>{spin=!spin; e.target.textContent='Spin: '+(spin?'on':'off');});
+
+function renderPropertyCard(){
+  const max = Math.max(...mode.metrics.map(m=>m.value));
+  let metricHtml = mode.metrics.map(m=>{
+    const width = Math.max(4, (m.value/max)*100).toFixed(1);
+    const c = colorOf(m.tone);
+    return `<div class="metric">
+      <div class="metricTop"><span class="metricName">${m.name}</span><span class="metricValue">${m.label}</span></div>
+      <div class="barTrack"><div class="barFill" style="width:${width}%; background:${c}"></div></div>
+    </div>`;
+  }).join('');
+  const pills = mode.focus.map(f=>{
+    const map={axial:'lengthwise / axial', circ:'crosswise / hoop', radial:'flatwise / radial', edge:'edgewise', bend:'bending cue', notch:'notch cue', electric:'electric field'};
+    return `<span class="pill">${map[f]||f}</span>`;
+  }).join('');
+  propertyCard.innerHTML = `<span class="kicker">Selected property</span><div class="propTitle">${mode.title}</div><p class="propNote">${mode.note}</p>${metricHtml}<div class="pillRow">${pills}</div>`;
+}
+
+function resize(){
+  DPR = Math.min(2, window.devicePixelRatio || 1);
+  const r = canvas.getBoundingClientRect();
+  W = Math.max(1, Math.floor(r.width*DPR));
+  H = Math.max(1, Math.floor(r.height*DPR));
+  canvas.width=W; canvas.height=H;
+}
+window.addEventListener('resize', resize);
+resize(); renderPropertyCard();
+
+canvas.addEventListener('pointerdown', e=>{dragging=true; canvas.setPointerCapture(e.pointerId); lastX=e.clientX; lastY=e.clientY;});
+canvas.addEventListener('pointermove', e=>{
+  if(!dragging) return;
+  const dx=e.clientX-lastX, dy=e.clientY-lastY;
+  lastX=e.clientX; lastY=e.clientY;
+  ry += dx*0.008;
+  rx += dy*0.008;
+  rx = Math.max(-1.25, Math.min(1.25, rx));
+});
+canvas.addEventListener('pointerup', e=>{dragging=false;});
+canvas.addEventListener('wheel', e=>{
+  e.preventDefault();
+  zoom *= Math.exp(-e.deltaY*0.001);
+  zoom = Math.max(0.55, Math.min(2.2, zoom));
+},{passive:false});
+
+function rot(p){
+  let [x,y,z]=p;
+  let cy=Math.cos(rx), sy=Math.sin(rx);
+  let y1=y*cy-z*sy, z1=y*sy+z*cy; y=y1; z=z1;
+  cy=Math.cos(ry); sy=Math.sin(ry);
+  let x1=x*cy+z*sy, z2=-x*sy+z*cy; x=x1; z=z2;
+  cy=Math.cos(rz); sy=Math.sin(rz);
+  x1=x*cy-y*sy; y1=x*sy+y*cy; x=x1; y=y1;
+  return [x,y,z];
+}
+function project(p){
+  const r=rot(p);
+  const scale = Math.min(W,H)*0.18*zoom;
+  const dist = 7.0;
+  const f = dist/(dist-r[2]);
+  return {x: W/2 + r[0]*scale*f, y: H/2 - r[1]*scale*f, z:r[2], f};
+}
+function tubePoint(x, theta, radius){return [x, Math.cos(theta)*radius, Math.sin(theta)*radius];}
+function strokeLine(points, color, width=2, alpha=1, dash=null){
+  ctx.save(); ctx.globalAlpha=alpha; ctx.strokeStyle=color; ctx.lineWidth=width*DPR; ctx.lineCap='butt'; ctx.lineJoin='round';
+  if(dash) ctx.setLineDash(dash.map(v=>v*DPR));
+  ctx.beginPath();
+  points.forEach((p,i)=>{const q=project(p); if(i===0)ctx.moveTo(q.x,q.y); else ctx.lineTo(q.x,q.y);});
+  ctx.stroke(); ctx.restore();
+}
+function fillPoly(points, fill, alpha=1){
+  ctx.save(); ctx.globalAlpha=alpha; ctx.fillStyle=fill; ctx.beginPath();
+  points.forEach((p,i)=>{const q=project(p); if(i===0)ctx.moveTo(q.x,q.y); else ctx.lineTo(q.x,q.y);});
+  ctx.closePath(); ctx.fill(); ctx.restore();
+}
+function fillRing(outerPoints, innerPoints, fill, alpha=1){
+  ctx.save();
+  ctx.globalAlpha = alpha;
+  ctx.fillStyle = fill;
+  ctx.beginPath();
+
+  outerPoints.forEach((p,i)=>{
+    const q = project(p);
+    if(i === 0) ctx.moveTo(q.x,q.y);
+    else ctx.lineTo(q.x,q.y);
+  });
+  ctx.closePath();
+
+  innerPoints.slice().reverse().forEach((p,i)=>{
+    const q = project(p);
+    if(i === 0) ctx.moveTo(q.x,q.y);
+    else ctx.lineTo(q.x,q.y);
+  });
+  ctx.closePath();
+
+  ctx.fill('evenodd');
+  ctx.restore();
+}
+function screenLine(p1,p2,color,width=2,alpha=1,dash=null){
+  ctx.save(); ctx.globalAlpha=alpha; ctx.strokeStyle=color; ctx.lineWidth=width*DPR; ctx.lineCap='square';
+  if(dash) ctx.setLineDash(dash.map(v=>v*DPR));
+  ctx.beginPath(); ctx.moveTo(p1.x,p1.y); ctx.lineTo(p2.x,p2.y); ctx.stroke(); ctx.restore();
+}
+function drawArrow(p1,p2,color,label,opts={}){
+  const a=project(p1), b=project(p2);
+  screenLine(a,b,color,opts.width||3.2,opts.alpha||1,opts.dash||null);
+  const ang=Math.atan2(b.y-a.y,b.x-a.x);
+  const size=(opts.head||12)*DPR;
+  ctx.save(); ctx.fillStyle=color; ctx.globalAlpha=opts.alpha||1;
+  ctx.beginPath(); ctx.moveTo(b.x,b.y); ctx.lineTo(b.x-size*Math.cos(ang-Math.PI/6), b.y-size*Math.sin(ang-Math.PI/6)); ctx.lineTo(b.x-size*Math.cos(ang+Math.PI/6), b.y-size*Math.sin(ang+Math.PI/6)); ctx.closePath(); ctx.fill(); ctx.restore();
+  if(label) drawLabel(label,b.x+(opts.labelDx||8)*DPR,b.y+(opts.labelDy||-8)*DPR,color);
+}
+function drawDoubleArrow(p1,p2,color,label){
+  drawArrow(p1,p2,color,null,{width:3.2});
+  drawArrow(p2,p1,color,label,{width:3.2,labelDx:8,labelDy:-8});
+}
+function drawLabel(text,x,y,color){
+  ctx.save();
+  ctx.font=`${11*DPR}px ui-monospace, SFMono-Regular, Menlo, Consolas, monospace`;
+  const pad=6*DPR, h=23*DPR;
+  const w=ctx.measureText(text).width+pad*2;
+  ctx.fillStyle=css('--label-bg');
+  squareRect(ctx,x,y-h/2,w,h); ctx.fill();
+  ctx.strokeStyle=css('--ink'); ctx.lineWidth=1.3*DPR; squareRect(ctx,x,y-h/2,w,h); ctx.stroke();
+  ctx.fillStyle=color; ctx.fillText(text,x+pad,y+4*DPR);
+  ctx.restore();
+}
+function squareRect(ctx,x,y,w,h){ctx.beginPath(); ctx.rect(x,y,w,h); ctx.closePath();}
+function drawArcArrow(x, radius, th1, th2, color, label){
+  const pts=[]; const n=64;
+  for(let i=0;i<=n;i++){ const t=th1+(th2-th1)*i/n; pts.push(tubePoint(x,t,radius)); }
+  strokeLine(pts,color,3.2,1,[10,4]);
+  const pPrev=tubePoint(x, th2-(th2-th1)/n, radius);
+  const pEnd=tubePoint(x, th2, radius);
+  drawArrow(pPrev,pEnd,color,label,{width:0.1,head:12,labelDx:8,labelDy:-8});
+}
+function drawBendingCue(){
+  const pts=[]; const n=80;
+  for(let i=0;i<=n;i++){
+    const t=i/n;
+    const x=-2.7+5.4*t;
+    const y=1.55+0.35*Math.sin(Math.PI*t);
+    pts.push([x,y,0.18]);
+  }
+  strokeLine(pts,css('--ink'),1.8,.72,[8,5]);
+  drawArrow(pts[pts.length-3], pts[pts.length-1], css('--ink'), 'flexural / bending', {width:1.3,alpha:.85,head:10,labelDy:-12,dash:[8,5]});
+}
+function drawNotchCue(){
+  const x=.25;
+  strokeLine([[x-.28,1.20,0.04],[x-.05,1.06,0.04],[x+.18,1.20,0.04]], css('--ink'), 2.1, .9);
+  drawArrow([x,2.15,0.20],[x,1.30,0.08], css('--ink'), 'IZOD impact / notch', {width:2.6, alpha:.9, labelDx:10, labelDy:-10});
+}
+function drawElectricCue(){
+  const c=colorOf('electric');
+  const p1=[1.0,0.55,1.45], p2=[1.0,0.37,1.02];
+  drawArrow(p1,p2,c,'E-field through wall',{width:3.4,head:12,dash:[7,4]});
+  strokeLine([[.85,.82,1.35],[1.05,.66,1.25],[.93,.63,1.13],[1.12,.45,1.06]], c, 2.2, .95);
+}
+function drawDirectionSet(active){
+  const should = d => showAll || active.includes(d) || active.includes('all');
+  if(should('axial')){
+    drawDoubleArrow([-2.95,-1.45,-.55],[2.95,-1.45,-.55],colorOf('axial'),'lengthwise / axial');
+  }
+  if(should('circ')){
+    drawArcArrow(1.05,1.42,-1.05,4.25,colorOf('circ'),'crosswise / hoop');
+  }
+  if(should('radial')){
+    drawDoubleArrow([-.95,0.72,1.75],[-.95,0.48,1.12],colorOf('radial'),'flatwise / through wall');
+  }
+  if(should('edge')){
+    drawArrow([-.35,-1.58,.22],[.65,-1.58,.22],colorOf('edge'),'edgewise / in-plane edge',{width:3.2});
+  }
+  if(active.includes('bend')) drawBendingCue();
+  if(active.includes('notch')) drawNotchCue();
+  if(active.includes('electric')) drawElectricCue();
+}
+function drawTube(){
+  const L=5.25, R=1.0, r=R-wallThickness;
+  const nTheta=96, nX=28;
+  const quads=[];
+  for(let i=0;i<nX;i++){
+    const x0=-L/2 + L*i/nX;
+    const x1=-L/2 + L*(i+1)/nX;
+    for(let j=0;j<nTheta;j++){
+      const t0=2*Math.PI*j/nTheta;
+      const t1=2*Math.PI*(j+1)/nTheta;
+      const pts=[tubePoint(x0,t0,R),tubePoint(x1,t0,R),tubePoint(x1,t1,R),tubePoint(x0,t1,R)];
+      const z=pts.reduce((s,p)=>s+rot(p)[2],0)/4;
+      const light=.42+.35*Math.max(0, Math.cos((t0+t1)/2-0.55));
+      quads.push({pts,z,light,t:(t0+t1)/2});
+    }
+  }
+  quads.sort((a,b)=>a.z-b.z);
+  quads.forEach(q=>{
+    const alpha = q.z>-.2 ? .93 : .45;
+    const base1 = hexToRgb(css('--tube-1'));
+    const base2 = hexToRgb(css('--tube-2'));
+    const mix = Math.max(0, Math.min(1, q.light));
+    const rgb = {
+      r:Math.round(base2.r + (base1.r-base2.r)*mix),
+      g:Math.round(base2.g + (base1.g-base2.g)*mix),
+      b:Math.round(base2.b + (base1.b-base2.b)*mix)
+    };
+    fillPoly(q.pts, `rgba(${rgb.r},${rgb.g},${rgb.b},${alpha})`, 1);
+  });
+  for(const x of [-L/2,L/2]){
+    const outer=[], inner=[];
+    for(let j=0;j<=nTheta;j++){
+      const t=2*Math.PI*j/nTheta;
+      outer.push(tubePoint(x,t,R));
+      inner.push(tubePoint(x,t,r));
+    }
+
+    // Full annular end face using --tube-3 on both exposed tube ends.
+    fillRing(outer, inner, css('--tube-3'), .78);
+
+    strokeLine(outer,css('--ink'),1.9,.88);
+    strokeLine(inner,css('--rule-strong'),1.6,.92);
+  }
+  // Circumferential laminate rings: thin, chart-like tick marks.
+  for(let i=1;i<nX;i+=4){
+    const x=-L/2+L*i/nX, pts=[];
+    for(let j=0;j<=nTheta;j++){ const t=2*Math.PI*j/nTheta; pts.push(tubePoint(x,t,R+.006)); }
+    strokeLine(pts,css('--canvas-line'),1,.9,[3,3]);
+  }
+  // Longitudinal fibers/grid.
+  for(let j=0;j<nTheta;j+=8){
+    const t=2*Math.PI*j/nTheta, pts=[];
+    for(let i=0;i<=nX;i++){ const x=-L/2+L*i/nX; pts.push(tubePoint(x,t,R+.008)); }
+    strokeLine(pts,css('--canvas-line'),1,.9);
+  }
+  // Cross-hatched fiberglass accent bands.
+  for(let j=0;j<nTheta;j+=12){
+    const t=2*Math.PI*j/nTheta;
+    const pts1=[], pts2=[];
+    for(let i=0;i<=nX;i+=2){
+      const x=-L/2+L*i/nX;
+      pts1.push(tubePoint(x,t+0.10*i,R+.011));
+      pts2.push(tubePoint(x,t-0.10*i,R+.012));
+    }
+    strokeLine(pts1,css('--rule'),.7,.62);
+    strokeLine(pts2,css('--rule'),.7,.52);
+  }
+  // Subtle wall-thickness outline cue on the right end.
+  // The full end faces are now shaded with --tube-3 above.
+  const cut=[]; const thA=-.98, thB=-.35, x=L/2;
+  for(let i=0;i<=18;i++){ cut.push(tubePoint(x, thA+(thB-thA)*i/18, R+.012)); }
+  for(let i=18;i>=0;i--){ cut.push(tubePoint(x, thA+(thB-thA)*i/18, r-.006)); }
+  strokeLine(cut.concat([cut[0]]),css('--ink'),1.15,.62);
+}
+function hexToRgb(hex){
+  hex = String(hex).trim();
+  if(hex.startsWith('#')) hex = hex.slice(1);
+  if(hex.length===3) hex = hex.split('').map(c=>c+c).join('');
+  const n=parseInt(hex,16);
+  return {r:(n>>16)&255,g:(n>>8)&255,b:n&255};
+}
+function drawAxes(){
+  const origin=[-3.45,-2.25,-.35], s=.62;
+  drawArrow(origin,[origin[0]+s,origin[1],origin[2]],colorOf('axial'),'x axial',{width:1.8,head:8,labelDx:5,labelDy:-6});
+  drawArrow(origin,[origin[0],origin[1]+s,origin[2]],colorOf('circ'),'y hoop local',{width:1.8,head:8,labelDx:5,labelDy:-6});
+  drawArrow(origin,[origin[0],origin[1],origin[2]+s],colorOf('radial'),'z wall normal',{width:1.8,head:8,labelDx:5,labelDy:-6});
+}
+function drawBackground(){
+  ctx.clearRect(0,0,W,H);
+  ctx.fillStyle=css('--stage-bg');
+  ctx.fillRect(0,0,W,H);
+  // editorial chart grid
+  ctx.save();
+  ctx.strokeStyle=css('--canvas-line');
+  ctx.lineWidth=1*DPR;
+  const spacing=42*DPR;
+  for(let x=((W*.03)%spacing); x<W; x+=spacing){
+    ctx.beginPath(); ctx.moveTo(x,0); ctx.lineTo(x,H); ctx.stroke();
+  }
+  for(let y=((H*.02)%spacing); y<H; y+=spacing){
+    ctx.beginPath(); ctx.moveTo(0,y); ctx.lineTo(W,y); ctx.stroke();
+  }
+  ctx.restore();
+  ctx.save();
+  ctx.fillStyle=css('--canvas-dot');
+  for(let i=0;i<90;i++){
+    const x=(i*173 % W), y=(i*331 % H); const r=(i%2+1)*.42*DPR;
+    ctx.beginPath(); ctx.arc(x,y,r,0,Math.PI*2); ctx.fill();
+  }
+  ctx.restore();
+
+  
+}
+function draw(){
+  if(spin && !dragging) ry += 0.006;
+  drawBackground();
+  drawTube();
+  const active = mode.focus.slice();
+  if(mode.id==='physical') active.push('all');
+  drawDirectionSet(active);
+  drawAxes();
+  requestAnimationFrame(draw);
+}
+requestAnimationFrame(draw);
+</script>
+</body>
+</html>
