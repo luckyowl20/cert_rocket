@@ -38,7 +38,7 @@
 		)
 		(uuid "895112d4-ad7c-47b5-a2e8-4fc0026f40b7")
 	)
-	(text "TODO:\nDraw system schematic with relevant sheets at a high level\nConsolidate datasheets to their respective sheets/parts\nWrite specs/assumptions on this page\nFind a flash chip and connect it to MCU"
+	(text "TODO:\nDraw system schematic with relevant sheets at a high level\nConsolidate datasheets to their respective sheets/parts\nWrite specs/assumptions on this page\nPut test pads everywhere!"
 		(exclude_from_sim no)
 		(at 41.148 114.046 0)
 		(effects

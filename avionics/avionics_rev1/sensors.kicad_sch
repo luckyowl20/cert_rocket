@@ -1975,6 +1975,12 @@
 		(uuid "d7956fe2-5faf-4356-98dc-00d30bcd2608")
 	)
 	(junction
+		(at 124.46 119.38)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "e1a635c9-7ab3-4930-ae7a-8f10d522d039")
+	)
+	(junction
 		(at 25.4 114.3)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -1985,12 +1991,6 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "e7dcf664-4255-4885-8841-1f2f64afaf81")
-	)
-	(junction
-		(at 124.46 119.38)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "fa0f2709-86b3-439c-a260-5db089cd3926")
 	)
 	(no_connect
 		(at 114.3 114.3)
@@ -2160,7 +2160,7 @@
 	)
 	(wire
 		(pts
-			(xy 124.46 119.38) (xy 139.7 119.38)
+			(xy 124.46 119.38) (xy 138.43 119.38)
 		)
 		(stroke
 			(width 0)
@@ -4462,7 +4462,7 @@
 	)
 	(symbol
 		(lib_id "power:+3.3V")
-		(at 139.7 119.38 0)
+		(at 138.43 119.38 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -4473,7 +4473,7 @@
 		(fields_autoplaced yes)
 		(uuid "9ac7b498-3436-46a8-ac9b-43b151e17fcd")
 		(property "Reference" "#PWR047"
-			(at 139.7 123.19 0)
+			(at 138.43 123.19 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4484,7 +4484,7 @@
 			)
 		)
 		(property "Value" "+3.3V"
-			(at 139.7 114.3 0)
+			(at 138.43 114.3 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -4494,7 +4494,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 139.7 119.38 0)
+			(at 138.43 119.38 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4505,7 +4505,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 139.7 119.38 0)
+			(at 138.43 119.38 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4516,7 +4516,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"+3.3V\""
-			(at 139.7 119.38 0)
+			(at 138.43 119.38 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
