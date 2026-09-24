@@ -3,7 +3,7 @@
 	(generator "eeschema")
 	(generator_version "10.0")
 	(uuid "18342e63-b9d5-4364-86e1-18c58fadfe2e")
-	(paper "A4")
+	(paper "A3")
 	(lib_symbols
 		(symbol "Device:Buzzer"
 			(pin_names
@@ -2646,9 +2646,9 @@
 		)
 		(uuid "b379cb32-8e86-455f-85fa-1d2473940447")
 	)
-	(text "TODO: \ndetermine pins for SPI / I2C devices\ndetermine pins for buzzer / status LED(s)\ndetermine pins for pyro channels\ndetermine pins for battery monitoring / \ncurrent draw (find IC for current sensing)\ndetermine if this needs a crystal or not (probably)\ndetermine pins for USB connections\ndetermine pins for other telemetry IO\nsetup a debug header / look into STlink\nfind a flash memory chip and wire it up"
+	(text "TODO: \ndetermine pins for SPI / I2C (if any) devices\ndetermine pins for buzzer / status LED(s)\ndetermine pins for pyro channels\ndetermine pins for battery monitoring / \ncurrent draw (find IC for current sensing)\ndetermine if this needs a crystal or not (probably)\ndetermine pins for USB connections\ndetermine pins for other telemetry IO\nsetup a debug header / look into STlink\nfind a flash memory chip and wire it up (needs to hold flight data)\nconnect existing flags to corresponding pins\nadd voltages/tolerances for capacitors/resistors"
 		(exclude_from_sim no)
-		(at 20.32 40.894 0)
+		(at 214.63 122.936 0)
 		(effects
 			(font
 				(size 2.032 2.032)
