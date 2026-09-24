@@ -1,0 +1,44 @@
+{
+  "reference_V": 1.1702127659574468,
+  "pyro_divider_ratio": 0.3333333333333333,
+  "falling_trip_nominal_V": 3.5001382978723403,
+  "rising_reconnect_nominal_V": 3.5211382978723407,
+  "illustrative_falling_envelope_V": [
+    3.386343436971435,
+    3.5962239449921194
+  ],
+  "adc_ratio": 0.1669449081803005,
+  "adc_at_16V8_V": 2.8046744574290483,
+  "main_thresholds": [
+    {
+      "cells": 1,
+      "pack_V": 3.5,
+      "adc_V": 0.5843071786310517,
+      "code_12bit_3V3": 725
+    },
+    {
+      "cells": 2,
+      "pack_V": 7.0,
+      "adc_V": 1.1686143572621035,
+      "code_12bit_3V3": 1450
+    },
+    {
+      "cells": 3,
+      "pack_V": 10.5,
+      "adc_V": 1.7529215358931554,
+      "code_12bit_3V3": 2175
+    },
+    {
+      "cells": 4,
+      "pack_V": 14.0,
+      "adc_V": 2.337228714524207,
+      "code_12bit_3V3": 2900
+    }
+  ],
+  "bleed_max_power_W": 0.12958677685950415,
+  "discharge_tau_bound_s": 0.04715219967793881,
+  "vout_after_500ms_85C_V": 0.10758226525566889,
+  "vout_after_500ms_125C_V": 1.2650147927894964,
+  "adc_filter_tau_s": 8.330550918196996e-05,
+  "current_limit_formula_A": 4.536551527520668
+}

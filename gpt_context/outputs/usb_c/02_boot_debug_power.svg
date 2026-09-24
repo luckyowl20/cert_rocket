@@ -1,0 +1,138 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1800" height="1650" viewBox="0 0 1800 1650">
+<rect width="100%" height="100%" fill="white"/>
+<text x="70" y="45" dominant-baseline="text-before-edge" font-family="Arial,sans-serif" font-size="42" font-weight="700" fill="#172B43">Boot, debug and power connections</text>
+<text x="70" y="106" dominant-baseline="text-before-edge" font-family="Arial,sans-serif" font-size="23" font-weight="400" fill="#526579">Use SWD for first bring-up and recovery. USB firmware update depends on the exact MCU ROM and boot settings.</text>
+<polyline points="70,153 1730,153" fill="none" stroke="#CEDAE3" stroke-width="2"/>
+<text x="70" y="1595" dominant-baseline="text-before-edge" font-family="Arial,sans-serif" font-size="21" font-weight="400" fill="#526579">CONNECTION GUIDE ONLY  |  Confirm exact MCU/package, power budget and KiCad footprint before manufacture.</text>
+<text x="1660" y="1595" dominant-baseline="text-before-edge" font-family="Arial,sans-serif" font-size="21" font-weight="700" fill="#172B43">2 / 2</text>
+<text x="80" y="195" dominant-baseline="text-before-edge" font-family="Arial,sans-serif" font-size="28" font-weight="700" fill="#172B43">BOOT / RESET</text>
+<text x="80" y="250" dominant-baseline="text-before-edge" font-family="Arial,sans-serif" font-size="24" font-weight="700" fill="#AB4D14">3V3</text>
+<polyline points="140,285 235,285" fill="none" stroke="#AB4D14" stroke-width="3"/>
+<polyline points="235,285 255,285" fill="none" stroke="#166A79" stroke-width="3"/>
+<polyline points="255,285 305,263" fill="none" stroke="#166A79" stroke-width="3"/>
+<polyline points="310,285 335,285" fill="none" stroke="#166A79" stroke-width="3"/>
+<circle cx="255" cy="285" r="5" fill="#166A79"/>
+<circle cx="310" cy="285" r="5" fill="#166A79"/>
+<polyline points="335,285 745,285" fill="none" stroke="#166A79" stroke-width="3"/>
+<text x="570" y="252" dominant-baseline="text-before-edge" font-family="Arial,sans-serif" font-size="23" font-weight="700" fill="#166A79">BOOT0 / PB8*</text>
+<text x="235" y="224" dominant-baseline="text-before-edge" font-family="Arial,sans-serif" font-size="23" font-weight="700" fill="#172B43">SW1  BOOT</text>
+<circle cx="440" cy="285" r="5" fill="#166A79"/>
+<polyline points="440,285 440,350" fill="none" stroke="#166A79" stroke-width="3"/>
+<polyline points="440,350 440,368" fill="none" stroke="#166A79" stroke-width="3"/>
+<rect x="428" y="368" width="24" height="64" fill="white" stroke="#166A79" stroke-width="2"/>
+<polyline points="440,432 440,450" fill="none" stroke="#166A79" stroke-width="3"/>
+<polyline points="440,450 440,465" fill="none" stroke="#166A79" stroke-width="3"/>
+<polyline points="418,465 462,465" fill="none" stroke="#166A79" stroke-width="3"/>
+<polyline points="426,473 454,473" fill="none" stroke="#166A79" stroke-width="3"/>
+<polyline points="434,481 446,481" fill="none" stroke="#166A79" stroke-width="3"/>
+<text x="490" y="373" dominant-baseline="text-before-edge" font-family="Arial,sans-serif" font-size="23" font-weight="400" fill="#172B43">R3</text>
+<text x="490" y="406" dominant-baseline="text-before-edge" font-family="Arial,sans-serif" font-size="23" font-weight="400" fill="#172B43">10 kΩ</text>
+<text x="80" y="390" dominant-baseline="text-before-edge" font-family="Arial,sans-serif" font-size="23" font-weight="400" fill="#526579">*Verify BOOT0 pin and</text>
+<text x="80" y="423" dominant-baseline="text-before-edge" font-family="Arial,sans-serif" font-size="23" font-weight="400" fill="#526579">option bytes for your G4.</text>
+<text x="80" y="550" dominant-baseline="text-before-edge" font-family="Arial,sans-serif" font-size="24" font-weight="700" fill="#AB4D14">3V3</text>
+<polyline points="140,587 235,587" fill="none" stroke="#AB4D14" stroke-width="3"/>
+<polyline points="235,587 253,587" fill="none" stroke="#166A79" stroke-width="3"/>
+<rect x="253" y="575" width="64" height="24" fill="white" stroke="#166A79" stroke-width="2"/>
+<polyline points="317,587 335,587" fill="none" stroke="#166A79" stroke-width="3"/>
+<text x="230" y="531" dominant-baseline="text-before-edge" font-family="Arial,sans-serif" font-size="23" font-weight="400" fill="#172B43">R4  10 kΩ</text>
+<polyline points="335,587 770,587" fill="none" stroke="#166A79" stroke-width="3"/>
+<text x="667" y="554" dominant-baseline="text-before-edge" font-family="Arial,sans-serif" font-size="23" font-weight="700" fill="#166A79">NRST</text>
+<circle cx="440" cy="587" r="5" fill="#166A79"/>
+<polyline points="440,587 440,655" fill="none" stroke="#166A79" stroke-width="3"/>
+<polyline points="440,655 440,688" fill="none" stroke="#166A79" stroke-width="3"/>
+<polyline points="420,688 460,688" fill="none" stroke="#166A79" stroke-width="3"/>
+<polyline points="420,700 460,700" fill="none" stroke="#166A79" stroke-width="3"/>
+<polyline points="440,700 440,733" fill="none" stroke="#166A79" stroke-width="3"/>
+<polyline points="440,733 440,748" fill="none" stroke="#166A79" stroke-width="3"/>
+<polyline points="418,748 462,748" fill="none" stroke="#166A79" stroke-width="3"/>
+<polyline points="426,756 454,756" fill="none" stroke="#166A79" stroke-width="3"/>
+<polyline points="434,764 446,764" fill="none" stroke="#166A79" stroke-width="3"/>
+<text x="485" y="685" dominant-baseline="text-before-edge" font-family="Arial,sans-serif" font-size="22" font-weight="400" fill="#172B43">C2  100 nF</text>
+<circle cx="670" cy="587" r="5" fill="#166A79"/>
+<polyline points="670,587 670,655" fill="none" stroke="#166A79" stroke-width="3"/>
+<polyline points="670,655 670,675" fill="none" stroke="#166A79" stroke-width="3"/>
+<polyline points="670,675 648,723" fill="none" stroke="#166A79" stroke-width="3"/>
+<polyline points="670,730 670,755" fill="none" stroke="#166A79" stroke-width="3"/>
+<circle cx="670" cy="675" r="5" fill="#166A79"/>
+<circle cx="670" cy="730" r="5" fill="#166A79"/>
+<polyline points="670,755 670,770" fill="none" stroke="#166A79" stroke-width="3"/>
+<polyline points="648,770 692,770" fill="none" stroke="#166A79" stroke-width="3"/>
+<polyline points="656,778 684,778" fill="none" stroke="#166A79" stroke-width="3"/>
+<polyline points="664,786 676,786" fill="none" stroke="#166A79" stroke-width="3"/>
+<text x="685" y="670" dominant-baseline="text-before-edge" font-family="Arial,sans-serif" font-size="22" font-weight="700" fill="#172B43">SW2</text>
+<text x="685" y="702" dominant-baseline="text-before-edge" font-family="Arial,sans-serif" font-size="22" font-weight="700" fill="#172B43">RESET</text>
+<text x="80" y="835" dominant-baseline="text-before-edge" font-family="Arial,sans-serif" font-size="23" font-weight="400" fill="#172B43">DFU: hold BOOT, pulse RESET, release BOOT.</text>
+<text x="80" y="868" dominant-baseline="text-before-edge" font-family="Arial,sans-serif" font-size="23" font-weight="400" fill="#172B43">Normal boot: release BOOT and pulse RESET.</text>
+<text x="80" y="901" dominant-baseline="text-before-edge" font-family="Arial,sans-serif" font-size="23" font-weight="400" fill="#172B43">Requires correct boot option bytes; keep SWD accessible.</text>
+<text x="925" y="195" dominant-baseline="text-before-edge" font-family="Arial,sans-serif" font-size="28" font-weight="700" fill="#172B43">J2  STDC14 DEBUG HEADER</text>
+<text x="925" y="238" dominant-baseline="text-before-edge" font-family="Arial,sans-serif" font-size="23" font-weight="400" fill="#526579">FTSH-107-01-L-DV-K • STLINK-V3MINIE cable</text>
+<rect x="925" y="285" width="800" height="535" fill="#EEF5FA" stroke="#172B43" stroke-width="2"/>
+<text x="950" y="310" dominant-baseline="text-before-edge" font-family="Arial,sans-serif" font-size="21" font-weight="700" fill="#172B43">PIN</text>
+<text x="1140" y="310" dominant-baseline="text-before-edge" font-family="Arial,sans-serif" font-size="21" font-weight="700" fill="#172B43">MCU / NET</text>
+<text x="1320" y="310" dominant-baseline="text-before-edge" font-family="Arial,sans-serif" font-size="21" font-weight="700" fill="#172B43">FUNCTION</text>
+<text x="950" y="365" dominant-baseline="text-before-edge" font-family="Arial,sans-serif" font-size="22" font-weight="700" fill="#172B43">3</text>
+<text x="1140" y="365" dominant-baseline="text-before-edge" font-family="Arial,sans-serif" font-size="22" font-weight="700" fill="#172B43">3V3</text>
+<text x="1320" y="365" dominant-baseline="text-before-edge" font-family="Arial,sans-serif" font-size="18" font-weight="400" fill="#172B43">Target voltage reference (not power input)</text>
+<text x="950" y="417" dominant-baseline="text-before-edge" font-family="Arial,sans-serif" font-size="22" font-weight="700" fill="#172B43">4</text>
+<text x="1140" y="417" dominant-baseline="text-before-edge" font-family="Arial,sans-serif" font-size="22" font-weight="700" fill="#172B43">PA13</text>
+<text x="1320" y="417" dominant-baseline="text-before-edge" font-family="Arial,sans-serif" font-size="18" font-weight="400" fill="#172B43">SWDIO</text>
+<text x="950" y="469" dominant-baseline="text-before-edge" font-family="Arial,sans-serif" font-size="22" font-weight="700" fill="#172B43">6</text>
+<text x="1140" y="469" dominant-baseline="text-before-edge" font-family="Arial,sans-serif" font-size="22" font-weight="700" fill="#172B43">PA14</text>
+<text x="1320" y="469" dominant-baseline="text-before-edge" font-family="Arial,sans-serif" font-size="18" font-weight="400" fill="#172B43">SWCLK</text>
+<text x="950" y="521" dominant-baseline="text-before-edge" font-family="Arial,sans-serif" font-size="22" font-weight="700" fill="#172B43">8</text>
+<text x="1140" y="521" dominant-baseline="text-before-edge" font-family="Arial,sans-serif" font-size="22" font-weight="700" fill="#172B43">PB3</text>
+<text x="1320" y="521" dominant-baseline="text-before-edge" font-family="Arial,sans-serif" font-size="18" font-weight="400" fill="#172B43">SWO (optional)</text>
+<text x="950" y="573" dominant-baseline="text-before-edge" font-family="Arial,sans-serif" font-size="22" font-weight="700" fill="#172B43">12</text>
+<text x="1140" y="573" dominant-baseline="text-before-edge" font-family="Arial,sans-serif" font-size="22" font-weight="700" fill="#172B43">NRST</text>
+<text x="1320" y="573" dominant-baseline="text-before-edge" font-family="Arial,sans-serif" font-size="18" font-weight="400" fill="#172B43">Reset / connect-under-reset</text>
+<text x="950" y="625" dominant-baseline="text-before-edge" font-family="Arial,sans-serif" font-size="22" font-weight="700" fill="#172B43">5, 7, 11</text>
+<text x="1140" y="625" dominant-baseline="text-before-edge" font-family="Arial,sans-serif" font-size="22" font-weight="700" fill="#172B43">GND</text>
+<text x="1320" y="625" dominant-baseline="text-before-edge" font-family="Arial,sans-serif" font-size="18" font-weight="400" fill="#172B43">Ground and ground-detect</text>
+<text x="950" y="677" dominant-baseline="text-before-edge" font-family="Arial,sans-serif" font-size="22" font-weight="700" fill="#172B43">1, 2, 9</text>
+<text x="1140" y="677" dominant-baseline="text-before-edge" font-family="Arial,sans-serif" font-size="22" font-weight="700" fill="#172B43">NC</text>
+<text x="1320" y="677" dominant-baseline="text-before-edge" font-family="Arial,sans-serif" font-size="18" font-weight="400" fill="#172B43">Reserved; leave disconnected</text>
+<text x="950" y="729" dominant-baseline="text-before-edge" font-family="Arial,sans-serif" font-size="22" font-weight="700" fill="#172B43">10, 13, 14</text>
+<text x="1140" y="729" dominant-baseline="text-before-edge" font-family="Arial,sans-serif" font-size="22" font-weight="700" fill="#172B43">NC</text>
+<text x="1320" y="729" dominant-baseline="text-before-edge" font-family="Arial,sans-serif" font-size="18" font-weight="400" fill="#172B43">Unused JTAG/UART in this drawing</text>
+<text x="925" y="842" dominant-baseline="text-before-edge" font-family="Arial,sans-serif" font-size="23" font-weight="400" fill="#172B43">SWD can upload and debug firmware without USB.</text>
+<text x="925" y="875" dominant-baseline="text-before-edge" font-family="Arial,sans-serif" font-size="23" font-weight="400" fill="#172B43">Power the target from its power circuit, not VTREF.</text>
+<text x="925" y="908" dominant-baseline="text-before-edge" font-family="Arial,sans-serif" font-size="23" font-weight="400" fill="#172B43">Check header orientation against the connector drawing.</text>
+<polyline points="70,982 1730,982" fill="none" stroke="#CEDAE3" stroke-width="2"/>
+<text x="80" y="1020" dominant-baseline="text-before-edge" font-family="Arial,sans-serif" font-size="26" font-weight="700" fill="#172B43">POWER: CONDITIONAL ARCHITECTURE — NOT A COMPLETE REGULATOR SCHEMATIC</text>
+<text x="80" y="1070" dominant-baseline="text-before-edge" font-family="Arial,sans-serif" font-size="23" font-weight="400" fill="#526579">Only if using a protected, rechargeable 1-cell Li-ion/LiPo battery (4.2 V charge). Other batteries require a different circuit.</text>
+<text x="80" y="1140" dominant-baseline="text-before-edge" font-family="Arial,sans-serif" font-size="23" font-weight="700" fill="#AB4D14">USB_VBUS</text>
+<text x="80" y="1173" dominant-baseline="text-before-edge" font-family="Arial,sans-serif" font-size="23" font-weight="700" fill="#AB4D14">5 V from J1</text>
+<polyline points="235,1180 320,1180" fill="none" stroke="#AB4D14" stroke-width="4"/>
+<polyline points="308,1172 320,1180 308,1188" fill="none" stroke="#AB4D14" stroke-width="4"/>
+<rect x="320" y="1125" width="300" height="115" fill="#EEF5FA" stroke="#172B43" stroke-width="2"/>
+<text x="345" y="1144" dominant-baseline="text-before-edge" font-family="Arial,sans-serif" font-size="24" font-weight="700" fill="#172B43">Input protection +</text>
+<text x="345" y="1178" dominant-baseline="text-before-edge" font-family="Arial,sans-serif" font-size="24" font-weight="700" fill="#172B43">inrush/current control</text>
+<polyline points="620,1180 710,1180" fill="none" stroke="#AB4D14" stroke-width="4"/>
+<polyline points="698,1172 710,1180 698,1188" fill="none" stroke="#AB4D14" stroke-width="4"/>
+<rect x="710" y="1125" width="390" height="115" fill="#EEF5FA" stroke="#172B43" stroke-width="2"/>
+<text x="735" y="1144" dominant-baseline="text-before-edge" font-family="Arial,sans-serif" font-size="25" font-weight="700" fill="#172B43">BQ24074  IN → OUT</text>
+<text x="735" y="1179" dominant-baseline="text-before-edge" font-family="Arial,sans-serif" font-size="25" font-weight="700" fill="#172B43">Charger + power path</text>
+<polyline points="1100,1180 1195,1180" fill="none" stroke="#AB4D14" stroke-width="4"/>
+<polyline points="1183,1172 1195,1180 1183,1188" fill="none" stroke="#AB4D14" stroke-width="4"/>
+<rect x="1195" y="1125" width="325" height="115" fill="#EEF5FA" stroke="#172B43" stroke-width="2"/>
+<text x="1220" y="1144" dominant-baseline="text-before-edge" font-family="Arial,sans-serif" font-size="25" font-weight="700" fill="#172B43">TPS63031</text>
+<text x="1220" y="1179" dominant-baseline="text-before-edge" font-family="Arial,sans-serif" font-size="25" font-weight="700" fill="#172B43">3.3 V buck-boost</text>
+<polyline points="1520,1180 1615,1180" fill="none" stroke="#AB4D14" stroke-width="4"/>
+<polyline points="1603,1172 1615,1180 1603,1188" fill="none" stroke="#AB4D14" stroke-width="4"/>
+<text x="1625" y="1140" dominant-baseline="text-before-edge" font-family="Arial,sans-serif" font-size="24" font-weight="700" fill="#AB4D14">3V3</text>
+<text x="1625" y="1174" dominant-baseline="text-before-edge" font-family="Arial,sans-serif" font-size="24" font-weight="700" fill="#AB4D14">logic</text>
+<polyline points="900,1240 900,1285" fill="none" stroke="#AB4D14" stroke-width="3"/>
+<rect x="710" y="1285" width="390" height="85" fill="#FFF4E9" stroke="#172B43" stroke-width="2"/>
+<text x="735" y="1305" dominant-baseline="text-before-edge" font-family="Arial,sans-serif" font-size="23" font-weight="700" fill="#172B43">BAT ↔ protected 1S battery</text>
+<text x="80" y="1285" dominant-baseline="text-before-edge" font-family="Arial,sans-serif" font-size="22" font-weight="400" fill="#172B43">USB budget is shared by the running board</text>
+<text x="80" y="1317" dominant-baseline="text-before-edge" font-family="Arial,sans-serif" font-size="22" font-weight="400" fill="#172B43">and battery charging. No assumption of 3 A!</text>
+<text x="80" y="1349" dominant-baseline="text-before-edge" font-family="Arial,sans-serif" font-size="22" font-weight="400" fill="#172B43">Use 100 mA default / USB current policy.</text>
+<text x="80" y="1381" dominant-baseline="text-before-edge" font-family="Arial,sans-serif" font-size="22" font-weight="400" fill="#172B43">Power-good or safe VBUS sensing → GPIO.</text>
+<text x="1195" y="1285" dominant-baseline="text-before-edge" font-family="Arial,sans-serif" font-size="22" font-weight="400" fill="#172B43">If battery is not 1S rechargeable:</text>
+<text x="1195" y="1317" dominant-baseline="text-before-edge" font-family="Arial,sans-serif" font-size="22" font-weight="400" fill="#172B43">do not use this charger circuit.</text>
+<text x="1195" y="1349" dominant-baseline="text-before-edge" font-family="Arial,sans-serif" font-size="22" font-weight="400" fill="#172B43">Use a suitable source selector</text>
+<text x="1195" y="1381" dominant-baseline="text-before-edge" font-family="Arial,sans-serif" font-size="22" font-weight="400" fill="#172B43">and regulated 3V3 supply.</text>
+<text x="80" y="1430" dominant-baseline="text-before-edge" font-family="Arial,sans-serif" font-size="22" font-weight="400" fill="#526579">Power sheet still needs: protection selection, current settings, suspend control, capacitors, inductor, thermal design and sensing.</text>
+<text x="80" y="1475" dominant-baseline="text-before-edge" font-family="Arial,sans-serif" font-size="23" font-weight="700" fill="#AB4D14">Prevent battery backfeed into USB. Keep deployment/pyrotechnic power physically inhibited during USB programming.</text>
+<text x="80" y="1525" dominant-baseline="text-before-edge" font-family="Arial,sans-serif" font-size="22" font-weight="400" fill="#172B43">All board grounds share the intended return network. Never connect USB 5 V directly to MCU supply pins.</text>
+</svg>

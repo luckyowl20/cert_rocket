@@ -3187,7 +3187,7 @@
 				)
 			)
 		)
-		(property "Footprint" "avionics_footprints:XCVR_MAX-M10S-00B"
+		(property "Footprint" "MAX-M10S-00B:XCVR_MAX-M10S-00B"
 			(at 153.162 38.354 0)
 			(hide yes)
 			(show_name no)

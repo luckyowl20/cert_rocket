@@ -1,0 +1,108 @@
+{
+  "IC_pins": {
+    "U4 TPS2121RUXR": {
+      "1": "LOGIC_RAW",
+      "2": "MAIN_BAT",
+      "3": "LOGIC_CP2",
+      "4": "GND",
+      "5": "GND",
+      "6": "USB_PRIORITY",
+      "7": "USB_VBUS",
+      "8": "LOGIC_RAW",
+      "9": "LOGIC_ST",
+      "10": "LOGIC_ILIM",
+      "11": "LOGIC_SS",
+      "12": "GND"
+    },
+    "U3 TMUX1511RSVR shared with pyro sheet": {
+      "1": "SENSE_EN",
+      "2": "OUT_DIV",
+      "3": "ADC_TPS_OUT",
+      "4": "SENSE_EN",
+      "5": "MAIN_DIV",
+      "6": "ADC_MAIN",
+      "7": "NC",
+      "8": "GND",
+      "9": "ADC_USB",
+      "10": "USB_DIV",
+      "11": "SENSE_EN",
+      "12": "NC",
+      "13": "GND",
+      "14": "GND",
+      "15": "GND",
+      "16": "3V3"
+    }
+  },
+  "passive_connections": {
+    "R18": [
+      "USB_VBUS",
+      "USB_PRIORITY"
+    ],
+    "R19": [
+      "USB_PRIORITY",
+      "GND"
+    ],
+    "R20": [
+      "LOGIC_CP2",
+      "GND"
+    ],
+    "R21": [
+      "MCU_SELECT_MAIN",
+      "LOGIC_CP2"
+    ],
+    "R22": [
+      "LOGIC_ILIM",
+      "GND"
+    ],
+    "R23": [
+      "3V3",
+      "LOGIC_ST"
+    ],
+    "R24": [
+      "USB_VBUS",
+      "USB_DIV"
+    ],
+    "R25": [
+      "USB_DIV",
+      "GND"
+    ],
+    "C9": [
+      "USB_VBUS",
+      "GND"
+    ],
+    "C10": [
+      "MAIN_BAT",
+      "GND"
+    ],
+    "C11": [
+      "LOGIC_RAW",
+      "GND"
+    ],
+    "C12": [
+      "LOGIC_SS",
+      "GND"
+    ],
+    "C14": [
+      "USB_DIV",
+      "GND"
+    ]
+  },
+  "resistors_ohm": {
+    "R18": 15000,
+    "R19": 10000,
+    "R20": 100000,
+    "R21": 1000,
+    "R22": 80600,
+    "R23": 10000,
+    "R24": 49900,
+    "R25": 10000
+  },
+  "capacitors_F": {
+    "C9": 1e-06,
+    "C10": 1e-05,
+    "C11": 1e-05,
+    "C12": 1e-07,
+    "C14": 1e-08
+  },
+  "note": "U3 is the EXISTING shared IC, not a new part."
+}

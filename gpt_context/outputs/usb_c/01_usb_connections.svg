@@ -1,0 +1,130 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1800" height="1550" viewBox="0 0 1800 1550">
+<rect width="100%" height="100%" fill="white"/>
+<text x="70" y="45" dominant-baseline="text-before-edge" font-family="Arial,sans-serif" font-size="42" font-weight="700" fill="#172B43">USB-C → STM32G4: data and connector wiring</text>
+<text x="70" y="106" dominant-baseline="text-before-edge" font-family="Arial,sans-serif" font-size="23" font-weight="400" fill="#526579">USB 2.0 full-speed DEVICE / 5 V SINK. G474 electrical reference; no USB-PD or USB-to-UART bridge required.</text>
+<polyline points="70,153 1730,153" fill="none" stroke="#CEDAE3" stroke-width="2"/>
+<text x="70" y="1495" dominant-baseline="text-before-edge" font-family="Arial,sans-serif" font-size="21" font-weight="400" fill="#526579">CONNECTION GUIDE ONLY  |  Confirm exact MCU/package, power budget and KiCad footprint before manufacture.</text>
+<text x="1660" y="1495" dominant-baseline="text-before-edge" font-family="Arial,sans-serif" font-size="21" font-weight="700" fill="#172B43">1 / 2</text>
+<text x="90" y="195" dominant-baseline="text-before-edge" font-family="Arial,sans-serif" font-size="29" font-weight="700" fill="#172B43">J1  USB4105-GF-A</text>
+<text x="90" y="237" dominant-baseline="text-before-edge" font-family="Arial,sans-serif" font-size="23" font-weight="400" fill="#526579">USB-C receptacle • USB 2.0</text>
+<rect x="90" y="285" width="390" height="725" fill="#EEF5FA" stroke="#172B43" stroke-width="2"/>
+<text x="110" y="338" dominant-baseline="text-before-edge" font-family="Arial,sans-serif" font-size="22" font-weight="400" fill="#172B43">A4, A9, B4, B9</text>
+<text x="360" y="338" dominant-baseline="text-before-edge" font-family="Arial,sans-serif" font-size="22" font-weight="700" fill="#172B43">VBUS</text>
+<text x="110" y="443" dominant-baseline="text-before-edge" font-family="Arial,sans-serif" font-size="22" font-weight="400" fill="#172B43">A6 + B6</text>
+<text x="360" y="443" dominant-baseline="text-before-edge" font-family="Arial,sans-serif" font-size="22" font-weight="700" fill="#172B43">D+</text>
+<text x="110" y="523" dominant-baseline="text-before-edge" font-family="Arial,sans-serif" font-size="22" font-weight="400" fill="#172B43">A7 + B7</text>
+<text x="360" y="523" dominant-baseline="text-before-edge" font-family="Arial,sans-serif" font-size="22" font-weight="700" fill="#172B43">D−</text>
+<text x="110" y="638" dominant-baseline="text-before-edge" font-family="Arial,sans-serif" font-size="22" font-weight="400" fill="#172B43">A5</text>
+<text x="360" y="638" dominant-baseline="text-before-edge" font-family="Arial,sans-serif" font-size="22" font-weight="700" fill="#172B43">CC1</text>
+<text x="110" y="748" dominant-baseline="text-before-edge" font-family="Arial,sans-serif" font-size="22" font-weight="400" fill="#172B43">B5</text>
+<text x="360" y="748" dominant-baseline="text-before-edge" font-family="Arial,sans-serif" font-size="22" font-weight="700" fill="#172B43">CC2</text>
+<text x="110" y="838" dominant-baseline="text-before-edge" font-family="Arial,sans-serif" font-size="22" font-weight="400" fill="#172B43">A1, A12, B1, B12</text>
+<text x="360" y="838" dominant-baseline="text-before-edge" font-family="Arial,sans-serif" font-size="22" font-weight="700" fill="#172B43">GND</text>
+<text x="110" y="903" dominant-baseline="text-before-edge" font-family="Arial,sans-serif" font-size="22" font-weight="400" fill="#172B43">A8, B8</text>
+<text x="360" y="903" dominant-baseline="text-before-edge" font-family="Arial,sans-serif" font-size="22" font-weight="700" fill="#172B43">SBU1/2</text>
+<text x="110" y="953" dominant-baseline="text-before-edge" font-family="Arial,sans-serif" font-size="22" font-weight="400" fill="#172B43">Metal shell</text>
+<text x="360" y="953" dominant-baseline="text-before-edge" font-family="Arial,sans-serif" font-size="22" font-weight="700" fill="#172B43">SHIELD</text>
+<polyline points="480,365 835,365" fill="none" stroke="#AB4D14" stroke-width="3"/>
+<text x="560" y="332" dominant-baseline="text-before-edge" font-family="Arial,sans-serif" font-size="23" font-weight="700" fill="#AB4D14">USB_VBUS (5 V)</text>
+<text x="545" y="382" dominant-baseline="text-before-edge" font-family="Arial,sans-serif" font-size="21" font-weight="400" fill="#526579">To protected power input on sheet 2</text>
+<polyline points="480,470 1250,470" fill="none" stroke="#166A79" stroke-width="3"/>
+<polyline points="480,550 1250,550" fill="none" stroke="#166A79" stroke-width="3"/>
+<text x="650" y="437" dominant-baseline="text-before-edge" font-family="Arial,sans-serif" font-size="23" font-weight="700" fill="#166A79">USB_DP</text>
+<text x="650" y="517" dominant-baseline="text-before-edge" font-family="Arial,sans-serif" font-size="23" font-weight="700" fill="#166A79">USB_DM</text>
+<text x="880" y="420" dominant-baseline="text-before-edge" font-family="Arial,sans-serif" font-size="22" font-weight="700" fill="#172B43">Direct connections</text>
+<text x="880" y="573" dominant-baseline="text-before-edge" font-family="Arial,sans-serif" font-size="22" font-weight="400" fill="#526579">No external pull-up or</text>
+<text x="880" y="605" dominant-baseline="text-before-edge" font-family="Arial,sans-serif" font-size="22" font-weight="400" fill="#526579">series termination on G474.</text>
+<polyline points="480,665 790,665" fill="none" stroke="#166A79" stroke-width="3"/>
+<text x="535" y="632" dominant-baseline="text-before-edge" font-family="Arial,sans-serif" font-size="23" font-weight="700" fill="#166A79">USB_CC1</text>
+<polyline points="790,665 808,665" fill="none" stroke="#166A79" stroke-width="3"/>
+<rect x="808" y="653" width="64" height="24" fill="white" stroke="#166A79" stroke-width="2"/>
+<polyline points="872,665 890,665" fill="none" stroke="#166A79" stroke-width="3"/>
+<text x="765" y="690" dominant-baseline="text-before-edge" font-family="Arial,sans-serif" font-size="22" font-weight="400" fill="#172B43">R1  5.1 kΩ, 1%</text>
+<polyline points="890,665 1035,665" fill="none" stroke="#166A79" stroke-width="3"/>
+<polyline points="1035,665 1035,680" fill="none" stroke="#166A79" stroke-width="3"/>
+<polyline points="1013,680 1057,680" fill="none" stroke="#166A79" stroke-width="3"/>
+<polyline points="1021,688 1049,688" fill="none" stroke="#166A79" stroke-width="3"/>
+<polyline points="1029,696 1041,696" fill="none" stroke="#166A79" stroke-width="3"/>
+<polyline points="480,775 790,775" fill="none" stroke="#166A79" stroke-width="3"/>
+<text x="535" y="742" dominant-baseline="text-before-edge" font-family="Arial,sans-serif" font-size="23" font-weight="700" fill="#166A79">USB_CC2</text>
+<polyline points="790,775 808,775" fill="none" stroke="#166A79" stroke-width="3"/>
+<rect x="808" y="763" width="64" height="24" fill="white" stroke="#166A79" stroke-width="2"/>
+<polyline points="872,775 890,775" fill="none" stroke="#166A79" stroke-width="3"/>
+<text x="765" y="800" dominant-baseline="text-before-edge" font-family="Arial,sans-serif" font-size="22" font-weight="400" fill="#172B43">R2  5.1 kΩ, 1%</text>
+<polyline points="890,775 1035,775" fill="none" stroke="#166A79" stroke-width="3"/>
+<polyline points="1035,775 1035,790" fill="none" stroke="#166A79" stroke-width="3"/>
+<polyline points="1013,790 1057,790" fill="none" stroke="#166A79" stroke-width="3"/>
+<polyline points="1021,798 1049,798" fill="none" stroke="#166A79" stroke-width="3"/>
+<polyline points="1029,806 1041,806" fill="none" stroke="#166A79" stroke-width="3"/>
+<polyline points="480,865 565,865" fill="none" stroke="#166A79" stroke-width="3"/>
+<polyline points="565,865 565,880" fill="none" stroke="#166A79" stroke-width="3"/>
+<polyline points="543,880 587,880" fill="none" stroke="#166A79" stroke-width="3"/>
+<polyline points="551,888 579,888" fill="none" stroke="#166A79" stroke-width="3"/>
+<polyline points="559,896 571,896" fill="none" stroke="#166A79" stroke-width="3"/>
+<polyline points="480,930 550,930" fill="none" stroke="#166A79" stroke-width="3"/>
+<polyline points="544,924 556,936" fill="none" stroke="#166A79" stroke-width="3"/>
+<polyline points="544,936 556,924" fill="none" stroke="#166A79" stroke-width="3"/>
+<text x="580" y="907" dominant-baseline="text-before-edge" font-family="Arial,sans-serif" font-size="22" font-weight="400" fill="#526579">Not connected</text>
+<polyline points="480,980 780,980" fill="none" stroke="#166A79" stroke-width="3"/>
+<polyline points="780,980 780,995" fill="none" stroke="#166A79" stroke-width="3"/>
+<polyline points="758,995 802,995" fill="none" stroke="#166A79" stroke-width="3"/>
+<polyline points="766,1003 794,1003" fill="none" stroke="#166A79" stroke-width="3"/>
+<polyline points="774,1011 786,1011" fill="none" stroke="#166A79" stroke-width="3"/>
+<text x="850" y="958" dominant-baseline="text-before-edge" font-family="Arial,sans-serif" font-size="22" font-weight="400" fill="#526579">Shell → PCB ground near connector*</text>
+<text x="1250" y="195" dominant-baseline="text-before-edge" font-family="Arial,sans-serif" font-size="29" font-weight="700" fill="#172B43">U1  STM32G4</text>
+<text x="1250" y="237" dominant-baseline="text-before-edge" font-family="Arial,sans-serif" font-size="21" font-weight="400" fill="#526579">Pin names, NOT package pad numbers</text>
+<rect x="1250" y="380" width="480" height="425" fill="#EEF5FA" stroke="#172B43" stroke-width="2"/>
+<text x="1275" y="445" dominant-baseline="text-before-edge" font-family="Arial,sans-serif" font-size="25" font-weight="700" fill="#172B43">PA12 / USB_DP</text>
+<text x="1275" y="525" dominant-baseline="text-before-edge" font-family="Arial,sans-serif" font-size="25" font-weight="700" fill="#172B43">PA11 / USB_DM</text>
+<text x="1275" y="615" dominant-baseline="text-before-edge" font-family="Arial,sans-serif" font-size="23" font-weight="400" fill="#172B43">Application: USB CDC commands</text>
+<text x="1275" y="648" dominant-baseline="text-before-edge" font-family="Arial,sans-serif" font-size="23" font-weight="400" fill="#172B43">Bootloader: USB DFU firmware</text>
+<text x="1275" y="681" dominant-baseline="text-before-edge" font-family="Arial,sans-serif" font-size="23" font-weight="400" fill="#172B43">Clock: valid 48 MHz USB source</text>
+<text x="1275" y="737" dominant-baseline="text-before-edge" font-family="Arial,sans-serif" font-size="22" font-weight="400" fill="#526579">Other MCU circuitry omitted.</text>
+<polyline points="1490,315 1490,380" fill="none" stroke="#AB4D14" stroke-width="3"/>
+<text x="1225" y="283" dominant-baseline="text-before-edge" font-family="Arial,sans-serif" font-size="23" font-weight="700" fill="#AB4D14">3V3 → VDDUSB (if separate)</text>
+<polyline points="1490,335 1170,335" fill="none" stroke="#AB4D14" stroke-width="3"/>
+<circle cx="1490" cy="335" r="5" fill="#166A79"/>
+<polyline points="1170,335 1170,368" fill="none" stroke="#166A79" stroke-width="3"/>
+<polyline points="1150,368 1190,368" fill="none" stroke="#166A79" stroke-width="3"/>
+<polyline points="1150,380 1190,380" fill="none" stroke="#166A79" stroke-width="3"/>
+<polyline points="1170,380 1170,413" fill="none" stroke="#166A79" stroke-width="3"/>
+<polyline points="1170,413 1170,428" fill="none" stroke="#166A79" stroke-width="3"/>
+<polyline points="1148,428 1192,428" fill="none" stroke="#166A79" stroke-width="3"/>
+<polyline points="1156,436 1184,436" fill="none" stroke="#166A79" stroke-width="3"/>
+<polyline points="1164,444 1176,444" fill="none" stroke="#166A79" stroke-width="3"/>
+<text x="1030" y="283" dominant-baseline="text-before-edge" font-family="Arial,sans-serif" font-size="22" font-weight="400" fill="#172B43">C1 100 nF</text>
+<text x="90" y="1050" dominant-baseline="text-before-edge" font-family="Arial,sans-serif" font-size="25" font-weight="700" fill="#172B43">CONNECTOR RULES</text>
+<text x="90" y="1100" dominant-baseline="text-before-edge" font-family="Arial,sans-serif" font-size="23" font-weight="400" fill="#172B43">Join the two D+ contacts at the receptacle.</text>
+<text x="90" y="1133" dominant-baseline="text-before-edge" font-family="Arial,sans-serif" font-size="23" font-weight="400" fill="#172B43">Join the two D− contacts at the receptacle.</text>
+<text x="90" y="1166" dominant-baseline="text-before-edge" font-family="Arial,sans-serif" font-size="23" font-weight="400" fill="#172B43">Keep CC1 and CC2 separate: one resistor each.</text>
+<text x="90" y="1199" dominant-baseline="text-before-edge" font-family="Arial,sans-serif" font-size="23" font-weight="400" fill="#172B43">All repeated VBUS/GND contacts are connected.</text>
+<text x="90" y="1232" dominant-baseline="text-before-edge" font-family="Arial,sans-serif" font-size="23" font-weight="400" fill="#172B43">Same net label anywhere = same electrical net.</text>
+<text x="90" y="1310" dominant-baseline="text-before-edge" font-family="Arial,sans-serif" font-size="21" font-weight="400" fill="#526579">*Direct shell grounding is a starting choice;</text>
+<text x="90" y="1341" dominant-baseline="text-before-edge" font-family="Arial,sans-serif" font-size="21" font-weight="400" fill="#526579">review enclosure/chassis and EMC requirements.</text>
+<text x="1100" y="1050" dominant-baseline="text-before-edge" font-family="Arial,sans-serif" font-size="27" font-weight="700" fill="#172B43">U2  TPD4E05U06DQAR</text>
+<rect x="1100" y="1100" width="630" height="280" fill="#EEF5FA" stroke="#172B43" stroke-width="2"/>
+<polyline points="920,1145 1100,1145" fill="none" stroke="#166A79" stroke-width="3"/>
+<text x="920" y="1112" dominant-baseline="text-before-edge" font-family="Arial,sans-serif" font-size="23" font-weight="700" fill="#166A79">USB_DP</text>
+<text x="1125" y="1125" dominant-baseline="text-before-edge" font-family="Arial,sans-serif" font-size="23" font-weight="700" fill="#172B43">1  D1+</text>
+<polyline points="920,1200 1100,1200" fill="none" stroke="#166A79" stroke-width="3"/>
+<text x="920" y="1167" dominant-baseline="text-before-edge" font-family="Arial,sans-serif" font-size="23" font-weight="700" fill="#166A79">USB_DM</text>
+<text x="1125" y="1180" dominant-baseline="text-before-edge" font-family="Arial,sans-serif" font-size="23" font-weight="700" fill="#172B43">2  D1−</text>
+<polyline points="920,1255 1100,1255" fill="none" stroke="#166A79" stroke-width="3"/>
+<text x="920" y="1222" dominant-baseline="text-before-edge" font-family="Arial,sans-serif" font-size="23" font-weight="700" fill="#166A79">USB_CC1</text>
+<text x="1125" y="1235" dominant-baseline="text-before-edge" font-family="Arial,sans-serif" font-size="23" font-weight="700" fill="#172B43">4  D2+</text>
+<polyline points="920,1310 1100,1310" fill="none" stroke="#166A79" stroke-width="3"/>
+<text x="920" y="1277" dominant-baseline="text-before-edge" font-family="Arial,sans-serif" font-size="23" font-weight="700" fill="#166A79">USB_CC2</text>
+<text x="1125" y="1290" dominant-baseline="text-before-edge" font-family="Arial,sans-serif" font-size="23" font-weight="700" fill="#172B43">5  D2−</text>
+<text x="1340" y="1125" dominant-baseline="text-before-edge" font-family="Arial,sans-serif" font-size="22" font-weight="400" fill="#172B43">Four shunt clamps to GND.</text>
+<text x="1340" y="1157" dominant-baseline="text-before-edge" font-family="Arial,sans-serif" font-size="22" font-weight="400" fill="#172B43">Signal wires do NOT pass</text>
+<text x="1340" y="1189" dominant-baseline="text-before-edge" font-family="Arial,sans-serif" font-size="22" font-weight="400" fill="#172B43">through separate input/output</text>
+<text x="1340" y="1221" dominant-baseline="text-before-edge" font-family="Arial,sans-serif" font-size="22" font-weight="400" fill="#172B43">pins inside this IC.</text>
+<text x="1340" y="1280" dominant-baseline="text-before-edge" font-family="Arial,sans-serif" font-size="22" font-weight="400" fill="#172B43">Pins 3, 8 → GND</text>
+<text x="1340" y="1312" dominant-baseline="text-before-edge" font-family="Arial,sans-serif" font-size="22" font-weight="400" fill="#172B43">Pins 6, 7, 9, 10 → NC here</text>
+<polyline points="1520,1380 1520,1390" fill="none" stroke="#166A79" stroke-width="3"/>
+<polyline points="1520,1390 1520,1405" fill="none" stroke="#166A79" stroke-width="3"/>
+<polyline points="1498,1405 1542,1405" fill="none" stroke="#166A79" stroke-width="3"/>
+<polyline points="1506,1413 1534,1413" fill="none" stroke="#166A79" stroke-width="3"/>
+<polyline points="1514,1421 1526,1421" fill="none" stroke="#166A79" stroke-width="3"/>
+<text x="1100" y="1440" dominant-baseline="text-before-edge" font-family="Arial,sans-serif" font-size="20" font-weight="400" fill="#526579">Place U2 beside J1; use short ground returns.</text>
+</svg>

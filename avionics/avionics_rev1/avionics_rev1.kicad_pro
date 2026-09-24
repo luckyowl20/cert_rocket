@@ -642,6 +642,14 @@
       "version": 1
     },
     "net_format_name": "",
+    "ngspice": {
+      "fix_include_paths": true,
+      "meta": {
+        "version": 0
+      },
+      "model_mode": 4,
+      "workbook_filename": ""
+    },
     "page_layout_descr_file": "",
     "plot_directory": "",
     "reuse_designators": true,
@@ -661,7 +669,7 @@
         "uuid": "c491fe45-d2ff-414d-a846-7eed12d2b763"
       }
     ],
-    "used_designators": "",
+    "used_designators": "U6-7,R19,R22-35,D4,#PWR27-32,#PWR55-66,C12,C16-19,Q1",
     "variants": []
   },
   "sheets": [
@@ -684,6 +692,10 @@
     [
       "e623a7ae-ff1d-49da-ab92-e789534cb704",
       "sensors"
+    ],
+    [
+      "ed6133c6-6f1b-42df-b4e6-53aba33da3e9",
+      "pyro_channels"
     ]
   ],
   "text_variables": {},

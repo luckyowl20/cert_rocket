@@ -199,6 +199,52 @@
 		)
 	)
 	(sheet
+		(at 130.81 96.52)
+		(size 27.94 11.43)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0)
+		)
+		(uuid "ed6133c6-6f1b-42df-b4e6-53aba33da3e9")
+		(property "Sheetname" "pyro_channels"
+			(at 130.81 95.8084 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "pyro_channels.kicad_sch"
+			(at 130.81 108.5346 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "avionics_rev1"
+				(path "/c491fe45-d2ff-414d-a846-7eed12d2b763"
+					(page "6")
+				)
+			)
+		)
+	)
+	(sheet
 		(at 22.86 36.83)
 		(size 62.23 6.35)
 		(exclude_from_sim no)

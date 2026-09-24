@@ -1,0 +1,112 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1800" height="1600" viewBox="0 0 1800 1600">
+<rect width="100%" height="100%" fill="white"/>
+<text x="70" y="40" dominant-baseline="text-before-edge" font-family="Arial,sans-serif" font-size="39" font-weight="700" fill="#172B43">Automatic IN1 qualification: nominal 3.50 V cutoff</text>
+<text x="70" y="100" dominant-baseline="text-before-edge" font-family="Arial,sans-serif" font-size="22" font-weight="400" fill="#526579">U2 is TLV7041 (open-drain), not TLV7031 (push-pull). Thresholds apply only while 3V3 is regulated.</text>
+<polyline points="70,150 1730,150" fill="none" stroke="#CEDAE3" stroke-width="2"/>
+<text x="70" y="1552" dominant-baseline="text-before-edge" font-family="Arial,sans-serif" font-size="20" font-weight="400" fill="#526579">PROTOTYPE CONNECTION GUIDE | Same net label = same wire. Read README.md before implementation.</text>
+<text x="1650" y="1552" dominant-baseline="text-before-edge" font-family="Arial,sans-serif" font-size="20" font-weight="700" fill="#172B43">2 / 3</text>
+<text x="115" y="233" dominant-baseline="text-before-edge" font-family="Arial,sans-serif" font-size="22" font-weight="700" fill="#AB4D14">PYRO_BAT</text>
+<polyline points="150,265 150,305" fill="none" stroke="#166A79" stroke-width="3"/>
+<polyline points="150,305 150,323" fill="none" stroke="#166A79" stroke-width="3"/>
+<rect x="138" y="323" width="24" height="64" fill="white" stroke="#166A79" stroke-width="2"/>
+<polyline points="150,387 150,405" fill="none" stroke="#166A79" stroke-width="3"/>
+<text x="190" y="325" dominant-baseline="text-before-edge" font-family="Arial,sans-serif" font-size="22" font-weight="400" fill="#172B43">R1  20 kΩ</text>
+<text x="190" y="356" dominant-baseline="text-before-edge" font-family="Arial,sans-serif" font-size="22" font-weight="400" fill="#172B43">0.1%</text>
+<polyline points="150,405 150,470" fill="none" stroke="#166A79" stroke-width="3"/>
+<circle cx="150" cy="440" r="5" fill="#166A79"/>
+<polyline points="150,440 435,440" fill="none" stroke="#166A79" stroke-width="3"/>
+<text x="185" y="408" dominant-baseline="text-before-edge" font-family="Arial,sans-serif" font-size="22" font-weight="700" fill="#166A79">PYRO_SENSE</text>
+<polyline points="150,470 150,488" fill="none" stroke="#166A79" stroke-width="3"/>
+<rect x="138" y="488" width="24" height="64" fill="white" stroke="#166A79" stroke-width="2"/>
+<polyline points="150,552 150,570" fill="none" stroke="#166A79" stroke-width="3"/>
+<polyline points="150,570 150,585" fill="none" stroke="#166A79" stroke-width="3"/>
+<polyline points="128,585 172,585" fill="none" stroke="#166A79" stroke-width="3"/>
+<polyline points="136,593 164,593" fill="none" stroke="#166A79" stroke-width="3"/>
+<polyline points="144,601 156,601" fill="none" stroke="#166A79" stroke-width="3"/>
+<text x="190" y="492" dominant-baseline="text-before-edge" font-family="Arial,sans-serif" font-size="22" font-weight="400" fill="#172B43">R2  10 kΩ</text>
+<text x="190" y="523" dominant-baseline="text-before-edge" font-family="Arial,sans-serif" font-size="22" font-weight="400" fill="#172B43">0.1%</text>
+<text x="595" y="233" dominant-baseline="text-before-edge" font-family="Arial,sans-serif" font-size="22" font-weight="700" fill="#AB4D14">3V3</text>
+<polyline points="630,265 630,305" fill="none" stroke="#166A79" stroke-width="3"/>
+<polyline points="630,305 630,323" fill="none" stroke="#166A79" stroke-width="3"/>
+<rect x="618" y="323" width="24" height="64" fill="white" stroke="#166A79" stroke-width="2"/>
+<polyline points="630,387 630,405" fill="none" stroke="#166A79" stroke-width="3"/>
+<text x="670" y="325" dominant-baseline="text-before-edge" font-family="Arial,sans-serif" font-size="22" font-weight="400" fill="#172B43">R3  18.2 kΩ</text>
+<text x="670" y="356" dominant-baseline="text-before-edge" font-family="Arial,sans-serif" font-size="22" font-weight="400" fill="#172B43">0.1%</text>
+<polyline points="630,405 630,470" fill="none" stroke="#166A79" stroke-width="3"/>
+<circle cx="630" cy="440" r="5" fill="#166A79"/>
+<polyline points="630,440 915,440" fill="none" stroke="#166A79" stroke-width="3"/>
+<text x="665" y="408" dominant-baseline="text-before-edge" font-family="Arial,sans-serif" font-size="22" font-weight="700" fill="#166A79">REF_1V170</text>
+<polyline points="630,470 630,488" fill="none" stroke="#166A79" stroke-width="3"/>
+<rect x="618" y="488" width="24" height="64" fill="white" stroke="#166A79" stroke-width="2"/>
+<polyline points="630,552 630,570" fill="none" stroke="#166A79" stroke-width="3"/>
+<polyline points="630,570 630,585" fill="none" stroke="#166A79" stroke-width="3"/>
+<polyline points="608,585 652,585" fill="none" stroke="#166A79" stroke-width="3"/>
+<polyline points="616,593 644,593" fill="none" stroke="#166A79" stroke-width="3"/>
+<polyline points="624,601 636,601" fill="none" stroke="#166A79" stroke-width="3"/>
+<text x="670" y="492" dominant-baseline="text-before-edge" font-family="Arial,sans-serif" font-size="22" font-weight="400" fill="#172B43">R4  10 kΩ</text>
+<text x="670" y="523" dominant-baseline="text-before-edge" font-family="Arial,sans-serif" font-size="22" font-weight="400" fill="#172B43">0.1%</text>
+<text x="85" y="650" dominant-baseline="text-before-edge" font-family="Arial,sans-serif" font-size="23" font-weight="400" fill="#172B43">PYRO_SENSE also connects to U1 pin 6 (PR1).</text>
+<text x="85" y="682" dominant-baseline="text-before-edge" font-family="Arial,sans-serif" font-size="23" font-weight="400" fill="#172B43">At 3.5 V: PYRO_SENSE = 1.1667 V.</text>
+<text x="85" y="714" dominant-baseline="text-before-edge" font-family="Arial,sans-serif" font-size="23" font-weight="400" fill="#172B43">Reference divider: REF_1V170 = 1.17021 V.</text>
+<rect x="1090" y="335" width="475" height="360" fill="#EEF5FA" stroke="#172B43" stroke-width="2"/>
+<text x="1120" y="360" dominant-baseline="text-before-edge" font-family="Arial,sans-serif" font-size="27" font-weight="700" fill="#172B43">U2  TLV7041DBVR</text>
+<polyline points="865,475 1090,475" fill="none" stroke="#166A79" stroke-width="3"/>
+<text x="865" y="443" dominant-baseline="text-before-edge" font-family="Arial,sans-serif" font-size="22" font-weight="700" fill="#166A79">REF_1V170</text>
+<text x="1110" y="455" dominant-baseline="text-before-edge" font-family="Arial,sans-serif" font-size="22" font-weight="700" fill="#172B43">3  IN+</text>
+<polyline points="865,575 1090,575" fill="none" stroke="#166A79" stroke-width="3"/>
+<text x="865" y="543" dominant-baseline="text-before-edge" font-family="Arial,sans-serif" font-size="22" font-weight="700" fill="#166A79">PYRO_SENSE</text>
+<text x="1110" y="555" dominant-baseline="text-before-edge" font-family="Arial,sans-serif" font-size="22" font-weight="700" fill="#172B43">4  IN−</text>
+<polyline points="1315,265 1315,335" fill="none" stroke="#AB4D14" stroke-width="3"/>
+<text x="1260" y="233" dominant-baseline="text-before-edge" font-family="Arial,sans-serif" font-size="22" font-weight="700" fill="#AB4D14">3V3 → 5 VCC</text>
+<text x="1170" y="640" dominant-baseline="text-before-edge" font-family="Arial,sans-serif" font-size="22" font-weight="700" fill="#172B43">2 VEE → GND</text>
+<polyline points="1270,695 1270,730" fill="none" stroke="#166A79" stroke-width="3"/>
+<polyline points="1270,730 1270,745" fill="none" stroke="#166A79" stroke-width="3"/>
+<polyline points="1248,745 1292,745" fill="none" stroke="#166A79" stroke-width="3"/>
+<polyline points="1256,753 1284,753" fill="none" stroke="#166A79" stroke-width="3"/>
+<polyline points="1264,761 1276,761" fill="none" stroke="#166A79" stroke-width="3"/>
+<text x="1420" y="500" dominant-baseline="text-before-edge" font-family="Arial,sans-serif" font-size="22" font-weight="700" fill="#172B43">1 OUT</text>
+<polyline points="1565,525 1710,525" fill="none" stroke="#166A79" stroke-width="3"/>
+<text x="1575" y="565" dominant-baseline="text-before-edge" font-family="Arial,sans-serif" font-size="20" font-weight="700" fill="#166A79">OV1_BLOCK</text>
+<text x="1060" y="795" dominant-baseline="text-before-edge" font-family="Arial,sans-serif" font-size="23" font-weight="400" fill="#172B43">Output sinks LOW for a healthy IN1.</text>
+<text x="1060" y="827" dominant-baseline="text-before-edge" font-family="Arial,sans-serif" font-size="23" font-weight="400" fill="#172B43">Output releases for low IN1 / comparator POR.</text>
+<polyline points="70,900 1730,900" fill="none" stroke="#CEDAE3" stroke-width="2"/>
+<text x="80" y="940" dominant-baseline="text-before-edge" font-family="Arial,sans-serif" font-size="26" font-weight="700" fill="#172B43">BATTERY-DERIVED BLOCK BIAS</text>
+<text x="200" y="1023" dominant-baseline="text-before-edge" font-family="Arial,sans-serif" font-size="22" font-weight="700" fill="#AB4D14">PYRO_BAT</text>
+<polyline points="200,1055 200,1090" fill="none" stroke="#166A79" stroke-width="3"/>
+<polyline points="200,1090 200,1108" fill="none" stroke="#166A79" stroke-width="3"/>
+<rect x="188" y="1108" width="24" height="64" fill="white" stroke="#166A79" stroke-width="2"/>
+<polyline points="200,1172 200,1190" fill="none" stroke="#166A79" stroke-width="3"/>
+<text x="240" y="1115" dominant-baseline="text-before-edge" font-family="Arial,sans-serif" font-size="22" font-weight="400" fill="#172B43">R5  47 kΩ  1%</text>
+<polyline points="200,1190 200,1260" fill="none" stroke="#166A79" stroke-width="3"/>
+<circle cx="200" cy="1220" r="5" fill="#166A79"/>
+<polyline points="200,1220 770,1220" fill="none" stroke="#166A79" stroke-width="3"/>
+<text x="320" y="1188" dominant-baseline="text-before-edge" font-family="Arial,sans-serif" font-size="22" font-weight="700" fill="#166A79">OV1_BLOCK → U2.1 and U1.5</text>
+<polyline points="200,1260 200,1278" fill="none" stroke="#166A79" stroke-width="3"/>
+<rect x="188" y="1278" width="24" height="64" fill="white" stroke="#166A79" stroke-width="2"/>
+<polyline points="200,1342 200,1360" fill="none" stroke="#166A79" stroke-width="3"/>
+<polyline points="200,1360 200,1375" fill="none" stroke="#166A79" stroke-width="3"/>
+<polyline points="178,1375 222,1375" fill="none" stroke="#166A79" stroke-width="3"/>
+<polyline points="186,1383 214,1383" fill="none" stroke="#166A79" stroke-width="3"/>
+<polyline points="194,1391 206,1391" fill="none" stroke="#166A79" stroke-width="3"/>
+<text x="240" y="1285" dominant-baseline="text-before-edge" font-family="Arial,sans-serif" font-size="22" font-weight="400" fill="#172B43">R6  47 kΩ  1%</text>
+<text x="450" y="1290" dominant-baseline="text-before-edge" font-family="Arial,sans-serif" font-size="22" font-weight="400" fill="#172B43">U2 released: OV1 ≈ Vpyro / 2 → blocks IN1.</text>
+<text x="450" y="1321" dominant-baseline="text-before-edge" font-family="Arial,sans-serif" font-size="22" font-weight="400" fill="#172B43">U2 sinking: OV1 ≈ 0 V → permits IN1.</text>
+<text x="960" y="1028" dominant-baseline="text-before-edge" font-family="Arial,sans-serif" font-size="22" font-weight="700" fill="#AB4D14">3V3</text>
+<polyline points="960,1060 960,1093" fill="none" stroke="#166A79" stroke-width="3"/>
+<polyline points="940,1093 980,1093" fill="none" stroke="#166A79" stroke-width="3"/>
+<polyline points="940,1105 980,1105" fill="none" stroke="#166A79" stroke-width="3"/>
+<polyline points="960,1105 960,1138" fill="none" stroke="#166A79" stroke-width="3"/>
+<polyline points="960,1138 960,1153" fill="none" stroke="#166A79" stroke-width="3"/>
+<polyline points="938,1153 982,1153" fill="none" stroke="#166A79" stroke-width="3"/>
+<polyline points="946,1161 974,1161" fill="none" stroke="#166A79" stroke-width="3"/>
+<polyline points="954,1169 966,1169" fill="none" stroke="#166A79" stroke-width="3"/>
+<text x="1000" y="1080" dominant-baseline="text-before-edge" font-family="Arial,sans-serif" font-size="22" font-weight="400" fill="#172B43">C5 100 nF</text>
+<text x="1000" y="1111" dominant-baseline="text-before-edge" font-family="Arial,sans-serif" font-size="22" font-weight="400" fill="#172B43">Beside U2 pins 5/2</text>
+<rect x="930" y="1200" width="770" height="240" fill="#FFF4E9" stroke="#172B43" stroke-width="2"/>
+<text x="955" y="1225" dominant-baseline="text-before-edge" font-family="Arial,sans-serif" font-size="25" font-weight="700" fill="#172B43">EXPECTED NOMINAL TRIPS</text>
+<text x="955" y="1275" dominant-baseline="text-before-edge" font-family="Arial,sans-serif" font-size="22" font-weight="400" fill="#172B43">Falling: 3.500 V    |    Rising: 3.521 V</text>
+<text x="955" y="1306" dominant-baseline="text-before-edge" font-family="Arial,sans-serif" font-size="22" font-weight="400" fill="#172B43">Includes typical 7 mV internal hysteresis.</text>
+<text x="955" y="1337" dominant-baseline="text-before-edge" font-family="Arial,sans-serif" font-size="22" font-weight="400" fill="#172B43">Buck tolerance, comparator offset and hysteresis</text>
+<text x="955" y="1368" dominant-baseline="text-before-edge" font-family="Arial,sans-serif" font-size="22" font-weight="400" fill="#172B43">spread move these thresholds. See calculations.</text>
+<text x="80" y="1480" dominant-baseline="text-before-edge" font-family="Arial,sans-serif" font-size="21" font-weight="400" fill="#AB4D14">A buck rail is not an independent precision reference. Startup/brownout behavior still needs system-level inhibition.</text>
+</svg>

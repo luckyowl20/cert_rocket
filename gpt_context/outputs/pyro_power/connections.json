@@ -1,0 +1,187 @@
+{
+  "IC_pins": {
+    "U1 TPS2121RUXR": {
+      "1": "TPS_OUT",
+      "2": "MAIN_BAT",
+      "3": "GND",
+      "4": "OV2_BLOCK",
+      "5": "OV1_BLOCK",
+      "6": "PYRO_SENSE",
+      "7": "PYRO_BAT",
+      "8": "TPS_OUT",
+      "9": "TPS_ST",
+      "10": "ILIM_SET",
+      "11": "SS_SET",
+      "12": "GND"
+    },
+    "U2 TLV7041DBVR": {
+      "1": "OV1_BLOCK",
+      "2": "GND",
+      "3": "REF_1V170",
+      "4": "PYRO_SENSE",
+      "5": "3V3"
+    },
+    "U3 TMUX1511RSVR": {
+      "1": "SENSE_EN",
+      "2": "OUT_DIV",
+      "3": "ADC_TPS_OUT",
+      "4": "SENSE_EN",
+      "5": "MAIN_DIV",
+      "6": "ADC_MAIN",
+      "7": "NC",
+      "8": "GND",
+      "9": "ADC_USB",
+      "10": "USB_DIV",
+      "11": "SENSE_EN",
+      "12": "NC",
+      "13": "GND",
+      "14": "GND",
+      "15": "GND",
+      "16": "3V3"
+    },
+    "Q1 DMN2056U-13": {
+      "1": "MAIN_GATE",
+      "2": "GND",
+      "3": "OV2_BLOCK"
+    }
+  },
+  "passive_connections": {
+    "R1": [
+      "PYRO_BAT",
+      "PYRO_SENSE"
+    ],
+    "R2": [
+      "PYRO_SENSE",
+      "GND"
+    ],
+    "R3": [
+      "3V3",
+      "REF_1V170"
+    ],
+    "R4": [
+      "REF_1V170",
+      "GND"
+    ],
+    "R5": [
+      "PYRO_BAT",
+      "OV1_BLOCK"
+    ],
+    "R6": [
+      "OV1_BLOCK",
+      "GND"
+    ],
+    "R7": [
+      "MAIN_BAT",
+      "OV2_BLOCK"
+    ],
+    "R8": [
+      "MAIN_GATE",
+      "GND"
+    ],
+    "R9": [
+      "MCU_MAIN_ALLOW",
+      "MAIN_GATE"
+    ],
+    "R10": [
+      "ILIM_SET",
+      "GND"
+    ],
+    "R11": [
+      "3V3",
+      "TPS_ST"
+    ],
+    "R12": [
+      "TPS_OUT",
+      "GND"
+    ],
+    "R13": [
+      "TPS_OUT",
+      "OUT_DIV"
+    ],
+    "R14": [
+      "OUT_DIV",
+      "GND"
+    ],
+    "R15": [
+      "MAIN_BAT",
+      "MAIN_DIV"
+    ],
+    "R16": [
+      "MAIN_DIV",
+      "GND"
+    ],
+    "R17": [
+      "SENSE_EN",
+      "GND"
+    ],
+    "C1": [
+      "PYRO_BAT",
+      "GND"
+    ],
+    "C2": [
+      "MAIN_BAT",
+      "GND"
+    ],
+    "C3": [
+      "TPS_OUT",
+      "GND"
+    ],
+    "C4": [
+      "SS_SET",
+      "GND"
+    ],
+    "C5": [
+      "3V3",
+      "GND"
+    ],
+    "C6": [
+      "OUT_DIV",
+      "GND"
+    ],
+    "C7": [
+      "MAIN_DIV",
+      "GND"
+    ],
+    "C8": [
+      "3V3",
+      "GND"
+    ],
+    "D1 BZT52C4V7-7-F": [
+      "K:OV2_BLOCK",
+      "A:GND"
+    ],
+    "SW1 physical arm disconnect": [
+      "TPS_OUT",
+      "ARMED_SUPPLY"
+    ]
+  },
+  "resistors_ohm": {
+    "R1": 20000,
+    "R2": 10000,
+    "R3": 18200,
+    "R4": 10000,
+    "R5": 47000,
+    "R6": 47000,
+    "R7": 10000,
+    "R8": 100000,
+    "R9": 1000,
+    "R10": 22100,
+    "R11": 10000,
+    "R12": 2200,
+    "R13": 49900,
+    "R14": 10000,
+    "R15": 49900,
+    "R16": 10000,
+    "R17": 100000
+  },
+  "capacitors_F": {
+    "C1": 1e-05,
+    "C2": 1e-05,
+    "C3": 1e-05,
+    "C4": 1e-07,
+    "C5": 1e-07,
+    "C6": 1e-08,
+    "C7": 1e-08,
+    "C8": 1e-07
+  }
+}

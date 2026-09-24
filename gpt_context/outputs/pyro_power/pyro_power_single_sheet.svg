@@ -1,0 +1,382 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="3300" height="2300" viewBox="0 0 3300 2300">
+<rect width="100%" height="100%" fill="white"/>
+<text x="70" y="40" dominant-baseline="text-before-edge" font-family="Arial,sans-serif" font-size="39" font-weight="700" fill="#172B43">TPS2121 battery selector | comparator lockout and MCU monitoring</text>
+<text x="70" y="100" dominant-baseline="text-before-edge" font-family="Arial,sans-serif" font-size="22" font-weight="400" fill="#526579">Dedicated 1S battery preferred; main 1-4S battery requires MCU permission. Resistor calculations and limitations: README.md.</text>
+<polyline points="70,150 3230,150" fill="none" stroke="#CEDAE3" stroke-width="2"/>
+<text x="70" y="2252" dominant-baseline="text-before-edge" font-family="Arial,sans-serif" font-size="20" font-weight="400" fill="#526579">PROTOTYPE CONNECTION GUIDE | Same net label = same wire. Read README.md before implementation.</text>
+<text x="3150" y="2252" dominant-baseline="text-before-edge" font-family="Arial,sans-serif" font-size="20" font-weight="700" fill="#172B43">1 / 1</text>
+<rect x="1300" y="250" width="420" height="1250" fill="white" stroke="#172B43" stroke-width="2"/>
+<text x="1390" y="1000" dominant-baseline="text-before-edge" font-family="Arial,sans-serif" font-size="29" font-weight="700" fill="#172B43">U1</text>
+<text x="1390" y="1038" dominant-baseline="text-before-edge" font-family="Arial,sans-serif" font-size="29" font-weight="700" fill="#172B43">TPS2121RUXR</text>
+<text x="1320" y="333" dominant-baseline="text-before-edge" font-family="Arial,sans-serif" font-size="25" font-weight="400" fill="#172B43">7  IN1</text>
+<text x="1320" y="533" dominant-baseline="text-before-edge" font-family="Arial,sans-serif" font-size="25" font-weight="400" fill="#172B43">6  PR1</text>
+<text x="1320" y="883" dominant-baseline="text-before-edge" font-family="Arial,sans-serif" font-size="25" font-weight="400" fill="#172B43">5  OV1</text>
+<text x="1320" y="1133" dominant-baseline="text-before-edge" font-family="Arial,sans-serif" font-size="25" font-weight="400" fill="#172B43">2  IN2</text>
+<text x="1320" y="1333" dominant-baseline="text-before-edge" font-family="Arial,sans-serif" font-size="25" font-weight="400" fill="#172B43">4  OV2</text>
+<text x="1545" y="333" dominant-baseline="text-before-edge" font-family="Arial,sans-serif" font-size="25" font-weight="400" fill="#172B43">OUT  1,8</text>
+<text x="1545" y="633" dominant-baseline="text-before-edge" font-family="Arial,sans-serif" font-size="25" font-weight="400" fill="#172B43">CP2  3</text>
+<text x="1545" y="783" dominant-baseline="text-before-edge" font-family="Arial,sans-serif" font-size="25" font-weight="400" fill="#172B43">ST  9</text>
+<text x="1545" y="1083" dominant-baseline="text-before-edge" font-family="Arial,sans-serif" font-size="25" font-weight="400" fill="#172B43">SS  11</text>
+<text x="1545" y="1333" dominant-baseline="text-before-edge" font-family="Arial,sans-serif" font-size="25" font-weight="400" fill="#172B43">ILIM  10</text>
+<text x="1440" y="1450" dominant-baseline="text-before-edge" font-family="Arial,sans-serif" font-size="25" font-weight="400" fill="#172B43">GND 12</text>
+<polyline points="1510,1500 1510,1540" fill="none" stroke="#166A79" stroke-width="3"/>
+<polyline points="1510,1540 1510,1555" fill="none" stroke="#166A79" stroke-width="3"/>
+<polyline points="1488,1555 1532,1555" fill="none" stroke="#166A79" stroke-width="3"/>
+<polyline points="1496,1563 1524,1563" fill="none" stroke="#166A79" stroke-width="3"/>
+<polyline points="1504,1571 1516,1571" fill="none" stroke="#166A79" stroke-width="3"/>
+<text x="80" y="318" dominant-baseline="text-before-edge" font-family="Arial,sans-serif" font-size="22" font-weight="700" fill="#AB4D14">PYRO_BAT  (1S, max 4.2 V)</text>
+<polyline points="80,350 1300,350" fill="none" stroke="#AB4D14" stroke-width="3"/>
+<circle cx="160" cy="350" r="5" fill="#166A79"/>
+<polyline points="160,350 160,383" fill="none" stroke="#166A79" stroke-width="3"/>
+<polyline points="140,383 180,383" fill="none" stroke="#166A79" stroke-width="3"/>
+<polyline points="140,395 180,395" fill="none" stroke="#166A79" stroke-width="3"/>
+<polyline points="160,395 160,428" fill="none" stroke="#166A79" stroke-width="3"/>
+<polyline points="160,428 160,443" fill="none" stroke="#166A79" stroke-width="3"/>
+<polyline points="138,443 182,443" fill="none" stroke="#166A79" stroke-width="3"/>
+<polyline points="146,451 174,451" fill="none" stroke="#166A79" stroke-width="3"/>
+<polyline points="154,459 166,459" fill="none" stroke="#166A79" stroke-width="3"/>
+<text x="80" y="465" dominant-baseline="text-before-edge" font-family="Arial,sans-serif" font-size="21" font-weight="400" fill="#172B43">C1 10 µF / 10 V</text>
+<circle cx="350" cy="350" r="5" fill="#166A79"/>
+<polyline points="350,350 350,390" fill="none" stroke="#166A79" stroke-width="3"/>
+<polyline points="350,390 350,408" fill="none" stroke="#166A79" stroke-width="3"/>
+<rect x="338" y="408" width="24" height="64" fill="white" stroke="#166A79" stroke-width="2"/>
+<polyline points="350,472 350,490" fill="none" stroke="#166A79" stroke-width="3"/>
+<text x="378" y="423" dominant-baseline="text-before-edge" font-family="Arial,sans-serif" font-size="22" font-weight="400" fill="#172B43">R1  20 kΩ</text>
+<polyline points="350,490 350,570" fill="none" stroke="#166A79" stroke-width="3"/>
+<circle cx="350" cy="550" r="5" fill="#166A79"/>
+<polyline points="350,550 1300,550" fill="none" stroke="#166A79" stroke-width="3"/>
+<text x="700" y="518" dominant-baseline="text-before-edge" font-family="Arial,sans-serif" font-size="22" font-weight="700" fill="#166A79">PYRO_SENSE</text>
+<polyline points="350,570 350,588" fill="none" stroke="#166A79" stroke-width="3"/>
+<rect x="338" y="588" width="24" height="64" fill="white" stroke="#166A79" stroke-width="2"/>
+<polyline points="350,652 350,670" fill="none" stroke="#166A79" stroke-width="3"/>
+<text x="378" y="603" dominant-baseline="text-before-edge" font-family="Arial,sans-serif" font-size="22" font-weight="400" fill="#172B43">R2  10 kΩ</text>
+<polyline points="350,670 350,685" fill="none" stroke="#166A79" stroke-width="3"/>
+<polyline points="328,685 372,685" fill="none" stroke="#166A79" stroke-width="3"/>
+<polyline points="336,693 364,693" fill="none" stroke="#166A79" stroke-width="3"/>
+<polyline points="344,701 356,701" fill="none" stroke="#166A79" stroke-width="3"/>
+<circle cx="590" cy="550" r="5" fill="#166A79"/>
+<polyline points="590,550 590,730 850,730" fill="none" stroke="#166A79" stroke-width="3"/>
+<polyline points="850,680 1070,800 850,920 850,680" fill="none" stroke="#172B43" stroke-width="3"/>
+<text x="865" y="711" dominant-baseline="text-before-edge" font-family="Arial,sans-serif" font-size="24" font-weight="400" fill="#172B43">−  4</text>
+<text x="865" y="848" dominant-baseline="text-before-edge" font-family="Arial,sans-serif" font-size="24" font-weight="400" fill="#172B43">+  3</text>
+<text x="1080" y="763" dominant-baseline="text-before-edge" font-family="Arial,sans-serif" font-size="21" font-weight="400" fill="#172B43">1</text>
+<text x="810" y="1060" dominant-baseline="text-before-edge" font-family="Arial,sans-serif" font-size="25" font-weight="700" fill="#172B43">U2 TLV7041DBVR</text>
+<text x="810" y="1095" dominant-baseline="text-before-edge" font-family="Arial,sans-serif" font-size="20" font-weight="400" fill="#526579">Open-drain comparator</text>
+<text x="650" y="668" dominant-baseline="text-before-edge" font-family="Arial,sans-serif" font-size="22" font-weight="700" fill="#AB4D14">3V3</text>
+<polyline points="650,700 650,750" fill="none" stroke="#AB4D14" stroke-width="3"/>
+<polyline points="650,750 650,768" fill="none" stroke="#166A79" stroke-width="3"/>
+<rect x="638" y="768" width="24" height="64" fill="white" stroke="#166A79" stroke-width="2"/>
+<polyline points="650,832 650,850" fill="none" stroke="#166A79" stroke-width="3"/>
+<text x="675" y="775" dominant-baseline="text-before-edge" font-family="Arial,sans-serif" font-size="22" font-weight="400" fill="#172B43">R3  18.2 kΩ</text>
+<polyline points="650,850 650,920" fill="none" stroke="#166A79" stroke-width="3"/>
+<circle cx="650" cy="870" r="5" fill="#166A79"/>
+<polyline points="650,870 850,870" fill="none" stroke="#166A79" stroke-width="3"/>
+<text x="690" y="838" dominant-baseline="text-before-edge" font-family="Arial,sans-serif" font-size="22" font-weight="700" fill="#166A79">REF_1V170</text>
+<polyline points="650,920 650,938" fill="none" stroke="#166A79" stroke-width="3"/>
+<rect x="638" y="938" width="24" height="64" fill="white" stroke="#166A79" stroke-width="2"/>
+<polyline points="650,1002 650,1020" fill="none" stroke="#166A79" stroke-width="3"/>
+<text x="678" y="953" dominant-baseline="text-before-edge" font-family="Arial,sans-serif" font-size="22" font-weight="400" fill="#172B43">R4  10 kΩ</text>
+<polyline points="650,1020 650,1035" fill="none" stroke="#166A79" stroke-width="3"/>
+<polyline points="628,1035 672,1035" fill="none" stroke="#166A79" stroke-width="3"/>
+<polyline points="636,1043 664,1043" fill="none" stroke="#166A79" stroke-width="3"/>
+<polyline points="644,1051 656,1051" fill="none" stroke="#166A79" stroke-width="3"/>
+<text x="940" y="578" dominant-baseline="text-before-edge" font-family="Arial,sans-serif" font-size="22" font-weight="700" fill="#AB4D14">3V3</text>
+<polyline points="940,610 940,729" fill="none" stroke="#AB4D14" stroke-width="3"/>
+<text x="950" y="710" dominant-baseline="text-before-edge" font-family="Arial,sans-serif" font-size="20" font-weight="400" fill="#172B43">5</text>
+<circle cx="940" cy="620" r="5" fill="#166A79"/>
+<polyline points="940,620 1030,620" fill="none" stroke="#AB4D14" stroke-width="3"/>
+<polyline points="1030,620 1030,653" fill="none" stroke="#166A79" stroke-width="3"/>
+<polyline points="1010,653 1050,653" fill="none" stroke="#166A79" stroke-width="3"/>
+<polyline points="1010,665 1050,665" fill="none" stroke="#166A79" stroke-width="3"/>
+<polyline points="1030,665 1030,698" fill="none" stroke="#166A79" stroke-width="3"/>
+<polyline points="1030,698 1030,713" fill="none" stroke="#166A79" stroke-width="3"/>
+<polyline points="1008,713 1052,713" fill="none" stroke="#166A79" stroke-width="3"/>
+<polyline points="1016,721 1044,721" fill="none" stroke="#166A79" stroke-width="3"/>
+<polyline points="1024,729 1036,729" fill="none" stroke="#166A79" stroke-width="3"/>
+<text x="995" y="560" dominant-baseline="text-before-edge" font-family="Arial,sans-serif" font-size="20" font-weight="400" fill="#172B43">C5 100 nF</text>
+<polyline points="940,871 940,910" fill="none" stroke="#166A79" stroke-width="3"/>
+<polyline points="940,910 940,925" fill="none" stroke="#166A79" stroke-width="3"/>
+<polyline points="918,925 962,925" fill="none" stroke="#166A79" stroke-width="3"/>
+<polyline points="926,933 954,933" fill="none" stroke="#166A79" stroke-width="3"/>
+<polyline points="934,941 946,941" fill="none" stroke="#166A79" stroke-width="3"/>
+<text x="955" y="886" dominant-baseline="text-before-edge" font-family="Arial,sans-serif" font-size="20" font-weight="400" fill="#172B43">2</text>
+<circle cx="1220" cy="350" r="5" fill="#166A79"/>
+<polyline points="1220,350 1220,650" fill="none" stroke="#166A79" stroke-width="3"/>
+<polyline points="1220,650 1220,668" fill="none" stroke="#166A79" stroke-width="3"/>
+<rect x="1208" y="668" width="24" height="64" fill="white" stroke="#166A79" stroke-width="2"/>
+<polyline points="1220,732 1220,750" fill="none" stroke="#166A79" stroke-width="3"/>
+<text x="1060" y="655" dominant-baseline="text-before-edge" font-family="Arial,sans-serif" font-size="22" font-weight="400" fill="#172B43">R5  47 kΩ</text>
+<polyline points="1220,750 1220,930" fill="none" stroke="#166A79" stroke-width="3"/>
+<polyline points="1070,800 1220,800" fill="none" stroke="#166A79" stroke-width="3"/>
+<circle cx="1220" cy="800" r="5" fill="#166A79"/>
+<polyline points="1220,900 1300,900" fill="none" stroke="#166A79" stroke-width="3"/>
+<circle cx="1220" cy="900" r="5" fill="#166A79"/>
+<text x="1090" y="840" dominant-baseline="text-before-edge" font-family="Arial,sans-serif" font-size="20" font-weight="700" fill="#166A79">OV1_BLOCK</text>
+<polyline points="1220,930 1220,948" fill="none" stroke="#166A79" stroke-width="3"/>
+<rect x="1208" y="948" width="24" height="64" fill="white" stroke="#166A79" stroke-width="2"/>
+<polyline points="1220,1012 1220,1030" fill="none" stroke="#166A79" stroke-width="3"/>
+<text x="1060" y="970" dominant-baseline="text-before-edge" font-family="Arial,sans-serif" font-size="22" font-weight="400" fill="#172B43">R6  47 kΩ</text>
+<polyline points="1220,1030 1220,1045" fill="none" stroke="#166A79" stroke-width="3"/>
+<polyline points="1198,1045 1242,1045" fill="none" stroke="#166A79" stroke-width="3"/>
+<polyline points="1206,1053 1234,1053" fill="none" stroke="#166A79" stroke-width="3"/>
+<polyline points="1214,1061 1226,1061" fill="none" stroke="#166A79" stroke-width="3"/>
+<polyline points="1220,538 1220,562" fill="none" stroke="white" stroke-width="9"/>
+<polyline points="1206,550 1234,550" fill="none" stroke="#166A79" stroke-width="3"/>
+<polyline points="1220,538 1232,543 1232,557 1220,562" fill="none" stroke="#166A79" stroke-width="3"/>
+<polyline points="650,718 650,742" fill="none" stroke="white" stroke-width="9"/>
+<polyline points="636,730 664,730" fill="none" stroke="#166A79" stroke-width="3"/>
+<polyline points="650,718 662,723 662,737 650,742" fill="none" stroke="#166A79" stroke-width="3"/>
+<text x="80" y="1118" dominant-baseline="text-before-edge" font-family="Arial,sans-serif" font-size="22" font-weight="700" fill="#AB4D14">MAIN_BAT  (1-4S, max 16.8 V)</text>
+<polyline points="80,1150 1300,1150" fill="none" stroke="#AB4D14" stroke-width="3"/>
+<circle cx="170" cy="1150" r="5" fill="#166A79"/>
+<polyline points="170,1150 170,1183" fill="none" stroke="#166A79" stroke-width="3"/>
+<polyline points="150,1183 190,1183" fill="none" stroke="#166A79" stroke-width="3"/>
+<polyline points="150,1195 190,1195" fill="none" stroke="#166A79" stroke-width="3"/>
+<polyline points="170,1195 170,1228" fill="none" stroke="#166A79" stroke-width="3"/>
+<polyline points="170,1228 170,1243" fill="none" stroke="#166A79" stroke-width="3"/>
+<polyline points="148,1243 192,1243" fill="none" stroke="#166A79" stroke-width="3"/>
+<polyline points="156,1251 184,1251" fill="none" stroke="#166A79" stroke-width="3"/>
+<polyline points="164,1259 176,1259" fill="none" stroke="#166A79" stroke-width="3"/>
+<text x="80" y="1265" dominant-baseline="text-before-edge" font-family="Arial,sans-serif" font-size="21" font-weight="400" fill="#172B43">C2 10 µF / 35 V</text>
+<circle cx="750" cy="1150" r="5" fill="#166A79"/>
+<polyline points="750,1150 750,1200" fill="none" stroke="#166A79" stroke-width="3"/>
+<polyline points="750,1200 750,1218" fill="none" stroke="#166A79" stroke-width="3"/>
+<rect x="738" y="1218" width="24" height="64" fill="white" stroke="#166A79" stroke-width="2"/>
+<polyline points="750,1282 750,1300" fill="none" stroke="#166A79" stroke-width="3"/>
+<text x="778" y="1233" dominant-baseline="text-before-edge" font-family="Arial,sans-serif" font-size="22" font-weight="400" fill="#172B43">R7  10 kΩ</text>
+<polyline points="750,1300 750,1450" fill="none" stroke="#166A79" stroke-width="3"/>
+<circle cx="750" cy="1350" r="5" fill="#166A79"/>
+<polyline points="750,1350 1300,1350" fill="none" stroke="#166A79" stroke-width="3"/>
+<text x="1000" y="1318" dominant-baseline="text-before-edge" font-family="Arial,sans-serif" font-size="22" font-weight="700" fill="#166A79">OV2_BLOCK</text>
+<circle cx="990" cy="1350" r="5" fill="#166A79"/>
+<polyline points="990,1350 990,1410" fill="none" stroke="#166A79" stroke-width="3"/>
+<polyline points="966,1403 966,1410 1014,1410 1014,1417" fill="none" stroke="#172B43" stroke-width="3"/>
+<polyline points="990,1410 969,1445 1011,1445 990,1410" fill="none" stroke="#172B43" stroke-width="3"/>
+<polyline points="990,1445 990,1485" fill="none" stroke="#166A79" stroke-width="3"/>
+<polyline points="990,1485 990,1500" fill="none" stroke="#166A79" stroke-width="3"/>
+<polyline points="968,1500 1012,1500" fill="none" stroke="#166A79" stroke-width="3"/>
+<polyline points="976,1508 1004,1508" fill="none" stroke="#166A79" stroke-width="3"/>
+<polyline points="984,1516 996,1516" fill="none" stroke="#166A79" stroke-width="3"/>
+<text x="1035" y="1405" dominant-baseline="text-before-edge" font-family="Arial,sans-serif" font-size="21" font-weight="400" fill="#172B43">D1 4.7 V</text>
+<text x="1035" y="1435" dominant-baseline="text-before-edge" font-family="Arial,sans-serif" font-size="21" font-weight="400" fill="#172B43">BZT52C4V7-7-F</text>
+<text x="1035" y="1465" dominant-baseline="text-before-edge" font-family="Arial,sans-serif" font-size="21" font-weight="400" fill="#172B43">K top / A bottom</text>
+<rect x="600" y="1450" width="240" height="130" fill="white" stroke="#172B43" stroke-width="2"/>
+<text x="617" y="1475" dominant-baseline="text-before-edge" font-family="Arial,sans-serif" font-size="23" font-weight="700" fill="#172B43">Q1 N-MOS</text>
+<text x="615" y="1532" dominant-baseline="text-before-edge" font-family="Arial,sans-serif" font-size="19" font-weight="400" fill="#172B43">1 G    3 D    2 S</text>
+<polyline points="790,1580 790,1630" fill="none" stroke="#166A79" stroke-width="3"/>
+<polyline points="790,1630 790,1645" fill="none" stroke="#166A79" stroke-width="3"/>
+<polyline points="768,1645 812,1645" fill="none" stroke="#166A79" stroke-width="3"/>
+<polyline points="776,1653 804,1653" fill="none" stroke="#166A79" stroke-width="3"/>
+<polyline points="784,1661 796,1661" fill="none" stroke="#166A79" stroke-width="3"/>
+<text x="680" y="1680" dominant-baseline="text-before-edge" font-family="Arial,sans-serif" font-size="22" font-weight="400" fill="#172B43">DMN2056U-13</text>
+<polyline points="350,1530 450,1530" fill="none" stroke="#166A79" stroke-width="3"/>
+<polyline points="450,1530 468,1530" fill="none" stroke="#166A79" stroke-width="3"/>
+<rect x="468" y="1518" width="64" height="24" fill="white" stroke="#166A79" stroke-width="2"/>
+<polyline points="532,1530 550,1530" fill="none" stroke="#166A79" stroke-width="3"/>
+<text x="405" y="1465" dominant-baseline="text-before-edge" font-family="Arial,sans-serif" font-size="22" font-weight="400" fill="#172B43">R9  1 kΩ</text>
+<polyline points="550,1530 600,1530" fill="none" stroke="#166A79" stroke-width="3"/>
+<circle cx="570" cy="1530" r="5" fill="#166A79"/>
+<polyline points="570,1530 570,1600" fill="none" stroke="#166A79" stroke-width="3"/>
+<polyline points="570,1600 570,1618" fill="none" stroke="#166A79" stroke-width="3"/>
+<rect x="558" y="1618" width="24" height="64" fill="white" stroke="#166A79" stroke-width="2"/>
+<polyline points="570,1682 570,1700" fill="none" stroke="#166A79" stroke-width="3"/>
+<text x="390" y="1645" dominant-baseline="text-before-edge" font-family="Arial,sans-serif" font-size="22" font-weight="400" fill="#172B43">R8  100 kΩ</text>
+<polyline points="570,1700 570,1715" fill="none" stroke="#166A79" stroke-width="3"/>
+<polyline points="548,1715 592,1715" fill="none" stroke="#166A79" stroke-width="3"/>
+<polyline points="556,1723 584,1723" fill="none" stroke="#166A79" stroke-width="3"/>
+<polyline points="564,1731 576,1731" fill="none" stroke="#166A79" stroke-width="3"/>
+<polyline points="1720,350 2680,350" fill="none" stroke="#AB4D14" stroke-width="3"/>
+<text x="1850" y="318" dominant-baseline="text-before-edge" font-family="Arial,sans-serif" font-size="22" font-weight="700" fill="#AB4D14">TPS_OUT</text>
+<circle cx="1900" cy="350" r="5" fill="#166A79"/>
+<circle cx="2120" cy="350" r="5" fill="#166A79"/>
+<polyline points="1900,350 1900,383" fill="none" stroke="#166A79" stroke-width="3"/>
+<polyline points="1880,383 1920,383" fill="none" stroke="#166A79" stroke-width="3"/>
+<polyline points="1880,395 1920,395" fill="none" stroke="#166A79" stroke-width="3"/>
+<polyline points="1900,395 1900,428" fill="none" stroke="#166A79" stroke-width="3"/>
+<polyline points="1900,428 1900,443" fill="none" stroke="#166A79" stroke-width="3"/>
+<polyline points="1878,443 1922,443" fill="none" stroke="#166A79" stroke-width="3"/>
+<polyline points="1886,451 1914,451" fill="none" stroke="#166A79" stroke-width="3"/>
+<polyline points="1894,459 1906,459" fill="none" stroke="#166A79" stroke-width="3"/>
+<text x="1830" y="465" dominant-baseline="text-before-edge" font-family="Arial,sans-serif" font-size="21" font-weight="400" fill="#172B43">C3 10 µF / 35 V</text>
+<polyline points="2120,350 2120,368" fill="none" stroke="#166A79" stroke-width="3"/>
+<rect x="2108" y="368" width="24" height="64" fill="white" stroke="#166A79" stroke-width="2"/>
+<polyline points="2120,432 2120,450" fill="none" stroke="#166A79" stroke-width="3"/>
+<text x="2160" y="390" dominant-baseline="text-before-edge" font-family="Arial,sans-serif" font-size="22" font-weight="400" fill="#172B43">R12  2.2 kΩ</text>
+<polyline points="2120,450 2120,465" fill="none" stroke="#166A79" stroke-width="3"/>
+<polyline points="2098,465 2142,465" fill="none" stroke="#166A79" stroke-width="3"/>
+<polyline points="2106,473 2134,473" fill="none" stroke="#166A79" stroke-width="3"/>
+<polyline points="2114,481 2126,481" fill="none" stroke="#166A79" stroke-width="3"/>
+<text x="2160" y="430" dominant-baseline="text-before-edge" font-family="Arial,sans-serif" font-size="20" font-weight="400" fill="#172B43">0.5 W</text>
+<circle cx="2680" cy="350" r="5" fill="#166A79"/>
+<polyline points="2680,350 2750,320" fill="none" stroke="#AB4D14" stroke-width="3"/>
+<circle cx="2765" cy="350" r="5" fill="#166A79"/>
+<polyline points="2765,350 3200,350" fill="none" stroke="#AB4D14" stroke-width="3"/>
+<text x="2620" y="245" dominant-baseline="text-before-edge" font-family="Arial,sans-serif" font-size="24" font-weight="700" fill="#172B43">SW1 PHYSICAL ARM</text>
+<text x="2830" y="318" dominant-baseline="text-before-edge" font-family="Arial,sans-serif" font-size="22" font-weight="700" fill="#AB4D14">ARMED_SUPPLY</text>
+<text x="2830" y="385" dominant-baseline="text-before-edge" font-family="Arial,sans-serif" font-size="22" font-weight="400" fill="#526579">To inhibited channel drivers</text>
+<text x="2830" y="416" dominant-baseline="text-before-edge" font-family="Arial,sans-serif" font-size="22" font-weight="400" fill="#526579">(not included here)</text>
+<circle cx="1800" cy="350" r="5" fill="#166A79"/>
+<polyline points="1800,350 1800,600 1900,600" fill="none" stroke="#166A79" stroke-width="3"/>
+<polyline points="1900,600 1918,600" fill="none" stroke="#166A79" stroke-width="3"/>
+<rect x="1918" y="588" width="64" height="24" fill="white" stroke="#166A79" stroke-width="2"/>
+<polyline points="1982,600 2000,600" fill="none" stroke="#166A79" stroke-width="3"/>
+<text x="1840" y="545" dominant-baseline="text-before-edge" font-family="Arial,sans-serif" font-size="22" font-weight="400" fill="#172B43">R13  49.9 kΩ</text>
+<polyline points="2000,600 2300,600 2300,800 2450,800" fill="none" stroke="#166A79" stroke-width="3"/>
+<circle cx="2020" cy="600" r="5" fill="#166A79"/>
+<polyline points="2020,600 2020,630" fill="none" stroke="#166A79" stroke-width="3"/>
+<polyline points="2020,630 2020,648" fill="none" stroke="#166A79" stroke-width="3"/>
+<rect x="2008" y="648" width="24" height="64" fill="white" stroke="#166A79" stroke-width="2"/>
+<polyline points="2020,712 2020,730" fill="none" stroke="#166A79" stroke-width="3"/>
+<text x="1840" y="675" dominant-baseline="text-before-edge" font-family="Arial,sans-serif" font-size="22" font-weight="400" fill="#172B43">R14  10 kΩ</text>
+<polyline points="2020,730 2020,745" fill="none" stroke="#166A79" stroke-width="3"/>
+<polyline points="1998,745 2042,745" fill="none" stroke="#166A79" stroke-width="3"/>
+<polyline points="2006,753 2034,753" fill="none" stroke="#166A79" stroke-width="3"/>
+<polyline points="2014,761 2026,761" fill="none" stroke="#166A79" stroke-width="3"/>
+<circle cx="2200" cy="600" r="5" fill="#166A79"/>
+<polyline points="2200,600 2200,630" fill="none" stroke="#166A79" stroke-width="3"/>
+<polyline points="2200,630 2200,663" fill="none" stroke="#166A79" stroke-width="3"/>
+<polyline points="2180,663 2220,663" fill="none" stroke="#166A79" stroke-width="3"/>
+<polyline points="2180,675 2220,675" fill="none" stroke="#166A79" stroke-width="3"/>
+<polyline points="2200,675 2200,708" fill="none" stroke="#166A79" stroke-width="3"/>
+<polyline points="2200,708 2200,723" fill="none" stroke="#166A79" stroke-width="3"/>
+<polyline points="2178,723 2222,723" fill="none" stroke="#166A79" stroke-width="3"/>
+<polyline points="2186,731 2214,731" fill="none" stroke="#166A79" stroke-width="3"/>
+<polyline points="2194,739 2206,739" fill="none" stroke="#166A79" stroke-width="3"/>
+<text x="2110" y="770" dominant-baseline="text-before-edge" font-family="Arial,sans-serif" font-size="20" font-weight="400" fill="#172B43">C6 10 nF</text>
+<text x="2330" y="768" dominant-baseline="text-before-edge" font-family="Arial,sans-serif" font-size="22" font-weight="700" fill="#166A79">OUT_DIV</text>
+<polyline points="1720,650 1770,650" fill="none" stroke="#166A79" stroke-width="3"/>
+<polyline points="1770,650 1770,665" fill="none" stroke="#166A79" stroke-width="3"/>
+<polyline points="1748,665 1792,665" fill="none" stroke="#166A79" stroke-width="3"/>
+<polyline points="1756,673 1784,673" fill="none" stroke="#166A79" stroke-width="3"/>
+<polyline points="1764,681 1776,681" fill="none" stroke="#166A79" stroke-width="3"/>
+<polyline points="1720,800 1840,800 1840,1200 2950,1200" fill="none" stroke="#166A79" stroke-width="3"/>
+<text x="1870" y="1168" dominant-baseline="text-before-edge" font-family="Arial,sans-serif" font-size="22" font-weight="700" fill="#166A79">TPS_ST</text>
+<circle cx="2060" cy="1200" r="5" fill="#166A79"/>
+<polyline points="2060,1200 2060,1060" fill="none" stroke="#166A79" stroke-width="3"/>
+<polyline points="2060,960 2060,978" fill="none" stroke="#166A79" stroke-width="3"/>
+<rect x="2048" y="978" width="24" height="64" fill="white" stroke="#166A79" stroke-width="2"/>
+<polyline points="2060,1042 2060,1060" fill="none" stroke="#166A79" stroke-width="3"/>
+<text x="2090" y="982" dominant-baseline="text-before-edge" font-family="Arial,sans-serif" font-size="22" font-weight="400" fill="#172B43">R11  10 kΩ</text>
+<text x="2010" y="928" dominant-baseline="text-before-edge" font-family="Arial,sans-serif" font-size="22" font-weight="700" fill="#AB4D14">3V3</text>
+<polyline points="1720,1100 1775,1100" fill="none" stroke="#166A79" stroke-width="3"/>
+<polyline points="1775,1100 1775,1133" fill="none" stroke="#166A79" stroke-width="3"/>
+<polyline points="1755,1133 1795,1133" fill="none" stroke="#166A79" stroke-width="3"/>
+<polyline points="1755,1145 1795,1145" fill="none" stroke="#166A79" stroke-width="3"/>
+<polyline points="1775,1145 1775,1178" fill="none" stroke="#166A79" stroke-width="3"/>
+<polyline points="1775,1178 1775,1193" fill="none" stroke="#166A79" stroke-width="3"/>
+<polyline points="1753,1193 1797,1193" fill="none" stroke="#166A79" stroke-width="3"/>
+<polyline points="1761,1201 1789,1201" fill="none" stroke="#166A79" stroke-width="3"/>
+<polyline points="1769,1209 1781,1209" fill="none" stroke="#166A79" stroke-width="3"/>
+<text x="1870" y="1250" dominant-baseline="text-before-edge" font-family="Arial,sans-serif" font-size="20" font-weight="400" fill="#172B43">C4 100 nF</text>
+<polyline points="1720,1350 1830,1350" fill="none" stroke="#166A79" stroke-width="3"/>
+<polyline points="1830,1350 1830,1368" fill="none" stroke="#166A79" stroke-width="3"/>
+<rect x="1818" y="1368" width="24" height="64" fill="white" stroke="#166A79" stroke-width="2"/>
+<polyline points="1830,1432 1830,1450" fill="none" stroke="#166A79" stroke-width="3"/>
+<text x="1860" y="1380" dominant-baseline="text-before-edge" font-family="Arial,sans-serif" font-size="22" font-weight="400" fill="#172B43">R10  22.1 kΩ</text>
+<polyline points="1830,1450 1830,1465" fill="none" stroke="#166A79" stroke-width="3"/>
+<polyline points="1808,1465 1852,1465" fill="none" stroke="#166A79" stroke-width="3"/>
+<polyline points="1816,1473 1844,1473" fill="none" stroke="#166A79" stroke-width="3"/>
+<polyline points="1824,1481 1836,1481" fill="none" stroke="#166A79" stroke-width="3"/>
+<rect x="2450" y="700" width="350" height="400" fill="white" stroke="#172B43" stroke-width="2"/>
+<text x="2470" y="720" dominant-baseline="text-before-edge" font-family="Arial,sans-serif" font-size="23" font-weight="700" fill="#172B43">U3 TMUX1511RSVR</text>
+<text x="2470" y="784" dominant-baseline="text-before-edge" font-family="Arial,sans-serif" font-size="22" font-weight="400" fill="#172B43">2 S1       D1 3</text>
+<text x="2470" y="934" dominant-baseline="text-before-edge" font-family="Arial,sans-serif" font-size="22" font-weight="400" fill="#172B43">5 S2       D2 6</text>
+<text x="2470" y="1032" dominant-baseline="text-before-edge" font-family="Arial,sans-serif" font-size="21" font-weight="400" fill="#172B43">SEL1 1 + SEL2 4</text>
+<polyline points="2800,800 2950,800" fill="none" stroke="#166A79" stroke-width="3"/>
+<polyline points="2800,950 2950,950" fill="none" stroke="#166A79" stroke-width="3"/>
+<text x="2620" y="528" dominant-baseline="text-before-edge" font-family="Arial,sans-serif" font-size="22" font-weight="700" fill="#AB4D14">3V3</text>
+<polyline points="2620,560 2620,700" fill="none" stroke="#AB4D14" stroke-width="3"/>
+<text x="2635" y="674" dominant-baseline="text-before-edge" font-family="Arial,sans-serif" font-size="20" font-weight="400" fill="#172B43">16 VDD</text>
+<circle cx="2620" cy="590" r="5" fill="#166A79"/>
+<polyline points="2620,590 2740,590" fill="none" stroke="#AB4D14" stroke-width="3"/>
+<polyline points="2740,590 2740,623" fill="none" stroke="#166A79" stroke-width="3"/>
+<polyline points="2720,623 2760,623" fill="none" stroke="#166A79" stroke-width="3"/>
+<polyline points="2720,635 2760,635" fill="none" stroke="#166A79" stroke-width="3"/>
+<polyline points="2740,635 2740,668" fill="none" stroke="#166A79" stroke-width="3"/>
+<polyline points="2740,668 2740,683" fill="none" stroke="#166A79" stroke-width="3"/>
+<polyline points="2718,683 2762,683" fill="none" stroke="#166A79" stroke-width="3"/>
+<polyline points="2726,691 2754,691" fill="none" stroke="#166A79" stroke-width="3"/>
+<polyline points="2734,699 2746,699" fill="none" stroke="#166A79" stroke-width="3"/>
+<text x="2780" y="610" dominant-baseline="text-before-edge" font-family="Arial,sans-serif" font-size="20" font-weight="400" fill="#172B43">C8</text>
+<text x="2780" y="639" dominant-baseline="text-before-edge" font-family="Arial,sans-serif" font-size="20" font-weight="400" fill="#172B43">100 nF</text>
+<text x="2480" y="837" dominant-baseline="text-before-edge" font-family="Arial,sans-serif" font-size="16" font-weight="400" fill="#526579">8,13,14,15 → GND; 7,12 NC</text>
+<text x="2480" y="862" dominant-baseline="text-before-edge" font-family="Arial,sans-serif" font-size="16" font-weight="400" fill="#526579">10 USB_DIV; 9 ADC_USB; 11 SENSE_EN</text>
+<text x="2480" y="887" dominant-baseline="text-before-edge" font-family="Arial,sans-serif" font-size="16" font-weight="400" fill="#526579">Channel 3: see logic_power sheet</text>
+<polyline points="2500,1100 2500,1140" fill="none" stroke="#166A79" stroke-width="3"/>
+<polyline points="2500,1140 2500,1155" fill="none" stroke="#166A79" stroke-width="3"/>
+<polyline points="2478,1155 2522,1155" fill="none" stroke="#166A79" stroke-width="3"/>
+<polyline points="2486,1163 2514,1163" fill="none" stroke="#166A79" stroke-width="3"/>
+<polyline points="2494,1171 2506,1171" fill="none" stroke="#166A79" stroke-width="3"/>
+<polyline points="2680,1100 2680,1300 2950,1300" fill="none" stroke="#166A79" stroke-width="3"/>
+<circle cx="2800" cy="1300" r="5" fill="#166A79"/>
+<polyline points="2800,1300 2800,1350" fill="none" stroke="#166A79" stroke-width="3"/>
+<polyline points="2800,1350 2800,1368" fill="none" stroke="#166A79" stroke-width="3"/>
+<rect x="2788" y="1368" width="24" height="64" fill="white" stroke="#166A79" stroke-width="2"/>
+<polyline points="2800,1432 2800,1450" fill="none" stroke="#166A79" stroke-width="3"/>
+<text x="2580" y="1385" dominant-baseline="text-before-edge" font-family="Arial,sans-serif" font-size="22" font-weight="400" fill="#172B43">R17  100 kΩ</text>
+<polyline points="2800,1450 2800,1465" fill="none" stroke="#166A79" stroke-width="3"/>
+<polyline points="2778,1465 2822,1465" fill="none" stroke="#166A79" stroke-width="3"/>
+<polyline points="2786,1473 2814,1473" fill="none" stroke="#166A79" stroke-width="3"/>
+<polyline points="2794,1481 2806,1481" fill="none" stroke="#166A79" stroke-width="3"/>
+<text x="2685" y="1268" dominant-baseline="text-before-edge" font-family="Arial,sans-serif" font-size="22" font-weight="700" fill="#166A79">SENSE_EN</text>
+<rect x="2950" y="700" width="285" height="1350" fill="#EEF5FA" stroke="#172B43" stroke-width="2"/>
+<text x="2990" y="730" dominant-baseline="text-before-edge" font-family="Arial,sans-serif" font-size="26" font-weight="700" fill="#172B43">MCU / 3V3</text>
+<text x="2970" y="785" dominant-baseline="text-before-edge" font-family="Arial,sans-serif" font-size="20" font-weight="700" fill="#172B43">ADC_TPS_OUT</text>
+<text x="2970" y="935" dominant-baseline="text-before-edge" font-family="Arial,sans-serif" font-size="20" font-weight="700" fill="#172B43">ADC_MAIN</text>
+<text x="2970" y="1185" dominant-baseline="text-before-edge" font-family="Arial,sans-serif" font-size="20" font-weight="700" fill="#172B43">GPIO: TPS_ST</text>
+<text x="2970" y="1285" dominant-baseline="text-before-edge" font-family="Arial,sans-serif" font-size="20" font-weight="700" fill="#172B43">GPIO: SENSE_EN</text>
+<text x="2970" y="1985" dominant-baseline="text-before-edge" font-family="Arial,sans-serif" font-size="20" font-weight="700" fill="#172B43">GPIO: MAIN_ALLOW</text>
+<text x="2970" y="1470" dominant-baseline="text-before-edge" font-family="Arial,sans-serif" font-size="21" font-weight="400" fill="#172B43">Exact MCU pins</text>
+<text x="2970" y="1500" dominant-baseline="text-before-edge" font-family="Arial,sans-serif" font-size="21" font-weight="400" fill="#172B43">not assigned.</text>
+<text x="2970" y="1530" dominant-baseline="text-before-edge" font-family="Arial,sans-serif" font-size="21" font-weight="400" fill="#172B43"></text>
+<text x="2970" y="1560" dominant-baseline="text-before-edge" font-family="Arial,sans-serif" font-size="21" font-weight="400" fill="#172B43">Reset defaults:</text>
+<text x="2970" y="1590" dominant-baseline="text-before-edge" font-family="Arial,sans-serif" font-size="21" font-weight="400" fill="#172B43">MAIN_ALLOW = low</text>
+<text x="2970" y="1620" dominant-baseline="text-before-edge" font-family="Arial,sans-serif" font-size="21" font-weight="400" fill="#172B43">SENSE_EN = low</text>
+<text x="2970" y="1650" dominant-baseline="text-before-edge" font-family="Arial,sans-serif" font-size="21" font-weight="400" fill="#172B43"></text>
+<text x="2970" y="1680" dominant-baseline="text-before-edge" font-family="Arial,sans-serif" font-size="21" font-weight="400" fill="#172B43">Separate hardware</text>
+<text x="2970" y="1710" dominant-baseline="text-before-edge" font-family="Arial,sans-serif" font-size="21" font-weight="400" fill="#172B43">and firmware</text>
+<text x="2970" y="1740" dominant-baseline="text-before-edge" font-family="Arial,sans-serif" font-size="21" font-weight="400" fill="#172B43">arming required.</text>
+<circle cx="100" cy="1150" r="5" fill="#166A79"/>
+<polyline points="100,1150 100,1800 1900,1800" fill="none" stroke="#166A79" stroke-width="3"/>
+<polyline points="1900,1800 1918,1800" fill="none" stroke="#166A79" stroke-width="3"/>
+<rect x="1918" y="1788" width="64" height="24" fill="white" stroke="#166A79" stroke-width="2"/>
+<polyline points="1982,1800 2000,1800" fill="none" stroke="#166A79" stroke-width="3"/>
+<text x="1860" y="1740" dominant-baseline="text-before-edge" font-family="Arial,sans-serif" font-size="22" font-weight="400" fill="#172B43">R15  49.9 kΩ</text>
+<polyline points="2000,1800 2350,1800 2350,950 2450,950" fill="none" stroke="#166A79" stroke-width="3"/>
+<circle cx="2070" cy="1800" r="5" fill="#166A79"/>
+<polyline points="2070,1800 2070,1840" fill="none" stroke="#166A79" stroke-width="3"/>
+<polyline points="2070,1840 2070,1858" fill="none" stroke="#166A79" stroke-width="3"/>
+<rect x="2058" y="1858" width="24" height="64" fill="white" stroke="#166A79" stroke-width="2"/>
+<polyline points="2070,1922 2070,1940" fill="none" stroke="#166A79" stroke-width="3"/>
+<text x="2100" y="1875" dominant-baseline="text-before-edge" font-family="Arial,sans-serif" font-size="22" font-weight="400" fill="#172B43">R16  10 kΩ</text>
+<polyline points="2070,1940 2070,1955" fill="none" stroke="#166A79" stroke-width="3"/>
+<polyline points="2048,1955 2092,1955" fill="none" stroke="#166A79" stroke-width="3"/>
+<polyline points="2056,1963 2084,1963" fill="none" stroke="#166A79" stroke-width="3"/>
+<polyline points="2064,1971 2076,1971" fill="none" stroke="#166A79" stroke-width="3"/>
+<circle cx="2250" cy="1800" r="5" fill="#166A79"/>
+<polyline points="2250,1800 2250,1840" fill="none" stroke="#166A79" stroke-width="3"/>
+<polyline points="2250,1840 2250,1873" fill="none" stroke="#166A79" stroke-width="3"/>
+<polyline points="2230,1873 2270,1873" fill="none" stroke="#166A79" stroke-width="3"/>
+<polyline points="2230,1885 2270,1885" fill="none" stroke="#166A79" stroke-width="3"/>
+<polyline points="2250,1885 2250,1918" fill="none" stroke="#166A79" stroke-width="3"/>
+<polyline points="2250,1918 2250,1933" fill="none" stroke="#166A79" stroke-width="3"/>
+<polyline points="2228,1933 2272,1933" fill="none" stroke="#166A79" stroke-width="3"/>
+<polyline points="2236,1941 2264,1941" fill="none" stroke="#166A79" stroke-width="3"/>
+<polyline points="2244,1949 2256,1949" fill="none" stroke="#166A79" stroke-width="3"/>
+<text x="2300" y="1860" dominant-baseline="text-before-edge" font-family="Arial,sans-serif" font-size="20" font-weight="400" fill="#172B43">C7 10 nF</text>
+<text x="2400" y="1718" dominant-baseline="text-before-edge" font-family="Arial,sans-serif" font-size="22" font-weight="700" fill="#166A79">MAIN_DIV</text>
+<polyline points="2950,2000 350,2000 350,1530" fill="none" stroke="#166A79" stroke-width="3"/>
+<text x="650" y="1968" dominant-baseline="text-before-edge" font-family="Arial,sans-serif" font-size="22" font-weight="700" fill="#166A79">MCU_MAIN_ALLOW</text>
+<polyline points="350,1788 350,1812" fill="none" stroke="white" stroke-width="9"/>
+<polyline points="336,1800 364,1800" fill="none" stroke="#166A79" stroke-width="3"/>
+<polyline points="350,1788 362,1793 362,1807 350,1812" fill="none" stroke="#166A79" stroke-width="3"/>
+<polyline points="2350,1188 2350,1212" fill="none" stroke="white" stroke-width="9"/>
+<polyline points="2336,1200 2364,1200" fill="none" stroke="#166A79" stroke-width="3"/>
+<polyline points="2350,1188 2362,1193 2362,1207 2350,1212" fill="none" stroke="#166A79" stroke-width="3"/>
+<polyline points="2680,1188 2680,1212" fill="none" stroke="white" stroke-width="9"/>
+<polyline points="2666,1200 2694,1200" fill="none" stroke="#166A79" stroke-width="3"/>
+<polyline points="2680,1188 2692,1193 2692,1207 2680,1212" fill="none" stroke="#166A79" stroke-width="3"/>
+<text x="80" y="2110" dominant-baseline="text-before-edge" font-family="Arial,sans-serif" font-size="23" font-weight="400" fill="#172B43">Junction dot = connected. Wire jump = NOT connected. All ground symbols share GND. 3V3 comes from the independent MCU buck/USB power path.</text>
+<text x="80" y="2150" dominant-baseline="text-before-edge" font-family="Arial,sans-serif" font-size="23" font-weight="400" fill="#AB4D14">R1-R4 and R13-R16: 0.1%. Other resistors: 1%. Nominal 3.5 V cutoff only; reference tolerance and power sequencing remain design constraints.</text>
+<text x="80" y="2190" dominant-baseline="text-before-edge" font-family="Arial,sans-serif" font-size="23" font-weight="400" fill="#526579">USB never connects to IN1/IN2/OUT. Source selection is not arming. Inert-load verification required before implementation.</text>
+</svg>

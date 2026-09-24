@@ -1,0 +1,900 @@
+{
+  "USB_priority_ratio": 0.4,
+  "PR1_at_USB_5V_V": 2.0,
+  "PR1_min_at_USB_2V8_V": 1.1059880838323353,
+  "PR1_max_at_USB_5V5_V": 2.2270540480961922,
+  "CP2_min_for_GPIO_2V4_V": 2.3756624437556244,
+  "CP2_minus_PR1_min_margin_V": 0.14860839565943218,
+  "CP2_at_GPIO_3V3_V": 3.267326732673267,
+  "adc_ratio": 0.1669449081803005,
+  "adc_at_USB_5V_V": 0.8347245409015025,
+  "adc_max_at_USB_5V5_with_0p1pct_resistors_V": 0.9197278320617572,
+  "adc_filter_tau_s": 8.330550918196996e-05,
+  "ILIM_equation_typical_A": 1.4889946068523654,
+  "buck_input_estimate_5V_85pct_A": 0.4658823529411764,
+  "buck_input_estimate_4V4_85pct_A": 0.5294117647058822,
+  "steady_state_test_cases": [
+    {
+      "USB_V": 0,
+      "MAIN_V": 0,
+      "GPIO": "Hi-Z",
+      "source": "Hi-Z"
+    },
+    {
+      "USB_V": 0,
+      "MAIN_V": 0,
+      "GPIO": "LOW",
+      "source": "Hi-Z"
+    },
+    {
+      "USB_V": 0,
+      "MAIN_V": 0,
+      "GPIO": "HIGH",
+      "source": "Hi-Z"
+    },
+    {
+      "USB_V": 0,
+      "MAIN_V": 2.8,
+      "GPIO": "Hi-Z",
+      "source": "MAIN"
+    },
+    {
+      "USB_V": 0,
+      "MAIN_V": 2.8,
+      "GPIO": "LOW",
+      "source": "MAIN"
+    },
+    {
+      "USB_V": 0,
+      "MAIN_V": 2.8,
+      "GPIO": "HIGH",
+      "source": "MAIN"
+    },
+    {
+      "USB_V": 0,
+      "MAIN_V": 3.5,
+      "GPIO": "Hi-Z",
+      "source": "MAIN"
+    },
+    {
+      "USB_V": 0,
+      "MAIN_V": 3.5,
+      "GPIO": "LOW",
+      "source": "MAIN"
+    },
+    {
+      "USB_V": 0,
+      "MAIN_V": 3.5,
+      "GPIO": "HIGH",
+      "source": "MAIN"
+    },
+    {
+      "USB_V": 0,
+      "MAIN_V": 4.2,
+      "GPIO": "Hi-Z",
+      "source": "MAIN"
+    },
+    {
+      "USB_V": 0,
+      "MAIN_V": 4.2,
+      "GPIO": "LOW",
+      "source": "MAIN"
+    },
+    {
+      "USB_V": 0,
+      "MAIN_V": 4.2,
+      "GPIO": "HIGH",
+      "source": "MAIN"
+    },
+    {
+      "USB_V": 0,
+      "MAIN_V": 8.4,
+      "GPIO": "Hi-Z",
+      "source": "MAIN"
+    },
+    {
+      "USB_V": 0,
+      "MAIN_V": 8.4,
+      "GPIO": "LOW",
+      "source": "MAIN"
+    },
+    {
+      "USB_V": 0,
+      "MAIN_V": 8.4,
+      "GPIO": "HIGH",
+      "source": "MAIN"
+    },
+    {
+      "USB_V": 0,
+      "MAIN_V": 12.6,
+      "GPIO": "Hi-Z",
+      "source": "MAIN"
+    },
+    {
+      "USB_V": 0,
+      "MAIN_V": 12.6,
+      "GPIO": "LOW",
+      "source": "MAIN"
+    },
+    {
+      "USB_V": 0,
+      "MAIN_V": 12.6,
+      "GPIO": "HIGH",
+      "source": "MAIN"
+    },
+    {
+      "USB_V": 0,
+      "MAIN_V": 16.8,
+      "GPIO": "Hi-Z",
+      "source": "MAIN"
+    },
+    {
+      "USB_V": 0,
+      "MAIN_V": 16.8,
+      "GPIO": "LOW",
+      "source": "MAIN"
+    },
+    {
+      "USB_V": 0,
+      "MAIN_V": 16.8,
+      "GPIO": "HIGH",
+      "source": "MAIN"
+    },
+    {
+      "USB_V": 2.8,
+      "MAIN_V": 0,
+      "GPIO": "Hi-Z",
+      "source": "USB"
+    },
+    {
+      "USB_V": 2.8,
+      "MAIN_V": 0,
+      "GPIO": "LOW",
+      "source": "USB"
+    },
+    {
+      "USB_V": 2.8,
+      "MAIN_V": 0,
+      "GPIO": "HIGH",
+      "source": "USB"
+    },
+    {
+      "USB_V": 2.8,
+      "MAIN_V": 2.8,
+      "GPIO": "Hi-Z",
+      "source": "USB"
+    },
+    {
+      "USB_V": 2.8,
+      "MAIN_V": 2.8,
+      "GPIO": "LOW",
+      "source": "USB"
+    },
+    {
+      "USB_V": 2.8,
+      "MAIN_V": 2.8,
+      "GPIO": "HIGH",
+      "source": "MAIN"
+    },
+    {
+      "USB_V": 2.8,
+      "MAIN_V": 3.5,
+      "GPIO": "Hi-Z",
+      "source": "USB"
+    },
+    {
+      "USB_V": 2.8,
+      "MAIN_V": 3.5,
+      "GPIO": "LOW",
+      "source": "USB"
+    },
+    {
+      "USB_V": 2.8,
+      "MAIN_V": 3.5,
+      "GPIO": "HIGH",
+      "source": "MAIN"
+    },
+    {
+      "USB_V": 2.8,
+      "MAIN_V": 4.2,
+      "GPIO": "Hi-Z",
+      "source": "USB"
+    },
+    {
+      "USB_V": 2.8,
+      "MAIN_V": 4.2,
+      "GPIO": "LOW",
+      "source": "USB"
+    },
+    {
+      "USB_V": 2.8,
+      "MAIN_V": 4.2,
+      "GPIO": "HIGH",
+      "source": "MAIN"
+    },
+    {
+      "USB_V": 2.8,
+      "MAIN_V": 8.4,
+      "GPIO": "Hi-Z",
+      "source": "USB"
+    },
+    {
+      "USB_V": 2.8,
+      "MAIN_V": 8.4,
+      "GPIO": "LOW",
+      "source": "USB"
+    },
+    {
+      "USB_V": 2.8,
+      "MAIN_V": 8.4,
+      "GPIO": "HIGH",
+      "source": "MAIN"
+    },
+    {
+      "USB_V": 2.8,
+      "MAIN_V": 12.6,
+      "GPIO": "Hi-Z",
+      "source": "USB"
+    },
+    {
+      "USB_V": 2.8,
+      "MAIN_V": 12.6,
+      "GPIO": "LOW",
+      "source": "USB"
+    },
+    {
+      "USB_V": 2.8,
+      "MAIN_V": 12.6,
+      "GPIO": "HIGH",
+      "source": "MAIN"
+    },
+    {
+      "USB_V": 2.8,
+      "MAIN_V": 16.8,
+      "GPIO": "Hi-Z",
+      "source": "USB"
+    },
+    {
+      "USB_V": 2.8,
+      "MAIN_V": 16.8,
+      "GPIO": "LOW",
+      "source": "USB"
+    },
+    {
+      "USB_V": 2.8,
+      "MAIN_V": 16.8,
+      "GPIO": "HIGH",
+      "source": "MAIN"
+    },
+    {
+      "USB_V": 3.5,
+      "MAIN_V": 0,
+      "GPIO": "Hi-Z",
+      "source": "USB"
+    },
+    {
+      "USB_V": 3.5,
+      "MAIN_V": 0,
+      "GPIO": "LOW",
+      "source": "USB"
+    },
+    {
+      "USB_V": 3.5,
+      "MAIN_V": 0,
+      "GPIO": "HIGH",
+      "source": "USB"
+    },
+    {
+      "USB_V": 3.5,
+      "MAIN_V": 2.8,
+      "GPIO": "Hi-Z",
+      "source": "USB"
+    },
+    {
+      "USB_V": 3.5,
+      "MAIN_V": 2.8,
+      "GPIO": "LOW",
+      "source": "USB"
+    },
+    {
+      "USB_V": 3.5,
+      "MAIN_V": 2.8,
+      "GPIO": "HIGH",
+      "source": "MAIN"
+    },
+    {
+      "USB_V": 3.5,
+      "MAIN_V": 3.5,
+      "GPIO": "Hi-Z",
+      "source": "USB"
+    },
+    {
+      "USB_V": 3.5,
+      "MAIN_V": 3.5,
+      "GPIO": "LOW",
+      "source": "USB"
+    },
+    {
+      "USB_V": 3.5,
+      "MAIN_V": 3.5,
+      "GPIO": "HIGH",
+      "source": "MAIN"
+    },
+    {
+      "USB_V": 3.5,
+      "MAIN_V": 4.2,
+      "GPIO": "Hi-Z",
+      "source": "USB"
+    },
+    {
+      "USB_V": 3.5,
+      "MAIN_V": 4.2,
+      "GPIO": "LOW",
+      "source": "USB"
+    },
+    {
+      "USB_V": 3.5,
+      "MAIN_V": 4.2,
+      "GPIO": "HIGH",
+      "source": "MAIN"
+    },
+    {
+      "USB_V": 3.5,
+      "MAIN_V": 8.4,
+      "GPIO": "Hi-Z",
+      "source": "USB"
+    },
+    {
+      "USB_V": 3.5,
+      "MAIN_V": 8.4,
+      "GPIO": "LOW",
+      "source": "USB"
+    },
+    {
+      "USB_V": 3.5,
+      "MAIN_V": 8.4,
+      "GPIO": "HIGH",
+      "source": "MAIN"
+    },
+    {
+      "USB_V": 3.5,
+      "MAIN_V": 12.6,
+      "GPIO": "Hi-Z",
+      "source": "USB"
+    },
+    {
+      "USB_V": 3.5,
+      "MAIN_V": 12.6,
+      "GPIO": "LOW",
+      "source": "USB"
+    },
+    {
+      "USB_V": 3.5,
+      "MAIN_V": 12.6,
+      "GPIO": "HIGH",
+      "source": "MAIN"
+    },
+    {
+      "USB_V": 3.5,
+      "MAIN_V": 16.8,
+      "GPIO": "Hi-Z",
+      "source": "USB"
+    },
+    {
+      "USB_V": 3.5,
+      "MAIN_V": 16.8,
+      "GPIO": "LOW",
+      "source": "USB"
+    },
+    {
+      "USB_V": 3.5,
+      "MAIN_V": 16.8,
+      "GPIO": "HIGH",
+      "source": "MAIN"
+    },
+    {
+      "USB_V": 4.3,
+      "MAIN_V": 0,
+      "GPIO": "Hi-Z",
+      "source": "USB"
+    },
+    {
+      "USB_V": 4.3,
+      "MAIN_V": 0,
+      "GPIO": "LOW",
+      "source": "USB"
+    },
+    {
+      "USB_V": 4.3,
+      "MAIN_V": 0,
+      "GPIO": "HIGH",
+      "source": "USB"
+    },
+    {
+      "USB_V": 4.3,
+      "MAIN_V": 2.8,
+      "GPIO": "Hi-Z",
+      "source": "USB"
+    },
+    {
+      "USB_V": 4.3,
+      "MAIN_V": 2.8,
+      "GPIO": "LOW",
+      "source": "USB"
+    },
+    {
+      "USB_V": 4.3,
+      "MAIN_V": 2.8,
+      "GPIO": "HIGH",
+      "source": "MAIN"
+    },
+    {
+      "USB_V": 4.3,
+      "MAIN_V": 3.5,
+      "GPIO": "Hi-Z",
+      "source": "USB"
+    },
+    {
+      "USB_V": 4.3,
+      "MAIN_V": 3.5,
+      "GPIO": "LOW",
+      "source": "USB"
+    },
+    {
+      "USB_V": 4.3,
+      "MAIN_V": 3.5,
+      "GPIO": "HIGH",
+      "source": "MAIN"
+    },
+    {
+      "USB_V": 4.3,
+      "MAIN_V": 4.2,
+      "GPIO": "Hi-Z",
+      "source": "USB"
+    },
+    {
+      "USB_V": 4.3,
+      "MAIN_V": 4.2,
+      "GPIO": "LOW",
+      "source": "USB"
+    },
+    {
+      "USB_V": 4.3,
+      "MAIN_V": 4.2,
+      "GPIO": "HIGH",
+      "source": "MAIN"
+    },
+    {
+      "USB_V": 4.3,
+      "MAIN_V": 8.4,
+      "GPIO": "Hi-Z",
+      "source": "USB"
+    },
+    {
+      "USB_V": 4.3,
+      "MAIN_V": 8.4,
+      "GPIO": "LOW",
+      "source": "USB"
+    },
+    {
+      "USB_V": 4.3,
+      "MAIN_V": 8.4,
+      "GPIO": "HIGH",
+      "source": "MAIN"
+    },
+    {
+      "USB_V": 4.3,
+      "MAIN_V": 12.6,
+      "GPIO": "Hi-Z",
+      "source": "USB"
+    },
+    {
+      "USB_V": 4.3,
+      "MAIN_V": 12.6,
+      "GPIO": "LOW",
+      "source": "USB"
+    },
+    {
+      "USB_V": 4.3,
+      "MAIN_V": 12.6,
+      "GPIO": "HIGH",
+      "source": "MAIN"
+    },
+    {
+      "USB_V": 4.3,
+      "MAIN_V": 16.8,
+      "GPIO": "Hi-Z",
+      "source": "USB"
+    },
+    {
+      "USB_V": 4.3,
+      "MAIN_V": 16.8,
+      "GPIO": "LOW",
+      "source": "USB"
+    },
+    {
+      "USB_V": 4.3,
+      "MAIN_V": 16.8,
+      "GPIO": "HIGH",
+      "source": "MAIN"
+    },
+    {
+      "USB_V": 4.5,
+      "MAIN_V": 0,
+      "GPIO": "Hi-Z",
+      "source": "USB"
+    },
+    {
+      "USB_V": 4.5,
+      "MAIN_V": 0,
+      "GPIO": "LOW",
+      "source": "USB"
+    },
+    {
+      "USB_V": 4.5,
+      "MAIN_V": 0,
+      "GPIO": "HIGH",
+      "source": "USB"
+    },
+    {
+      "USB_V": 4.5,
+      "MAIN_V": 2.8,
+      "GPIO": "Hi-Z",
+      "source": "USB"
+    },
+    {
+      "USB_V": 4.5,
+      "MAIN_V": 2.8,
+      "GPIO": "LOW",
+      "source": "USB"
+    },
+    {
+      "USB_V": 4.5,
+      "MAIN_V": 2.8,
+      "GPIO": "HIGH",
+      "source": "MAIN"
+    },
+    {
+      "USB_V": 4.5,
+      "MAIN_V": 3.5,
+      "GPIO": "Hi-Z",
+      "source": "USB"
+    },
+    {
+      "USB_V": 4.5,
+      "MAIN_V": 3.5,
+      "GPIO": "LOW",
+      "source": "USB"
+    },
+    {
+      "USB_V": 4.5,
+      "MAIN_V": 3.5,
+      "GPIO": "HIGH",
+      "source": "MAIN"
+    },
+    {
+      "USB_V": 4.5,
+      "MAIN_V": 4.2,
+      "GPIO": "Hi-Z",
+      "source": "USB"
+    },
+    {
+      "USB_V": 4.5,
+      "MAIN_V": 4.2,
+      "GPIO": "LOW",
+      "source": "USB"
+    },
+    {
+      "USB_V": 4.5,
+      "MAIN_V": 4.2,
+      "GPIO": "HIGH",
+      "source": "MAIN"
+    },
+    {
+      "USB_V": 4.5,
+      "MAIN_V": 8.4,
+      "GPIO": "Hi-Z",
+      "source": "USB"
+    },
+    {
+      "USB_V": 4.5,
+      "MAIN_V": 8.4,
+      "GPIO": "LOW",
+      "source": "USB"
+    },
+    {
+      "USB_V": 4.5,
+      "MAIN_V": 8.4,
+      "GPIO": "HIGH",
+      "source": "MAIN"
+    },
+    {
+      "USB_V": 4.5,
+      "MAIN_V": 12.6,
+      "GPIO": "Hi-Z",
+      "source": "USB"
+    },
+    {
+      "USB_V": 4.5,
+      "MAIN_V": 12.6,
+      "GPIO": "LOW",
+      "source": "USB"
+    },
+    {
+      "USB_V": 4.5,
+      "MAIN_V": 12.6,
+      "GPIO": "HIGH",
+      "source": "MAIN"
+    },
+    {
+      "USB_V": 4.5,
+      "MAIN_V": 16.8,
+      "GPIO": "Hi-Z",
+      "source": "USB"
+    },
+    {
+      "USB_V": 4.5,
+      "MAIN_V": 16.8,
+      "GPIO": "LOW",
+      "source": "USB"
+    },
+    {
+      "USB_V": 4.5,
+      "MAIN_V": 16.8,
+      "GPIO": "HIGH",
+      "source": "MAIN"
+    },
+    {
+      "USB_V": 5,
+      "MAIN_V": 0,
+      "GPIO": "Hi-Z",
+      "source": "USB"
+    },
+    {
+      "USB_V": 5,
+      "MAIN_V": 0,
+      "GPIO": "LOW",
+      "source": "USB"
+    },
+    {
+      "USB_V": 5,
+      "MAIN_V": 0,
+      "GPIO": "HIGH",
+      "source": "USB"
+    },
+    {
+      "USB_V": 5,
+      "MAIN_V": 2.8,
+      "GPIO": "Hi-Z",
+      "source": "USB"
+    },
+    {
+      "USB_V": 5,
+      "MAIN_V": 2.8,
+      "GPIO": "LOW",
+      "source": "USB"
+    },
+    {
+      "USB_V": 5,
+      "MAIN_V": 2.8,
+      "GPIO": "HIGH",
+      "source": "MAIN"
+    },
+    {
+      "USB_V": 5,
+      "MAIN_V": 3.5,
+      "GPIO": "Hi-Z",
+      "source": "USB"
+    },
+    {
+      "USB_V": 5,
+      "MAIN_V": 3.5,
+      "GPIO": "LOW",
+      "source": "USB"
+    },
+    {
+      "USB_V": 5,
+      "MAIN_V": 3.5,
+      "GPIO": "HIGH",
+      "source": "MAIN"
+    },
+    {
+      "USB_V": 5,
+      "MAIN_V": 4.2,
+      "GPIO": "Hi-Z",
+      "source": "USB"
+    },
+    {
+      "USB_V": 5,
+      "MAIN_V": 4.2,
+      "GPIO": "LOW",
+      "source": "USB"
+    },
+    {
+      "USB_V": 5,
+      "MAIN_V": 4.2,
+      "GPIO": "HIGH",
+      "source": "MAIN"
+    },
+    {
+      "USB_V": 5,
+      "MAIN_V": 8.4,
+      "GPIO": "Hi-Z",
+      "source": "USB"
+    },
+    {
+      "USB_V": 5,
+      "MAIN_V": 8.4,
+      "GPIO": "LOW",
+      "source": "USB"
+    },
+    {
+      "USB_V": 5,
+      "MAIN_V": 8.4,
+      "GPIO": "HIGH",
+      "source": "MAIN"
+    },
+    {
+      "USB_V": 5,
+      "MAIN_V": 12.6,
+      "GPIO": "Hi-Z",
+      "source": "USB"
+    },
+    {
+      "USB_V": 5,
+      "MAIN_V": 12.6,
+      "GPIO": "LOW",
+      "source": "USB"
+    },
+    {
+      "USB_V": 5,
+      "MAIN_V": 12.6,
+      "GPIO": "HIGH",
+      "source": "MAIN"
+    },
+    {
+      "USB_V": 5,
+      "MAIN_V": 16.8,
+      "GPIO": "Hi-Z",
+      "source": "USB"
+    },
+    {
+      "USB_V": 5,
+      "MAIN_V": 16.8,
+      "GPIO": "LOW",
+      "source": "USB"
+    },
+    {
+      "USB_V": 5,
+      "MAIN_V": 16.8,
+      "GPIO": "HIGH",
+      "source": "MAIN"
+    },
+    {
+      "USB_V": 5.5,
+      "MAIN_V": 0,
+      "GPIO": "Hi-Z",
+      "source": "USB"
+    },
+    {
+      "USB_V": 5.5,
+      "MAIN_V": 0,
+      "GPIO": "LOW",
+      "source": "USB"
+    },
+    {
+      "USB_V": 5.5,
+      "MAIN_V": 0,
+      "GPIO": "HIGH",
+      "source": "USB"
+    },
+    {
+      "USB_V": 5.5,
+      "MAIN_V": 2.8,
+      "GPIO": "Hi-Z",
+      "source": "USB"
+    },
+    {
+      "USB_V": 5.5,
+      "MAIN_V": 2.8,
+      "GPIO": "LOW",
+      "source": "USB"
+    },
+    {
+      "USB_V": 5.5,
+      "MAIN_V": 2.8,
+      "GPIO": "HIGH",
+      "source": "MAIN"
+    },
+    {
+      "USB_V": 5.5,
+      "MAIN_V": 3.5,
+      "GPIO": "Hi-Z",
+      "source": "USB"
+    },
+    {
+      "USB_V": 5.5,
+      "MAIN_V": 3.5,
+      "GPIO": "LOW",
+      "source": "USB"
+    },
+    {
+      "USB_V": 5.5,
+      "MAIN_V": 3.5,
+      "GPIO": "HIGH",
+      "source": "MAIN"
+    },
+    {
+      "USB_V": 5.5,
+      "MAIN_V": 4.2,
+      "GPIO": "Hi-Z",
+      "source": "USB"
+    },
+    {
+      "USB_V": 5.5,
+      "MAIN_V": 4.2,
+      "GPIO": "LOW",
+      "source": "USB"
+    },
+    {
+      "USB_V": 5.5,
+      "MAIN_V": 4.2,
+      "GPIO": "HIGH",
+      "source": "MAIN"
+    },
+    {
+      "USB_V": 5.5,
+      "MAIN_V": 8.4,
+      "GPIO": "Hi-Z",
+      "source": "USB"
+    },
+    {
+      "USB_V": 5.5,
+      "MAIN_V": 8.4,
+      "GPIO": "LOW",
+      "source": "USB"
+    },
+    {
+      "USB_V": 5.5,
+      "MAIN_V": 8.4,
+      "GPIO": "HIGH",
+      "source": "MAIN"
+    },
+    {
+      "USB_V": 5.5,
+      "MAIN_V": 12.6,
+      "GPIO": "Hi-Z",
+      "source": "USB"
+    },
+    {
+      "USB_V": 5.5,
+      "MAIN_V": 12.6,
+      "GPIO": "LOW",
+      "source": "USB"
+    },
+    {
+      "USB_V": 5.5,
+      "MAIN_V": 12.6,
+      "GPIO": "HIGH",
+      "source": "MAIN"
+    },
+    {
+      "USB_V": 5.5,
+      "MAIN_V": 16.8,
+      "GPIO": "Hi-Z",
+      "source": "USB"
+    },
+    {
+      "USB_V": 5.5,
+      "MAIN_V": 16.8,
+      "GPIO": "LOW",
+      "source": "USB"
+    },
+    {
+      "USB_V": 5.5,
+      "MAIN_V": 16.8,
+      "GPIO": "HIGH",
+      "source": "MAIN"
+    }
+  ]
+}
