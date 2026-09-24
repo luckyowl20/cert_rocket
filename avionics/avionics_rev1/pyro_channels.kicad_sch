@@ -4269,7 +4269,7 @@
 		)
 		(uuid "ed01210e-e75c-42ac-8957-0fe57f934495")
 	)
-	(text "TODO: \noverall design review\nassign footprints for and gate, connector, fets\ndetermine resistor values for FETs dividers\npick correct FET footprint / part #\npick a connector footprint for J3 (small screw terminal) \n"
+	(text "TODO: \noverall design review\nassign footprints for and gate, connector, fets\ndetermine resistor values for FETs dividers\npick correct FET footprint / part # (dual fet)\npick a connector footprint for J3 (small screw terminal) \n"
 		(exclude_from_sim no)
 		(at 297.942 65.786 0)
 		(effects
