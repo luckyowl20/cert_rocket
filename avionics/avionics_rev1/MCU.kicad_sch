@@ -2646,16 +2646,24 @@
 		)
 		(uuid "b379cb32-8e86-455f-85fa-1d2473940447")
 	)
-	(text "TODO: \npins for SPI / I2C devices\npins for buzzer / status LED(s)\npins for pyro channels\npins for battery monitoring / current draw\ndetermine if this needs a crystal or not (prolly)\npins for USB connections\npins for debug header"
+	(text "TODO: \ndetermine pins for SPI / I2C devices\ndetermine pins for buzzer / status LED(s)\ndetermine pins for pyro channels\ndetermine pins for battery monitoring / \ncurrent draw (find IC for current sensing)\ndetermine if this needs a crystal or not (probably)\ndetermine pins for USB connections\ndetermine pins for other telemetry IO\nsetup a debug header / look into STlink\nfind a flash memory chip and wire it up"
 		(exclude_from_sim no)
-		(at 71.882 53.848 0)
+		(at 20.32 40.894 0)
 		(effects
 			(font
-				(size 1.27 1.27)
+				(size 2.032 2.032)
+				(thickness 0.4064)
+				(bold yes)
 			)
 			(justify left)
 		)
 		(uuid "b7e93550-6083-4a8c-aa0a-3ac0d96fba3f")
+	)
+	(junction
+		(at 179.07 128.27)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "0414eb38-b681-423c-87ec-8b0e9362fa3d")
 	)
 	(junction
 		(at 182.88 144.78)
@@ -2704,12 +2712,6 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "9d7da05c-2b33-4878-9b32-c3ae461fed8e")
-	)
-	(junction
-		(at 179.07 128.27)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "ba862c70-7ff7-490a-a45a-91c7af5f5f8d")
 	)
 	(junction
 		(at 163.83 153.67)
@@ -3059,7 +3061,7 @@
 	)
 	(wire
 		(pts
-			(xy 179.07 133.35) (xy 179.07 134.62)
+			(xy 179.07 134.62) (xy 179.07 135.89)
 		)
 		(stroke
 			(width 0)
@@ -3349,6 +3351,16 @@
 	)
 	(wire
 		(pts
+			(xy 179.07 129.54) (xy 179.07 128.27)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f3fc0351-5246-4a34-a528-9a67720b52ab")
+	)
+	(wire
+		(pts
 			(xy 173.99 139.7) (xy 173.99 144.78)
 		)
 		(stroke
@@ -3388,16 +3400,6 @@
 		(uuid "fcdcd1e6-e2fc-400f-a419-683cced493af")
 	)
 	(label "VREF"
-		(at 156.21 128.27 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "16004cb1-4a72-410e-ac19-033bf3605ddf")
-	)
-	(label "VREF"
 		(at 135.89 20.32 0)
 		(effects
 			(font
@@ -3432,7 +3434,7 @@
 		)
 	)
 	(global_label "UART_TX"
-		(shape input)
+		(shape output)
 		(at 160.02 95.25 0)
 		(fields_autoplaced yes)
 		(effects
@@ -3455,8 +3457,32 @@
 			)
 		)
 	)
-	(global_label "PYRO_3_FIRE"
+	(global_label "PYRO_4_SENS"
 		(shape input)
+		(at 204.47 83.82 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "18d2c53f-51b1-4ba8-b455-2c094191158f")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 220.4575 83.82 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+	)
+	(global_label "PYRO_3_FIRE"
+		(shape output)
 		(at 176.53 80.01 0)
 		(fields_autoplaced yes)
 		(effects
@@ -3504,7 +3530,7 @@
 		)
 	)
 	(global_label "CS_RADIO"
-		(shape input)
+		(shape output)
 		(at 93.98 110.49 180)
 		(fields_autoplaced yes)
 		(effects
@@ -3528,7 +3554,7 @@
 		)
 	)
 	(global_label "CS_BARO"
-		(shape input)
+		(shape output)
 		(at 93.98 105.41 180)
 		(fields_autoplaced yes)
 		(effects
@@ -3552,7 +3578,7 @@
 		)
 	)
 	(global_label "RADIO_RF_SW"
-		(shape input)
+		(shape output)
 		(at 99.06 76.2 180)
 		(fields_autoplaced yes)
 		(effects
@@ -3576,7 +3602,7 @@
 		)
 	)
 	(global_label "CS_IMU"
-		(shape input)
+		(shape output)
 		(at 92.71 97.79 180)
 		(fields_autoplaced yes)
 		(effects
@@ -3599,8 +3625,32 @@
 			)
 		)
 	)
-	(global_label "SPI1_MOSI"
+	(global_label "PYRO_1_SENS"
 		(shape input)
+		(at 204.47 66.04 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "7ab312d7-6515-4d75-8f72-f14d3c352f0d")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 220.4575 66.04 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+	)
+	(global_label "SPI1_MOSI"
+		(shape output)
 		(at 115.57 110.49 180)
 		(fields_autoplaced yes)
 		(effects
@@ -3648,7 +3698,7 @@
 		)
 	)
 	(global_label "RADIO_REBOOT"
-		(shape input)
+		(shape output)
 		(at 101.6 81.28 180)
 		(fields_autoplaced yes)
 		(effects
@@ -3671,8 +3721,32 @@
 			)
 		)
 	)
-	(global_label "PYRO_2_FIRE"
+	(global_label "PYRO_2_SENS"
 		(shape input)
+		(at 204.47 71.12 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "898597ba-09ef-4f5a-946f-2c6395b0bb39")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 220.4575 71.12 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+	)
+	(global_label "PYRO_2_FIRE"
+		(shape output)
 		(at 175.26 72.39 0)
 		(fields_autoplaced yes)
 		(effects
@@ -3695,8 +3769,8 @@
 			)
 		)
 	)
-	(global_label "PYRO_1"
-		(shape input)
+	(global_label "PYRO_1_FIRE"
+		(shape output)
 		(at 175.26 66.04 0)
 		(fields_autoplaced yes)
 		(effects
@@ -3707,7 +3781,7 @@
 		)
 		(uuid "8c90729a-0c07-442d-8c8c-4b01cca06782")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 185.3814 66.04 0)
+			(at 190.4614 66.04 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3720,7 +3794,7 @@
 		)
 	)
 	(global_label "RADIO_INT"
-		(shape input)
+		(shape output)
 		(at 96.52 72.39 180)
 		(fields_autoplaced yes)
 		(effects
@@ -3744,7 +3818,7 @@
 		)
 	)
 	(global_label "GPS_RESET"
-		(shape input)
+		(shape output)
 		(at 93.98 92.71 180)
 		(fields_autoplaced yes)
 		(effects
@@ -3768,7 +3842,7 @@
 		)
 	)
 	(global_label "PYRO_4_FIRE"
-		(shape input)
+		(shape output)
 		(at 175.6967 86.635 0)
 		(fields_autoplaced yes)
 		(effects
@@ -3816,7 +3890,7 @@
 		)
 	)
 	(global_label "CS_ACCEL"
-		(shape input)
+		(shape output)
 		(at 95.25 101.6 180)
 		(fields_autoplaced yes)
 		(effects
@@ -3840,7 +3914,7 @@
 		)
 	)
 	(global_label "SPI1_SCK"
-		(shape input)
+		(shape output)
 		(at 115.57 115.57 180)
 		(fields_autoplaced yes)
 		(effects
@@ -3860,6 +3934,30 @@
 					(size 1.27 1.27)
 				)
 				(justify right)
+			)
+		)
+	)
+	(global_label "PYRO_3_SENS"
+		(shape input)
+		(at 204.47 77.47 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "ffd324c5-0cbd-4db7-bb3b-5bf12b80923f")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 220.4575 77.47 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
 			)
 		)
 	)
@@ -4193,7 +4291,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 179.07 134.62 0)
+		(at 179.07 135.89 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -4204,7 +4302,7 @@
 		(fields_autoplaced yes)
 		(uuid "51a7e586-a954-4af5-84ae-9c6dcf4687eb")
 		(property "Reference" "#PWR011"
-			(at 179.07 140.97 0)
+			(at 179.07 142.24 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4215,7 +4313,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 179.07 139.7 0)
+			(at 179.07 140.97 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -4225,7 +4323,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 179.07 134.62 0)
+			(at 179.07 135.89 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4236,7 +4334,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 179.07 134.62 0)
+			(at 179.07 135.89 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4247,7 +4345,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 179.07 134.62 0)
+			(at 179.07 135.89 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4672,7 +4770,7 @@
 	)
 	(symbol
 		(lib_id "Device:C_Small")
-		(at 179.07 130.81 180)
+		(at 179.07 132.08 180)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -4683,7 +4781,7 @@
 		(fields_autoplaced yes)
 		(uuid "a2635192-e133-4f64-a835-dc660305798d")
 		(property "Reference" "C14"
-			(at 181.61 129.5335 0)
+			(at 181.61 130.8035 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -4694,7 +4792,7 @@
 			)
 		)
 		(property "Value" "0.1uF"
-			(at 181.61 132.0735 0)
+			(at 181.61 133.3435 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -4705,7 +4803,7 @@
 			)
 		)
 		(property "Footprint" "Capacitor_SMD:C_0201_0603Metric"
-			(at 179.07 130.81 0)
+			(at 179.07 132.08 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4716,7 +4814,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 179.07 130.81 0)
+			(at 179.07 132.08 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4727,7 +4825,7 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor, small symbol"
-			(at 179.07 130.81 0)
+			(at 179.07 132.08 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4754,7 +4852,7 @@
 	)
 	(symbol
 		(lib_id "Device:Buzzer")
-		(at 35.56 36.83 0)
+		(at 24.13 91.44 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -4765,7 +4863,7 @@
 		(fields_autoplaced yes)
 		(uuid "a5d3b23e-31c3-4880-a600-c8dfcf57de2d")
 		(property "Reference" "BZ1"
-			(at 39.37 35.5599 0)
+			(at 27.94 90.1699 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -4776,7 +4874,7 @@
 			)
 		)
 		(property "Value" "Buzzer"
-			(at 39.37 38.0999 0)
+			(at 27.94 92.7099 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -4787,7 +4885,7 @@
 			)
 		)
 		(property "Footprint" "avionics_footprints:XDCR_PS1240P02BT"
-			(at 34.925 34.29 90)
+			(at 23.495 88.9 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4798,7 +4896,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 34.925 34.29 90)
+			(at 23.495 88.9 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4809,7 +4907,7 @@
 			)
 		)
 		(property "Description" "Buzzer, polarized"
-			(at 35.56 36.83 0)
+			(at 24.13 91.44 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)

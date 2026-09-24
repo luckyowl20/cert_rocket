@@ -1,0 +1,117 @@
+{
+  "source_sha256": "7e74b0d6cf6691030256bb5914ea10cdaccca40025d7908a3e42e9de363497b0",
+  "parts": [
+    {
+      "refs": [
+        "D1"
+      ],
+      "mpn": "LTST-C170GKT",
+      "fp": "LTST_C170GKT_0805",
+      "source": "C:\\Program Files\\KiCad\\10.0\\share\\kicad\\footprints\\LED_SMD.pretty\\LED_0805_2012Metric.kicad_mod",
+      "model": "C:\\Program Files\\KiCad\\10.0\\share\\kicad\\3dmodels\\LED_SMD.3dshapes\\LED_0805_2012Metric.step",
+      "generic": true,
+      "url": "https://www.digikey.com/en/products/detail/liteon/LTST-C170GKT/269226",
+      "ds": "https://media.digikey.com/pdf/Data%20Sheets/Lite-On%20PDFs/LTST-C170GKT.pdf"
+    },
+    {
+      "refs": [
+        "D2"
+      ],
+      "mpn": "USBLC6-4SC6",
+      "fp": "USBLC6_4SC6_SOT23_6",
+      "source": "C:\\Program Files\\KiCad\\10.0\\share\\kicad\\footprints\\Package_TO_SOT_SMD.pretty\\SOT-23-6.kicad_mod",
+      "model": "C:\\Program Files\\KiCad\\10.0\\share\\kicad\\3dmodels\\Package_TO_SOT_SMD.3dshapes\\SOT-23-6.step",
+      "generic": true,
+      "url": "https://www.digikey.com/en/products/detail/stmicroelectronics/USBLC6-4SC6/725216",
+      "ds": "https://www.st.com/resource/en/datasheet/usblc6-4.pdf"
+    },
+    {
+      "refs": [
+        "D4"
+      ],
+      "mpn": "BZT52C4V7-E3-08",
+      "fp": "BZT52C4V7_E3_08_SOD123",
+      "source": "C:\\Program Files\\KiCad\\10.0\\share\\kicad\\footprints\\Diode_SMD.pretty\\D_SOD-123.kicad_mod",
+      "model": "C:\\Program Files\\KiCad\\10.0\\share\\kicad\\3dmodels\\Diode_SMD.3dshapes\\D_SOD-123.step",
+      "generic": true,
+      "url": "https://www.digikey.com/en/products/detail/vishay-general-semiconductor-diodes-division/BZT52C4V7-E3-08/8564833",
+      "ds": "https://www.vishay.com/docs/86342/bzt52_series.pdf"
+    },
+    {
+      "refs": [
+        "Q1"
+      ],
+      "mpn": "DMN2056U-7",
+      "fp": "DMN2056U_7_SOT23",
+      "source": "C:\\Program Files\\KiCad\\10.0\\share\\kicad\\footprints\\Package_TO_SOT_SMD.pretty\\SOT-23.kicad_mod",
+      "model": "C:\\Program Files\\KiCad\\10.0\\share\\kicad\\3dmodels\\Package_TO_SOT_SMD.3dshapes\\SOT-23.step",
+      "generic": true,
+      "url": "https://www.digikey.com/en/products/detail/diodes-incorporated/DMN2056U-7/8275317",
+      "ds": "https://www.diodes.com/datasheet/download/DMN2056U.pdf"
+    },
+    {
+      "refs": [
+        "U6"
+      ],
+      "mpn": "TLV7041DBVR",
+      "fp": "TLV7041DBVR_SOT23_5",
+      "source": "C:\\Program Files\\KiCad\\10.0\\share\\kicad\\footprints\\Package_TO_SOT_SMD.pretty\\SOT-23-5.kicad_mod",
+      "model": "C:\\Program Files\\KiCad\\10.0\\share\\kicad\\3dmodels\\Package_TO_SOT_SMD.3dshapes\\SOT-23-5.step",
+      "generic": true,
+      "url": "https://www.digikey.com/en/products/detail/texas-instruments/TLV7041DBVR/10820152",
+      "ds": "https://www.ti.com/lit/ds/symlink/tlv7031.pdf"
+    },
+    {
+      "refs": [
+        "U5",
+        "U13"
+      ],
+      "mpn": "TPS2121RUXR",
+      "fp": "TPS2121RUXR_RUX12",
+      "source": "C:\\Users\\mdsch\\Desktop\\rocketry\\avionics\\downloads\\TPS2121RUXR\\KiCADv6\\footprints.pretty\\RUX0012A.kicad_mod",
+      "model": "C:\\Users\\mdsch\\Desktop\\rocketry\\avionics\\downloads\\TPS2121RUXR\\RUX0012A.stp",
+      "generic": false,
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "url": "https://www.digikey.com/en/products/detail/texas-instruments/TPS2121RUXR/9859001",
+      "ds": "https://www.ti.com/lit/ds/symlink/tps2121.pdf"
+    },
+    {
+      "refs": [
+        "U7"
+      ],
+      "mpn": "TMUX1511RSVR",
+      "fp": "TMUX1511RSVR_RSV16",
+      "source": "C:\\Users\\mdsch\\Desktop\\rocketry\\avionics\\downloads\\TMUX1511RSVR\\KiCADv6\\footprints.pretty\\RSV0016A-MFG.kicad_mod",
+      "model": "C:\\Users\\mdsch\\Desktop\\rocketry\\avionics\\downloads\\TMUX1511RSVR\\RSV0016A.stp",
+      "generic": false,
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "url": "https://www.digikey.com/en/products/detail/texas-instruments/TMUX1511RSVR/9954223",
+      "ds": "https://www.ti.com/lit/ds/symlink/tmux1511.pdf"
+    },
+    {
+      "refs": [
+        "U1"
+      ],
+      "mpn": "LMR604063SBRAKRQ1",
+      "fp": "LMR604063SBRAKRQ1_RAK9",
+      "source": "C:\\Users\\mdsch\\Desktop\\rocketry\\avionics\\downloads\\ul_LMR604065SRAKRQ1\\KiCADv6\\footprints.pretty\\RAK0009A-MFG.kicad_mod",
+      "model": "C:\\Users\\mdsch\\Desktop\\rocketry\\avionics\\avionics_rev1\\footprint_3D_models\\RAK0009A.stp",
+      "generic": false,
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "url": "https://www.digikey.com/en/products/detail/texas-instruments/LMR604063SBRAKRQ1/29020671",
+      "ds": "https://www.ti.com/lit/ds/symlink/lmr60406-q1.pdf"
+    }
+  ]
+}

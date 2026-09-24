@@ -2703,24 +2703,27 @@
 			(embedded_fonts no)
 		)
 	)
-	(text "TODO: add 1 more and gate to ensure \npyro power and MCU power are good"
+	(text "Pyro power good will be determined by MCU\nbefore fire command is sent"
 		(exclude_from_sim no)
-		(at 19.304 79.756 0)
+		(at 33.528 69.342 0)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
 			(justify left)
 		)
-		(uuid "2c14308b-5ec0-4c8e-85d0-185c5b20f4b7")
+		(uuid "ed01210e-e75c-42ac-8957-0fe57f934495")
 	)
-	(text "TODO: assign footprints for and gate, connector, fets\ndetermine resistor values for FETs\npick correct FET footprint / part #\n"
+	(text "TODO: \noverall design review\nassign footprints for and gate, connector, fets\ndetermine resistor values for FETs dividers\npick correct FET footprint / part #\npick a connector footprint for J3 (small screw terminal) \n"
 		(exclude_from_sim no)
-		(at 112.014 52.578 0)
+		(at 53.34 28.956 0)
 		(effects
 			(font
-				(size 1.27 1.27)
+				(size 2.032 2.032)
+				(thickness 0.4064)
+				(bold yes)
 			)
+			(justify left)
 		)
 		(uuid "ee751a6e-9c9e-4918-952f-5bda96a1b374")
 	)
@@ -3554,7 +3557,7 @@
 		)
 		(uuid "b1ef5f05-74b1-4612-ada5-c7340162770f")
 	)
-	(label "PYRO_3_FET"
+	(label "PYRO_4_FET"
 		(at 177.8 106.68 0)
 		(effects
 			(font

@@ -38,16 +38,18 @@
 		)
 		(uuid "895112d4-ad7c-47b5-a2e8-4fc0026f40b7")
 	)
-	(text "TODO: consolidate sensors into 1 sheet if needed"
+	(text "TODO:\nDraw system schematic with relevant sheets at a high level\nConsolidate datasheets to their respective sheets/parts\nWrite specs/assumptions on this page\nFind a flash chip and connect it to MCU"
 		(exclude_from_sim no)
-		(at 218.948 33.782 0)
+		(at 41.148 114.046 0)
 		(effects
 			(font
-				(size 1.27 1.27)
+				(size 2.032 2.032)
+				(thickness 0.254)
+				(bold yes)
 			)
 			(justify left)
 		)
-		(uuid "b89c674c-f3d8-4b72-ba8a-7839818606a2")
+		(uuid "fce11b6c-efa1-485c-80d6-50c80a137ab2")
 	)
 	(sheet
 		(at 22.86 22.86)
@@ -199,7 +201,7 @@
 		)
 	)
 	(sheet
-		(at 130.81 96.52)
+		(at 139.7 86.36)
 		(size 27.94 11.43)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -215,7 +217,7 @@
 		)
 		(uuid "ed6133c6-6f1b-42df-b4e6-53aba33da3e9")
 		(property "Sheetname" "pyro_channels"
-			(at 130.81 95.8084 0)
+			(at 139.7 85.6484 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -226,7 +228,7 @@
 			)
 		)
 		(property "Sheetfile" "pyro_channels.kicad_sch"
-			(at 130.81 108.5346 0)
+			(at 139.7 98.3746 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
