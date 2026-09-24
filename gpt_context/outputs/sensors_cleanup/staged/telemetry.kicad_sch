@@ -1887,14 +1887,12 @@
 			(embedded_fonts no)
 		)
 	)
-	(text "TODO: \nfigure out best antenna solution for 915mhz,\nif needed, include an SMA port (undesireable)\nupdate footprints for AE1 FL1 U6 and TP1\nAdd voltages/tolerances for all capacitors/resistors\nValidate schematic against component datasheets\n"
+	(text "TODO: update footprints for AE1 FL1 U6 and TP1\n"
 		(exclude_from_sim no)
-		(at 33.274 36.322 0)
+		(at 59.69 40.132 0)
 		(effects
 			(font
-				(size 2.032 2.032)
-				(thickness 0.4064)
-				(bold yes)
+				(size 1.27 1.27)
 			)
 			(justify left)
 		)

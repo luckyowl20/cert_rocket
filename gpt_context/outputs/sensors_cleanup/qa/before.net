@@ -1,0 +1,1385 @@
+(export
+	(version "E")
+	(design
+		(source "C:\\Users\\mdsch\\Desktop\\rocketry\\gpt_context\\outputs\\sensors_cleanup\\before\\sensors.kicad_sch")
+		(date "2026-09-24T01:38:14")
+		(tool "Eeschema 10.0.3")
+		(sheet
+			(number "1")
+			(name "/")
+			(tstamps "/")
+			(title_block
+				(title)
+				(company)
+				(rev)
+				(date)
+				(source "sensors.kicad_sch")
+				(comment
+					(number "1")
+					(value "")
+				)
+				(comment
+					(number "2")
+					(value "")
+				)
+				(comment
+					(number "3")
+					(value "")
+				)
+				(comment
+					(number "4")
+					(value "")
+				)
+				(comment
+					(number "5")
+					(value "")
+				)
+				(comment
+					(number "6")
+					(value "")
+				)
+				(comment
+					(number "7")
+					(value "")
+				)
+				(comment
+					(number "8")
+					(value "")
+				)
+				(comment
+					(number "9")
+					(value "")
+				)
+			)
+		)
+	)
+	(components
+		(comp
+			(ref "C22")
+			(value "0.1uF")
+			(footprint "Capacitor_SMD:C_0201_0603Metric")
+			(description "Unpolarized capacitor, small symbol")
+			(fields
+				(field
+					(name "Footprint") "Capacitor_SMD:C_0201_0603Metric")
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description") "Unpolarized capacitor, small symbol")
+			)
+			(libsource
+				(lib "Device")
+				(part "C_Small")
+				(description "Unpolarized capacitor, small symbol")
+			)
+			(property
+				(name "Sheetname")
+				(value "")
+			)
+			(property
+				(name "Sheetfile")
+				(value "outputs/sensors_cleanup/before/sensors.kicad_sch")
+			)
+			(property
+				(name "ki_keywords")
+				(value "capacitor cap")
+			)
+			(property
+				(name "ki_fp_filters")
+				(value "C_*")
+			)
+			(sheetpath
+				(names "/")
+				(tstamps "/")
+			)
+			(tstamps "f5cf8ad5-14eb-48ec-ba77-2697f07ed66c")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "C23")
+			(value "0.1uF")
+			(footprint "Capacitor_SMD:C_0201_0603Metric")
+			(description "Unpolarized capacitor, small symbol")
+			(fields
+				(field
+					(name "Footprint") "Capacitor_SMD:C_0201_0603Metric")
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description") "Unpolarized capacitor, small symbol")
+			)
+			(libsource
+				(lib "Device")
+				(part "C_Small")
+				(description "Unpolarized capacitor, small symbol")
+			)
+			(property
+				(name "Sheetname")
+				(value "")
+			)
+			(property
+				(name "Sheetfile")
+				(value "outputs/sensors_cleanup/before/sensors.kicad_sch")
+			)
+			(property
+				(name "ki_keywords")
+				(value "capacitor cap")
+			)
+			(property
+				(name "ki_fp_filters")
+				(value "C_*")
+			)
+			(sheetpath
+				(names "/")
+				(tstamps "/")
+			)
+			(tstamps "a1e52aae-1d33-471a-a50b-f589c5038fd8")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "C24")
+			(value "1uF")
+			(footprint "Capacitor_SMD:C_0201_0603Metric")
+			(description "Unpolarized capacitor, small symbol")
+			(fields
+				(field
+					(name "Footprint") "Capacitor_SMD:C_0201_0603Metric")
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description") "Unpolarized capacitor, small symbol")
+			)
+			(libsource
+				(lib "Device")
+				(part "C_Small")
+				(description "Unpolarized capacitor, small symbol")
+			)
+			(property
+				(name "Sheetname")
+				(value "")
+			)
+			(property
+				(name "Sheetfile")
+				(value "outputs/sensors_cleanup/before/sensors.kicad_sch")
+			)
+			(property
+				(name "ki_keywords")
+				(value "capacitor cap")
+			)
+			(property
+				(name "ki_fp_filters")
+				(value "C_*")
+			)
+			(sheetpath
+				(names "/")
+				(tstamps "/")
+			)
+			(tstamps "ac38747c-32f2-4212-b6ed-5cc0a35841ee")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "C25")
+			(value "0.1uF")
+			(footprint "Capacitor_SMD:C_0201_0603Metric")
+			(description "Unpolarized capacitor, small symbol")
+			(fields
+				(field
+					(name "Footprint") "Capacitor_SMD:C_0201_0603Metric")
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description") "Unpolarized capacitor, small symbol")
+			)
+			(libsource
+				(lib "Device")
+				(part "C_Small")
+				(description "Unpolarized capacitor, small symbol")
+			)
+			(property
+				(name "Sheetname")
+				(value "")
+			)
+			(property
+				(name "Sheetfile")
+				(value "outputs/sensors_cleanup/before/sensors.kicad_sch")
+			)
+			(property
+				(name "ki_keywords")
+				(value "capacitor cap")
+			)
+			(property
+				(name "ki_fp_filters")
+				(value "C_*")
+			)
+			(sheetpath
+				(names "/")
+				(tstamps "/")
+			)
+			(tstamps "6ce1fdb8-489b-465f-8da7-095502768685")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "C26")
+			(value "0.1uF")
+			(footprint "Capacitor_SMD:C_0201_0603Metric")
+			(description "Unpolarized capacitor, small symbol")
+			(fields
+				(field
+					(name "Footprint") "Capacitor_SMD:C_0201_0603Metric")
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description") "Unpolarized capacitor, small symbol")
+			)
+			(libsource
+				(lib "Device")
+				(part "C_Small")
+				(description "Unpolarized capacitor, small symbol")
+			)
+			(property
+				(name "Sheetname")
+				(value "")
+			)
+			(property
+				(name "Sheetfile")
+				(value "outputs/sensors_cleanup/before/sensors.kicad_sch")
+			)
+			(property
+				(name "ki_keywords")
+				(value "capacitor cap")
+			)
+			(property
+				(name "ki_fp_filters")
+				(value "C_*")
+			)
+			(sheetpath
+				(names "/")
+				(tstamps "/")
+			)
+			(tstamps "327c1c4a-83a3-4b4a-8971-1c2cfe5512e6")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "R9")
+			(value "10k")
+			(footprint "Resistor_SMD:R_0201_0603Metric")
+			(description "Resistor, small US symbol")
+			(fields
+				(field
+					(name "Footprint") "Resistor_SMD:R_0201_0603Metric")
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description") "Resistor, small US symbol")
+			)
+			(libsource
+				(lib "Device")
+				(part "R_Small_US")
+				(description "Resistor, small US symbol")
+			)
+			(property
+				(name "Sheetname")
+				(value "")
+			)
+			(property
+				(name "Sheetfile")
+				(value "outputs/sensors_cleanup/before/sensors.kicad_sch")
+			)
+			(property
+				(name "ki_keywords")
+				(value "r resistor")
+			)
+			(property
+				(name "ki_fp_filters")
+				(value "R_*")
+			)
+			(sheetpath
+				(names "/")
+				(tstamps "/")
+			)
+			(tstamps "a87d4329-2e6d-47c7-8f13-fcad6070aadd")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "R10")
+			(value "10k")
+			(footprint "Resistor_SMD:R_0201_0603Metric")
+			(description "Resistor, small US symbol")
+			(fields
+				(field
+					(name "Footprint") "Resistor_SMD:R_0201_0603Metric")
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description") "Resistor, small US symbol")
+			)
+			(libsource
+				(lib "Device")
+				(part "R_Small_US")
+				(description "Resistor, small US symbol")
+			)
+			(property
+				(name "Sheetname")
+				(value "")
+			)
+			(property
+				(name "Sheetfile")
+				(value "outputs/sensors_cleanup/before/sensors.kicad_sch")
+			)
+			(property
+				(name "ki_keywords")
+				(value "r resistor")
+			)
+			(property
+				(name "ki_fp_filters")
+				(value "R_*")
+			)
+			(sheetpath
+				(names "/")
+				(tstamps "/")
+			)
+			(tstamps "235c388a-fb97-44c9-9cda-1b80c6a5e786")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "R11")
+			(value "10k")
+			(footprint "Resistor_SMD:R_0201_0603Metric")
+			(description "Resistor, small US symbol")
+			(fields
+				(field
+					(name "Footprint") "Resistor_SMD:R_0201_0603Metric")
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description") "Resistor, small US symbol")
+			)
+			(libsource
+				(lib "Device")
+				(part "R_Small_US")
+				(description "Resistor, small US symbol")
+			)
+			(property
+				(name "Sheetname")
+				(value "")
+			)
+			(property
+				(name "Sheetfile")
+				(value "outputs/sensors_cleanup/before/sensors.kicad_sch")
+			)
+			(property
+				(name "ki_keywords")
+				(value "r resistor")
+			)
+			(property
+				(name "ki_fp_filters")
+				(value "R_*")
+			)
+			(sheetpath
+				(names "/")
+				(tstamps "/")
+			)
+			(tstamps "a9bf9c2b-e868-4727-8cf9-8961781b6839")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "U8")
+			(value "LPS22DFTR")
+			(footprint "QFN_22DFTR_STM")
+			(datasheet "https://www.st.com/resource/en/datasheet/lps22df.pdf")
+			(fields
+				(field
+					(name "Footprint") "QFN_22DFTR_STM")
+				(field
+					(name "Datasheet") "https://www.st.com/resource/en/datasheet/lps22df.pdf")
+				(field
+					(name "Description")
+				)
+			)
+			(libsource
+				(lib "rocketry_library")
+				(part "LPS22DFTR")
+				(description "")
+			)
+			(property
+				(name "Sheetname")
+				(value "")
+			)
+			(property
+				(name "Sheetfile")
+				(value "outputs/sensors_cleanup/before/sensors.kicad_sch")
+			)
+			(property
+				(name "ki_keywords")
+				(value "LPS22DFTR")
+			)
+			(property
+				(name "ki_fp_filters")
+				(value "QFN_22DFTR_STM QFN_22DFTR_STM-M QFN_22DFTR_STM-L")
+			)
+			(sheetpath
+				(names "/")
+				(tstamps "/")
+			)
+			(tstamps "8a56a585-a9ec-4d66-8091-2e431251f040")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "10")
+						)
+						(pin
+							(num "2")
+						)
+						(pin
+							(num "4")
+						)
+						(pin
+							(num "5")
+						)
+						(pin
+							(num "6")
+						)
+						(pin
+							(num "7")
+						)
+						(pin
+							(num "9")
+						)
+						(pin
+							(num "8")
+						)
+						(pin
+							(num "3")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "U9")
+			(value "ADXL375BCCZ-RL7")
+			(footprint "LGA_CC-14-1_ADI")
+			(datasheet "https://www.analog.com/media/en/technical-documentation/data-sheets/ADXL375-EP.pdf")
+			(fields
+				(field
+					(name "Footprint") "LGA_CC-14-1_ADI")
+				(field
+					(name "Datasheet") "https://www.analog.com/media/en/technical-documentation/data-sheets/ADXL375-EP.pdf")
+				(field
+					(name "Description")
+				)
+			)
+			(libsource
+				(lib "rocketry_library")
+				(part "ADXL375BCCZ-RL7")
+				(description "")
+			)
+			(property
+				(name "Sheetname")
+				(value "")
+			)
+			(property
+				(name "Sheetfile")
+				(value "outputs/sensors_cleanup/before/sensors.kicad_sch")
+			)
+			(property
+				(name "ki_keywords")
+				(value "ADXL375BCCZ-RL7")
+			)
+			(property
+				(name "ki_fp_filters")
+				(value "LGA_CC-14-1_ADI LGA_CC-14-1_ADI-M LGA_CC-14-1_ADI-L")
+			)
+			(sheetpath
+				(names "/")
+				(tstamps "/")
+			)
+			(tstamps "1db4138b-d3f9-4760-beb1-68dcbfa44be8")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+						(pin
+							(num "3")
+						)
+						(pin
+							(num "4")
+						)
+						(pin
+							(num "5")
+						)
+						(pin
+							(num "6")
+						)
+						(pin
+							(num "7")
+						)
+						(pin
+							(num "14")
+						)
+						(pin
+							(num "13")
+						)
+						(pin
+							(num "12")
+						)
+						(pin
+							(num "11")
+						)
+						(pin
+							(num "10")
+						)
+						(pin
+							(num "9")
+						)
+						(pin
+							(num "8")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "U10")
+			(value "LSM6DSV32XTR")
+			(footprint "LGA-14L_2p5X3p0X0p86_STM")
+			(datasheet "https://www.st.com/resource/en/datasheet/lsm6dsv32x.pdf")
+			(fields
+				(field
+					(name "Footprint") "LGA-14L_2p5X3p0X0p86_STM")
+				(field
+					(name "Datasheet") "https://www.st.com/resource/en/datasheet/lsm6dsv32x.pdf")
+				(field
+					(name "Description")
+				)
+			)
+			(libsource
+				(lib "rocketry_library")
+				(part "LSM6DSV32XTR")
+				(description "")
+			)
+			(property
+				(name "Sheetname")
+				(value "")
+			)
+			(property
+				(name "Sheetfile")
+				(value "outputs/sensors_cleanup/before/sensors.kicad_sch")
+			)
+			(property
+				(name "ki_keywords")
+				(value "LSM6DSV32XTR")
+			)
+			(property
+				(name "ki_fp_filters")
+				(value "LGA-14L_2p5X3p0X0p86_STM LGA-14L_2p5X3p0X0p86_STM-M LGA-14L_2p5X3p0X0p86_STM-L")
+			)
+			(sheetpath
+				(names "/")
+				(tstamps "/")
+			)
+			(tstamps "8aa28a44-3df6-40f8-9f8a-5694fb6a50d4")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+						(pin
+							(num "3")
+						)
+						(pin
+							(num "4")
+						)
+						(pin
+							(num "5")
+						)
+						(pin
+							(num "6")
+						)
+						(pin
+							(num "7")
+						)
+						(pin
+							(num "14")
+						)
+						(pin
+							(num "13")
+						)
+						(pin
+							(num "12")
+						)
+						(pin
+							(num "11")
+						)
+						(pin
+							(num "10")
+						)
+						(pin
+							(num "9")
+						)
+						(pin
+							(num "8")
+						)
+					)
+				)
+			)
+		)
+	)
+	(groups)
+	(variants)
+	(libparts
+		(libpart
+			(lib "Device")
+			(part "C_Small")
+			(description "Unpolarized capacitor, small symbol")
+			(footprints
+				(fp "C_*")
+			)
+			(fields
+				(field
+					(name "Reference") "C")
+				(field
+					(name "Value") "C_Small")
+				(field
+					(name "Footprint")
+				)
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description") "Unpolarized capacitor, small symbol")
+			)
+			(pins
+				(pin
+					(num "1")
+					(name "")
+					(type "passive")
+				)
+				(pin
+					(num "2")
+					(name "")
+					(type "passive")
+				)
+			)
+		)
+		(libpart
+			(lib "Device")
+			(part "R_Small_US")
+			(description "Resistor, small US symbol")
+			(footprints
+				(fp "R_*")
+			)
+			(fields
+				(field
+					(name "Reference") "R")
+				(field
+					(name "Value") "R_Small_US")
+				(field
+					(name "Footprint")
+				)
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description") "Resistor, small US symbol")
+			)
+			(pins
+				(pin
+					(num "1")
+					(name "")
+					(type "passive")
+				)
+				(pin
+					(num "2")
+					(name "")
+					(type "passive")
+				)
+			)
+		)
+		(libpart
+			(lib "rocketry_library")
+			(part "ADXL375BCCZ-RL7")
+			(docs "https://www.analog.com/media/en/technical-documentation/data-sheets/ADXL375-EP.pdf")
+			(footprints
+				(fp "LGA_CC-14-1_ADI")
+				(fp "LGA_CC-14-1_ADI-M")
+				(fp "LGA_CC-14-1_ADI-L")
+			)
+			(fields
+				(field
+					(name "Reference") "U")
+				(field
+					(name "Value") "ADXL375BCCZ-RL7")
+				(field
+					(name "Footprint") "LGA_CC-14-1_ADI")
+				(field
+					(name "Datasheet") "https://www.analog.com/media/en/technical-documentation/data-sheets/ADXL375-EP.pdf")
+				(field
+					(name "Description")
+				)
+			)
+			(pins
+				(pin
+					(num "1")
+					(name "VDDI/O")
+					(type "power_in")
+				)
+				(pin
+					(num "2")
+					(name "GND")
+					(type "power_out")
+				)
+				(pin
+					(num "3")
+					(name "RESERVED")
+					(type "unspecified")
+				)
+				(pin
+					(num "4")
+					(name "GND")
+					(type "power_out")
+				)
+				(pin
+					(num "5")
+					(name "GND")
+					(type "power_out")
+				)
+				(pin
+					(num "6")
+					(name "VS")
+					(type "unspecified")
+				)
+				(pin
+					(num "7")
+					(name "*CS")
+					(type "unspecified")
+				)
+				(pin
+					(num "8")
+					(name "INT1")
+					(type "bidirectional")
+				)
+				(pin
+					(num "9")
+					(name "INT2")
+					(type "bidirectional")
+				)
+				(pin
+					(num "10")
+					(name "NC")
+					(type "no_connect")
+				)
+				(pin
+					(num "11")
+					(name "RESERVED")
+					(type "unspecified")
+				)
+				(pin
+					(num "12")
+					(name "SDO/ALTADDRESS")
+					(type "unspecified")
+				)
+				(pin
+					(num "13")
+					(name "SDA/SDI/SDIO")
+					(type "unspecified")
+				)
+				(pin
+					(num "14")
+					(name "SCL/SCLK")
+					(type "unspecified")
+				)
+			)
+		)
+		(libpart
+			(lib "rocketry_library")
+			(part "LPS22DFTR")
+			(docs "https://www.st.com/resource/en/datasheet/lps22df.pdf")
+			(footprints
+				(fp "QFN_22DFTR_STM")
+				(fp "QFN_22DFTR_STM-M")
+				(fp "QFN_22DFTR_STM-L")
+			)
+			(fields
+				(field
+					(name "Reference") "U")
+				(field
+					(name "Value") "LPS22DFTR")
+				(field
+					(name "Footprint") "QFN_22DFTR_STM")
+				(field
+					(name "Datasheet") "https://www.st.com/resource/en/datasheet/lps22df.pdf")
+				(field
+					(name "Description")
+				)
+			)
+			(pins
+				(pin
+					(num "1")
+					(name "Vdd_IO")
+					(type "power_in")
+				)
+				(pin
+					(num "2")
+					(name "SCL/SPC")
+					(type "unspecified")
+				)
+				(pin
+					(num "3")
+					(name "RES")
+					(type "unspecified")
+				)
+				(pin
+					(num "4")
+					(name "SDA/SDI/SDISDO")
+					(type "unspecified")
+				)
+				(pin
+					(num "5")
+					(name "SDO/SA0")
+					(type "unspecified")
+				)
+				(pin
+					(num "6")
+					(name "CS")
+					(type "unspecified")
+				)
+				(pin
+					(num "7")
+					(name "INT_DRDY")
+					(type "input")
+				)
+				(pin
+					(num "8")
+					(name "GND_IO")
+					(type "power_out")
+				)
+				(pin
+					(num "9")
+					(name "GND")
+					(type "power_out")
+				)
+				(pin
+					(num "10")
+					(name "VDD")
+					(type "power_in")
+				)
+			)
+		)
+		(libpart
+			(lib "rocketry_library")
+			(part "LSM6DSV32XTR")
+			(docs "https://www.st.com/resource/en/datasheet/lsm6dsv32x.pdf")
+			(footprints
+				(fp "LGA-14L_2p5X3p0X0p86_STM")
+				(fp "LGA-14L_2p5X3p0X0p86_STM-M")
+				(fp "LGA-14L_2p5X3p0X0p86_STM-L")
+			)
+			(fields
+				(field
+					(name "Reference") "U")
+				(field
+					(name "Value") "LSM6DSV32XTR")
+				(field
+					(name "Footprint") "LGA-14L_2p5X3p0X0p86_STM")
+				(field
+					(name "Datasheet") "https://www.st.com/resource/en/datasheet/lsm6dsv32x.pdf")
+				(field
+					(name "Description")
+				)
+			)
+			(pins
+				(pin
+					(num "1")
+					(name "SDO/SA0")
+					(type "unspecified")
+				)
+				(pin
+					(num "2")
+					(name "SDX/AH1/QVAR1")
+					(type "unspecified")
+				)
+				(pin
+					(num "3")
+					(name "SCX/AH2/QVAR2")
+					(type "unspecified")
+				)
+				(pin
+					(num "4")
+					(name "INT1")
+					(type "input")
+				)
+				(pin
+					(num "5")
+					(name "VDD_IO")
+					(type "power_in")
+				)
+				(pin
+					(num "6")
+					(name "GND")
+					(type "power_out")
+				)
+				(pin
+					(num "7")
+					(name "GND")
+					(type "power_out")
+				)
+				(pin
+					(num "8")
+					(name "VDD")
+					(type "power_in")
+				)
+				(pin
+					(num "9")
+					(name "INT2")
+					(type "input")
+				)
+				(pin
+					(num "10")
+					(name "OCS_AUX")
+					(type "unspecified")
+				)
+				(pin
+					(num "11")
+					(name "SDO_AUX")
+					(type "unspecified")
+				)
+				(pin
+					(num "12")
+					(name "CS")
+					(type "unspecified")
+				)
+				(pin
+					(num "13")
+					(name "SCL")
+					(type "unspecified")
+				)
+				(pin
+					(num "14")
+					(name "SDA")
+					(type "unspecified")
+				)
+			)
+		)
+	)
+	(libraries
+		(library
+			(logical "Device")
+			(uri "${KICAD10_SYMBOL_DIR}/Device.kicad_sym")
+		)
+		(library
+			(logical "rocketry_library")
+			(uri "${KIPRJMOD}/symbol_library/rocketry_library.kicad_sym")
+		)
+	)
+	(nets
+		(net
+			(code "1")
+			(name "+3.3V")
+			(class "Default")
+			(node
+				(ref "C22")
+				(pin "2")
+				(pintype "passive")
+			)
+			(node
+				(ref "C23")
+				(pin "2")
+				(pintype "passive")
+			)
+			(node
+				(ref "C24")
+				(pin "2")
+				(pintype "passive")
+			)
+			(node
+				(ref "C25")
+				(pin "2")
+				(pintype "passive")
+			)
+			(node
+				(ref "C26")
+				(pin "2")
+				(pintype "passive")
+			)
+			(node
+				(ref "R10")
+				(pin "2")
+				(pintype "passive")
+			)
+			(node
+				(ref "R11")
+				(pin "2")
+				(pintype "passive")
+			)
+			(node
+				(ref "R9")
+				(pin "2")
+				(pintype "passive")
+			)
+			(node
+				(ref "U10")
+				(pin "5")
+				(pinfunction "VDD_IO_5")
+				(pintype "power_in")
+			)
+			(node
+				(ref "U10")
+				(pin "8")
+				(pinfunction "VDD_8")
+				(pintype "power_in")
+			)
+			(node
+				(ref "U8")
+				(pin "1")
+				(pinfunction "Vdd_IO_1")
+				(pintype "power_in")
+			)
+			(node
+				(ref "U8")
+				(pin "10")
+				(pinfunction "VDD_10")
+				(pintype "power_in")
+			)
+			(node
+				(ref "U9")
+				(pin "1")
+				(pinfunction "VDDI/O_1")
+				(pintype "power_in")
+			)
+			(node
+				(ref "U9")
+				(pin "6")
+				(pinfunction "VS_6")
+				(pintype "unspecified")
+			)
+		)
+		(net
+			(code "2")
+			(name "CS_ACCEL")
+			(class "Default")
+			(node
+				(ref "R10")
+				(pin "1")
+				(pintype "passive")
+			)
+			(node
+				(ref "U9")
+				(pin "7")
+				(pinfunction "*CS_7")
+				(pintype "unspecified")
+			)
+		)
+		(net
+			(code "3")
+			(name "CS_BARO")
+			(class "Default")
+			(node
+				(ref "R9")
+				(pin "1")
+				(pintype "passive")
+			)
+			(node
+				(ref "U8")
+				(pin "6")
+				(pinfunction "CS_6")
+				(pintype "unspecified")
+			)
+		)
+		(net
+			(code "4")
+			(name "CS_IMU")
+			(class "Default")
+			(node
+				(ref "R11")
+				(pin "1")
+				(pintype "passive")
+			)
+			(node
+				(ref "U10")
+				(pin "12")
+				(pinfunction "CS_12")
+				(pintype "unspecified")
+			)
+		)
+		(net
+			(code "5")
+			(name "GND")
+			(class "Default")
+			(node
+				(ref "C22")
+				(pin "1")
+				(pintype "passive")
+			)
+			(node
+				(ref "C23")
+				(pin "1")
+				(pintype "passive")
+			)
+			(node
+				(ref "C24")
+				(pin "1")
+				(pintype "passive")
+			)
+			(node
+				(ref "C25")
+				(pin "1")
+				(pintype "passive")
+			)
+			(node
+				(ref "C26")
+				(pin "1")
+				(pintype "passive")
+			)
+			(node
+				(ref "U10")
+				(pin "2")
+				(pinfunction "SDX/AH1/QVAR1_2")
+				(pintype "unspecified")
+			)
+			(node
+				(ref "U10")
+				(pin "3")
+				(pinfunction "SCX/AH2/QVAR2_3")
+				(pintype "unspecified")
+			)
+			(node
+				(ref "U10")
+				(pin "6")
+				(pinfunction "GND_6")
+				(pintype "power_out")
+			)
+			(node
+				(ref "U10")
+				(pin "7")
+				(pinfunction "GND_7")
+				(pintype "power_out")
+			)
+			(node
+				(ref "U8")
+				(pin "3")
+				(pinfunction "RES_3")
+				(pintype "unspecified")
+			)
+			(node
+				(ref "U8")
+				(pin "8")
+				(pinfunction "GND_IO_8")
+				(pintype "power_out")
+			)
+			(node
+				(ref "U8")
+				(pin "9")
+				(pinfunction "GND_9")
+				(pintype "power_out")
+			)
+			(node
+				(ref "U9")
+				(pin "2")
+				(pinfunction "GND_2")
+				(pintype "power_out")
+			)
+			(node
+				(ref "U9")
+				(pin "4")
+				(pinfunction "GND_4")
+				(pintype "power_out")
+			)
+			(node
+				(ref "U9")
+				(pin "5")
+				(pinfunction "GND_5")
+				(pintype "power_out")
+			)
+		)
+		(net
+			(code "6")
+			(name "SPI1_MISO")
+			(class "Default")
+			(node
+				(ref "U10")
+				(pin "1")
+				(pinfunction "SDO/SA0_1")
+				(pintype "unspecified")
+			)
+			(node
+				(ref "U8")
+				(pin "5")
+				(pinfunction "SDO/SA0_5")
+				(pintype "unspecified")
+			)
+			(node
+				(ref "U9")
+				(pin "12")
+				(pinfunction "SDO/ALTADDRESS_12")
+				(pintype "unspecified")
+			)
+		)
+		(net
+			(code "7")
+			(name "SPI1_MOSI")
+			(class "Default")
+			(node
+				(ref "U10")
+				(pin "14")
+				(pinfunction "SDA_14")
+				(pintype "unspecified")
+			)
+			(node
+				(ref "U8")
+				(pin "4")
+				(pinfunction "SDA/SDI/SDISDO_4")
+				(pintype "unspecified")
+			)
+			(node
+				(ref "U9")
+				(pin "13")
+				(pinfunction "SDA/SDI/SDIO_13")
+				(pintype "unspecified")
+			)
+		)
+		(net
+			(code "8")
+			(name "SPI1_SCK")
+			(class "Default")
+			(node
+				(ref "U10")
+				(pin "13")
+				(pinfunction "SCL_13")
+				(pintype "unspecified")
+			)
+			(node
+				(ref "U8")
+				(pin "2")
+				(pinfunction "SCL/SPC_2")
+				(pintype "unspecified")
+			)
+			(node
+				(ref "U9")
+				(pin "14")
+				(pinfunction "SCL/SCLK_14")
+				(pintype "unspecified")
+			)
+		)
+	)
+)

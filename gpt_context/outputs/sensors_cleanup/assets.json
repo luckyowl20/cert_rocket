@@ -1,0 +1,22 @@
+[
+  {
+    "footprint": "QFN_22DFTR_STM",
+    "model": "QFN_22DFTR_STM.step",
+    "source": "C:\\Users\\mdsch\\Desktop\\rocketry\\avionics\\downloads\\ul_LPS22DFTR\\QFN_22DFTR_STM.step"
+  },
+  {
+    "footprint": "LGA_CC-14-1_ADI",
+    "model": "LGA_CC-14-1_ADI.step",
+    "source": "C:\\Users\\mdsch\\Desktop\\rocketry\\avionics\\downloads\\ADXL375BCCZ_RL7\\LGA_CC-14-1_ADI.step"
+  },
+  {
+    "footprint": "LGA-14L_2p5X3p0X0p86_STM",
+    "model": "LGA-14L_2p5X3p0X0p86_STM.step",
+    "source": "C:\\Users\\mdsch\\Desktop\\rocketry\\avionics\\downloads\\ul_LSM6DSV32XTR\\LGA-14L_2p5X3p0X0p86_STM.step"
+  },
+  {
+    "footprint": "TAJA105K016RNJ_3216_18",
+    "model": "CP_EIA-3216-18_Kemet-A.step",
+    "source": "KiCad generic 3216-18 package"
+  }
+]

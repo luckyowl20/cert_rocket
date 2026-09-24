@@ -5,184 +5,6 @@
 	(uuid "5b9e8065-526f-4cc7-9fe9-782557e1ad51")
 	(paper "A4")
 	(lib_symbols
-		(symbol "Device:C_Polarized_Small"
-			(pin_numbers
-				(hide yes)
-			)
-			(pin_names
-				(offset 0.254)
-				(hide yes)
-			)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(in_pos_files yes)
-			(duplicate_pin_numbers_are_jumpers no)
-			(property "Reference" "C"
-				(at 0.254 1.778 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left)
-				)
-			)
-			(property "Value" "C_Polarized_Small"
-				(at 0.254 -2.032 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left)
-				)
-			)
-			(property "Footprint" ""
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Datasheet" ""
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Description" "Polarized capacitor, small symbol"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "ki_keywords" "cap capacitor"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "ki_fp_filters" "CP_*"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(symbol "C_Polarized_Small_0_1"
-				(rectangle
-					(start -1.524 0.6858)
-					(end 1.524 0.3048)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(rectangle
-					(start -1.524 -0.3048)
-					(end 1.524 -0.6858)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type outline)
-					)
-				)
-				(polyline
-					(pts
-						(xy -1.27 1.524) (xy -0.762 1.524)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -1.016 1.27) (xy -1.016 1.778)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-			)
-			(symbol "C_Polarized_Small_1_1"
-				(pin passive line
-					(at 0 2.54 270)
-					(length 1.8542)
-					(name ""
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 0 -2.54 90)
-					(length 1.8542)
-					(name ""
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-			(embedded_fonts no)
-		)
 		(symbol "Device:C_Small"
 			(pin_numbers
 				(hide yes)
@@ -862,7 +684,7 @@
 						)
 					)
 				)
-				(pin power_in line
+				(pin power_out line
 					(at 0 -2.54 0)
 					(length 7.62)
 					(name "GND"
@@ -880,7 +702,7 @@
 						)
 					)
 				)
-				(pin passive line
+				(pin unspecified line
 					(at 0 -5.08 0)
 					(length 7.62)
 					(name "RESERVED"
@@ -898,7 +720,7 @@
 						)
 					)
 				)
-				(pin power_in line
+				(pin power_out line
 					(at 0 -7.62 0)
 					(length 7.62)
 					(name "GND"
@@ -916,7 +738,7 @@
 						)
 					)
 				)
-				(pin power_in line
+				(pin power_out line
 					(at 0 -10.16 0)
 					(length 7.62)
 					(name "GND"
@@ -934,7 +756,7 @@
 						)
 					)
 				)
-				(pin power_in line
+				(pin unspecified line
 					(at 0 -12.7 0)
 					(length 7.62)
 					(name "VS"
@@ -952,7 +774,7 @@
 						)
 					)
 				)
-				(pin input line
+				(pin unspecified line
 					(at 0 -15.24 0)
 					(length 7.62)
 					(name "*CS"
@@ -970,7 +792,7 @@
 						)
 					)
 				)
-				(pin output line
+				(pin bidirectional line
 					(at 46.99 -15.24 180)
 					(length 7.62)
 					(name "INT1"
@@ -988,7 +810,7 @@
 						)
 					)
 				)
-				(pin output line
+				(pin bidirectional line
 					(at 46.99 -12.7 180)
 					(length 7.62)
 					(name "INT2"
@@ -1024,7 +846,7 @@
 						)
 					)
 				)
-				(pin passive line
+				(pin unspecified line
 					(at 46.99 -7.62 180)
 					(length 7.62)
 					(name "RESERVED"
@@ -1042,7 +864,7 @@
 						)
 					)
 				)
-				(pin bidirectional line
+				(pin unspecified line
 					(at 46.99 -5.08 180)
 					(length 7.62)
 					(name "SDO/ALTADDRESS"
@@ -1060,7 +882,7 @@
 						)
 					)
 				)
-				(pin bidirectional line
+				(pin unspecified line
 					(at 46.99 -2.54 180)
 					(length 7.62)
 					(name "SDA/SDI/SDIO"
@@ -1078,7 +900,7 @@
 						)
 					)
 				)
-				(pin input line
+				(pin unspecified line
 					(at 46.99 0 180)
 					(length 7.62)
 					(name "SCL/SCLK"
@@ -1228,7 +1050,7 @@
 						)
 					)
 				)
-				(pin passive line
+				(pin unspecified line
 					(at 54.61 -10.16 180)
 					(length 7.62)
 					(name "RES"
@@ -1246,7 +1068,7 @@
 						)
 					)
 				)
-				(pin bidirectional line
+				(pin unspecified line
 					(at 0 -7.62 0)
 					(length 7.62)
 					(name "SDA/SDI/SDISDO"
@@ -1264,7 +1086,7 @@
 						)
 					)
 				)
-				(pin bidirectional line
+				(pin unspecified line
 					(at 0 -10.16 0)
 					(length 7.62)
 					(name "SDO/SA0"
@@ -1282,7 +1104,7 @@
 						)
 					)
 				)
-				(pin input line
+				(pin unspecified line
 					(at 54.61 0 180)
 					(length 7.62)
 					(name "CS"
@@ -1300,7 +1122,7 @@
 						)
 					)
 				)
-				(pin output line
+				(pin input line
 					(at 54.61 -2.54 180)
 					(length 7.62)
 					(name "INT_DRDY"
@@ -1318,7 +1140,7 @@
 						)
 					)
 				)
-				(pin power_in line
+				(pin power_out line
 					(at 54.61 -7.62 180)
 					(length 7.62)
 					(name "GND_IO"
@@ -1336,7 +1158,7 @@
 						)
 					)
 				)
-				(pin power_in line
+				(pin power_out line
 					(at 54.61 -5.08 180)
 					(length 7.62)
 					(name "GND"
@@ -1386,7 +1208,7 @@
 						(color 255 255 194 1)
 					)
 				)
-				(pin input line
+				(pin unspecified line
 					(at 0 -5.08 0)
 					(length 7.62)
 					(name "SCL/SPC"
@@ -1504,7 +1326,7 @@
 				)
 			)
 			(symbol "LSM6DSV32XTR_0_1"
-				(pin bidirectional line
+				(pin unspecified line
 					(at 0 0 0)
 					(length 7.62)
 					(name "SDO/SA0"
@@ -1522,7 +1344,7 @@
 						)
 					)
 				)
-				(pin bidirectional line
+				(pin unspecified line
 					(at 0 -2.54 0)
 					(length 7.62)
 					(name "SDX/AH1/QVAR1"
@@ -1540,7 +1362,7 @@
 						)
 					)
 				)
-				(pin bidirectional line
+				(pin unspecified line
 					(at 0 -5.08 0)
 					(length 7.62)
 					(name "SCX/AH2/QVAR2"
@@ -1558,7 +1380,7 @@
 						)
 					)
 				)
-				(pin output line
+				(pin input line
 					(at 0 -7.62 0)
 					(length 7.62)
 					(name "INT1"
@@ -1594,7 +1416,7 @@
 						)
 					)
 				)
-				(pin power_in line
+				(pin power_out line
 					(at 0 -12.7 0)
 					(length 7.62)
 					(name "GND"
@@ -1612,7 +1434,7 @@
 						)
 					)
 				)
-				(pin power_in line
+				(pin power_out line
 					(at 0 -15.24 0)
 					(length 7.62)
 					(name "GND"
@@ -1648,7 +1470,7 @@
 						)
 					)
 				)
-				(pin output line
+				(pin input line
 					(at 66.04 -12.7 180)
 					(length 7.62)
 					(name "INT2"
@@ -1666,7 +1488,7 @@
 						)
 					)
 				)
-				(pin input line
+				(pin unspecified line
 					(at 66.04 -10.16 180)
 					(length 7.62)
 					(name "OCS_AUX"
@@ -1684,7 +1506,7 @@
 						)
 					)
 				)
-				(pin tri_state line
+				(pin unspecified line
 					(at 66.04 -7.62 180)
 					(length 7.62)
 					(name "SDO_AUX"
@@ -1702,7 +1524,7 @@
 						)
 					)
 				)
-				(pin input line
+				(pin unspecified line
 					(at 66.04 -5.08 180)
 					(length 7.62)
 					(name "CS"
@@ -1720,7 +1542,7 @@
 						)
 					)
 				)
-				(pin input line
+				(pin unspecified line
 					(at 66.04 -2.54 180)
 					(length 7.62)
 					(name "SCL"
@@ -1738,7 +1560,7 @@
 						)
 					)
 				)
-				(pin bidirectional line
+				(pin unspecified line
 					(at 66.04 0 180)
 					(length 7.62)
 					(name "SDA"
@@ -1810,12 +1632,12 @@
 		)
 		(uuid "f58bf09e-1d3e-4c56-943e-0a7bf9376d15")
 	)
-	(text "C24: 1uF tantalum per ADXL375 p.26.\nTAJA105K016RNJ, 16V, 10%, A case.\nPositive pin 1 to +3.3V; place at VS."
+	(text "The datasheet calls for tantalum caps (pg 26)\ncheck if this makes a difference between\nceramic capacitors"
 		(exclude_from_sim no)
 		(at 217.932 63.5 0)
 		(effects
 			(font
-				(size 1 1)
+				(size 1.27 1.27)
 			)
 			(justify left)
 		)
@@ -1879,13 +1701,14 @@
 		)
 		(uuid "9be3c299-1e89-4df4-a439-b6a1607e2dce")
 	)
-	(text "SENSOR DESIGN NOTES\n3.3V, 4-wire SPI; keep all CS high at startup.\nR9-R11: 10k 1% (0.33mA when selected).\nPlace bypass capacitors at each supply pin.\nU10: mode 1, Qvar/analog hub disabled.\nC24 follows ADI tantalum recommendation.\nDigiKey: TAJA105K016RNJ (478-1649-1-ND)\nhttps://www.digikey.com/en/products/detail/kyocera-avx/TAJA105K016RNJ/563757"
+	(text "TODO:\nValidate schematic for correctness against datasheets\nValidate pull up/down resistor values where relevant\nAssign footprints / 3D models to all components\nUpdate resistors/capacitors with tolerances/voltages\nDetermine if U9 needs special tantalum capacitors. \nIf so, find a digikey link and make note."
 		(exclude_from_sim no)
-		(at 177.038 105.41 0)
+		(at 177.038 113.792 0)
 		(effects
 			(font
-				(size 1.27 1.27)
+				(size 2.032 2.032)
 				(thickness 0.254)
+				(bold yes)
 			)
 			(justify left)
 		)
@@ -3114,7 +2937,7 @@
 				)
 			)
 		)
-		(property "Footprint" "avionics_footprints:LGA_CC-14-1_ADI"
+		(property "Footprint" "LGA_CC-14-1_ADI"
 			(at 205.74 36.83 0)
 			(hide yes)
 			(show_name no)
@@ -3126,7 +2949,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://www.analog.com/media/en/technical-documentation/data-sheets/ADXL375.pdf"
+		(property "Datasheet" "https://www.analog.com/media/en/technical-documentation/data-sheets/ADXL375-EP.pdf"
 			(at 205.74 36.83 0)
 			(hide yes)
 			(show_name no)
@@ -3146,28 +2969,6 @@
 			(effects
 				(font
 					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "MPN" "ADXL375BCCZ-RL7"
-			(at 205.74 36.83 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1 1)
-				)
-			)
-		)
-		(property "3D Model Type" "Supplier nominal package; visualization only"
-			(at 205.74 36.83 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1 1)
 				)
 			)
 		)
@@ -3246,13 +3047,13 @@
 				(justify right)
 			)
 		)
-		(property "Value" "10k 1%"
+		(property "Value" "10k"
 			(at 193.04 64.7699 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
-					(size 1 1)
+					(size 1.27 1.27)
 				)
 				(justify right)
 			)
@@ -3287,39 +3088,6 @@
 			(effects
 				(font
 					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Tolerance" "1%"
-			(at 195.58 63.5 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1 1)
-				)
-			)
-		)
-		(property "Power" "0.05W"
-			(at 195.58 63.5 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1 1)
-				)
-			)
-		)
-		(property "Voltage" "25V"
-			(at 195.58 63.5 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1 1)
 				)
 			)
 		)
@@ -3434,18 +3202,18 @@
 			(do_not_autoplace no)
 			(effects
 				(font
-					(size 1 1)
+					(size 1.27 1.27)
 				)
 				(justify right)
 			)
 		)
-		(property "Value" "100n 10%"
+		(property "Value" "0.1uF"
 			(at 127 124.4535 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
-					(size 1 1)
+					(size 1.27 1.27)
 				)
 				(justify right)
 			)
@@ -3481,39 +3249,6 @@
 				(font
 					(size 1.27 1.27)
 				)
-			)
-		)
-		(property "Tolerance" "10%"
-			(at 124.46 123.19 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1 1)
-				)
-			)
-		)
-		(property "Dielectric" "X7R"
-			(at 124.46 123.19 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1 1)
-				)
-			)
-		)
-		(property "Voltage" "10V"
-			(at 127 126.4535 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1 1)
-				)
-				(justify right)
 			)
 		)
 		(pin "2"
@@ -3705,18 +3440,18 @@
 			(do_not_autoplace no)
 			(effects
 				(font
-					(size 1 1)
+					(size 1.27 1.27)
 				)
 				(justify right)
 			)
 		)
-		(property "Value" "100n 10%"
+		(property "Value" "0.1uF"
 			(at 27.94 120.6435 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
-					(size 1 1)
+					(size 1.27 1.27)
 				)
 				(justify right)
 			)
@@ -3752,39 +3487,6 @@
 				(font
 					(size 1.27 1.27)
 				)
-			)
-		)
-		(property "Tolerance" "10%"
-			(at 25.4 119.38 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1 1)
-				)
-			)
-		)
-		(property "Dielectric" "X7R"
-			(at 25.4 119.38 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1 1)
-				)
-			)
-		)
-		(property "Voltage" "10V"
-			(at 27.94 122.6435 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1 1)
-				)
-				(justify right)
 			)
 		)
 		(pin "2"
@@ -3834,7 +3536,7 @@
 				)
 			)
 		)
-		(property "Footprint" "avionics_footprints:QFN_22DFTR_STM"
+		(property "Footprint" "QFN_22DFTR_STM"
 			(at 73.914 36.322 0)
 			(hide yes)
 			(show_name no)
@@ -3866,28 +3568,6 @@
 			(effects
 				(font
 					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "MPN" "LPS22DFTR"
-			(at 60.96 46.99 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1 1)
-				)
-			)
-		)
-		(property "3D Model Type" "Supplier nominal package; visualization only"
-			(at 60.96 46.99 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1 1)
 				)
 			)
 		)
@@ -3962,7 +3642,7 @@
 				)
 			)
 		)
-		(property "Footprint" "avionics_footprints:LGA-14L_2p5X3p0X0p86_STM"
+		(property "Footprint" "LGA-14L_2p5X3p0X0p86_STM"
 			(at 71.12 90.932 0)
 			(hide yes)
 			(show_name no)
@@ -3994,28 +3674,6 @@
 			(effects
 				(font
 					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "MPN" "LSM6DSV32XTR"
-			(at 48.26 104.14 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1 1)
-				)
-			)
-		)
-		(property "3D Model Type" "Supplier nominal package; visualization only"
-			(at 48.26 104.14 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1 1)
 				)
 			)
 		)
@@ -4634,18 +4292,18 @@
 			(do_not_autoplace no)
 			(effects
 				(font
-					(size 1 1)
+					(size 1.27 1.27)
 				)
 				(justify right)
 			)
 		)
-		(property "Value" "100n 10%"
+		(property "Value" "0.1uF"
 			(at 184.15 38.0935 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
-					(size 1 1)
+					(size 1.27 1.27)
 				)
 				(justify right)
 			)
@@ -4681,39 +4339,6 @@
 				(font
 					(size 1.27 1.27)
 				)
-			)
-		)
-		(property "Tolerance" "10%"
-			(at 181.61 36.83 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1 1)
-				)
-			)
-		)
-		(property "Dielectric" "X7R"
-			(at 181.61 36.83 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1 1)
-				)
-			)
-		)
-		(property "Voltage" "10V"
-			(at 184.15 40.0935 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1 1)
-				)
-				(justify right)
 			)
 		)
 		(pin "2"
@@ -4833,13 +4458,13 @@
 				(justify right)
 			)
 		)
-		(property "Value" "10k 1%"
+		(property "Value" "10k"
 			(at 124.46 44.4499 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
-					(size 1 1)
+					(size 1.27 1.27)
 				)
 				(justify right)
 			)
@@ -4874,39 +4499,6 @@
 			(effects
 				(font
 					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Tolerance" "1%"
-			(at 127 43.18 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1 1)
-				)
-			)
-		)
-		(property "Power" "0.05W"
-			(at 127 43.18 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1 1)
-				)
-			)
-		)
-		(property "Voltage" "25V"
-			(at 127 43.18 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1 1)
 				)
 			)
 		)
@@ -4949,13 +4541,13 @@
 				(justify right)
 			)
 		)
-		(property "Value" "10k 1%"
+		(property "Value" "10k"
 			(at 135.89 106.6799 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
-					(size 1 1)
+					(size 1.27 1.27)
 				)
 				(justify right)
 			)
@@ -4993,39 +4585,6 @@
 				)
 			)
 		)
-		(property "Tolerance" "1%"
-			(at 138.43 105.41 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1 1)
-				)
-			)
-		)
-		(property "Power" "0.05W"
-			(at 138.43 105.41 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1 1)
-				)
-			)
-		)
-		(property "Voltage" "25V"
-			(at 138.43 105.41 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1 1)
-				)
-			)
-		)
 		(pin "1"
 			(uuid "f3b598dd-3074-4316-b4d1-8c14cc5c098a")
 		)
@@ -5042,8 +4601,8 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:C_Polarized_Small")
-		(at 173.99 54.61 0)
+		(lib_id "Device:C_Small")
+		(at 173.99 54.61 180)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -5059,23 +4618,23 @@
 			(do_not_autoplace no)
 			(effects
 				(font
-					(size 1 1)
+					(size 1.27 1.27)
 				)
-				(justify left)
+				(justify right)
 			)
 		)
-		(property "Value" "1u 10%"
+		(property "Value" "1uF"
 			(at 176.53 55.8735 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
-					(size 1 1)
+					(size 1.27 1.27)
 				)
-				(justify left)
+				(justify right)
 			)
 		)
-		(property "Footprint" "avionics_footprints:TAJA105K016RNJ_3216_18"
+		(property "Footprint" "Capacitor_SMD:C_0201_0603Metric"
 			(at 173.99 54.61 0)
 			(hide yes)
 			(show_name no)
@@ -5086,7 +4645,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://datasheets.kyocera-avx.com/TAJ.pdf"
+		(property "Datasheet" ""
 			(at 173.99 54.61 0)
 			(hide yes)
 			(show_name no)
@@ -5097,7 +4656,7 @@
 				)
 			)
 		)
-		(property "Description" "1uF 10% 16V tantalum, A case; positive pin 1 to +3.3V"
+		(property "Description" "Unpolarized capacitor, small symbol"
 			(at 173.99 54.61 0)
 			(hide yes)
 			(show_name no)
@@ -5105,83 +4664,6 @@
 			(effects
 				(font
 					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Tolerance" "10%"
-			(at 173.99 54.61 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1 1)
-				)
-			)
-		)
-		(property "Dielectric" "Tantalum"
-			(at 173.99 54.61 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1 1)
-				)
-			)
-		)
-		(property "Voltage" "16V"
-			(at 176.53 57.8735 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1 1)
-				)
-				(justify left)
-			)
-		)
-		(property "MPN" "TAJA105K016RNJ"
-			(at 173.99 54.61 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1 1)
-				)
-			)
-		)
-		(property "Manufacturer" "KYOCERA AVX"
-			(at 173.99 54.61 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1 1)
-				)
-			)
-		)
-		(property "DigiKey" "https://www.digikey.com/en/products/detail/kyocera-avx/TAJA105K016RNJ/563757"
-			(at 173.99 54.61 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1 1)
-				)
-			)
-		)
-		(property "3D Model Type" "KiCad generic 3216-18 package"
-			(at 173.99 54.61 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1 1)
 				)
 			)
 		)
@@ -5530,18 +5012,18 @@
 			(do_not_autoplace no)
 			(effects
 				(font
-					(size 1 1)
+					(size 1.27 1.27)
 				)
 				(justify right)
 			)
 		)
-		(property "Value" "100n 10%"
+		(property "Value" "0.1uF"
 			(at 39.37 54.6035 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
-					(size 1 1)
+					(size 1.27 1.27)
 				)
 				(justify right)
 			)
@@ -5577,39 +5059,6 @@
 				(font
 					(size 1.27 1.27)
 				)
-			)
-		)
-		(property "Tolerance" "10%"
-			(at 41.91 53.34 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1 1)
-				)
-			)
-		)
-		(property "Dielectric" "X7R"
-			(at 41.91 53.34 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1 1)
-				)
-			)
-		)
-		(property "Voltage" "10V"
-			(at 39.37 56.6035 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1 1)
-				)
-				(justify right)
 			)
 		)
 		(pin "2"

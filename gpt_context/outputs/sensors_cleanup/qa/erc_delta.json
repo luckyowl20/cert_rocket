@@ -1,0 +1,317 @@
+{
+  "removed": [
+    [
+      "/sensors/",
+      "pin_to_pin",
+      "Pins of type Power output and Power output are connected",
+      [
+        "Symbol U8 Pin 8 [GND_IO, Power output, Line]",
+        "Symbol U8 Pin 9 [GND, Power output, Line]"
+      ]
+    ],
+    [
+      "/power_setup/",
+      "pin_to_pin",
+      "Pins of type Bidirectional and Power output are connected",
+      [
+        "Symbol U10 Pin 7 [GND, Power output, Line]",
+        "Symbol U7 Pin 13 [D4, Bidirectional, Line]"
+      ]
+    ],
+    [
+      "/sensors/",
+      "pin_to_pin",
+      "Pins of type Unspecified and Passive are connected",
+      [
+        "Symbol R10 Pin 1 [Passive, Line]",
+        "Symbol U9 Pin 7 [*CS, Unspecified, Line]"
+      ]
+    ],
+    [
+      "/sensors/",
+      "pin_to_pin",
+      "Pins of type Unspecified and Unspecified are connected",
+      [
+        "Symbol U10 Pin 14 [SDA, Unspecified, Line]",
+        "Symbol U8 Pin 4 [SDA/SDI/SDISDO, Unspecified, Line]"
+      ]
+    ],
+    [
+      "/sensors/",
+      "pin_to_pin",
+      "Pins of type Unspecified and Unspecified are connected",
+      [
+        "Symbol U10 Pin 1 [SDO/SA0, Unspecified, Line]",
+        "Symbol U12 Pin 3 [SPI_MOSI, Unspecified, Line]"
+      ]
+    ],
+    [
+      "/sensors/",
+      "pin_to_pin",
+      "Pins of type Unspecified and Unspecified are connected",
+      [
+        "Symbol U10 Pin 13 [SCL, Unspecified, Line]",
+        "Symbol U8 Pin 2 [SCL/SPC, Unspecified, Line]"
+      ]
+    ],
+    [
+      "/sensors/",
+      "pin_to_pin",
+      "Pins of type Unspecified and Unspecified are connected",
+      [
+        "Symbol U10 Pin 1 [SDO/SA0, Unspecified, Line]",
+        "Symbol U8 Pin 5 [SDO/SA0, Unspecified, Line]"
+      ]
+    ],
+    [
+      "/sensors/",
+      "pin_to_pin",
+      "Pins of type Unspecified and Power output are connected",
+      [
+        "Symbol U8 Pin 3 [RES, Unspecified, Line]",
+        "Symbol U8 Pin 8 [GND_IO, Power output, Line]"
+      ]
+    ],
+    [
+      "/telemetry/",
+      "pin_to_pin",
+      "Pins of type Unspecified and Bidirectional are connected",
+      [
+        "Symbol U12 Pin 2 [SPI_MISO, Unspecified, Line]",
+        "Symbol U2 Pin 21 [PA7, Bidirectional, Line]"
+      ]
+    ],
+    [
+      "/sensors/",
+      "pin_to_pin",
+      "Pins of type Power output and Power output are connected",
+      [
+        "Symbol U10 Pin 7 [GND, Power output, Line]",
+        "Symbol U8 Pin 8 [GND_IO, Power output, Line]"
+      ]
+    ],
+    [
+      "/",
+      "footprint_link_issues",
+      "The current configuration does not include the footprint library ''",
+      [
+        "Symbol U8 [LPS22DFTR]"
+      ]
+    ],
+    [
+      "/",
+      "footprint_link_issues",
+      "The current configuration does not include the footprint library ''",
+      [
+        "Symbol U10 [LSM6DSV32XTR]"
+      ]
+    ],
+    [
+      "/sensors/",
+      "pin_to_pin",
+      "Pins of type Unspecified and Power output are connected",
+      [
+        "Symbol U10 Pin 3 [SCX/AH2/QVAR2, Unspecified, Line]",
+        "Symbol U10 Pin 6 [GND, Power output, Line]"
+      ]
+    ],
+    [
+      "/sensors/",
+      "pin_to_pin",
+      "Pins of type Power output and Power output are connected",
+      [
+        "Symbol U10 Pin 6 [GND, Power output, Line]",
+        "Symbol U10 Pin 7 [GND, Power output, Line]"
+      ]
+    ],
+    [
+      "/",
+      "footprint_link_issues",
+      "The current configuration does not include the footprint library ''",
+      [
+        "Symbol U9 [ADXL375BCCZ-RL7]"
+      ]
+    ],
+    [
+      "/sensors/",
+      "pin_to_pin",
+      "Pins of type Unspecified and Unspecified are connected",
+      [
+        "Symbol U10 Pin 14 [SDA, Unspecified, Line]",
+        "Symbol U12 Pin 2 [SPI_MISO, Unspecified, Line]"
+      ]
+    ],
+    [
+      "/sensors/",
+      "pin_to_pin",
+      "Pins of type Power output and Power output are connected",
+      [
+        "Symbol U8 Pin 9 [GND, Power output, Line]",
+        "Symbol U9 Pin 5 [GND, Power output, Line]"
+      ]
+    ],
+    [
+      "/sensors/",
+      "pin_to_pin",
+      "Pins of type Unspecified and Unspecified are connected",
+      [
+        "Symbol U10 Pin 1 [SDO/SA0, Unspecified, Line]",
+        "Symbol U9 Pin 12 [SDO/ALTADDRESS, Unspecified, Line]"
+      ]
+    ],
+    [
+      "/sensors/",
+      "pin_to_pin",
+      "Pins of type Power output and Power output are connected",
+      [
+        "Symbol U9 Pin 2 [GND, Power output, Line]",
+        "Symbol U9 Pin 4 [GND, Power output, Line]"
+      ]
+    ],
+    [
+      "/telemetry/",
+      "pin_to_pin",
+      "Pins of type Unspecified and Bidirectional are connected",
+      [
+        "Symbol U12 Pin 4 [SPI_SCK, Unspecified, Line]",
+        "Symbol U2 Pin 19 [PA5, Bidirectional, Line]"
+      ]
+    ],
+    [
+      "/sensors/",
+      "pin_to_pin",
+      "Pins of type Power output and Power output are connected",
+      [
+        "Symbol U9 Pin 4 [GND, Power output, Line]",
+        "Symbol U9 Pin 5 [GND, Power output, Line]"
+      ]
+    ],
+    [
+      "/power_setup/",
+      "pin_to_pin",
+      "Pins of type Bidirectional and Power output are connected",
+      [
+        "Symbol U10 Pin 7 [GND, Power output, Line]",
+        "Symbol U7 Pin 14 [S4, Bidirectional, Line]"
+      ]
+    ],
+    [
+      "/sensors/",
+      "pin_to_pin",
+      "Pins of type Unspecified and Passive are connected",
+      [
+        "Symbol R11 Pin 1 [Passive, Line]",
+        "Symbol U10 Pin 12 [CS, Unspecified, Line]"
+      ]
+    ],
+    [
+      "/sensors/",
+      "pin_to_pin",
+      "Pins of type Unspecified and Unspecified are connected",
+      [
+        "Symbol U10 Pin 13 [SCL, Unspecified, Line]",
+        "Symbol U9 Pin 14 [SCL/SCLK, Unspecified, Line]"
+      ]
+    ],
+    [
+      "/telemetry/",
+      "pin_to_pin",
+      "Pins of type Unspecified and Bidirectional are connected",
+      [
+        "Symbol U12 Pin 3 [SPI_MOSI, Unspecified, Line]",
+        "Symbol U2 Pin 20 [PA6, Bidirectional, Line]"
+      ]
+    ],
+    [
+      "/sensors/",
+      "pin_to_pin",
+      "Pins of type Unspecified and Unspecified are connected",
+      [
+        "Symbol U10 Pin 14 [SDA, Unspecified, Line]",
+        "Symbol U9 Pin 13 [SDA/SDI/SDIO, Unspecified, Line]"
+      ]
+    ],
+    [
+      "/power_setup/",
+      "pin_to_pin",
+      "Pins of type Bidirectional and Power output are connected",
+      [
+        "Symbol U10 Pin 7 [GND, Power output, Line]",
+        "Symbol U5 Pin 11 [SS, Bidirectional, Line]"
+      ]
+    ],
+    [
+      "/sensors/",
+      "pin_to_pin",
+      "Pins of type Unspecified and Power input are connected",
+      [
+        "Symbol U9 Pin 1 [VDDI/O, Power input, Line]",
+        "Symbol U9 Pin 6 [VS, Unspecified, Line]"
+      ]
+    ],
+    [
+      "/sensors/",
+      "pin_to_pin",
+      "Pins of type Unspecified and Passive are connected",
+      [
+        "Symbol R9 Pin 1 [Passive, Line]",
+        "Symbol U8 Pin 6 [CS, Unspecified, Line]"
+      ]
+    ],
+    [
+      "/sensors/",
+      "pin_to_pin",
+      "Pins of type Unspecified and Unspecified are connected",
+      [
+        "Symbol U10 Pin 2 [SDX/AH1/QVAR1, Unspecified, Line]",
+        "Symbol U10 Pin 3 [SCX/AH2/QVAR2, Unspecified, Line]"
+      ]
+    ],
+    [
+      "/sensors/",
+      "pin_to_pin",
+      "Pins of type Unspecified and Unspecified are connected",
+      [
+        "Symbol U10 Pin 13 [SCL, Unspecified, Line]",
+        "Symbol U12 Pin 4 [SPI_SCK, Unspecified, Line]"
+      ]
+    ]
+  ],
+  "added": [
+    [
+      "/telemetry/",
+      "pin_to_pin",
+      "Pins of type Unspecified and Bidirectional are connected",
+      [
+        "Symbol U10 Pin 1 [SDO/SA0, Bidirectional, Line]",
+        "Symbol U12 Pin 3 [SPI_MOSI, Unspecified, Line]"
+      ]
+    ],
+    [
+      "/pyro_channels/",
+      "power_pin_not_driven",
+      "Input Power pin not driven by any Output Power pins",
+      [
+        "Symbol SN74LVC08AQPWRQ1 Pin 7 [GND, Input, Line]"
+      ]
+    ],
+    [
+      "/telemetry/",
+      "pin_to_pin",
+      "Pins of type Unspecified and Bidirectional are connected",
+      [
+        "Symbol U10 Pin 14 [SDA, Bidirectional, Line]",
+        "Symbol U12 Pin 2 [SPI_MISO, Unspecified, Line]"
+      ]
+    ],
+    [
+      "/telemetry/",
+      "pin_to_pin",
+      "Pins of type Unspecified and Input are connected",
+      [
+        "Symbol U10 Pin 13 [SCL, Input, Line]",
+        "Symbol U12 Pin 4 [SPI_SCK, Unspecified, Line]"
+      ]
+    ]
+  ]
+}
