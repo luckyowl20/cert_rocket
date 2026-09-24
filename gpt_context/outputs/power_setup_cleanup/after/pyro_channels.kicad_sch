@@ -3647,7 +3647,7 @@
 		)
 	)
 	(global_label "PYRO_3_SENS"
-		(shape output)
+		(shape input)
 		(at 144.78 110.49 0)
 		(fields_autoplaced yes)
 		(effects
@@ -3671,7 +3671,7 @@
 		)
 	)
 	(global_label "PYRO_2_SENS"
-		(shape output)
+		(shape input)
 		(at 190.5 74.93 0)
 		(fields_autoplaced yes)
 		(effects
@@ -3743,7 +3743,7 @@
 		)
 	)
 	(global_label "PYRO_1_SENS"
-		(shape output)
+		(shape input)
 		(at 144.78 74.93 0)
 		(fields_autoplaced yes)
 		(effects
@@ -3767,7 +3767,7 @@
 		)
 	)
 	(global_label "PYRO_4_SENS"
-		(shape output)
+		(shape input)
 		(at 190.5 110.49 0)
 		(fields_autoplaced yes)
 		(effects
@@ -4951,7 +4951,7 @@
 		(dnp no)
 		(uuid "b51781b8-5a1b-429b-acbb-2bf2b96c4a42")
 		(property "Reference" "R7"
-			(at 147.32 78.74 0)
+			(at 148.59 80.01 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -4961,7 +4961,7 @@
 			)
 		)
 		(property "Value" "27k"
-			(at 147.32 81.28 0)
+			(at 146.05 80.01 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -5031,7 +5031,7 @@
 		(dnp no)
 		(uuid "b76f03f4-d294-4216-829b-7f3458e22c70")
 		(property "Reference" "R18"
-			(at 147.32 114.3 0)
+			(at 148.59 115.57 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -5041,7 +5041,7 @@
 			)
 		)
 		(property "Value" "27k"
-			(at 147.32 116.84 0)
+			(at 146.05 115.57 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -5111,7 +5111,7 @@
 		(dnp no)
 		(uuid "ca96c8c7-a694-4349-9b0d-0cb8c4bb8a90")
 		(property "Reference" "R14"
-			(at 193.04 78.74 0)
+			(at 194.31 80.01 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -5121,7 +5121,7 @@
 			)
 		)
 		(property "Value" "27k"
-			(at 193.04 81.28 0)
+			(at 191.77 80.01 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -5347,7 +5347,7 @@
 		(dnp no)
 		(uuid "d48ddbaf-951d-42de-85b3-d6b4b4d19abe")
 		(property "Reference" "R16"
-			(at 193.04 114.3 0)
+			(at 194.31 115.57 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -5357,7 +5357,7 @@
 			)
 		)
 		(property "Value" "27k"
-			(at 193.04 116.84 0)
+			(at 191.77 115.57 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects

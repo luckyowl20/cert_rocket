@@ -1,0 +1,18 @@
+{
+  "logic_mux": "U13",
+  "USB_priority_upper": "R36",
+  "USB_priority_lower": "R37",
+  "USB_input": "C31",
+  "main_input": "C32",
+  "mux_output": "C33",
+  "status_pullup": "R38",
+  "current_limit": "R39",
+  "soft_start": "C34",
+  "override_series": "R40",
+  "override_pulldown": "R41",
+  "USB_adc_upper": "R42",
+  "USB_adc_lower": "R43",
+  "USB_adc_filter": "C35",
+  "sense_enable_pulldown": "R44",
+  "TMUX_bypass": "C36"
+}
