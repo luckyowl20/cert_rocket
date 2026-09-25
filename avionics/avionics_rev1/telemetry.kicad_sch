@@ -1047,6 +1047,428 @@
 			)
 			(embedded_fonts no)
 		)
+		(symbol "rocketry_library:C1608X7R1A105K080AC"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0.254)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "C"
+				(at 0.254 1.778 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Value" "1u / 10V"
+				(at 0.254 -2.032 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "Unpolarized capacitor, small symbol"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "DigiKey" "https://www.digikey.com/en/products/detail/tdk/C1608X7R1A105K080AC/2093406"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1 1)
+					)
+				)
+			)
+			(property "MPN" "C1608X7R1A105K080AC"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1 1)
+					)
+				)
+			)
+			(property "Tolerance" "10%"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1 1)
+					)
+				)
+			)
+			(property "Voltage" "10V"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1 1)
+					)
+				)
+			)
+			(property "Dielectric" "X7R"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1 1)
+					)
+				)
+			)
+			(property "ki_keywords" "capacitor cap"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_fp_filters" "C_*"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "C1608X7R1A105K080AC_0_1"
+				(polyline
+					(pts
+						(xy -1.524 0.508) (xy 1.524 0.508)
+					)
+					(stroke
+						(width 0.3048)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -1.524 -0.508) (xy 1.524 -0.508)
+					)
+					(stroke
+						(width 0.3302)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "C1608X7R1A105K080AC_1_1"
+				(pin passive line
+					(at 0 2.54 270)
+					(length 2.032)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -2.54 90)
+					(length 2.032)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "rocketry_library:GRM155R71A104KA01D"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0.254)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "C"
+				(at 0.254 1.778 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Value" "100n / 10V"
+				(at 0.254 -2.032 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "Unpolarized capacitor, small symbol"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "DigiKey" "https://www.digikey.com/en/products/detail/murata-electronics/GRM155R71A104KA01D/3845518"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1 1)
+					)
+				)
+			)
+			(property "MPN" "GRM155R71A104KA01D"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1 1)
+					)
+				)
+			)
+			(property "Tolerance" "10%"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1 1)
+					)
+				)
+			)
+			(property "Voltage" "10V"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1 1)
+					)
+				)
+			)
+			(property "Dielectric" "X7R"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1 1)
+					)
+				)
+			)
+			(property "ki_keywords" "capacitor cap"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_fp_filters" "C_*"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "GRM155R71A104KA01D_0_1"
+				(polyline
+					(pts
+						(xy -1.524 0.508) (xy 1.524 0.508)
+					)
+					(stroke
+						(width 0.3048)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -1.524 -0.508) (xy 1.524 -0.508)
+					)
+					(stroke
+						(width 0.3302)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "GRM155R71A104KA01D_1_1"
+				(pin passive line
+					(at 0 2.54 270)
+					(length 2.032)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -2.54 90)
+					(length 2.032)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "rocketry_library:MAX-M10S-00B"
 			(pin_names
 				(offset 1.016)
@@ -1493,7 +1915,7 @@
 						)
 					)
 				)
-				(pin power_in line
+				(pin power_out line
 					(at 22.86 15.24 180)
 					(length 5.08)
 					(name "VCC_RF"
@@ -1586,6 +2008,322 @@
 			)
 			(embedded_fonts no)
 		)
+		(symbol "rocketry_library:Molex_2111400100_Offboard"
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board no)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "AE"
+				(at 0 4 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1 1)
+					)
+				)
+			)
+			(property "Value" "2111400100"
+				(at 0 -4 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1 1)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1 1)
+					)
+				)
+			)
+			(property "Datasheet" "https://www.molex.com/en-us/products/part-detail/2111400100"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1 1)
+					)
+				)
+			)
+			(property "Description" "Off-board 915 MHz adhesive flex antenna, 100 mm U.FL cable; plugs into U12"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1 1)
+					)
+				)
+			)
+			(property "MPN" "2111400100"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1 1)
+					)
+				)
+			)
+			(property "Manufacturer" "Molex"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1 1)
+					)
+				)
+			)
+			(property "DigiKey" "https://www.digikey.com/en/products/detail/molex/2111400100/9953925"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1 1)
+					)
+				)
+			)
+			(symbol "Molex_2111400100_Offboard_0_1"
+				(rectangle
+					(start -16 2.54)
+					(end 16 -2.54)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "rocketry_library:RC0402FR-0710KL"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0.254)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "R"
+				(at 0.762 0.508 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Value" "10k / 1%"
+				(at 0.762 -1.016 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "Resistor, small US symbol"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "DigiKey" "https://www.digikey.com/en/products/detail/yageo/RC0402FR-0710KL/726523"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1 1)
+					)
+				)
+			)
+			(property "MPN" "RC0402FR-0710KL"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1 1)
+					)
+				)
+			)
+			(property "Tolerance" "1%"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1 1)
+					)
+				)
+			)
+			(property "Voltage" "50V"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1 1)
+					)
+				)
+			)
+			(property "Dielectric" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1 1)
+					)
+				)
+			)
+			(property "ki_keywords" "r resistor"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_fp_filters" "R_*"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "RC0402FR-0710KL_1_1"
+				(polyline
+					(pts
+						(xy 0 1.524) (xy 1.016 1.143) (xy 0 0.762) (xy -1.016 0.381) (xy 0 0)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 0) (xy 1.016 -0.381) (xy 0 -0.762) (xy -1.016 -1.143) (xy 0 -1.524)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(pin passive line
+					(at 0 2.54 270)
+					(length 1.016)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -2.54 90)
+					(length 1.016)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "rocketry_library:Wio-SX1262"
 			(exclude_from_sim no)
 			(in_bom yes)
@@ -1667,7 +2405,7 @@
 						)
 					)
 				)
-				(pin unspecified line
+				(pin input line
 					(at 0 0 0)
 					(length 7.62)
 					(name "RF_SW"
@@ -1685,7 +2423,7 @@
 						)
 					)
 				)
-				(pin unspecified line
+				(pin output line
 					(at 0 -2.54 0)
 					(length 7.62)
 					(name "SPI_MISO"
@@ -1703,7 +2441,7 @@
 						)
 					)
 				)
-				(pin unspecified line
+				(pin input line
 					(at 0 -5.08 0)
 					(length 7.62)
 					(name "SPI_MOSI"
@@ -1721,7 +2459,7 @@
 						)
 					)
 				)
-				(pin unspecified line
+				(pin input line
 					(at 0 -7.62 0)
 					(length 7.62)
 					(name "SPI_SCK"
@@ -1739,7 +2477,7 @@
 						)
 					)
 				)
-				(pin unspecified line
+				(pin input line
 					(at 0 -10.16 0)
 					(length 7.62)
 					(name "NRST"
@@ -1757,7 +2495,7 @@
 						)
 					)
 				)
-				(pin unspecified line
+				(pin input line
 					(at 0 -12.7 0)
 					(length 7.62)
 					(name "SPI_CS"
@@ -1775,7 +2513,7 @@
 						)
 					)
 				)
-				(pin unspecified line
+				(pin power_in line
 					(at 34.29 -17.78 180)
 					(length 7.62)
 					(name "GND"
@@ -1793,7 +2531,7 @@
 						)
 					)
 				)
-				(pin unspecified line
+				(pin power_in line
 					(at 0 -17.78 0)
 					(length 7.62)
 					(name "VCC"
@@ -1811,7 +2549,7 @@
 						)
 					)
 				)
-				(pin unspecified line
+				(pin passive line
 					(at 34.29 -7.62 180)
 					(length 7.62)
 					(name "RF_ANT"
@@ -1829,7 +2567,7 @@
 						)
 					)
 				)
-				(pin unspecified line
+				(pin power_in line
 					(at 34.29 -15.24 180)
 					(length 7.62)
 					(name "GND"
@@ -1847,7 +2585,7 @@
 						)
 					)
 				)
-				(pin unspecified line
+				(pin output line
 					(at 34.29 -2.54 180)
 					(length 7.62)
 					(name "BUSY"
@@ -1865,7 +2603,7 @@
 						)
 					)
 				)
-				(pin unspecified line
+				(pin bidirectional line
 					(at 34.29 0 180)
 					(length 7.62)
 					(name "DIO"
@@ -1911,6 +2649,17 @@
 		)
 		(uuid "78d7c259-d8e5-4f72-acc6-2fdb2e7d2a9c")
 	)
+	(text "DESIGN NOTES - TELEMETRY\nMAX-M10S retained for coast/recovery. Above 4 g,\nboost tracking may drop out. Velocity limit: 500 m/s.\nLog fix validity and IMU data; inertial position drifts.\nGPS feed: short 50-ohm route, continuous ground,\nground vias by FL2. Antenna nominal ground: 50 x 50 mm.\nKeep batteries and radio antenna away from GPS patch.\n915 MHz: 10,000 ft is a range-test target, not a guarantee.\nMount AE3 inside fiberglass; strain-relieve its cable.\nRatings and tolerances are in component properties.\nOriginal TODO reference names are retained as written."
+		(exclude_from_sim no)
+		(at 211 24 0)
+		(effects
+			(font
+				(size 1 1)
+			)
+			(justify left top)
+		)
+		(uuid "22c16926-b98e-4742-a841-4e0aadd01db3")
+	)
 	(text "TODO: \nfigure out best antenna solution for 915mhz,\nif needed, include an SMA port (undesireable)\nupdate footprints for AE1 FL1 U6 and TP1\nAdd voltages/tolerances for all capacitors/resistors\nValidate schematic against component datasheets\n"
 		(exclude_from_sim no)
 		(at 172.466 131.318 0)
@@ -1936,7 +2685,7 @@
 		)
 		(uuid "4cc11c2c-a891-47c2-8586-f9526855d898")
 	)
-	(text "NRST is a radio restart pin, toggle it to reboot the module\nBUSY logic low means module is ready for new packet from SPI bus\nRF_SW toggles the antenna from receive to transit mode, high=transmit\nDIO is a configurable interrupt"
+	(text "NRST: active-low radio reset. BUSY low: ready for SPI command.\nRF_SW HIGH enables RX. Internal DIO2 HIGH selects TX.\nUse module DC-DC mode and configure DIO3 for the TCXO.\nDIO1 is the configurable interrupt. Verify RX/TX control in firmware."
 		(exclude_from_sim no)
 		(at 23.368 133.35 0)
 		(effects
@@ -1958,15 +2707,16 @@
 		)
 		(uuid "70ddd16a-7626-44ca-b255-06112c2f9658")
 	)
-	(text "Using onboard u.fl connector"
+	(text "OFF-BOARD 915 MHz ANTENNA\n38 x 10 mm flex / 100 mm cable\nConnect to U12 U.FL; pad 9 remains NC."
 		(exclude_from_sim no)
-		(at 128.524 155.702 0)
+		(at 211 158 0)
 		(effects
 			(font
-				(size 1.27 1.27)
+				(size 1 1)
 			)
+			(justify left top)
 		)
-		(uuid "845be02e-faef-42d4-862c-ccbef5f4b518")
+		(uuid "7e6b1a3e-31e8-49fd-aa70-2d9692172765")
 	)
 	(text "MAX-M10S-00B datasheet:\nhttps://content.u-blox.com/sites/default/files/MAX-M10S_DataSheet_UBX-20035208.pdf"
 		(exclude_from_sim no)
@@ -1998,25 +2748,25 @@
 		(uuid "126a5aa1-9ef8-4804-8122-ff62dfc4de32")
 	)
 	(junction
-		(at 156.21 44.45)
+		(at 162.56 44.45)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "2454f6ca-ab04-4f6d-9ff4-bfc8cccf81bf")
 	)
 	(junction
-		(at 171.45 44.45)
+		(at 177.8 44.45)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "32a977d5-4288-4a0e-8efa-6e5dc64d4673")
 	)
 	(junction
-		(at 59.69 87.63)
+		(at 66.04 87.63)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "3876bd4a-6134-4a69-87f1-e93d15e3fc23")
 	)
 	(junction
-		(at 171.45 52.07)
+		(at 177.8 52.07)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "3a521c12-aa87-4d26-b8ca-6fe8a1263ae2")
@@ -2046,7 +2796,7 @@
 		(uuid "b2bfbd9e-e1db-40fa-9da2-db84b4c29f4d")
 	)
 	(junction
-		(at 166.37 44.45)
+		(at 172.72 44.45)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "e7100b0c-2a35-4b09-8b1c-ec193d7ace54")
@@ -2064,27 +2814,27 @@
 		(uuid "fdc9d8f9-115d-4f55-bde1-dcbcee7f4286")
 	)
 	(no_connect
-		(at 152.4 46.99)
+		(at 158.75 46.99)
 		(uuid "10cb48db-17e0-4d16-94fb-f00025447e93")
 	)
 	(no_connect
-		(at 152.4 57.15)
+		(at 158.75 57.15)
 		(uuid "146bfc46-2057-4eab-8e55-9f350338965b")
 	)
 	(no_connect
-		(at 152.4 77.47)
+		(at 158.75 77.47)
 		(uuid "45772f5f-6466-4229-a486-1a99b6c6adae")
 	)
 	(no_connect
-		(at 152.4 62.23)
+		(at 158.75 62.23)
 		(uuid "8b83ad8a-df79-4f92-91be-0980aca93e0b")
 	)
 	(no_connect
-		(at 152.4 74.93)
+		(at 158.75 74.93)
 		(uuid "90f9929e-537e-461f-8f41-e4ad89822edd")
 	)
 	(no_connect
-		(at 106.68 67.31)
+		(at 113.03 67.31)
 		(uuid "ac3e2b14-aa77-4628-9838-6c849c37207d")
 	)
 	(no_connect
@@ -2092,11 +2842,11 @@
 		(uuid "d2910bcf-f53d-444f-ace4-af6002d03e17")
 	)
 	(no_connect
-		(at 152.4 52.07)
+		(at 158.75 52.07)
 		(uuid "f38e6161-705f-4aa3-ac07-687a229761d1")
 	)
 	(no_connect
-		(at 106.68 77.47)
+		(at 113.03 77.47)
 		(uuid "ffe9d832-4a23-4846-bfcb-924958542de9")
 	)
 	(wire
@@ -2111,7 +2861,7 @@
 	)
 	(wire
 		(pts
-			(xy 157.48 82.55) (xy 157.48 85.09)
+			(xy 163.83 82.55) (xy 163.83 85.09)
 		)
 		(stroke
 			(width 0)
@@ -2121,7 +2871,7 @@
 	)
 	(wire
 		(pts
-			(xy 55.88 85.09) (xy 55.88 87.63)
+			(xy 62.23 85.09) (xy 62.23 87.63)
 		)
 		(stroke
 			(width 0)
@@ -2131,7 +2881,7 @@
 	)
 	(wire
 		(pts
-			(xy 166.37 50.8) (xy 166.37 52.07)
+			(xy 172.72 50.8) (xy 172.72 52.07)
 		)
 		(stroke
 			(width 0)
@@ -2141,7 +2891,7 @@
 	)
 	(wire
 		(pts
-			(xy 166.37 52.07) (xy 171.45 52.07)
+			(xy 172.72 52.07) (xy 177.8 52.07)
 		)
 		(stroke
 			(width 0)
@@ -2161,7 +2911,7 @@
 	)
 	(wire
 		(pts
-			(xy 152.4 82.55) (xy 157.48 82.55)
+			(xy 158.75 82.55) (xy 163.83 82.55)
 		)
 		(stroke
 			(width 0)
@@ -2171,7 +2921,7 @@
 	)
 	(wire
 		(pts
-			(xy 166.37 45.72) (xy 166.37 44.45)
+			(xy 172.72 45.72) (xy 172.72 44.45)
 		)
 		(stroke
 			(width 0)
@@ -2191,7 +2941,7 @@
 	)
 	(wire
 		(pts
-			(xy 55.88 87.63) (xy 59.69 87.63)
+			(xy 62.23 87.63) (xy 66.04 87.63)
 		)
 		(stroke
 			(width 0)
@@ -2221,7 +2971,7 @@
 	)
 	(wire
 		(pts
-			(xy 59.69 87.63) (xy 59.69 88.9)
+			(xy 66.04 87.63) (xy 66.04 88.9)
 		)
 		(stroke
 			(width 0)
@@ -2241,7 +2991,7 @@
 	)
 	(wire
 		(pts
-			(xy 156.21 44.45) (xy 166.37 44.45)
+			(xy 162.56 44.45) (xy 172.72 44.45)
 		)
 		(stroke
 			(width 0)
@@ -2251,7 +3001,7 @@
 	)
 	(wire
 		(pts
-			(xy 22.86 62.23) (xy 41.91 62.23)
+			(xy 29.21 62.23) (xy 48.26 62.23)
 		)
 		(stroke
 			(width 0)
@@ -2271,7 +3021,7 @@
 	)
 	(wire
 		(pts
-			(xy 77.47 62.23) (xy 106.68 62.23)
+			(xy 83.82 62.23) (xy 113.03 62.23)
 		)
 		(stroke
 			(width 0)
@@ -2281,7 +3031,7 @@
 	)
 	(wire
 		(pts
-			(xy 152.4 49.53) (xy 156.21 49.53)
+			(xy 158.75 49.53) (xy 162.56 49.53)
 		)
 		(stroke
 			(width 0)
@@ -2311,7 +3061,7 @@
 	)
 	(wire
 		(pts
-			(xy 152.4 69.85) (xy 156.21 69.85)
+			(xy 158.75 69.85) (xy 162.56 69.85)
 		)
 		(stroke
 			(width 0)
@@ -2331,7 +3081,7 @@
 	)
 	(wire
 		(pts
-			(xy 152.4 67.31) (xy 156.21 67.31)
+			(xy 158.75 67.31) (xy 162.56 67.31)
 		)
 		(stroke
 			(width 0)
@@ -2341,7 +3091,7 @@
 	)
 	(wire
 		(pts
-			(xy 63.5 87.63) (xy 59.69 87.63)
+			(xy 69.85 87.63) (xy 66.04 87.63)
 		)
 		(stroke
 			(width 0)
@@ -2361,7 +3111,7 @@
 	)
 	(wire
 		(pts
-			(xy 171.45 44.45) (xy 171.45 45.72)
+			(xy 177.8 44.45) (xy 177.8 45.72)
 		)
 		(stroke
 			(width 0)
@@ -2411,7 +3161,7 @@
 	)
 	(wire
 		(pts
-			(xy 96.52 57.15) (xy 106.68 57.15)
+			(xy 102.87 57.15) (xy 113.03 57.15)
 		)
 		(stroke
 			(width 0)
@@ -2441,7 +3191,7 @@
 	)
 	(wire
 		(pts
-			(xy 63.5 85.09) (xy 63.5 87.63)
+			(xy 69.85 85.09) (xy 69.85 87.63)
 		)
 		(stroke
 			(width 0)
@@ -2491,7 +3241,7 @@
 	)
 	(wire
 		(pts
-			(xy 171.45 52.07) (xy 171.45 50.8)
+			(xy 177.8 52.07) (xy 177.8 50.8)
 		)
 		(stroke
 			(width 0)
@@ -2501,7 +3251,7 @@
 	)
 	(wire
 		(pts
-			(xy 181.61 52.07) (xy 171.45 52.07)
+			(xy 187.96 52.07) (xy 177.8 52.07)
 		)
 		(stroke
 			(width 0)
@@ -2521,7 +3271,7 @@
 	)
 	(wire
 		(pts
-			(xy 166.37 44.45) (xy 171.45 44.45)
+			(xy 172.72 44.45) (xy 177.8 44.45)
 		)
 		(stroke
 			(width 0)
@@ -2541,7 +3291,7 @@
 	)
 	(wire
 		(pts
-			(xy 181.61 44.45) (xy 171.45 44.45)
+			(xy 187.96 44.45) (xy 177.8 44.45)
 		)
 		(stroke
 			(width 0)
@@ -2561,7 +3311,7 @@
 	)
 	(wire
 		(pts
-			(xy 59.69 85.09) (xy 59.69 87.63)
+			(xy 66.04 85.09) (xy 66.04 87.63)
 		)
 		(stroke
 			(width 0)
@@ -2571,7 +3321,7 @@
 	)
 	(wire
 		(pts
-			(xy 102.87 72.39) (xy 106.68 72.39)
+			(xy 109.22 72.39) (xy 113.03 72.39)
 		)
 		(stroke
 			(width 0)
@@ -2581,7 +3331,7 @@
 	)
 	(wire
 		(pts
-			(xy 152.4 44.45) (xy 156.21 44.45)
+			(xy 158.75 44.45) (xy 162.56 44.45)
 		)
 		(stroke
 			(width 0)
@@ -2591,7 +3341,7 @@
 	)
 	(wire
 		(pts
-			(xy 156.21 49.53) (xy 156.21 44.45)
+			(xy 162.56 49.53) (xy 162.56 44.45)
 		)
 		(stroke
 			(width 0)
@@ -2611,7 +3361,7 @@
 	)
 	(global_label "UART_TX"
 		(shape input)
-		(at 156.21 69.85 0)
+		(at 162.56 69.85 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -2621,7 +3371,7 @@
 		)
 		(uuid "3a9b86f5-14f3-48a6-b550-6928fca62472")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 166.9966 69.85 0)
+			(at 173.3466 69.85 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2635,7 +3385,7 @@
 	)
 	(global_label "GPS_RESET"
 		(shape input)
-		(at 96.52 57.15 180)
+		(at 102.87 57.15 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -2645,7 +3395,7 @@
 		)
 		(uuid "447a78be-2fc9-49a1-b45d-738c685d9f00")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 83.0726 57.15 0)
+			(at 89.4226 57.15 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2779,7 +3529,7 @@
 	)
 	(global_label "UART_RX"
 		(shape output)
-		(at 156.21 67.31 0)
+		(at 162.56 67.31 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -2789,7 +3539,7 @@
 		)
 		(uuid "c89c64f4-6fec-4d33-a321-577ab32dcbf3")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 167.299 67.31 0)
+			(at 173.649 67.31 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2874,7 +3624,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:R_Small_US")
+		(lib_id "rocketry_library:RC0402FR-0710KL")
 		(at 45.72 153.67 0)
 		(mirror x)
 		(unit 1)
@@ -2908,7 +3658,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0201_0603Metric"
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
 			(at 45.72 153.67 0)
 			(hide yes)
 			(show_name no)
@@ -2941,6 +3691,61 @@
 				)
 			)
 		)
+		(property "DigiKey" "https://www.digikey.com/en/products/detail/yageo/RC0402FR-0710KL/726523"
+			(at 0 0 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "MPN" "RC0402FR-0710KL"
+			(at 0 0 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Tolerance" "1%"
+			(at 0 0 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Voltage" "50V"
+			(at 0 0 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Dielectric" ""
+			(at 0 0 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "2dfed5f5-ec65-499b-a499-4a50660c4b3f")
 		)
@@ -2958,7 +3763,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 59.69 88.9 0)
+		(at 66.04 88.9 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -2969,7 +3774,7 @@
 		(fields_autoplaced yes)
 		(uuid "0d0c4428-8295-435e-a740-245f7e8cfcba")
 		(property "Reference" "#PWR048"
-			(at 59.69 95.25 0)
+			(at 66.04 95.25 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2980,7 +3785,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 59.69 93.98 0)
+			(at 66.04 93.98 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -2990,7 +3795,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 59.69 88.9 0)
+			(at 66.04 88.9 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3001,7 +3806,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 59.69 88.9 0)
+			(at 66.04 88.9 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3012,7 +3817,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 59.69 88.9 0)
+			(at 66.04 88.9 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3035,7 +3840,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:R_Small_US")
+		(lib_id "rocketry_library:RC0402FR-0710KL")
 		(at 58.42 153.67 0)
 		(mirror x)
 		(unit 1)
@@ -3069,7 +3874,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0201_0603Metric"
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
 			(at 58.42 153.67 0)
 			(hide yes)
 			(show_name no)
@@ -3102,6 +3907,61 @@
 				)
 			)
 		)
+		(property "DigiKey" "https://www.digikey.com/en/products/detail/yageo/RC0402FR-0710KL/726523"
+			(at 0 0 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "MPN" "RC0402FR-0710KL"
+			(at 0 0 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Tolerance" "1%"
+			(at 0 0 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Voltage" "50V"
+			(at 0 0 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Dielectric" ""
+			(at 0 0 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "6273a9a8-ee09-4759-87f7-6afd78ca6211")
 		)
@@ -3112,6 +3972,112 @@
 			(project "avionics_rev1"
 				(path "/c491fe45-d2ff-414d-a846-7eed12d2b763/d7956753-013f-4ddf-b676-6e3287c0b7a1"
 					(reference "R12")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "rocketry_library:Molex_2111400100_Offboard")
+		(at 231.14 150 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board no)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "1302bc5c-fe1c-435a-b5c1-4d09fb6e886a")
+		(property "Reference" "AE3"
+			(at 231.14 143.65 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Value" "2111400100"
+			(at 231.14 155.08 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 0 0 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Datasheet" "https://www.molex.com/en-us/products/part-detail/2111400100"
+			(at 0 0 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Description" "Off-board 915 MHz adhesive flex antenna, 100 mm U.FL cable; plugs into U12"
+			(at 0 0 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "MPN" "2111400100"
+			(at 0 0 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Manufacturer" "Molex"
+			(at 0 0 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "DigiKey" "https://www.digikey.com/en/products/detail/molex/2111400100/9953925"
+			(at 0 0 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(instances
+			(project "avionics_rev1"
+				(path "/c491fe45-d2ff-414d-a846-7eed12d2b763/d7956753-013f-4ddf-b676-6e3287c0b7a1"
+					(reference "AE3")
 					(unit 1)
 				)
 			)
@@ -3197,7 +4163,7 @@
 	)
 	(symbol
 		(lib_id "rocketry_library:MAX-M10S-00B")
-		(at 129.54 62.23 0)
+		(at 135.89 62.23 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -3208,7 +4174,7 @@
 		(fields_autoplaced yes)
 		(uuid "1dfe6562-1184-4e50-a4f1-4f224e7f269d")
 		(property "Reference" "U11"
-			(at 129.54 36.83 0)
+			(at 135.89 36.83 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -3218,7 +4184,7 @@
 			)
 		)
 		(property "Value" "MAX-M10S-00B"
-			(at 129.54 39.37 0)
+			(at 135.89 39.37 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -3227,8 +4193,8 @@
 				)
 			)
 		)
-		(property "Footprint" "MAX-M10S-00B:XCVR_MAX-M10S-00B"
-			(at 130.302 37.084 0)
+		(property "Footprint" "avionics_footprints:XCVR_MAX-M10S-00B"
+			(at 136.652 37.084 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3239,8 +4205,8 @@
 				(justify bottom)
 			)
 		)
-		(property "Datasheet" ""
-			(at 129.54 62.23 0)
+		(property "Datasheet" "https://content.u-blox.com/sites/default/files/MAX-M10S_DataSheet_UBX-20035208.pdf"
+			(at 135.89 62.23 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3251,7 +4217,7 @@
 			)
 		)
 		(property "Description" "Navigation BeiDou, Galileo, GLONASS, GPS, GNSS Transceiver Module 1.561GHz, 1.575GHz, 1.602GHz Antenna Not Included Surface Mount"
-			(at 127 29.464 0)
+			(at 133.35 29.464 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3263,7 +4229,7 @@
 			)
 		)
 		(property "MF" "U-Blox"
-			(at 133.858 35.052 0)
+			(at 140.208 35.052 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3275,7 +4241,7 @@
 			)
 		)
 		(property "MAXIMUM_PACKAGE_HEIGHT" "2.7mm"
-			(at 129.032 37.084 0)
+			(at 135.382 37.084 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3287,7 +4253,7 @@
 			)
 		)
 		(property "Package" "SMD-18 u-blox"
-			(at 128.524 36.322 0)
+			(at 134.874 36.322 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3299,7 +4265,7 @@
 			)
 		)
 		(property "Price" "None"
-			(at 126.746 34.036 0)
+			(at 133.096 34.036 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3311,7 +4277,7 @@
 			)
 		)
 		(property "Check_prices" "https://www.snapeda.com/parts/MAX-M10S-00B/u-blox/view-part/?ref=eda"
-			(at 132.08 35.052 0)
+			(at 138.43 35.052 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3323,7 +4289,7 @@
 			)
 		)
 		(property "STANDARD" "Manufacturer Recommendations"
-			(at 125.222 31.75 0)
+			(at 131.572 31.75 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3335,7 +4301,7 @@
 			)
 		)
 		(property "PARTREV" "C1"
-			(at 128.778 34.798 0)
+			(at 135.128 34.798 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3347,7 +4313,7 @@
 			)
 		)
 		(property "SnapEDA_Link" "https://www.snapeda.com/parts/MAX-M10S-00B/u-blox/view-part/?ref=snap"
-			(at 133.35 38.862 0)
+			(at 139.7 38.862 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3359,7 +4325,7 @@
 			)
 		)
 		(property "MP" "MAX-M10S-00B"
-			(at 131.826 32.258 0)
+			(at 138.176 32.258 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3371,7 +4337,7 @@
 			)
 		)
 		(property "Availability" "In Stock"
-			(at 114.046 32.258 0)
+			(at 120.396 32.258 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3383,7 +4349,7 @@
 			)
 		)
 		(property "MANUFACTURER" "u-blox"
-			(at 131.064 32.766 0)
+			(at 137.414 32.766 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3392,6 +4358,39 @@
 					(size 1.27 1.27)
 				)
 				(justify bottom)
+			)
+		)
+		(property "MPN" "MAX-M10S-00B"
+			(at 0 0 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Manufacturer" "u-blox"
+			(at 0 0 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "DigiKey" "https://www.digikey.com/en/products/detail/u-blox/MAX-M10S-00B/15712906"
+			(at 0 0 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
 			)
 		)
 		(pin "2"
@@ -3459,7 +4458,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 157.48 85.09 0)
+		(at 163.83 85.09 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -3470,7 +4469,7 @@
 		(fields_autoplaced yes)
 		(uuid "42906e54-517e-4cab-bffa-00649df4cb92")
 		(property "Reference" "#PWR049"
-			(at 157.48 91.44 0)
+			(at 163.83 91.44 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3481,7 +4480,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 157.48 90.17 0)
+			(at 163.83 90.17 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -3491,7 +4490,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 157.48 85.09 0)
+			(at 163.83 85.09 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3502,7 +4501,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 157.48 85.09 0)
+			(at 163.83 85.09 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3513,7 +4512,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 157.48 85.09 0)
+			(at 163.83 85.09 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3537,7 +4536,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 181.61 52.07 0)
+		(at 187.96 52.07 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -3548,7 +4547,7 @@
 		(fields_autoplaced yes)
 		(uuid "454ffbe5-5692-44eb-9e2a-c610f067f981")
 		(property "Reference" "#PWR084"
-			(at 181.61 58.42 0)
+			(at 187.96 58.42 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3559,7 +4558,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 181.61 57.15 0)
+			(at 187.96 57.15 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -3569,7 +4568,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 181.61 52.07 0)
+			(at 187.96 52.07 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3580,7 +4579,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 181.61 52.07 0)
+			(at 187.96 52.07 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3591,7 +4590,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 181.61 52.07 0)
+			(at 187.96 52.07 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3614,8 +4613,8 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:C_Small")
-		(at 166.37 48.26 0)
+		(lib_id "rocketry_library:GRM155R71A104KA01D")
+		(at 172.72 48.26 0)
 		(mirror x)
 		(unit 1)
 		(body_style 1)
@@ -3626,7 +4625,7 @@
 		(dnp no)
 		(uuid "5b0169f0-27a0-433f-adf3-83d40be81b91")
 		(property "Reference" "C27"
-			(at 163.83 46.9835 0)
+			(at 170.18 46.9835 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -3636,8 +4635,8 @@
 				(justify right)
 			)
 		)
-		(property "Value" "0.1uF"
-			(at 163.83 49.5235 0)
+		(property "Value" "100n"
+			(at 170.18 49.5235 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -3647,8 +4646,8 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0201_0603Metric"
-			(at 166.37 48.26 0)
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
+			(at 172.72 48.26 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3659,7 +4658,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 166.37 48.26 0)
+			(at 172.72 48.26 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3670,13 +4669,68 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor, small symbol"
-			(at 166.37 48.26 0)
+			(at 172.72 48.26 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "DigiKey" "https://www.digikey.com/en/products/detail/murata-electronics/GRM155R71A104KA01D/3845518"
+			(at 0 0 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "MPN" "GRM155R71A104KA01D"
+			(at 0 0 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Tolerance" "10%"
+			(at 0 0 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Voltage" "10V"
+			(at 0 0 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Dielectric" "X7R"
+			(at 0 0 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
 				)
 			)
 		)
@@ -3697,18 +4751,18 @@
 	)
 	(symbol
 		(lib_id "Connector:TestPoint")
-		(at 102.87 72.39 90)
+		(at 109.22 72.39 90)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "66687f22-aef5-48dc-a662-c7663a6724bc")
 		(property "Reference" "TP2"
-			(at 99.568 67.31 90)
+			(at 105.918 67.31 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -3718,7 +4772,7 @@
 			)
 		)
 		(property "Value" "TestPoint"
-			(at 99.568 69.85 90)
+			(at 105.918 69.85 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -3727,8 +4781,8 @@
 				)
 			)
 		)
-		(property "Footprint" ""
-			(at 102.87 67.31 0)
+		(property "Footprint" "TestPoint:TestPoint_Pad_D1.0mm"
+			(at 109.22 67.31 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3739,7 +4793,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 102.87 67.31 0)
+			(at 109.22 67.31 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3749,8 +4803,8 @@
 				)
 			)
 		)
-		(property "Description" "test point"
-			(at 102.87 72.39 0)
+		(property "Description" "Bare PCB copper test pad, no purchased component"
+			(at 109.22 72.39 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3773,8 +4827,8 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:C_Small")
-		(at 171.45 48.26 180)
+		(lib_id "rocketry_library:C1608X7R1A105K080AC")
+		(at 177.8 48.26 180)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -3784,7 +4838,7 @@
 		(dnp no)
 		(uuid "69743310-0bcb-45cd-94b9-5fe1b86e2ef0")
 		(property "Reference" "C28"
-			(at 173.99 46.9835 0)
+			(at 180.34 46.9835 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -3794,8 +4848,8 @@
 				(justify right)
 			)
 		)
-		(property "Value" "1uF"
-			(at 173.99 49.5235 0)
+		(property "Value" "1u"
+			(at 180.34 49.5235 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -3805,8 +4859,8 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0201_0603Metric"
-			(at 171.45 48.26 0)
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
+			(at 177.8 48.26 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3817,7 +4871,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 171.45 48.26 0)
+			(at 177.8 48.26 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3828,13 +4882,68 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor, small symbol"
-			(at 171.45 48.26 0)
+			(at 177.8 48.26 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "DigiKey" "https://www.digikey.com/en/products/detail/tdk/C1608X7R1A105K080AC/2093406"
+			(at 0 0 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "MPN" "C1608X7R1A105K080AC"
+			(at 0 0 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Tolerance" "10%"
+			(at 0 0 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Voltage" "10V"
+			(at 0 0 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Dielectric" "X7R"
+			(at 0 0 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
 				)
 			)
 		)
@@ -3854,7 +4963,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:C_Small")
+		(lib_id "rocketry_library:GRM155R71A104KA01D")
 		(at 58.42 168.91 180)
 		(unit 1)
 		(body_style 1)
@@ -3875,7 +4984,7 @@
 				(justify right)
 			)
 		)
-		(property "Value" "0.1uF"
+		(property "Value" "100n"
 			(at 60.96 170.18 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3886,7 +4995,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0201_0603Metric"
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
 			(at 58.42 168.91 0)
 			(hide yes)
 			(show_name no)
@@ -3916,6 +5025,61 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "DigiKey" "https://www.digikey.com/en/products/detail/murata-electronics/GRM155R71A104KA01D/3845518"
+			(at 0 0 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "MPN" "GRM155R71A104KA01D"
+			(at 0 0 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Tolerance" "10%"
+			(at 0 0 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Voltage" "10V"
+			(at 0 0 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Dielectric" "X7R"
+			(at 0 0 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
 				)
 			)
 		)
@@ -4014,7 +5178,7 @@
 	)
 	(symbol
 		(lib_id "Device:Antenna")
-		(at 22.86 57.15 0)
+		(at 29.21 57.15 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -4025,7 +5189,7 @@
 		(fields_autoplaced yes)
 		(uuid "851e6970-c5bc-41cf-98f2-8b7dc2f7a9c0")
 		(property "Reference" "AE2"
-			(at 25.4 56.5149 0)
+			(at 31.75 56.5149 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -4035,8 +5199,8 @@
 				(justify left)
 			)
 		)
-		(property "Value" "Antenna"
-			(at 25.4 59.0549 0)
+		(property "Value" "GP.1575.18.4.A.02"
+			(at 31.75 59.0549 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -4047,7 +5211,7 @@
 			)
 		)
 		(property "Footprint" "avionics_footprints:ANT_GP.1575.18.4.A.02_TAL"
-			(at 22.86 57.15 0)
+			(at 29.21 57.15 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4057,8 +5221,8 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
-			(at 22.86 57.15 0)
+		(property "Datasheet" "https://www.taoglas.com/datasheets/GP.1575.18.4.A.02.pdf"
+			(at 29.21 57.15 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4069,13 +5233,46 @@
 			)
 		)
 		(property "Description" "Antenna"
-			(at 22.86 57.15 0)
+			(at 29.21 57.15 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "GP.1575.18.4.A.02"
+			(at 0 0 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Manufacturer" "Taoglas"
+			(at 0 0 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "DigiKey" "https://www.digikey.com/en/products/detail/taoglas-limited/GP-1575-18-4-A-02/2332646"
+			(at 0 0 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
 				)
 			)
 		)
@@ -4093,7 +5290,7 @@
 	)
 	(symbol
 		(lib_id "power:+3.3V")
-		(at 181.61 44.45 0)
+		(at 187.96 44.45 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -4104,7 +5301,7 @@
 		(fields_autoplaced yes)
 		(uuid "8671aa18-231c-49d7-8b16-45863eac76e1")
 		(property "Reference" "#PWR050"
-			(at 181.61 48.26 0)
+			(at 187.96 48.26 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4115,7 +5312,7 @@
 			)
 		)
 		(property "Value" "+3.3V"
-			(at 181.61 39.37 0)
+			(at 187.96 39.37 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -4125,7 +5322,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 181.61 44.45 0)
+			(at 187.96 44.45 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4136,7 +5333,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 181.61 44.45 0)
+			(at 187.96 44.45 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4147,7 +5344,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"+3.3V\""
-			(at 181.61 44.45 0)
+			(at 187.96 44.45 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4269,8 +5466,9 @@
 				)
 			)
 		)
-		(property "Value" ""
+		(property "Value" "Wio-SX1262"
 			(at 76.2 147.32 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -4290,7 +5488,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://files.seeedstudio.com/products/SenseCAP/Wio_SX1262/Wio-SX1262_Module_Datasheet.pdf"
 			(at 76.2 147.32 0)
 			(hide yes)
 			(show_name no)
@@ -4309,6 +5507,39 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "114993390"
+			(at 0 0 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Manufacturer" "Seeed Studio"
+			(at 0 0 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "DigiKey" "https://www.digikey.com/en/products/detail/seeed-technology-co-ltd/114993390/25835823"
+			(at 0 0 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
 				)
 			)
 		)
@@ -4438,7 +5669,7 @@
 	)
 	(symbol
 		(lib_id "rocketry_library:AFS14A04-1575.42-T3")
-		(at 41.91 62.23 0)
+		(at 48.26 62.23 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -4448,7 +5679,7 @@
 		(dnp no)
 		(uuid "ec89b6a6-47bd-4a23-ab79-d49285dda920")
 		(property "Reference" "FL2"
-			(at 49.276 54.102 0)
+			(at 55.626 54.102 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -4459,7 +5690,7 @@
 			)
 		)
 		(property "Value" "AFS14A04-1575.42-T3"
-			(at 49.276 56.642 0)
+			(at 55.626 56.642 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -4469,8 +5700,8 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "AFS14A04157542T3"
-			(at 73.66 144.45 0)
+		(property "Footprint" "avionics_footprints:AFS14A04157542T3"
+			(at 80.01 144.45 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4481,8 +5712,8 @@
 				(justify left top)
 			)
 		)
-		(property "Datasheet" "https://datasheet.datasheetarchive.com/originals/dk/DKDS-11/202926.pdf"
-			(at 73.66 244.45 0)
+		(property "Datasheet" "https://abracon.com/Filters/SAW%20FILTERS/AFS14A04-1575.42-T3.pdf"
+			(at 80.01 244.45 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4494,7 +5725,7 @@
 			)
 		)
 		(property "Description" "Signal Conditioning 1575.42MHz BW=40MHz 5-Pad"
-			(at 41.91 62.23 0)
+			(at 48.26 62.23 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4505,7 +5736,7 @@
 			)
 		)
 		(property "Height" "0.7"
-			(at 73.66 444.45 0)
+			(at 80.01 444.45 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4517,7 +5748,7 @@
 			)
 		)
 		(property "Mouser Part Number" "815-AFS14A04-1575-T3"
-			(at 73.66 544.45 0)
+			(at 80.01 544.45 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4529,7 +5760,7 @@
 			)
 		)
 		(property "Mouser Price/Stock" "https://www.mouser.co.uk/ProductDetail/ABRACON/AFS14A04-1575.42-T3?qs=tfZGHB2PWd3aRd4qy%2Fp2mg%3D%3D"
-			(at 73.66 644.45 0)
+			(at 80.01 644.45 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4541,7 +5772,7 @@
 			)
 		)
 		(property "Manufacturer_Name" "ABRACON"
-			(at 73.66 744.45 0)
+			(at 80.01 744.45 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4553,7 +5784,7 @@
 			)
 		)
 		(property "Manufacturer_Part_Number" "AFS14A04-1575.42-T3"
-			(at 73.66 844.45 0)
+			(at 80.01 844.45 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4562,6 +5793,39 @@
 					(size 1.27 1.27)
 				)
 				(justify left top)
+			)
+		)
+		(property "MPN" "AFS14A04-1575.42-T3"
+			(at 0 0 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Manufacturer" "Abracon"
+			(at 0 0 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "DigiKey" "https://www.digikey.com/en/products/detail/abracon-llc/AFS14A04-1575-42-T3/4036387"
+			(at 0 0 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
 			)
 		)
 		(pin "A1"
@@ -4589,7 +5853,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:C_Small")
+		(lib_id "rocketry_library:C1608X7R1A105K080AC")
 		(at 71.12 168.91 0)
 		(mirror y)
 		(unit 1)
@@ -4611,7 +5875,7 @@
 				(justify right)
 			)
 		)
-		(property "Value" "1uF"
+		(property "Value" "1u"
 			(at 74.168 170.434 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4622,7 +5886,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0201_0603Metric"
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
 			(at 71.12 168.91 0)
 			(hide yes)
 			(show_name no)
@@ -4652,6 +5916,61 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "DigiKey" "https://www.digikey.com/en/products/detail/tdk/C1608X7R1A105K080AC/2093406"
+			(at 0 0 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "MPN" "C1608X7R1A105K080AC"
+			(at 0 0 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Tolerance" "10%"
+			(at 0 0 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Voltage" "10V"
+			(at 0 0 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Dielectric" "X7R"
+			(at 0 0 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
 				)
 			)
 		)

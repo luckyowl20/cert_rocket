@@ -1427,14 +1427,15 @@
 			(on_board yes)
 			(in_pos_files yes)
 			(duplicate_pin_numbers_are_jumpers no)
-			(property "Reference" "U"
-				(at 0 5.842 0)
+			(property "Reference" "SN74LVC08AQPWRQ1"
+				(at 11.0333 6.35 0)
 				(show_name no)
 				(do_not_autoplace no)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
+					(justify left)
 				)
 			)
 			(property "Value" ""
@@ -1843,7 +1844,7 @@
 						)
 					)
 				)
-				(pin input line
+				(pin power_out line
 					(at 8.89 -43.18 90)
 					(length 2.54)
 					(name "GND"
@@ -1969,7 +1970,7 @@
 						)
 					)
 				)
-				(pin input line
+				(pin power_in line
 					(at 8.89 6.35 270)
 					(length 2.54)
 					(name "VCC"
@@ -2136,6 +2137,215 @@
 				)
 			)
 			(symbol "RC0402FR-07100KL_1_1"
+				(polyline
+					(pts
+						(xy 0 1.524) (xy 1.016 1.143) (xy 0 0.762) (xy -1.016 0.381) (xy 0 0)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 0) (xy 1.016 -0.381) (xy 0 -0.762) (xy -1.016 -1.143) (xy 0 -1.524)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(pin passive line
+					(at 0 2.54 270)
+					(length 1.016)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -2.54 90)
+					(length 1.016)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "rocketry_library:RC0402FR-0710KL"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0.254)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "R"
+				(at 0.762 0.508 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Value" "10k / 1%"
+				(at 0.762 -1.016 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "Resistor, small US symbol"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "DigiKey" "https://www.digikey.com/en/products/detail/yageo/RC0402FR-0710KL/726523"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1 1)
+					)
+				)
+			)
+			(property "MPN" "RC0402FR-0710KL"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1 1)
+					)
+				)
+			)
+			(property "Tolerance" "1%"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1 1)
+					)
+				)
+			)
+			(property "Voltage" "50V"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1 1)
+					)
+				)
+			)
+			(property "Dielectric" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1 1)
+					)
+				)
+			)
+			(property "ki_keywords" "r resistor"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_fp_filters" "R_*"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "RC0402FR-0710KL_1_1"
 				(polyline
 					(pts
 						(xy 0 1.524) (xy 1.016 1.143) (xy 0 0.762) (xy -1.016 0.381) (xy 0 0)
@@ -4528,6 +4738,16 @@
 	)
 	(wire
 		(pts
+			(xy 74.93 39.37) (xy 74.93 41.91)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1b057195-72eb-4a05-a9f6-2dfa328453ad")
+	)
+	(wire
+		(pts
 			(xy 66.04 82.55) (xy 45.72 82.55)
 		)
 		(stroke
@@ -4565,16 +4785,6 @@
 			(type default)
 		)
 		(uuid "2209176a-ac08-4171-ae0b-30b722ed090e")
-	)
-	(wire
-		(pts
-			(xy 74.93 91.44) (xy 74.93 93.98)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "2563599a-0b69-43b1-aa74-e20974a25819")
 	)
 	(wire
 		(pts
@@ -5068,16 +5278,6 @@
 	)
 	(wire
 		(pts
-			(xy 74.93 39.37) (xy 74.93 41.91)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "97dc2861-6f37-445e-9b73-ea566b638935")
-	)
-	(wire
-		(pts
 			(xy 31.75 135.89) (xy 31.75 176.53)
 		)
 		(stroke
@@ -5195,6 +5395,16 @@
 			(type default)
 		)
 		(uuid "bbd21f43-a926-4abe-9774-1b1dbad650b2")
+	)
+	(wire
+		(pts
+			(xy 74.93 91.44) (xy 74.93 93.98)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "bc04e3da-c071-4cc5-8e6e-8e2b92ed095a")
 	)
 	(wire
 		(pts
@@ -5975,7 +6185,7 @@
 				)
 			)
 		)
-		(property "Value" "10n / 16V"
+		(property "Value" "10n"
 			(at 129.54 180.34 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6219,7 +6429,7 @@
 				)
 			)
 		)
-		(property "Value" "10n / 16V"
+		(property "Value" "10n"
 			(at 198.12 180.34 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6375,7 +6585,7 @@
 				)
 			)
 		)
-		(property "Value" "10n / 16V"
+		(property "Value" "10n"
 			(at 152.4 180.34 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7449,7 +7659,7 @@
 				)
 			)
 		)
-		(property "Value" "10n / 16V"
+		(property "Value" "10n"
 			(at 175.26 180.34 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9191,7 +9401,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:R_Small_US")
+		(lib_id "rocketry_library:RC0402FR-0710KL")
 		(at 54.61 179.07 0)
 		(unit 1)
 		(body_style 1)
@@ -9211,7 +9421,7 @@
 				)
 			)
 		)
-		(property "Value" "10k 1%"
+		(property "Value" "10k"
 			(at 60.61 180.34 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9221,7 +9431,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0201_0603Metric"
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
 			(at 54.61 179.07 0)
 			(hide yes)
 			(show_name no)
@@ -9243,8 +9453,9 @@
 				)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Resistor, small US symbol"
 			(at 54.61 179.07 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -9255,6 +9466,50 @@
 		)
 		(property "Tolerance" "1%"
 			(at 54.61 179.07 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "DigiKey" "https://www.digikey.com/en/products/detail/yageo/RC0402FR-0710KL/726523"
+			(at 0 0 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "MPN" "RC0402FR-0710KL"
+			(at 0 0 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Voltage" "50V"
+			(at 0 0 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Dielectric" ""
+			(at 0 0 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9434,7 +9689,7 @@
 				)
 			)
 		)
-		(property "Value" "100n / 10V"
+		(property "Value" "100n"
 			(at 38.1 180.34 0)
 			(show_name no)
 			(do_not_autoplace no)
