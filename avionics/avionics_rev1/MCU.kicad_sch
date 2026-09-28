@@ -9935,13 +9935,12 @@
 			)
 		)
 		(property "Voltage" "10V"
-			(at 91.44 163.83 0)
-			(hide yes)
+			(at 97.79 167 0)
 			(show_name no)
-			(do_not_autoplace no)
+			(do_not_autoplace yes)
 			(effects
 				(font
-					(size 1 1)
+					(size 0.8 0.8)
 				)
 			)
 		)
@@ -10091,13 +10090,12 @@
 			)
 		)
 		(property "Voltage" "10V"
-			(at 196.85 120.65 0)
-			(hide yes)
+			(at 203.2 123.82 0)
 			(show_name no)
-			(do_not_autoplace no)
+			(do_not_autoplace yes)
 			(effects
 				(font
-					(size 1 1)
+					(size 0.8 0.8)
 				)
 			)
 		)
@@ -10362,13 +10360,12 @@
 			)
 		)
 		(property "Tolerance" "1%"
-			(at 336.55 34.29 0)
-			(hide yes)
+			(at 327.66 37.46 0)
 			(show_name no)
-			(do_not_autoplace no)
+			(do_not_autoplace yes)
 			(effects
 				(font
-					(size 1 1)
+					(size 0.8 0.8)
 				)
 			)
 		)
@@ -10518,13 +10515,12 @@
 			)
 		)
 		(property "Tolerance" "1%"
-			(at 306.07 109.22 0)
-			(hide yes)
+			(at 312.42 112.39 0)
 			(show_name no)
-			(do_not_autoplace no)
+			(do_not_autoplace yes)
 			(effects
 				(font
-					(size 1 1)
+					(size 0.8 0.8)
 				)
 			)
 		)
@@ -10685,13 +10681,12 @@
 			)
 		)
 		(property "Voltage" "50V"
-			(at 53.34 57.15 0)
-			(hide yes)
+			(at 59.69 60.32 0)
 			(show_name no)
-			(do_not_autoplace no)
+			(do_not_autoplace yes)
 			(effects
 				(font
-					(size 1 1)
+					(size 0.8 0.8)
 				)
 			)
 		)
@@ -10929,13 +10924,12 @@
 			)
 		)
 		(property "Voltage" "10V"
-			(at 25.4 163.83 0)
-			(hide yes)
+			(at 31.75 167 0)
 			(show_name no)
-			(do_not_autoplace no)
+			(do_not_autoplace yes)
 			(effects
 				(font
-					(size 1 1)
+					(size 0.8 0.8)
 				)
 			)
 		)
@@ -11163,13 +11157,12 @@
 			)
 		)
 		(property "Voltage" "10V"
-			(at 44.45 205.74 0)
-			(hide yes)
+			(at 50.8 208.91 0)
 			(show_name no)
-			(do_not_autoplace no)
+			(do_not_autoplace yes)
 			(effects
 				(font
-					(size 1 1)
+					(size 0.8 0.8)
 				)
 			)
 		)
@@ -11759,13 +11752,12 @@
 			)
 		)
 		(property "Voltage" "10V"
-			(at 41.91 163.83 0)
-			(hide yes)
+			(at 48.26 167 0)
 			(show_name no)
-			(do_not_autoplace no)
+			(do_not_autoplace yes)
 			(effects
 				(font
-					(size 1 1)
+					(size 0.8 0.8)
 				)
 			)
 		)
@@ -12179,13 +12171,12 @@
 			)
 		)
 		(property "Voltage" "10V"
-			(at 212.09 120.65 0)
-			(hide yes)
+			(at 218.44 123.82 0)
 			(show_name no)
-			(do_not_autoplace no)
+			(do_not_autoplace yes)
 			(effects
 				(font
-					(size 1 1)
+					(size 0.8 0.8)
 				)
 			)
 		)
@@ -12325,13 +12316,12 @@
 			)
 		)
 		(property "Tolerance" "1%"
-			(at 45.72 101.6 0)
-			(hide yes)
+			(at 41.148 104.262 0)
 			(show_name no)
-			(do_not_autoplace no)
+			(do_not_autoplace yes)
 			(effects
 				(font
-					(size 1 1)
+					(size 0.8 0.8)
 				)
 			)
 		)
@@ -12623,13 +12613,12 @@
 			)
 		)
 		(property "Tolerance" "1%"
-			(at 316.23 49.53 0)
-			(hide yes)
+			(at 316.23 47.62 0)
 			(show_name no)
-			(do_not_autoplace no)
+			(do_not_autoplace yes)
 			(effects
 				(font
-					(size 1 1)
+					(size 0.8 0.8)
 				)
 			)
 		)
@@ -12790,13 +12779,12 @@
 			)
 		)
 		(property "Voltage" "10V"
-			(at 44.45 185.42 0)
-			(hide yes)
+			(at 50.8 188.59 0)
 			(show_name no)
-			(do_not_autoplace no)
+			(do_not_autoplace yes)
 			(effects
 				(font
-					(size 1 1)
+					(size 0.8 0.8)
 				)
 			)
 		)
@@ -13069,13 +13057,12 @@
 			)
 		)
 		(property "Tolerance" "1%"
-			(at 106.68 204.47 0)
-			(hide yes)
+			(at 113.03 207.64 0)
 			(show_name no)
-			(do_not_autoplace no)
+			(do_not_autoplace yes)
 			(effects
 				(font
-					(size 1 1)
+					(size 0.8 0.8)
 				)
 			)
 		)
@@ -13349,13 +13336,12 @@
 			)
 		)
 		(property "Tolerance" "1%"
-			(at 228.6 104.14 0)
-			(hide yes)
+			(at 234.95 107.31 0)
 			(show_name no)
-			(do_not_autoplace no)
+			(do_not_autoplace yes)
 			(effects
 				(font
-					(size 1 1)
+					(size 0.8 0.8)
 				)
 			)
 		)
@@ -13506,13 +13492,12 @@
 			)
 		)
 		(property "Tolerance" "1%"
-			(at 36.83 101.6 0)
-			(hide yes)
+			(at 32.258 104.262 0)
 			(show_name no)
-			(do_not_autoplace no)
+			(do_not_autoplace yes)
 			(effects
 				(font
-					(size 1 1)
+					(size 0.8 0.8)
 				)
 			)
 		)
@@ -13673,13 +13658,12 @@
 			)
 		)
 		(property "Voltage" "10V"
-			(at 59.69 205.74 0)
-			(hide yes)
+			(at 66.04 208.91 0)
 			(show_name no)
-			(do_not_autoplace no)
+			(do_not_autoplace yes)
 			(effects
 				(font
-					(size 1 1)
+					(size 0.8 0.8)
 				)
 			)
 		)
@@ -13819,13 +13803,12 @@
 			)
 		)
 		(property "Tolerance" "1%"
-			(at 54.61 101.6 0)
-			(hide yes)
+			(at 50.038 104.262 0)
 			(show_name no)
-			(do_not_autoplace no)
+			(do_not_autoplace yes)
 			(effects
 				(font
-					(size 1 1)
+					(size 0.8 0.8)
 				)
 			)
 		)
@@ -14074,13 +14057,12 @@
 			)
 		)
 		(property "Voltage" "10V"
-			(at 59.69 185.42 0)
-			(hide yes)
+			(at 66.04 188.59 0)
 			(show_name no)
-			(do_not_autoplace no)
+			(do_not_autoplace yes)
 			(effects
 				(font
-					(size 1 1)
+					(size 0.8 0.8)
 				)
 			)
 		)
@@ -14176,13 +14158,12 @@
 			)
 		)
 		(property "Tolerance" "1%"
-			(at 143.51 100.33 0)
-			(hide yes)
+			(at 143.51 98.42 0)
 			(show_name no)
-			(do_not_autoplace no)
+			(do_not_autoplace yes)
 			(effects
 				(font
-					(size 1 1)
+					(size 0.8 0.8)
 				)
 			)
 		)
@@ -14541,13 +14522,12 @@
 			)
 		)
 		(property "Voltage" "10V"
-			(at -77.47 -11.43 0)
-			(hide yes)
+			(at 113.792 167 0)
 			(show_name no)
-			(do_not_autoplace no)
+			(do_not_autoplace yes)
 			(effects
 				(font
-					(size 1 1)
+					(size 0.8 0.8)
 				)
 			)
 		)
@@ -15130,13 +15110,12 @@
 			)
 		)
 		(property "Voltage" "10V"
-			(at 106.68 184.15 0)
-			(hide yes)
+			(at 113.03 187.32 0)
 			(show_name no)
-			(do_not_autoplace no)
+			(do_not_autoplace yes)
 			(effects
 				(font
-					(size 1 1)
+					(size 0.8 0.8)
 				)
 			)
 		)
@@ -15275,13 +15254,12 @@
 			)
 		)
 		(property "Tolerance" "1%"
-			(at 290.83 104.14 0)
-			(hide yes)
+			(at 297.18 107.31 0)
 			(show_name no)
-			(do_not_autoplace no)
+			(do_not_autoplace yes)
 			(effects
 				(font
-					(size 1 1)
+					(size 0.8 0.8)
 				)
 			)
 		)
@@ -15743,13 +15721,12 @@
 			)
 		)
 		(property "Tolerance" "1%"
-			(at 328.93 59.69 0)
-			(hide yes)
+			(at 316.23 62.86 0)
 			(show_name no)
-			(do_not_autoplace no)
+			(do_not_autoplace yes)
 			(effects
 				(font
-					(size 1 1)
+					(size 0.8 0.8)
 				)
 			)
 		)
@@ -15998,13 +15975,12 @@
 			)
 		)
 		(property "Voltage" "10V"
-			(at 74.93 163.83 0)
-			(hide yes)
+			(at 81.28 167 0)
 			(show_name no)
-			(do_not_autoplace no)
+			(do_not_autoplace yes)
 			(effects
 				(font
-					(size 1 1)
+					(size 0.8 0.8)
 				)
 			)
 		)
@@ -16630,13 +16606,12 @@
 			)
 		)
 		(property "Tolerance" "1%"
-			(at 63.5 101.6 0)
-			(hide yes)
+			(at 58.928 104.262 0)
 			(show_name no)
-			(do_not_autoplace no)
+			(do_not_autoplace yes)
 			(effects
 				(font
-					(size 1 1)
+					(size 0.8 0.8)
 				)
 			)
 		)
@@ -16797,13 +16772,12 @@
 			)
 		)
 		(property "Voltage" "10V"
-			(at 58.42 163.83 0)
-			(hide yes)
+			(at 64.77 167 0)
 			(show_name no)
-			(do_not_autoplace no)
+			(do_not_autoplace yes)
 			(effects
 				(font
-					(size 1 1)
+					(size 0.8 0.8)
 				)
 			)
 		)
@@ -17148,13 +17122,12 @@
 			)
 		)
 		(property "Voltage" "50V"
-			(at 33.02 57.15 0)
-			(hide yes)
+			(at 26.67 60.32 0)
 			(show_name no)
-			(do_not_autoplace no)
+			(do_not_autoplace yes)
 			(effects
 				(font
-					(size 1 1)
+					(size 0.8 0.8)
 				)
 			)
 		)

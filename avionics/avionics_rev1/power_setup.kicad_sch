@@ -15297,12 +15297,12 @@
 			)
 		)
 		(property "Voltage" "10V"
-			(at 290.48 145.51 0)
+			(at 290.48 145.41 0)
 			(show_name no)
-			(do_not_autoplace no)
+			(do_not_autoplace yes)
 			(effects
 				(font
-					(size 1 1)
+					(size 0.8 0.8)
 				)
 			)
 		)
@@ -15430,12 +15430,12 @@
 			)
 		)
 		(property "Voltage" "35V"
-			(at 370.49 48.99 0)
+			(at 370.49 48.89 0)
 			(show_name no)
-			(do_not_autoplace no)
+			(do_not_autoplace yes)
 			(effects
 				(font
-					(size 1 1)
+					(size 0.8 0.8)
 				)
 			)
 		)
@@ -15570,13 +15570,12 @@
 			)
 		)
 		(property "Tolerance" "0.1%"
-			(at 49.53 172.72 0)
-			(hide yes)
+			(at 44.45 175.89 0)
 			(show_name no)
-			(do_not_autoplace no)
+			(do_not_autoplace yes)
 			(effects
 				(font
-					(size 1 1)
+					(size 0.8 0.8)
 				)
 			)
 		)
@@ -15718,14 +15717,14 @@
 			)
 		)
 		(property "Tolerance" "1%"
-			(at 210.82 44.45 0)
-			(hide yes)
+			(at 213.36 47.62 0)
 			(show_name no)
-			(do_not_autoplace no)
+			(do_not_autoplace yes)
 			(effects
 				(font
-					(size 1 1)
+					(size 0.8 0.8)
 				)
+				(justify right)
 			)
 		)
 		(property "MPN" "RC0402FR-07120RL"
@@ -15941,13 +15940,12 @@
 			)
 		)
 		(property "Tolerance" "1%"
-			(at 377.19 105.41 0)
-			(hide yes)
+			(at 377.19 104.77 0)
 			(show_name no)
-			(do_not_autoplace no)
+			(do_not_autoplace yes)
 			(effects
 				(font
-					(size 1 1)
+					(size 0.8 0.8)
 				)
 			)
 		)
@@ -16162,14 +16160,14 @@
 			)
 		)
 		(property "Tolerance" "1%"
-			(at 118.11 133.35 0)
-			(hide yes)
+			(at 120.65 136.5199 0)
 			(show_name no)
-			(do_not_autoplace no)
+			(do_not_autoplace yes)
 			(effects
 				(font
-					(size 1 1)
+					(size 0.8 0.8)
 				)
+				(justify left)
 			)
 		)
 		(property "MPN" "RC0402FR-0747KL"
@@ -16385,13 +16383,12 @@
 			)
 		)
 		(property "Tolerance" "1%"
-			(at 367.03 110.49 0)
-			(hide yes)
+			(at 373.03 113.66 0)
 			(show_name no)
-			(do_not_autoplace no)
+			(do_not_autoplace yes)
 			(effects
 				(font
-					(size 1 1)
+					(size 0.8 0.8)
 				)
 			)
 		)
@@ -16736,13 +16733,12 @@
 			)
 		)
 		(property "Voltage" "16V"
-			(at 341.63 181.61 0)
-			(hide yes)
+			(at 347.98 184.78 0)
 			(show_name no)
-			(do_not_autoplace no)
+			(do_not_autoplace yes)
 			(effects
 				(font
-					(size 1 1)
+					(size 0.8 0.8)
 				)
 			)
 		)
@@ -16851,12 +16847,12 @@
 			)
 		)
 		(property "Voltage" "10V"
-			(at 107.95 127.7362 0)
+			(at 107.95 127.6362 0)
 			(show_name no)
-			(do_not_autoplace no)
+			(do_not_autoplace yes)
 			(effects
 				(font
-					(size 1 1)
+					(size 0.8 0.8)
 				)
 				(justify left)
 			)
@@ -17066,12 +17062,12 @@
 			)
 		)
 		(property "Voltage" "35V"
-			(at 55.88 165.8362 0)
+			(at 55.88 165.7362 0)
 			(show_name no)
-			(do_not_autoplace no)
+			(do_not_autoplace yes)
 			(effects
 				(font
-					(size 1 1)
+					(size 0.8 0.8)
 				)
 				(justify left)
 			)
@@ -17204,14 +17200,14 @@
 			)
 		)
 		(property "Tolerance" "1%"
-			(at 177.8 251.46 0)
-			(hide yes)
+			(at 175.26 254.6299 0)
 			(show_name no)
-			(do_not_autoplace no)
+			(do_not_autoplace yes)
 			(effects
 				(font
-					(size 1 1)
+					(size 0.8 0.8)
 				)
+				(justify right)
 			)
 		)
 		(property "MPN" "RC0402FR-075K1L"
@@ -17596,14 +17592,14 @@
 			)
 		)
 		(property "Tolerance" "1%"
-			(at 171.45 162.56 0)
-			(hide yes)
+			(at 173.99 165.7299 0)
 			(show_name no)
-			(do_not_autoplace no)
+			(do_not_autoplace yes)
 			(effects
 				(font
-					(size 1 1)
+					(size 0.8 0.8)
 				)
+				(justify left)
 			)
 		)
 		(property "MPN" "RC0402FR-0722K1L"
@@ -17833,12 +17829,12 @@
 			)
 		)
 		(property "Voltage" "50V"
-			(at 90.17 43.9162 0)
+			(at 90.17 43.8162 0)
 			(show_name no)
-			(do_not_autoplace no)
+			(do_not_autoplace yes)
 			(effects
 				(font
-					(size 1 1)
+					(size 0.8 0.8)
 				)
 				(justify left)
 			)
@@ -18123,13 +18119,12 @@
 			)
 		)
 		(property "Tolerance" "1%"
-			(at 364.49 67.31 0)
-			(hide yes)
+			(at 370.49 70.48 0)
 			(show_name no)
-			(do_not_autoplace no)
+			(do_not_autoplace yes)
 			(effects
 				(font
-					(size 1 1)
+					(size 0.8 0.8)
 				)
 			)
 		)
@@ -18887,14 +18882,14 @@
 			)
 		)
 		(property "Tolerance" "0.1%"
-			(at 63.5 129.54 0)
-			(hide yes)
+			(at 66.04 132.7099 0)
 			(show_name no)
-			(do_not_autoplace no)
+			(do_not_autoplace yes)
 			(effects
 				(font
-					(size 1 1)
+					(size 0.8 0.8)
 				)
+				(justify left)
 			)
 		)
 		(property "MPN" "RT0402BRD0718K2L"
@@ -19124,12 +19119,12 @@
 			)
 		)
 		(property "Voltage" "35V"
-			(at 45.72 132.8162 0)
+			(at 45.72 132.7162 0)
 			(show_name no)
-			(do_not_autoplace no)
+			(do_not_autoplace yes)
 			(effects
 				(font
-					(size 1 1)
+					(size 0.8 0.8)
 				)
 				(justify left)
 			)
@@ -19548,13 +19543,12 @@
 			)
 		)
 		(property "Voltage" "16V"
-			(at 381 181.61 0)
-			(hide yes)
+			(at 387.35 184.78 0)
 			(show_name no)
-			(do_not_autoplace no)
+			(do_not_autoplace yes)
 			(effects
 				(font
-					(size 1 1)
+					(size 0.8 0.8)
 				)
 			)
 		)
@@ -19653,14 +19647,14 @@
 			)
 		)
 		(property "Tolerance" "1%"
-			(at 167.64 251.46 0)
-			(hide yes)
+			(at 165.1 254.6299 0)
 			(show_name no)
-			(do_not_autoplace no)
+			(do_not_autoplace yes)
 			(effects
 				(font
-					(size 1 1)
+					(size 0.8 0.8)
 				)
+				(justify right)
 			)
 		)
 		(property "MPN" "RC0402FR-075K1L"
@@ -19877,13 +19871,12 @@
 			)
 		)
 		(property "Tolerance" "0.1%"
-			(at 49.53 162.56 0)
-			(hide yes)
+			(at 44.45 165.73 0)
 			(show_name no)
-			(do_not_autoplace no)
+			(do_not_autoplace yes)
 			(effects
 				(font
-					(size 1 1)
+					(size 0.8 0.8)
 				)
 			)
 		)
@@ -20111,12 +20104,12 @@
 			)
 		)
 		(property "Voltage" "16V"
-			(at 207.93 259.81 0)
+			(at 207.93 259.71 0)
 			(show_name no)
-			(do_not_autoplace no)
+			(do_not_autoplace yes)
 			(effects
 				(font
-					(size 1 1)
+					(size 0.8 0.8)
 				)
 			)
 		)
@@ -20253,12 +20246,12 @@
 			)
 		)
 		(property "Voltage" "50V"
-			(at 101.6 43.9162 0)
+			(at 101.6 43.8162 0)
 			(show_name no)
-			(do_not_autoplace no)
+			(do_not_autoplace yes)
 			(effects
 				(font
-					(size 1 1)
+					(size 0.8 0.8)
 				)
 				(justify left)
 			)
@@ -20699,13 +20692,12 @@
 			)
 		)
 		(property "Tolerance" "1%"
-			(at 171.45 132.08 0)
-			(hide yes)
+			(at 177.45 135.25 0)
 			(show_name no)
-			(do_not_autoplace no)
+			(do_not_autoplace yes)
 			(effects
 				(font
-					(size 1 1)
+					(size 0.8 0.8)
 				)
 			)
 		)
@@ -20911,13 +20903,12 @@
 			)
 		)
 		(property "Tolerance" "0.1%"
-			(at 184.15 256.54 0)
-			(hide yes)
+			(at 190.15 259.71 0)
 			(show_name no)
-			(do_not_autoplace no)
+			(do_not_autoplace yes)
 			(effects
 				(font
-					(size 1 1)
+					(size 0.8 0.8)
 				)
 			)
 		)
@@ -21153,14 +21144,14 @@
 			)
 		)
 		(property "Tolerance" "1%"
-			(at 83.82 171.45 0)
-			(hide yes)
+			(at 81.28 174.6199 0)
 			(show_name no)
-			(do_not_autoplace no)
+			(do_not_autoplace yes)
 			(effects
 				(font
-					(size 1 1)
+					(size 0.8 0.8)
 				)
+				(justify left)
 			)
 		)
 		(property "MPN" "RC0402FR-07100KL"
@@ -21287,13 +21278,12 @@
 			)
 		)
 		(property "Tolerance" "1%"
-			(at 298.45 43.18 0)
-			(hide yes)
+			(at 304.45 46.35 0)
 			(show_name no)
-			(do_not_autoplace no)
+			(do_not_autoplace yes)
 			(effects
 				(font
-					(size 1 1)
+					(size 0.8 0.8)
 				)
 			)
 		)
@@ -21384,7 +21374,6 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "6d7c945a-e8be-4a25-ae23-cae84ff13779")
 		(property "Reference" "R1"
 			(at 110.49 58.4199 0)
@@ -21442,14 +21431,14 @@
 			)
 		)
 		(property "Tolerance" "0.1%"
-			(at 113.03 59.69 0)
-			(hide yes)
+			(at 110.49 62.8599 0)
 			(show_name no)
-			(do_not_autoplace no)
+			(do_not_autoplace yes)
 			(effects
 				(font
-					(size 1 1)
+					(size 0.8 0.8)
 				)
+				(justify right)
 			)
 		)
 		(property "MPN" "RN73R1ETTP1522B25"
@@ -21668,14 +21657,14 @@
 			)
 		)
 		(property "Tolerance" "0.1%"
-			(at 209.55 119.38 0)
-			(hide yes)
+			(at 212.09 122.5499 0)
 			(show_name no)
-			(do_not_autoplace no)
+			(do_not_autoplace yes)
 			(effects
 				(font
-					(size 1 1)
+					(size 0.8 0.8)
 				)
+				(justify left)
 			)
 		)
 		(property "MPN" "RT0402BRD0710KL"
@@ -21937,13 +21926,12 @@
 			)
 		)
 		(property "Tolerance" "1%"
-			(at 83.82 161.29 0)
-			(hide yes)
+			(at 78.74 164.46 0)
 			(show_name no)
-			(do_not_autoplace no)
+			(do_not_autoplace yes)
 			(effects
 				(font
-					(size 1 1)
+					(size 0.8 0.8)
 				)
 			)
 		)
@@ -22496,12 +22484,12 @@
 			)
 		)
 		(property "Voltage" "16V"
-			(at 224.79 47.7262 0)
+			(at 224.79 47.6262 0)
 			(show_name no)
-			(do_not_autoplace no)
+			(do_not_autoplace yes)
 			(effects
 				(font
-					(size 1 1)
+					(size 0.8 0.8)
 				)
 				(justify left)
 			)
@@ -22708,13 +22696,12 @@
 			)
 		)
 		(property "Tolerance" "0.1%"
-			(at 184.15 246.38 0)
-			(hide yes)
+			(at 190.15 249.55 0)
 			(show_name no)
-			(do_not_autoplace no)
+			(do_not_autoplace yes)
 			(effects
 				(font
-					(size 1 1)
+					(size 0.8 0.8)
 				)
 			)
 		)
@@ -23038,12 +23025,12 @@
 			)
 		)
 		(property "Voltage" "10V"
-			(at 153.67 258.54 0)
+			(at 153.67 258.44 0)
 			(show_name no)
-			(do_not_autoplace no)
+			(do_not_autoplace yes)
 			(effects
 				(font
-					(size 1 1)
+					(size 0.8 0.8)
 				)
 				(justify left)
 			)
@@ -23331,7 +23318,6 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "9b7b815c-356a-4c85-9d15-324cfaf7607a")
 		(property "Reference" "R3"
 			(at 68.58 41.9099 0)
@@ -23389,14 +23375,14 @@
 			)
 		)
 		(property "Tolerance" "0.1%"
-			(at 71.12 43.18 0)
-			(hide yes)
+			(at 68.58 46.3499 0)
 			(show_name no)
-			(do_not_autoplace no)
+			(do_not_autoplace yes)
 			(effects
 				(font
-					(size 1 1)
+					(size 0.8 0.8)
 				)
+				(justify right)
 			)
 		)
 		(property "MPN" "RT0402BRD07220KL"
@@ -23701,12 +23687,12 @@
 			)
 		)
 		(property "Voltage" "10V"
-			(at 340.01 113.76 0)
+			(at 340.01 113.66 0)
 			(show_name no)
-			(do_not_autoplace no)
+			(do_not_autoplace yes)
 			(effects
 				(font
-					(size 1 1)
+					(size 0.8 0.8)
 				)
 			)
 		)
@@ -24151,13 +24137,12 @@
 			)
 		)
 		(property "Tolerance" "1%"
-			(at 298.45 50.8 0)
-			(hide yes)
+			(at 304.45 53.97 0)
 			(show_name no)
-			(do_not_autoplace no)
+			(do_not_autoplace yes)
 			(effects
 				(font
-					(size 1 1)
+					(size 0.8 0.8)
 				)
 			)
 		)
@@ -24686,14 +24671,14 @@
 			)
 		)
 		(property "Tolerance" "1%"
-			(at 118.11 125.73 0)
-			(hide yes)
+			(at 120.65 128.8999 0)
 			(show_name no)
-			(do_not_autoplace no)
+			(do_not_autoplace yes)
 			(effects
 				(font
-					(size 1 1)
+					(size 0.8 0.8)
 				)
+				(justify left)
 			)
 		)
 		(property "MPN" "RC0402FR-0747KL"
@@ -24835,14 +24820,14 @@
 			)
 		)
 		(property "Tolerance" "1%"
-			(at 196.85 44.45 0)
-			(hide yes)
+			(at 199.39 47.6199 0)
 			(show_name no)
-			(do_not_autoplace no)
+			(do_not_autoplace yes)
 			(effects
 				(font
-					(size 1 1)
+					(size 0.8 0.8)
 				)
+				(justify right)
 			)
 		)
 		(property "MPN" "RC0402FR-07100KL"
@@ -25375,14 +25360,14 @@
 			)
 		)
 		(property "Tolerance" "0.1%"
-			(at 63.5 137.16 0)
-			(hide yes)
+			(at 66.04 140.3299 0)
 			(show_name no)
-			(do_not_autoplace no)
+			(do_not_autoplace yes)
 			(effects
 				(font
-					(size 1 1)
+					(size 0.8 0.8)
 				)
+				(justify left)
 			)
 		)
 		(property "MPN" "RT0402BRD0710KL"
@@ -25654,13 +25639,12 @@
 			)
 		)
 		(property "Voltage" "16V"
-			(at 368.3 181.61 0)
-			(hide yes)
+			(at 374.65 184.78 0)
 			(show_name no)
-			(do_not_autoplace no)
+			(do_not_autoplace yes)
 			(effects
 				(font
-					(size 1 1)
+					(size 0.8 0.8)
 				)
 			)
 		)
@@ -25701,7 +25685,6 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "c60dcfea-5854-4721-92e5-b4edc97cc760")
 		(property "Reference" "R4"
 			(at 68.58 52.0699 0)
@@ -25759,14 +25742,14 @@
 			)
 		)
 		(property "Tolerance" "0.1%"
-			(at 71.12 53.34 0)
-			(hide yes)
+			(at 68.58 56.5099 0)
 			(show_name no)
-			(do_not_autoplace no)
+			(do_not_autoplace yes)
 			(effects
 				(font
-					(size 1 1)
+					(size 0.8 0.8)
 				)
+				(justify right)
 			)
 		)
 		(property "MPN" "RT0402BRD0747KL"
@@ -25907,14 +25890,14 @@
 			)
 		)
 		(property "Tolerance" "1%"
-			(at 196.85 109.22 0)
-			(hide yes)
+			(at 199.39 112.3899 0)
 			(show_name no)
-			(do_not_autoplace no)
+			(do_not_autoplace yes)
 			(effects
 				(font
-					(size 1 1)
+					(size 0.8 0.8)
 				)
+				(justify left)
 			)
 		)
 		(property "MPN" "RC0402FR-0747KL"
@@ -26146,12 +26129,12 @@
 			)
 		)
 		(property "Voltage" "50V"
-			(at 189.23 112.4962 0)
+			(at 189.23 112.3962 0)
 			(show_name no)
-			(do_not_autoplace no)
+			(do_not_autoplace yes)
 			(effects
 				(font
-					(size 1 1)
+					(size 0.8 0.8)
 				)
 				(justify left)
 			)
@@ -26280,13 +26263,12 @@
 			)
 		)
 		(property "Tolerance" "1%"
-			(at 359.41 93.98 0)
-			(hide yes)
+			(at 365.41 97.15 0)
 			(show_name no)
-			(do_not_autoplace no)
+			(do_not_autoplace yes)
 			(effects
 				(font
-					(size 1 1)
+					(size 0.8 0.8)
 				)
 			)
 		)
@@ -26980,12 +26962,12 @@
 			)
 		)
 		(property "Voltage" "10V"
-			(at 171.45 41.3762 0)
+			(at 171.45 41.2762 0)
 			(show_name no)
-			(do_not_autoplace no)
+			(do_not_autoplace yes)
 			(effects
 				(font
-					(size 1 1)
+					(size 0.8 0.8)
 				)
 				(justify left)
 			)
@@ -27117,12 +27099,12 @@
 			)
 		)
 		(property "Voltage" "16V"
-			(at 226.06 122.6562 0)
+			(at 226.06 122.5562 0)
 			(show_name no)
-			(do_not_autoplace no)
+			(do_not_autoplace yes)
 			(effects
 				(font
-					(size 1 1)
+					(size 0.8 0.8)
 				)
 				(justify left)
 			)
@@ -27330,12 +27312,12 @@
 			)
 		)
 		(property "Voltage" "10V"
-			(at 279.75 46.45 0)
+			(at 279.75 46.35 0)
 			(show_name no)
-			(do_not_autoplace no)
+			(do_not_autoplace yes)
 			(effects
 				(font
-					(size 1 1)
+					(size 0.8 0.8)
 				)
 			)
 		)
@@ -27461,14 +27443,14 @@
 			)
 		)
 		(property "Tolerance" "1%"
-			(at 97.79 154.94 0)
-			(hide yes)
+			(at 100.33 158.1099 0)
 			(show_name no)
-			(do_not_autoplace no)
+			(do_not_autoplace yes)
 			(effects
 				(font
-					(size 1 1)
+					(size 0.8 0.8)
 				)
+				(justify right)
 			)
 		)
 		(property "DigiKey" "https://www.digikey.com/en/products/detail/yageo/RC0402FR-0710KL/726523"
@@ -27675,13 +27657,12 @@
 			)
 		)
 		(property "Tolerance" "1%"
-			(at 283.21 185.42 0)
-			(hide yes)
+			(at 277.21 188.59 0)
 			(show_name no)
-			(do_not_autoplace no)
+			(do_not_autoplace yes)
 			(effects
 				(font
-					(size 1 1)
+					(size 0.8 0.8)
 				)
 			)
 		)
@@ -27820,12 +27801,12 @@
 			)
 		)
 		(property "Voltage" "35V"
-			(at 291.75 95.98 0)
+			(at 291.75 95.88 0)
 			(show_name no)
-			(do_not_autoplace no)
+			(do_not_autoplace yes)
 			(effects
 				(font
-					(size 1 1)
+					(size 0.8 0.8)
 				)
 			)
 		)
@@ -27982,7 +27963,6 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "eef97bf3-7817-42b4-9255-6043d1b53d22")
 		(property "Reference" "R22"
 			(at 55.88 113.0299 0)
@@ -28040,14 +28020,14 @@
 			)
 		)
 		(property "Tolerance" "0.1%"
-			(at 53.34 114.3 0)
-			(hide yes)
+			(at 55.88 117.4699 0)
 			(show_name no)
-			(do_not_autoplace no)
+			(do_not_autoplace yes)
 			(effects
 				(font
-					(size 1 1)
+					(size 0.8 0.8)
 				)
+				(justify left)
 			)
 		)
 		(property "MPN" "RT0402BRD0710KL"
@@ -28406,13 +28386,12 @@
 			)
 		)
 		(property "Voltage" "16V"
-			(at 355.6 181.61 0)
-			(hide yes)
+			(at 361.95 184.78 0)
 			(show_name no)
-			(do_not_autoplace no)
+			(do_not_autoplace yes)
 			(effects
 				(font
-					(size 1 1)
+					(size 0.8 0.8)
 				)
 			)
 		)
@@ -28510,14 +28489,14 @@
 			)
 		)
 		(property "Tolerance" "0.1%"
-			(at 209.55 109.22 0)
-			(hide yes)
+			(at 212.09 112.3899 0)
 			(show_name no)
-			(do_not_autoplace no)
+			(do_not_autoplace yes)
 			(effects
 				(font
-					(size 1 1)
+					(size 0.8 0.8)
 				)
+				(justify left)
 			)
 		)
 		(property "MPN" "RT0402BRD0749K9L"
@@ -28766,7 +28745,6 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "fc724a69-943c-435c-b721-ce555e22693c")
 		(property "Reference" "R19"
 			(at 55.88 105.4099 0)
@@ -28824,14 +28802,14 @@
 			)
 		)
 		(property "Tolerance" "0.1%"
-			(at 53.34 106.68 0)
-			(hide yes)
+			(at 55.88 109.8499 0)
 			(show_name no)
-			(do_not_autoplace no)
+			(do_not_autoplace yes)
 			(effects
 				(font
-					(size 1 1)
+					(size 0.8 0.8)
 				)
+				(justify left)
 			)
 		)
 		(property "MPN" "RT0402BRD0720KL"
@@ -28983,12 +28961,12 @@
 			)
 		)
 		(property "Voltage" "35V"
-			(at 236.22 47.7262 0)
+			(at 236.22 47.6262 0)
 			(show_name no)
-			(do_not_autoplace no)
+			(do_not_autoplace yes)
 			(effects
 				(font
-					(size 1 1)
+					(size 0.8 0.8)
 				)
 				(justify left)
 			)

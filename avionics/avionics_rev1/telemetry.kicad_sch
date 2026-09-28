@@ -3714,14 +3714,14 @@
 			)
 		)
 		(property "Tolerance" "1%"
-			(at 0 0 0)
-			(hide yes)
+			(at 43.18 156.8399 0)
 			(show_name no)
-			(do_not_autoplace no)
+			(do_not_autoplace yes)
 			(effects
 				(font
-					(size 1 1)
+					(size 0.8 0.8)
 				)
+				(justify right)
 			)
 		)
 		(property "Voltage" "50V"
@@ -3930,14 +3930,14 @@
 			)
 		)
 		(property "Tolerance" "1%"
-			(at 0 0 0)
-			(hide yes)
+			(at 55.88 156.8399 0)
 			(show_name no)
-			(do_not_autoplace no)
+			(do_not_autoplace yes)
 			(effects
 				(font
-					(size 1 1)
+					(size 0.8 0.8)
 				)
+				(justify right)
 			)
 		)
 		(property "Voltage" "50V"
@@ -4713,14 +4713,14 @@
 			)
 		)
 		(property "Voltage" "10V"
-			(at 0 0 0)
-			(hide yes)
+			(at 170.18 51.4235 0)
 			(show_name no)
-			(do_not_autoplace no)
+			(do_not_autoplace yes)
 			(effects
 				(font
-					(size 1 1)
+					(size 0.8 0.8)
 				)
+				(justify right)
 			)
 		)
 		(property "Dielectric" "X7R"
@@ -4916,7 +4916,6 @@
 		)
 		(property "Tolerance" "10%"
 			(at 0 0 0)
-			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -4926,14 +4925,14 @@
 			)
 		)
 		(property "Voltage" "10V"
-			(at 0 0 0)
-			(hide yes)
+			(at 180.34 51.4235 0)
 			(show_name no)
-			(do_not_autoplace no)
+			(do_not_autoplace yes)
 			(effects
 				(font
-					(size 1 1)
+					(size 0.8 0.8)
 				)
+				(justify right)
 			)
 		)
 		(property "Dielectric" "X7R"
@@ -5062,14 +5061,14 @@
 			)
 		)
 		(property "Voltage" "10V"
-			(at 0 0 0)
-			(hide yes)
+			(at 60.96 172.08 0)
 			(show_name no)
-			(do_not_autoplace no)
+			(do_not_autoplace yes)
 			(effects
 				(font
-					(size 1 1)
+					(size 0.8 0.8)
 				)
+				(justify right)
 			)
 		)
 		(property "Dielectric" "X7R"
@@ -5953,14 +5952,14 @@
 			)
 		)
 		(property "Voltage" "10V"
-			(at 0 0 0)
-			(hide yes)
+			(at 74.168 172.334 0)
 			(show_name no)
-			(do_not_autoplace no)
+			(do_not_autoplace yes)
 			(effects
 				(font
-					(size 1 1)
+					(size 0.8 0.8)
 				)
+				(justify right)
 			)
 		)
 		(property "Dielectric" "X7R"

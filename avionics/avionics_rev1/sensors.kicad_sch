@@ -3722,14 +3722,14 @@
 			)
 		)
 		(property "Tolerance" "1%"
-			(at 195.58 63.5 0)
-			(hide yes)
+			(at 193.04 66.6699 0)
 			(show_name no)
-			(do_not_autoplace no)
+			(do_not_autoplace yes)
 			(effects
 				(font
-					(size 1 1)
+					(size 0.8 0.8)
 				)
+				(justify right)
 			)
 		)
 		(property "Power" "0.05W"
@@ -3970,12 +3970,12 @@
 			)
 		)
 		(property "Voltage" "10V"
-			(at 127 126.4535 0)
+			(at 127 126.3535 0)
 			(show_name no)
-			(do_not_autoplace no)
+			(do_not_autoplace yes)
 			(effects
 				(font
-					(size 1 1)
+					(size 0.8 0.8)
 				)
 				(justify right)
 			)
@@ -4263,12 +4263,12 @@
 			)
 		)
 		(property "Voltage" "10V"
-			(at 27.94 122.6435 0)
+			(at 27.94 122.5435 0)
 			(show_name no)
-			(do_not_autoplace no)
+			(do_not_autoplace yes)
 			(effects
 				(font
-					(size 1 1)
+					(size 0.8 0.8)
 				)
 				(justify right)
 			)
@@ -5236,12 +5236,12 @@
 			)
 		)
 		(property "Voltage" "10V"
-			(at 184.15 40.0935 0)
+			(at 184.15 39.9935 0)
 			(show_name no)
-			(do_not_autoplace no)
+			(do_not_autoplace yes)
 			(effects
 				(font
-					(size 1 1)
+					(size 0.8 0.8)
 				)
 				(justify right)
 			)
@@ -5430,14 +5430,14 @@
 			)
 		)
 		(property "Tolerance" "1%"
-			(at 127 43.18 0)
-			(hide yes)
+			(at 124.46 46.3499 0)
 			(show_name no)
-			(do_not_autoplace no)
+			(do_not_autoplace yes)
 			(effects
 				(font
-					(size 1 1)
+					(size 0.8 0.8)
 				)
+				(justify right)
 			)
 		)
 		(property "Power" "0.05W"
@@ -5579,14 +5579,14 @@
 			)
 		)
 		(property "Tolerance" "1%"
-			(at 138.43 105.41 0)
-			(hide yes)
+			(at 135.89 108.5799 0)
 			(show_name no)
-			(do_not_autoplace no)
+			(do_not_autoplace yes)
 			(effects
 				(font
-					(size 1 1)
+					(size 0.8 0.8)
 				)
+				(justify right)
 			)
 		)
 		(property "Power" "0.05W"
@@ -5749,12 +5749,12 @@
 			)
 		)
 		(property "Voltage" "16V"
-			(at 176.53 57.8735 0)
+			(at 176.53 57.7735 0)
 			(show_name no)
-			(do_not_autoplace no)
+			(do_not_autoplace yes)
 			(effects
 				(font
-					(size 1 1)
+					(size 0.8 0.8)
 				)
 				(justify left)
 			)
@@ -6220,12 +6220,12 @@
 			)
 		)
 		(property "Voltage" "10V"
-			(at 39.37 56.6035 0)
+			(at 39.37 56.5035 0)
 			(show_name no)
-			(do_not_autoplace no)
+			(do_not_autoplace yes)
 			(effects
 				(font
-					(size 1 1)
+					(size 0.8 0.8)
 				)
 				(justify right)
 			)

@@ -6284,13 +6284,12 @@
 			)
 		)
 		(property "Voltage" "16V"
-			(at 123.19 179.07 0)
-			(hide yes)
+			(at 129.54 182.24 0)
 			(show_name no)
-			(do_not_autoplace no)
+			(do_not_autoplace yes)
 			(effects
 				(font
-					(size 1 1)
+					(size 0.8 0.8)
 				)
 			)
 		)
@@ -6528,13 +6527,12 @@
 			)
 		)
 		(property "Voltage" "16V"
-			(at 191.77 179.07 0)
-			(hide yes)
+			(at 198.12 182.24 0)
 			(show_name no)
-			(do_not_autoplace no)
+			(do_not_autoplace yes)
 			(effects
 				(font
-					(size 1 1)
+					(size 0.8 0.8)
 				)
 			)
 		)
@@ -6684,13 +6682,12 @@
 			)
 		)
 		(property "Voltage" "16V"
-			(at 146.05 179.07 0)
-			(hide yes)
+			(at 152.4 182.24 0)
 			(show_name no)
-			(do_not_autoplace no)
+			(do_not_autoplace yes)
 			(effects
 				(font
-					(size 1 1)
+					(size 0.8 0.8)
 				)
 			)
 		)
@@ -7083,7 +7080,7 @@
 		(dnp no)
 		(uuid "2767807e-fb2a-45ed-8655-ddd08263ec92")
 		(property "Reference" "R6"
-			(at 127 52.07 90)
+			(at 127 48.26 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -7093,7 +7090,7 @@
 			)
 		)
 		(property "Value" "100k"
-			(at 127 49.53 90)
+			(at 127 50.292 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -7158,13 +7155,12 @@
 			)
 		)
 		(property "Tolerance" "1%"
-			(at -10.16 -29.21 0)
-			(hide yes)
+			(at 127 52.07 90)
 			(show_name no)
-			(do_not_autoplace no)
+			(do_not_autoplace yes)
 			(effects
 				(font
-					(size 1 1)
+					(size 0.8 0.8)
 				)
 			)
 		)
@@ -7758,13 +7754,12 @@
 			)
 		)
 		(property "Voltage" "16V"
-			(at 168.91 179.07 0)
-			(hide yes)
+			(at 175.26 182.24 0)
 			(show_name no)
-			(do_not_autoplace no)
+			(do_not_autoplace yes)
 			(effects
 				(font
-					(size 1 1)
+					(size 0.8 0.8)
 				)
 			)
 		)
@@ -7994,7 +7989,7 @@
 		(dnp no)
 		(uuid "89c579a3-6027-445c-b558-2294f553317c")
 		(property "Reference" "R17"
-			(at 127 87.63 90)
+			(at 127 84.074 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -8004,7 +7999,7 @@
 			)
 		)
 		(property "Value" "100k"
-			(at 127 85.09 90)
+			(at 127 86.106 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -8069,13 +8064,12 @@
 			)
 		)
 		(property "Tolerance" "1%"
-			(at -10.16 -29.21 0)
-			(hide yes)
+			(at 127 87.884 90)
 			(show_name no)
-			(do_not_autoplace no)
+			(do_not_autoplace yes)
 			(effects
 				(font
-					(size 1 1)
+					(size 0.8 0.8)
 				)
 			)
 		)
@@ -8128,7 +8122,7 @@
 		(dnp no)
 		(uuid "940575ed-4235-4544-8fb1-6f54053edbf9")
 		(property "Reference" "R15"
-			(at 172.72 87.63 90)
+			(at 172.72 83.82 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -8138,7 +8132,7 @@
 			)
 		)
 		(property "Value" "100k"
-			(at 172.72 85.09 90)
+			(at 172.72 85.852 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -8203,13 +8197,12 @@
 			)
 		)
 		(property "Tolerance" "1%"
-			(at -10.16 -29.21 0)
-			(hide yes)
+			(at 172.72 87.63 90)
 			(show_name no)
-			(do_not_autoplace no)
+			(do_not_autoplace yes)
 			(effects
 				(font
-					(size 1 1)
+					(size 0.8 0.8)
 				)
 			)
 		)
@@ -8704,13 +8697,12 @@
 			)
 		)
 		(property "Tolerance" "1%"
-			(at -10.16 -29.21 0)
-			(hide yes)
+			(at 137.16 53.97 0)
 			(show_name no)
-			(do_not_autoplace no)
+			(do_not_autoplace yes)
 			(effects
 				(font
-					(size 1 1)
+					(size 0.8 0.8)
 				)
 			)
 		)
@@ -8839,13 +8831,12 @@
 			)
 		)
 		(property "Tolerance" "1%"
-			(at -10.16 -29.21 0)
-			(hide yes)
+			(at 137.16 89.53 0)
 			(show_name no)
-			(do_not_autoplace no)
+			(do_not_autoplace yes)
 			(effects
 				(font
-					(size 1 1)
+					(size 0.8 0.8)
 				)
 			)
 		)
@@ -9062,13 +9053,12 @@
 			)
 		)
 		(property "Tolerance" "1%"
-			(at -10.16 -29.21 0)
-			(hide yes)
+			(at 182.88 53.97 0)
 			(show_name no)
-			(do_not_autoplace no)
+			(do_not_autoplace yes)
 			(effects
 				(font
-					(size 1 1)
+					(size 0.8 0.8)
 				)
 			)
 		)
@@ -9353,13 +9343,12 @@
 			)
 		)
 		(property "Tolerance" "1%"
-			(at -10.16 -29.21 0)
-			(hide yes)
+			(at 182.88 89.53 0)
 			(show_name no)
-			(do_not_autoplace no)
+			(do_not_autoplace yes)
 			(effects
 				(font
-					(size 1 1)
+					(size 0.8 0.8)
 				)
 			)
 		)
@@ -9465,13 +9454,12 @@
 			)
 		)
 		(property "Tolerance" "1%"
-			(at 54.61 179.07 0)
-			(hide yes)
+			(at 60.61 182.24 0)
 			(show_name no)
-			(do_not_autoplace no)
+			(do_not_autoplace yes)
 			(effects
 				(font
-					(size 1 1)
+					(size 0.8 0.8)
 				)
 			)
 		)
@@ -9546,7 +9534,7 @@
 		(dnp no)
 		(uuid "ee788666-a29f-44b7-8259-d8ac6bec28e2")
 		(property "Reference" "R8"
-			(at 172.72 52.07 90)
+			(at 172.466 48.006 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -9556,7 +9544,7 @@
 			)
 		)
 		(property "Value" "100k"
-			(at 172.72 49.53 90)
+			(at 172.72 49.784 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -9621,13 +9609,12 @@
 			)
 		)
 		(property "Tolerance" "1%"
-			(at -10.16 -29.21 0)
-			(hide yes)
+			(at 172.72 51.562 90)
 			(show_name no)
-			(do_not_autoplace no)
+			(do_not_autoplace yes)
 			(effects
 				(font
-					(size 1 1)
+					(size 0.8 0.8)
 				)
 			)
 		)
@@ -9788,13 +9775,12 @@
 			)
 		)
 		(property "Voltage" "10V"
-			(at 31.75 179.07 0)
-			(hide yes)
+			(at 38.1 182.24 0)
 			(show_name no)
-			(do_not_autoplace no)
+			(do_not_autoplace yes)
 			(effects
 				(font
-					(size 1 1)
+					(size 0.8 0.8)
 				)
 			)
 		)
