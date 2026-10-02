@@ -10137,7 +10137,7 @@
 		(dnp no)
 		(uuid "0f5e7af8-980a-48ef-8544-aefd0f2b6efb")
 		(property "Reference" "Q2"
-			(at 353.695 48.26 0)
+			(at 349.758 48.006 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -10147,7 +10147,7 @@
 			)
 		)
 		(property "Value" "DMN2056U-7"
-			(at 353.695 50.8 0)
+			(at 349.758 50.546 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -10263,7 +10263,7 @@
 		(dnp no)
 		(uuid "1169cbba-1c4f-4975-b9f1-959e87abb758")
 		(property "Reference" "R56"
-			(at 327.66 33.02 0)
+			(at 332.74 32.258 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -10273,7 +10273,7 @@
 			)
 		)
 		(property "Value" "1k"
-			(at 327.66 35.56 0)
+			(at 332.74 34.29 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -10282,7 +10282,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
 			(at 336.55 34.29 0)
 			(hide yes)
 			(show_name no)
@@ -10360,7 +10360,7 @@
 			)
 		)
 		(property "Tolerance" "1%"
-			(at 327.66 37.46 0)
+			(at 332.74 36.19 0)
 			(show_name no)
 			(do_not_autoplace yes)
 			(effects
@@ -10437,7 +10437,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
 			(at 306.07 109.22 0)
 			(hide yes)
 			(show_name no)
@@ -12238,7 +12238,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
 			(at 45.72 101.6 0)
 			(hide yes)
 			(show_name no)
@@ -12516,7 +12516,7 @@
 		(dnp no)
 		(uuid "63f039ec-537d-4213-b22e-06c432b5150f")
 		(property "Reference" "R54"
-			(at 316.23 43.18 90)
+			(at 316.23 44.196 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -12535,7 +12535,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
 			(at 316.23 49.53 0)
 			(hide yes)
 			(show_name no)
@@ -12613,7 +12613,7 @@
 			)
 		)
 		(property "Tolerance" "1%"
-			(at 316.23 47.62 0)
+			(at 316.23 47.498 90)
 			(show_name no)
 			(do_not_autoplace yes)
 			(effects
@@ -12979,7 +12979,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
 			(at 106.68 204.47 0)
 			(hide yes)
 			(show_name no)
@@ -13258,7 +13258,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
 			(at 228.6 104.14 0)
 			(hide yes)
 			(show_name no)
@@ -13414,7 +13414,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
 			(at 36.83 101.6 0)
 			(hide yes)
 			(show_name no)
@@ -13725,7 +13725,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
 			(at 54.61 101.6 0)
 			(hide yes)
 			(show_name no)
@@ -14102,7 +14102,6 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "89c8f424-04b7-4122-8ef3-4eec2c260a42")
 		(property "Reference" "R50"
 			(at 143.51 93.98 90)
@@ -14124,7 +14123,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
 			(at 143.51 100.33 0)
 			(hide yes)
 			(show_name no)
@@ -14158,7 +14157,7 @@
 			)
 		)
 		(property "Tolerance" "1%"
-			(at 143.51 98.42 0)
+			(at 143.51 98.298 90)
 			(show_name no)
 			(do_not_autoplace yes)
 			(effects
@@ -14657,7 +14656,7 @@
 		(dnp no)
 		(uuid "95f04b04-c3e5-4f62-831f-dd701da00c6d")
 		(property "Reference" "BZ1"
-			(at 349.25 22.86 0)
+			(at 357.886 32.512 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -14667,7 +14666,7 @@
 			)
 		)
 		(property "Value" "PS1240P02BT"
-			(at 349.25 25.4 0)
+			(at 357.886 35.052 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -15176,7 +15175,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
 			(at 290.83 104.14 0)
 			(hide yes)
 			(show_name no)
@@ -15624,7 +15623,7 @@
 		(dnp no)
 		(uuid "bb6ba5a7-e186-49a6-b061-ab6f470c0f6a")
 		(property "Reference" "R55"
-			(at 316.23 58.42 0)
+			(at 324.866 58.166 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -15634,7 +15633,7 @@
 			)
 		)
 		(property "Value" "10k"
-			(at 316.23 60.96 0)
+			(at 324.866 59.944 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -15643,7 +15642,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
 			(at 328.93 59.69 0)
 			(hide yes)
 			(show_name no)
@@ -15721,7 +15720,7 @@
 			)
 		)
 		(property "Tolerance" "1%"
-			(at 316.23 62.86 0)
+			(at 324.866 61.844 0)
 			(show_name no)
 			(do_not_autoplace yes)
 			(effects
@@ -16528,7 +16527,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
 			(at 63.5 101.6 0)
 			(hide yes)
 			(show_name no)

@@ -15683,7 +15683,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
 			(at 210.82 44.45 0)
 			(hide yes)
 			(show_name no)
@@ -15694,7 +15694,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://yageogroup.com/component-documentation/download/specsheet/RC0402FR-07120RL"
+		(property "Datasheet" ""
 			(at 210.82 44.45 0)
 			(hide yes)
 			(show_name no)
@@ -15906,7 +15906,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
 			(at 377.19 105.41 0)
 			(hide yes)
 			(show_name no)
@@ -15940,7 +15940,7 @@
 			)
 		)
 		(property "Tolerance" "1%"
-			(at 377.19 104.77 0)
+			(at 379.222 102.87 90)
 			(show_name no)
 			(do_not_autoplace yes)
 			(effects
@@ -16126,7 +16126,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
 			(at 118.11 133.35 0)
 			(hide yes)
 			(show_name no)
@@ -16137,7 +16137,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://yageogroup.com/component-documentation/download/specsheet/RC0402FR-0747KL"
+		(property "Datasheet" ""
 			(at 118.11 133.35 0)
 			(hide yes)
 			(show_name no)
@@ -16349,7 +16349,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
 			(at 367.03 110.49 0)
 			(hide yes)
 			(show_name no)
@@ -18085,7 +18085,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
 			(at 364.49 67.31 0)
 			(hide yes)
 			(show_name no)
@@ -18848,7 +18848,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
 			(at 63.5 129.54 0)
 			(hide yes)
 			(show_name no)
@@ -18859,7 +18859,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://yageogroup.com/component-documentation/download/specsheet/RT0402BRD0718K2L"
+		(property "Datasheet" ""
 			(at 63.5 129.54 0)
 			(hide yes)
 			(show_name no)
@@ -21244,7 +21244,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
 			(at 298.45 43.18 0)
 			(hide yes)
 			(show_name no)
@@ -21397,7 +21397,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
 			(at 113.03 59.69 0)
 			(hide yes)
 			(show_name no)
@@ -21408,7 +21408,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://www.koaspeer.com/pdfs/RN73R.pdf"
+		(property "Datasheet" ""
 			(at 113.03 59.69 0)
 			(hide yes)
 			(show_name no)
@@ -23341,7 +23341,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
 			(at 71.12 43.18 0)
 			(hide yes)
 			(show_name no)
@@ -23352,7 +23352,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://yageogroup.com/component-documentation/download/specsheet/RT0402BRD07220KL"
+		(property "Datasheet" ""
 			(at 71.12 43.18 0)
 			(hide yes)
 			(show_name no)
@@ -24103,7 +24103,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
 			(at 298.45 50.8 0)
 			(hide yes)
 			(show_name no)
@@ -24637,7 +24637,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
 			(at 118.11 125.73 0)
 			(hide yes)
 			(show_name no)
@@ -24648,7 +24648,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://yageogroup.com/component-documentation/download/specsheet/RC0402FR-0747KL"
+		(property "Datasheet" ""
 			(at 118.11 125.73 0)
 			(hide yes)
 			(show_name no)
@@ -24786,7 +24786,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
 			(at 196.85 44.45 0)
 			(hide yes)
 			(show_name no)
@@ -25326,7 +25326,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
 			(at 63.5 137.16 0)
 			(hide yes)
 			(show_name no)
@@ -25337,7 +25337,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://yageogroup.com/component-documentation/download/specsheet/RT0402BRD0710KL"
+		(property "Datasheet" ""
 			(at 63.5 137.16 0)
 			(hide yes)
 			(show_name no)
@@ -25708,7 +25708,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
 			(at 71.12 53.34 0)
 			(hide yes)
 			(show_name no)
@@ -25719,7 +25719,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://yageogroup.com/component-documentation/download/specsheet/RT0402BRD0747KL"
+		(property "Datasheet" ""
 			(at 71.12 53.34 0)
 			(hide yes)
 			(show_name no)
@@ -26229,7 +26229,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
 			(at 359.41 93.98 0)
 			(hide yes)
 			(show_name no)
@@ -26240,7 +26240,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://yageogroup.com/component-documentation/download/specsheet/RC0402FR-0780K6L"
+		(property "Datasheet" ""
 			(at 359.41 93.98 0)
 			(hide yes)
 			(show_name no)
@@ -27623,7 +27623,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
 			(at 283.21 185.42 0)
 			(hide yes)
 			(show_name no)
@@ -27986,7 +27986,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
 			(at 53.34 114.3 0)
 			(hide yes)
 			(show_name no)
@@ -27997,7 +27997,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://yageogroup.com/component-documentation/download/specsheet/RT0402BRD0710KL"
+		(property "Datasheet" ""
 			(at 53.34 114.3 0)
 			(hide yes)
 			(show_name no)
@@ -28768,7 +28768,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
 			(at 53.34 106.68 0)
 			(hide yes)
 			(show_name no)
@@ -28779,7 +28779,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://yageogroup.com/component-documentation/download/specsheet/RT0402BRD0720KL"
+		(property "Datasheet" ""
 			(at 53.34 106.68 0)
 			(hide yes)
 			(show_name no)
