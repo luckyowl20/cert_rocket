@@ -1427,7 +1427,18 @@
 			(on_board yes)
 			(in_pos_files yes)
 			(duplicate_pin_numbers_are_jumpers no)
-			(property "Reference" "SN74LVC08AQPWRQ1"
+			(property "Reference" "U"
+				(at 11.0333 8.89 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Value" "SN74LVC08AWBQARQ1"
 				(at 11.0333 6.35 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -1438,17 +1449,7 @@
 					(justify left)
 				)
 			)
-			(property "Value" ""
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Footprint" ""
+			(property "Footprint" "avionics_footprints:SN74LVC08AWBQARQ1_BQA14"
 				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -1459,7 +1460,7 @@
 					)
 				)
 			)
-			(property "Datasheet" ""
+			(property "Datasheet" "https://www.ti.com/lit/ds/symlink/sn74lvc08a-q1.pdf"
 				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -1470,7 +1471,40 @@
 					)
 				)
 			)
-			(property "Description" ""
+			(property "Description" "Automotive quad 2-input AND gate, WQFN-14 BQA0014B, exposed pad to GND"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "MPN" "SN74LVC08AWBQARQ1"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Manufacturer" "Texas Instruments"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "DigiKey" "https://www.digikey.com/en/products/detail/texas-instruments/SN74LVC08AWBQARQ1/22518165"
 				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -1844,7 +1878,7 @@
 						)
 					)
 				)
-				(pin power_out line
+				(pin power_in line
 					(at 8.89 -43.18 90)
 					(length 2.54)
 					(name "GND"
@@ -1981,6 +2015,25 @@
 						)
 					)
 					(number "14"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 8.89 -43.18 90)
+					(length 3.81)
+					(hide yes)
+					(name "EP"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "15"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -4479,19 +4532,6 @@
 		)
 		(uuid "ed01210e-e75c-42ac-8957-0fe57f934495")
 	)
-	(text "TODO: \noverall design review\nassign footprints for and gate, connector, fets\ndetermine resistor values for FETs dividers\npick correct FET footprint / part # (dual fet)\npick a connector footprint for J3 (small screw terminal) \n"
-		(exclude_from_sim no)
-		(at 297.942 65.786 0)
-		(effects
-			(font
-				(size 2.032 2.032)
-				(thickness 0.4064)
-				(bold yes)
-			)
-			(justify left)
-		)
-		(uuid "ee751a6e-9c9e-4918-952f-5bda96a1b374")
-	)
 	(junction
 		(at 45.72 55.88)
 		(diameter 0)
@@ -6195,7 +6235,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
 			(at 123.19 179.07 0)
 			(hide yes)
 			(show_name no)
@@ -6228,6 +6268,17 @@
 				)
 			)
 		)
+		(property "Manufacturer" "Yageo"
+			(at 123.19 179.07 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(property "ki_keywords" "capacitor cap"
 			(at 123.19 179.07 0)
 			(hide yes)
@@ -6250,7 +6301,7 @@
 				)
 			)
 		)
-		(property "MPN" "GRM155R71C103KA01D"
+		(property "MPN" "CC0603KRX7R7BB103"
 			(at 123.19 179.07 0)
 			(hide yes)
 			(show_name no)
@@ -6261,7 +6312,7 @@
 				)
 			)
 		)
-		(property "DigiKey" "https://www.digikey.com/en/products/detail/murata-electronics/GRM155R71C103KA01D/587926"
+		(property "DigiKey" "https://www.digikey.com/en/products/detail/yageo/CC0603KRX7R7BB103/5883753"
 			(at 123.19 179.07 0)
 			(hide yes)
 			(show_name no)
@@ -6438,7 +6489,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
 			(at 191.77 179.07 0)
 			(hide yes)
 			(show_name no)
@@ -6471,6 +6522,17 @@
 				)
 			)
 		)
+		(property "Manufacturer" "Yageo"
+			(at 191.77 179.07 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(property "ki_keywords" "capacitor cap"
 			(at 191.77 179.07 0)
 			(hide yes)
@@ -6493,7 +6555,7 @@
 				)
 			)
 		)
-		(property "MPN" "GRM155R71C103KA01D"
+		(property "MPN" "CC0603KRX7R7BB103"
 			(at 191.77 179.07 0)
 			(hide yes)
 			(show_name no)
@@ -6504,7 +6566,7 @@
 				)
 			)
 		)
-		(property "DigiKey" "https://www.digikey.com/en/products/detail/murata-electronics/GRM155R71C103KA01D/587926"
+		(property "DigiKey" "https://www.digikey.com/en/products/detail/yageo/CC0603KRX7R7BB103/5883753"
 			(at 191.77 179.07 0)
 			(hide yes)
 			(show_name no)
@@ -6593,7 +6655,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
 			(at 146.05 179.07 0)
 			(hide yes)
 			(show_name no)
@@ -6626,6 +6688,17 @@
 				)
 			)
 		)
+		(property "Manufacturer" "Yageo"
+			(at 146.05 179.07 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(property "ki_keywords" "capacitor cap"
 			(at 146.05 179.07 0)
 			(hide yes)
@@ -6648,7 +6721,7 @@
 				)
 			)
 		)
-		(property "MPN" "GRM155R71C103KA01D"
+		(property "MPN" "CC0603KRX7R7BB103"
 			(at 146.05 179.07 0)
 			(hide yes)
 			(show_name no)
@@ -6659,7 +6732,7 @@
 				)
 			)
 		)
-		(property "DigiKey" "https://www.digikey.com/en/products/detail/murata-electronics/GRM155R71C103KA01D/587926"
+		(property "DigiKey" "https://www.digikey.com/en/products/detail/yageo/CC0603KRX7R7BB103/5883753"
 			(at 146.05 179.07 0)
 			(hide yes)
 			(show_name no)
@@ -6963,7 +7036,18 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "12d4a2a0-46fa-4616-bbc8-93a8964882ba")
-		(property "Reference" "SN74LVC08AQPWRQ1"
+		(property "Reference" "U16"
+			(at 77.0733 39.37 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "SN74LVC08AWBQARQ1"
 			(at 77.0733 41.91 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6974,17 +7058,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" ""
-			(at 66.04 48.26 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
+		(property "Footprint" "avionics_footprints:SN74LVC08AWBQARQ1_BQA14"
 			(at 66.04 48.26 0)
 			(hide yes)
 			(show_name no)
@@ -6995,7 +7069,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.ti.com/lit/ds/symlink/sn74lvc08a-q1.pdf"
 			(at 66.04 48.26 0)
 			(hide yes)
 			(show_name no)
@@ -7006,8 +7080,41 @@
 				)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Automotive quad 2-input AND gate, WQFN-14 BQA0014B, exposed pad to GND"
 			(at 66.04 48.26 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "SN74LVC08AWBQARQ1"
+			(at 0 0 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" "Texas Instruments"
+			(at 0 0 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "DigiKey" "https://www.digikey.com/en/products/detail/texas-instruments/SN74LVC08AWBQARQ1/22518165"
+			(at 0 0 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7059,10 +7166,13 @@
 		(pin "10"
 			(uuid "f231ed24-1794-4c09-b62d-27f6066c0d33")
 		)
+		(pin "15"
+			(uuid "e2c043e0-eb80-47b8-ae6f-c20b44509a3a")
+		)
 		(instances
 			(project "avionics_rev1"
 				(path "/c491fe45-d2ff-414d-a846-7eed12d2b763/ed6133c6-6f1b-42df-b4e6-53aba33da3e9"
-					(reference "SN74LVC08AQPWRQ1")
+					(reference "U16")
 					(unit 1)
 				)
 			)
@@ -7110,7 +7220,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.yageogroup.com/component-documentation/download/specsheet/RC0603FR-07100KL"
 			(at 127 45.72 0)
 			(hide yes)
 			(show_name no)
@@ -7132,7 +7242,18 @@
 				)
 			)
 		)
-		(property "MPN" "RC0402FR-07100KL"
+		(property "Manufacturer" "Yageo"
+			(at 127 45.72 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "RC0603FR-07100KL"
 			(at -10.16 -29.21 0)
 			(hide yes)
 			(show_name no)
@@ -7143,7 +7264,7 @@
 				)
 			)
 		)
-		(property "DigiKey" "https://www.digikey.com/en/products/detail/yageo/RC0402FR-07100KL/729473"
+		(property "DigiKey" "https://www.digikey.com/en/products/detail/yageo/RC0603FR-07100KL/726889"
 			(at -10.16 -29.21 0)
 			(hide yes)
 			(show_name no)
@@ -7164,7 +7285,7 @@
 				)
 			)
 		)
-		(property "Power" "0.063W"
+		(property "Power" "0.1W"
 			(at -10.16 -29.21 0)
 			(hide yes)
 			(show_name no)
@@ -7175,7 +7296,7 @@
 				)
 			)
 		)
-		(property "Voltage" "50V"
+		(property "Voltage" "75V"
 			(at -10.16 -29.21 0)
 			(hide yes)
 			(show_name no)
@@ -7665,7 +7786,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
 			(at 168.91 179.07 0)
 			(hide yes)
 			(show_name no)
@@ -7698,6 +7819,17 @@
 				)
 			)
 		)
+		(property "Manufacturer" "Yageo"
+			(at 168.91 179.07 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(property "ki_keywords" "capacitor cap"
 			(at 168.91 179.07 0)
 			(hide yes)
@@ -7720,7 +7852,7 @@
 				)
 			)
 		)
-		(property "MPN" "GRM155R71C103KA01D"
+		(property "MPN" "CC0603KRX7R7BB103"
 			(at 168.91 179.07 0)
 			(hide yes)
 			(show_name no)
@@ -7731,7 +7863,7 @@
 				)
 			)
 		)
-		(property "DigiKey" "https://www.digikey.com/en/products/detail/murata-electronics/GRM155R71C103KA01D/587926"
+		(property "DigiKey" "https://www.digikey.com/en/products/detail/yageo/CC0603KRX7R7BB103/5883753"
 			(at 168.91 179.07 0)
 			(hide yes)
 			(show_name no)
@@ -7900,7 +8032,7 @@
 				(justify right)
 			)
 		)
-		(property "Value" "Conn_02x04_Top_Bottom"
+		(property "Value" "1725711"
 			(at 212.09 63.4999 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7911,7 +8043,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "avionics_footprints:Phoenix_1725711_MPT_0.5_8_2.54"
 			(at 219.71 63.5 0)
 			(hide yes)
 			(show_name no)
@@ -7922,7 +8054,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.phoenixcontact.com/us/products/1725711/pdf"
 			(at 219.71 63.5 0)
 			(hide yes)
 			(show_name no)
@@ -7933,8 +8065,96 @@
 				)
 			)
 		)
-		(property "Description" "Generic connector, double row, 02x04, top/bottom pin numbering scheme (row 1: 1...pins_per_row, row2: pins_per_row+1 ... num_pins), script generated (kicad-library-utils/schlib/autogen/connector/)"
+		(property "Description" "8-position screw terminal, 2.54mm pitch, horizontal wire entry, 6A, Phoenix Contact MPT 0,5/ 8-2,54"
 			(at 219.71 63.5 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "1725711"
+			(at 0 0 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" "Phoenix Contact"
+			(at 0 0 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "DigiKey" "https://www.digikey.com/en/products/detail/phoenix-contact/1725711/267468"
+			(at 0 0 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "DigiKey Part Number" "277-1279-ND"
+			(at 0 0 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Pitch" "2.54mm"
+			(at 0 0 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Current Rating" "6A"
+			(at 0 0 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Wire Gauge" "26-20 AWG (manufacturer)"
+			(at 0 0 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Position Count" "8"
+			(at 0 0 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8019,7 +8239,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.yageogroup.com/component-documentation/download/specsheet/RC0603FR-07100KL"
 			(at 127 81.28 0)
 			(hide yes)
 			(show_name no)
@@ -8041,7 +8261,18 @@
 				)
 			)
 		)
-		(property "MPN" "RC0402FR-07100KL"
+		(property "Manufacturer" "Yageo"
+			(at 127 81.28 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "RC0603FR-07100KL"
 			(at -10.16 -29.21 0)
 			(hide yes)
 			(show_name no)
@@ -8052,7 +8283,7 @@
 				)
 			)
 		)
-		(property "DigiKey" "https://www.digikey.com/en/products/detail/yageo/RC0402FR-07100KL/729473"
+		(property "DigiKey" "https://www.digikey.com/en/products/detail/yageo/RC0603FR-07100KL/726889"
 			(at -10.16 -29.21 0)
 			(hide yes)
 			(show_name no)
@@ -8073,7 +8304,7 @@
 				)
 			)
 		)
-		(property "Power" "0.063W"
+		(property "Power" "0.1W"
 			(at -10.16 -29.21 0)
 			(hide yes)
 			(show_name no)
@@ -8084,7 +8315,7 @@
 				)
 			)
 		)
-		(property "Voltage" "50V"
+		(property "Voltage" "75V"
 			(at -10.16 -29.21 0)
 			(hide yes)
 			(show_name no)
@@ -8152,7 +8383,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.yageogroup.com/component-documentation/download/specsheet/RC0603FR-07100KL"
 			(at 172.72 81.28 0)
 			(hide yes)
 			(show_name no)
@@ -8174,7 +8405,18 @@
 				)
 			)
 		)
-		(property "MPN" "RC0402FR-07100KL"
+		(property "Manufacturer" "Yageo"
+			(at 172.72 81.28 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "RC0603FR-07100KL"
 			(at -10.16 -29.21 0)
 			(hide yes)
 			(show_name no)
@@ -8185,7 +8427,7 @@
 				)
 			)
 		)
-		(property "DigiKey" "https://www.digikey.com/en/products/detail/yageo/RC0402FR-07100KL/729473"
+		(property "DigiKey" "https://www.digikey.com/en/products/detail/yageo/RC0603FR-07100KL/726889"
 			(at -10.16 -29.21 0)
 			(hide yes)
 			(show_name no)
@@ -8206,7 +8448,7 @@
 				)
 			)
 		)
-		(property "Power" "0.063W"
+		(property "Power" "0.1W"
 			(at -10.16 -29.21 0)
 			(hide yes)
 			(show_name no)
@@ -8217,7 +8459,7 @@
 				)
 			)
 		)
-		(property "Voltage" "50V"
+		(property "Voltage" "75V"
 			(at -10.16 -29.21 0)
 			(hide yes)
 			(show_name no)
@@ -8652,7 +8894,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.yageogroup.com/component-documentation/download/specsheet/RC0603FR-0718KL"
 			(at 132.08 50.8 0)
 			(hide yes)
 			(show_name no)
@@ -8674,7 +8916,18 @@
 				)
 			)
 		)
-		(property "MPN" "RC0402FR-0718KL"
+		(property "Manufacturer" "Yageo"
+			(at 132.08 50.8 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "RC0603FR-0718KL"
 			(at -10.16 -29.21 0)
 			(hide yes)
 			(show_name no)
@@ -8685,7 +8938,7 @@
 				)
 			)
 		)
-		(property "DigiKey" "https://www.digikey.com/en/products/detail/yageo/RC0402FR-0718KL/726548"
+		(property "DigiKey" "https://www.digikey.com/en/products/detail/yageo/RC0603FR-0718KL/726989"
 			(at -10.16 -29.21 0)
 			(hide yes)
 			(show_name no)
@@ -8706,7 +8959,7 @@
 				)
 			)
 		)
-		(property "Power" "0.063W"
+		(property "Power" "0.1W"
 			(at -10.16 -29.21 0)
 			(hide yes)
 			(show_name no)
@@ -8717,7 +8970,7 @@
 				)
 			)
 		)
-		(property "Voltage" "50V"
+		(property "Voltage" "75V"
 			(at -10.16 -29.21 0)
 			(hide yes)
 			(show_name no)
@@ -8786,7 +9039,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.yageogroup.com/component-documentation/download/specsheet/RC0603FR-0718KL"
 			(at 132.08 86.36 0)
 			(hide yes)
 			(show_name no)
@@ -8808,7 +9061,18 @@
 				)
 			)
 		)
-		(property "MPN" "RC0402FR-0718KL"
+		(property "Manufacturer" "Yageo"
+			(at 132.08 86.36 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "RC0603FR-0718KL"
 			(at -10.16 -29.21 0)
 			(hide yes)
 			(show_name no)
@@ -8819,7 +9083,7 @@
 				)
 			)
 		)
-		(property "DigiKey" "https://www.digikey.com/en/products/detail/yageo/RC0402FR-0718KL/726548"
+		(property "DigiKey" "https://www.digikey.com/en/products/detail/yageo/RC0603FR-0718KL/726989"
 			(at -10.16 -29.21 0)
 			(hide yes)
 			(show_name no)
@@ -8840,7 +9104,7 @@
 				)
 			)
 		)
-		(property "Power" "0.063W"
+		(property "Power" "0.1W"
 			(at -10.16 -29.21 0)
 			(hide yes)
 			(show_name no)
@@ -8851,7 +9115,7 @@
 				)
 			)
 		)
-		(property "Voltage" "50V"
+		(property "Voltage" "75V"
 			(at -10.16 -29.21 0)
 			(hide yes)
 			(show_name no)
@@ -9008,7 +9272,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.yageogroup.com/component-documentation/download/specsheet/RC0603FR-0718KL"
 			(at 177.8 50.8 0)
 			(hide yes)
 			(show_name no)
@@ -9030,7 +9294,18 @@
 				)
 			)
 		)
-		(property "MPN" "RC0402FR-0718KL"
+		(property "Manufacturer" "Yageo"
+			(at 177.8 50.8 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "RC0603FR-0718KL"
 			(at -10.16 -29.21 0)
 			(hide yes)
 			(show_name no)
@@ -9041,7 +9316,7 @@
 				)
 			)
 		)
-		(property "DigiKey" "https://www.digikey.com/en/products/detail/yageo/RC0402FR-0718KL/726548"
+		(property "DigiKey" "https://www.digikey.com/en/products/detail/yageo/RC0603FR-0718KL/726989"
 			(at -10.16 -29.21 0)
 			(hide yes)
 			(show_name no)
@@ -9062,7 +9337,7 @@
 				)
 			)
 		)
-		(property "Power" "0.063W"
+		(property "Power" "0.1W"
 			(at -10.16 -29.21 0)
 			(hide yes)
 			(show_name no)
@@ -9073,7 +9348,7 @@
 				)
 			)
 		)
-		(property "Voltage" "50V"
+		(property "Voltage" "75V"
 			(at -10.16 -29.21 0)
 			(hide yes)
 			(show_name no)
@@ -9298,7 +9573,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.yageogroup.com/component-documentation/download/specsheet/RC0603FR-0718KL"
 			(at 177.8 86.36 0)
 			(hide yes)
 			(show_name no)
@@ -9320,7 +9595,18 @@
 				)
 			)
 		)
-		(property "MPN" "RC0402FR-0718KL"
+		(property "Manufacturer" "Yageo"
+			(at 177.8 86.36 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "RC0603FR-0718KL"
 			(at -10.16 -29.21 0)
 			(hide yes)
 			(show_name no)
@@ -9331,7 +9617,7 @@
 				)
 			)
 		)
-		(property "DigiKey" "https://www.digikey.com/en/products/detail/yageo/RC0402FR-0718KL/726548"
+		(property "DigiKey" "https://www.digikey.com/en/products/detail/yageo/RC0603FR-0718KL/726989"
 			(at -10.16 -29.21 0)
 			(hide yes)
 			(show_name no)
@@ -9352,7 +9638,7 @@
 				)
 			)
 		)
-		(property "Power" "0.063W"
+		(property "Power" "0.1W"
 			(at -10.16 -29.21 0)
 			(hide yes)
 			(show_name no)
@@ -9363,7 +9649,7 @@
 				)
 			)
 		)
-		(property "Voltage" "50V"
+		(property "Voltage" "75V"
 			(at -10.16 -29.21 0)
 			(hide yes)
 			(show_name no)
@@ -9431,7 +9717,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.yageogroup.com/component-documentation/download/specsheet/RC0603FR-0710KL"
 			(at 54.61 179.07 0)
 			(hide yes)
 			(show_name no)
@@ -9453,6 +9739,28 @@
 				)
 			)
 		)
+		(property "Power" "0.1W"
+			(at 54.61 179.07 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" "Yageo"
+			(at 54.61 179.07 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(property "Tolerance" "1%"
 			(at 60.61 182.24 0)
 			(show_name no)
@@ -9463,7 +9771,7 @@
 				)
 			)
 		)
-		(property "DigiKey" "https://www.digikey.com/en/products/detail/yageo/RC0402FR-0710KL/726523"
+		(property "DigiKey" "https://www.digikey.com/en/products/detail/yageo/RC0603FR-0710KL/726880"
 			(at 0 0 0)
 			(hide yes)
 			(show_name no)
@@ -9474,7 +9782,7 @@
 				)
 			)
 		)
-		(property "MPN" "RC0402FR-0710KL"
+		(property "MPN" "RC0603FR-0710KL"
 			(at 0 0 0)
 			(hide yes)
 			(show_name no)
@@ -9485,7 +9793,7 @@
 				)
 			)
 		)
-		(property "Voltage" "50V"
+		(property "Voltage" "75V"
 			(at 0 0 0)
 			(hide yes)
 			(show_name no)
@@ -9564,7 +9872,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.yageogroup.com/component-documentation/download/specsheet/RC0603FR-07100KL"
 			(at 172.72 45.72 0)
 			(hide yes)
 			(show_name no)
@@ -9586,7 +9894,18 @@
 				)
 			)
 		)
-		(property "MPN" "RC0402FR-07100KL"
+		(property "Manufacturer" "Yageo"
+			(at 172.72 45.72 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "RC0603FR-07100KL"
 			(at -10.16 -29.21 0)
 			(hide yes)
 			(show_name no)
@@ -9597,7 +9916,7 @@
 				)
 			)
 		)
-		(property "DigiKey" "https://www.digikey.com/en/products/detail/yageo/RC0402FR-07100KL/729473"
+		(property "DigiKey" "https://www.digikey.com/en/products/detail/yageo/RC0603FR-07100KL/726889"
 			(at -10.16 -29.21 0)
 			(hide yes)
 			(show_name no)
@@ -9618,7 +9937,7 @@
 				)
 			)
 		)
-		(property "Power" "0.063W"
+		(property "Power" "0.1W"
 			(at -10.16 -29.21 0)
 			(hide yes)
 			(show_name no)
@@ -9629,7 +9948,7 @@
 				)
 			)
 		)
-		(property "Voltage" "50V"
+		(property "Voltage" "75V"
 			(at -10.16 -29.21 0)
 			(hide yes)
 			(show_name no)
@@ -9686,7 +10005,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
 			(at 31.75 179.07 0)
 			(hide yes)
 			(show_name no)
@@ -9697,7 +10016,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://yageogroup.com/content/datasheet/asset/file/KEM_C1002_X7R_SMD"
 			(at 31.75 179.07 0)
 			(hide yes)
 			(show_name no)
@@ -9716,6 +10035,17 @@
 			(effects
 				(font
 					(size 1 1)
+				)
+			)
+		)
+		(property "Manufacturer" "KEMET"
+			(at 31.75 179.07 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
 				)
 			)
 		)
@@ -9741,7 +10071,7 @@
 				)
 			)
 		)
-		(property "DigiKey" "https://www.digikey.com/en/products/detail/murata-electronics/GRM155R71A104KA01D/3845518"
+		(property "DigiKey" "https://www.digikey.com/en/products/detail/kemet/C0603C104K5RACTU/1465623"
 			(at 31.75 179.07 0)
 			(hide yes)
 			(show_name no)
@@ -9752,7 +10082,7 @@
 				)
 			)
 		)
-		(property "MPN" "GRM155R71A104KA01D"
+		(property "MPN" "C0603C104K5RACTU"
 			(at 31.75 179.07 0)
 			(hide yes)
 			(show_name no)
@@ -9774,7 +10104,7 @@
 				)
 			)
 		)
-		(property "Voltage" "10V"
+		(property "Voltage" "50V"
 			(at 38.1 182.24 0)
 			(show_name no)
 			(do_not_autoplace yes)

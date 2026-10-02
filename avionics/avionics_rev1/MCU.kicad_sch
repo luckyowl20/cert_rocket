@@ -9879,6 +9879,17 @@
 				)
 			)
 		)
+		(property "Manufacturer" "TDK"
+			(at 91.44 163.83 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(property "ki_keywords" "capacitor cap"
 			(at 91.44 163.83 0)
 			(hide yes)
@@ -10001,7 +10012,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
 			(at 196.85 120.65 0)
 			(hide yes)
 			(show_name no)
@@ -10012,7 +10023,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://yageogroup.com/content/datasheet/asset/file/KEM_C1002_X7R_SMD"
 			(at 196.85 120.65 0)
 			(hide yes)
 			(show_name no)
@@ -10031,6 +10042,17 @@
 			(effects
 				(font
 					(size 1 1)
+				)
+			)
+		)
+		(property "Manufacturer" "KEMET"
+			(at 196.85 120.65 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
 				)
 			)
 		)
@@ -10056,7 +10078,7 @@
 				)
 			)
 		)
-		(property "DigiKey" "https://www.digikey.com/en/products/detail/murata-electronics/GRM155R71A104KA01D/3845518"
+		(property "DigiKey" "https://www.digikey.com/en/products/detail/kemet/C0603C104K5RACTU/1465623"
 			(at 196.85 120.65 0)
 			(hide yes)
 			(show_name no)
@@ -10067,7 +10089,7 @@
 				)
 			)
 		)
-		(property "MPN" "GRM155R71A104KA01D"
+		(property "MPN" "C0603C104K5RACTU"
 			(at 196.85 120.65 0)
 			(hide yes)
 			(show_name no)
@@ -10089,7 +10111,7 @@
 				)
 			)
 		)
-		(property "Voltage" "10V"
+		(property "Voltage" "50V"
 			(at 203.2 123.82 0)
 			(show_name no)
 			(do_not_autoplace yes)
@@ -10293,7 +10315,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.yageogroup.com/component-documentation/download/specsheet/RC0603FR-071KL"
 			(at 336.55 34.29 0)
 			(hide yes)
 			(show_name no)
@@ -10312,6 +10334,17 @@
 			(effects
 				(font
 					(size 1 1)
+				)
+			)
+		)
+		(property "Manufacturer" "Yageo"
+			(at 336.55 34.29 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
 				)
 			)
 		)
@@ -10337,7 +10370,7 @@
 				)
 			)
 		)
-		(property "MPN" "RC0402FR-071KL"
+		(property "MPN" "RC0603FR-071KL"
 			(at 336.55 34.29 0)
 			(hide yes)
 			(show_name no)
@@ -10348,7 +10381,7 @@
 				)
 			)
 		)
-		(property "DigiKey" "https://www.digikey.com/en/products/detail/yageo/RC0402FR-071KL/726513"
+		(property "DigiKey" "https://www.digikey.com/en/products/detail/yageo/RC0603FR-071KL/726843"
 			(at 336.55 34.29 0)
 			(hide yes)
 			(show_name no)
@@ -10369,7 +10402,7 @@
 				)
 			)
 		)
-		(property "Power" "0.063W"
+		(property "Power" "0.1W"
 			(at 336.55 34.29 0)
 			(hide yes)
 			(show_name no)
@@ -10380,7 +10413,7 @@
 				)
 			)
 		)
-		(property "Voltage" "50V"
+		(property "Voltage" "75V"
 			(at 336.55 34.29 0)
 			(hide yes)
 			(show_name no)
@@ -10448,7 +10481,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.yageogroup.com/component-documentation/download/specsheet/RC0603FR-0710KL"
 			(at 306.07 109.22 0)
 			(hide yes)
 			(show_name no)
@@ -10467,6 +10500,28 @@
 			(effects
 				(font
 					(size 1 1)
+				)
+			)
+		)
+		(property "Power" "0.1W"
+			(at 306.07 109.22 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" "Yageo"
+			(at 306.07 109.22 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
 				)
 			)
 		)
@@ -10492,7 +10547,7 @@
 				)
 			)
 		)
-		(property "DigiKey" "https://www.digikey.com/en/products/detail/yageo/RC0402FR-0710KL/726523"
+		(property "DigiKey" "https://www.digikey.com/en/products/detail/yageo/RC0603FR-0710KL/726880"
 			(at 306.07 109.22 0)
 			(hide yes)
 			(show_name no)
@@ -10503,7 +10558,7 @@
 				)
 			)
 		)
-		(property "MPN" "RC0402FR-0710KL"
+		(property "MPN" "RC0603FR-0710KL"
 			(at 306.07 109.22 0)
 			(hide yes)
 			(show_name no)
@@ -10524,7 +10579,7 @@
 				)
 			)
 		)
-		(property "Voltage" "50V"
+		(property "Voltage" "75V"
 			(at 306.07 109.22 0)
 			(hide yes)
 			(show_name no)
@@ -10592,7 +10647,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
 			(at 53.34 57.15 0)
 			(hide yes)
 			(show_name no)
@@ -10603,7 +10658,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://yageogroup.com/content/datasheet/asset/file/KEM_C1003_C0G_SMD"
 			(at 53.34 57.15 0)
 			(hide yes)
 			(show_name no)
@@ -10622,6 +10677,17 @@
 			(effects
 				(font
 					(size 1 1)
+				)
+			)
+		)
+		(property "Manufacturer" "KEMET"
+			(at 53.34 57.15 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
 				)
 			)
 		)
@@ -10647,7 +10713,7 @@
 				)
 			)
 		)
-		(property "DigiKey" "https://www.digikey.com/en/products/detail/kemet/C0402C100J5GACTU/411286"
+		(property "DigiKey" "https://www.digikey.com/en/products/detail/kemet/C0603C100J5GACTU/411051"
 			(at 53.34 57.15 0)
 			(hide yes)
 			(show_name no)
@@ -10658,7 +10724,7 @@
 				)
 			)
 		)
-		(property "MPN" "C0402C100J5GACTU"
+		(property "MPN" "C0603C100J5GACTU"
 			(at 53.34 57.15 0)
 			(hide yes)
 			(show_name no)
@@ -10835,7 +10901,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
 			(at 25.4 163.83 0)
 			(hide yes)
 			(show_name no)
@@ -10846,7 +10912,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://yageogroup.com/content/datasheet/asset/file/KEM_C1002_X7R_SMD"
 			(at 25.4 163.83 0)
 			(hide yes)
 			(show_name no)
@@ -10865,6 +10931,17 @@
 			(effects
 				(font
 					(size 1 1)
+				)
+			)
+		)
+		(property "Manufacturer" "KEMET"
+			(at 25.4 163.83 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
 				)
 			)
 		)
@@ -10890,7 +10967,7 @@
 				)
 			)
 		)
-		(property "DigiKey" "https://www.digikey.com/en/products/detail/murata-electronics/GRM155R71A104KA01D/3845518"
+		(property "DigiKey" "https://www.digikey.com/en/products/detail/kemet/C0603C104K5RACTU/1465623"
 			(at 25.4 163.83 0)
 			(hide yes)
 			(show_name no)
@@ -10901,7 +10978,7 @@
 				)
 			)
 		)
-		(property "MPN" "GRM155R71A104KA01D"
+		(property "MPN" "C0603C104K5RACTU"
 			(at 25.4 163.83 0)
 			(hide yes)
 			(show_name no)
@@ -10923,7 +11000,7 @@
 				)
 			)
 		)
-		(property "Voltage" "10V"
+		(property "Voltage" "50V"
 			(at 31.75 167 0)
 			(show_name no)
 			(do_not_autoplace yes)
@@ -11068,7 +11145,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
 			(at 44.45 205.74 0)
 			(hide yes)
 			(show_name no)
@@ -11079,7 +11156,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://yageogroup.com/content/datasheet/asset/file/KEM_C1002_X7R_SMD"
 			(at 44.45 205.74 0)
 			(hide yes)
 			(show_name no)
@@ -11098,6 +11175,17 @@
 			(effects
 				(font
 					(size 1 1)
+				)
+			)
+		)
+		(property "Manufacturer" "KEMET"
+			(at 44.45 205.74 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
 				)
 			)
 		)
@@ -11123,7 +11211,7 @@
 				)
 			)
 		)
-		(property "DigiKey" "https://www.digikey.com/en/products/detail/murata-electronics/GRM155R71A104KA01D/3845518"
+		(property "DigiKey" "https://www.digikey.com/en/products/detail/kemet/C0603C104K5RACTU/1465623"
 			(at 44.45 205.74 0)
 			(hide yes)
 			(show_name no)
@@ -11134,7 +11222,7 @@
 				)
 			)
 		)
-		(property "MPN" "GRM155R71A104KA01D"
+		(property "MPN" "C0603C104K5RACTU"
 			(at 44.45 205.74 0)
 			(hide yes)
 			(show_name no)
@@ -11156,7 +11244,7 @@
 				)
 			)
 		)
-		(property "Voltage" "10V"
+		(property "Voltage" "50V"
 			(at 50.8 208.91 0)
 			(show_name no)
 			(do_not_autoplace yes)
@@ -11663,7 +11751,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
 			(at 41.91 163.83 0)
 			(hide yes)
 			(show_name no)
@@ -11674,7 +11762,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://yageogroup.com/content/datasheet/asset/file/KEM_C1002_X7R_SMD"
 			(at 41.91 163.83 0)
 			(hide yes)
 			(show_name no)
@@ -11693,6 +11781,17 @@
 			(effects
 				(font
 					(size 1 1)
+				)
+			)
+		)
+		(property "Manufacturer" "KEMET"
+			(at 41.91 163.83 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
 				)
 			)
 		)
@@ -11718,7 +11817,7 @@
 				)
 			)
 		)
-		(property "DigiKey" "https://www.digikey.com/en/products/detail/murata-electronics/GRM155R71A104KA01D/3845518"
+		(property "DigiKey" "https://www.digikey.com/en/products/detail/kemet/C0603C104K5RACTU/1465623"
 			(at 41.91 163.83 0)
 			(hide yes)
 			(show_name no)
@@ -11729,7 +11828,7 @@
 				)
 			)
 		)
-		(property "MPN" "GRM155R71A104KA01D"
+		(property "MPN" "C0603C104K5RACTU"
 			(at 41.91 163.83 0)
 			(hide yes)
 			(show_name no)
@@ -11751,7 +11850,7 @@
 				)
 			)
 		)
-		(property "Voltage" "10V"
+		(property "Voltage" "50V"
 			(at 48.26 167 0)
 			(show_name no)
 			(do_not_autoplace yes)
@@ -12115,6 +12214,17 @@
 				)
 			)
 		)
+		(property "Manufacturer" "TDK"
+			(at 212.09 120.65 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(property "ki_keywords" "capacitor cap"
 			(at 212.09 120.65 0)
 			(hide yes)
@@ -12249,7 +12359,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.yageogroup.com/component-documentation/download/specsheet/RC0603FR-0710KL"
 			(at 45.72 101.6 0)
 			(hide yes)
 			(show_name no)
@@ -12268,6 +12378,28 @@
 			(effects
 				(font
 					(size 1 1)
+				)
+			)
+		)
+		(property "Power" "0.1W"
+			(at 45.72 101.6 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" "Yageo"
+			(at 45.72 101.6 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
 				)
 			)
 		)
@@ -12293,7 +12425,7 @@
 				)
 			)
 		)
-		(property "DigiKey" "https://www.digikey.com/en/products/detail/yageo/RC0402FR-0710KL/726523"
+		(property "DigiKey" "https://www.digikey.com/en/products/detail/yageo/RC0603FR-0710KL/726880"
 			(at 45.72 101.6 0)
 			(hide yes)
 			(show_name no)
@@ -12304,7 +12436,7 @@
 				)
 			)
 		)
-		(property "MPN" "RC0402FR-0710KL"
+		(property "MPN" "RC0603FR-0710KL"
 			(at 45.72 101.6 0)
 			(hide yes)
 			(show_name no)
@@ -12325,7 +12457,7 @@
 				)
 			)
 		)
-		(property "Voltage" "50V"
+		(property "Voltage" "75V"
 			(at 45.72 101.6 0)
 			(hide yes)
 			(show_name no)
@@ -12546,7 +12678,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.yageogroup.com/component-documentation/download/specsheet/RC0603FR-071KL"
 			(at 316.23 49.53 0)
 			(hide yes)
 			(show_name no)
@@ -12565,6 +12697,17 @@
 			(effects
 				(font
 					(size 1 1)
+				)
+			)
+		)
+		(property "Manufacturer" "Yageo"
+			(at 316.23 49.53 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
 				)
 			)
 		)
@@ -12590,7 +12733,7 @@
 				)
 			)
 		)
-		(property "MPN" "RC0402FR-071KL"
+		(property "MPN" "RC0603FR-071KL"
 			(at 316.23 49.53 0)
 			(hide yes)
 			(show_name no)
@@ -12601,7 +12744,7 @@
 				)
 			)
 		)
-		(property "DigiKey" "https://www.digikey.com/en/products/detail/yageo/RC0402FR-071KL/726513"
+		(property "DigiKey" "https://www.digikey.com/en/products/detail/yageo/RC0603FR-071KL/726843"
 			(at 316.23 49.53 0)
 			(hide yes)
 			(show_name no)
@@ -12622,7 +12765,7 @@
 				)
 			)
 		)
-		(property "Power" "0.063W"
+		(property "Power" "0.1W"
 			(at 316.23 49.53 0)
 			(hide yes)
 			(show_name no)
@@ -12633,7 +12776,7 @@
 				)
 			)
 		)
-		(property "Voltage" "50V"
+		(property "Voltage" "75V"
 			(at 316.23 49.53 0)
 			(hide yes)
 			(show_name no)
@@ -12690,7 +12833,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
 			(at 44.45 185.42 0)
 			(hide yes)
 			(show_name no)
@@ -12701,7 +12844,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://yageogroup.com/content/datasheet/asset/file/KEM_C1002_X7R_SMD"
 			(at 44.45 185.42 0)
 			(hide yes)
 			(show_name no)
@@ -12720,6 +12863,17 @@
 			(effects
 				(font
 					(size 1 1)
+				)
+			)
+		)
+		(property "Manufacturer" "KEMET"
+			(at 44.45 185.42 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
 				)
 			)
 		)
@@ -12745,7 +12899,7 @@
 				)
 			)
 		)
-		(property "DigiKey" "https://www.digikey.com/en/products/detail/murata-electronics/GRM155R71A104KA01D/3845518"
+		(property "DigiKey" "https://www.digikey.com/en/products/detail/kemet/C0603C104K5RACTU/1465623"
 			(at 44.45 185.42 0)
 			(hide yes)
 			(show_name no)
@@ -12756,7 +12910,7 @@
 				)
 			)
 		)
-		(property "MPN" "GRM155R71A104KA01D"
+		(property "MPN" "C0603C104K5RACTU"
 			(at 44.45 185.42 0)
 			(hide yes)
 			(show_name no)
@@ -12778,7 +12932,7 @@
 				)
 			)
 		)
-		(property "Voltage" "10V"
+		(property "Voltage" "50V"
 			(at 50.8 188.59 0)
 			(show_name no)
 			(do_not_autoplace yes)
@@ -12990,7 +13144,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.yageogroup.com/component-documentation/download/specsheet/RC0603FR-0710KL"
 			(at 106.68 204.47 0)
 			(hide yes)
 			(show_name no)
@@ -13009,6 +13163,28 @@
 			(effects
 				(font
 					(size 1 1)
+				)
+			)
+		)
+		(property "Power" "0.1W"
+			(at 106.68 204.47 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" "Yageo"
+			(at 106.68 204.47 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
 				)
 			)
 		)
@@ -13034,7 +13210,7 @@
 				)
 			)
 		)
-		(property "DigiKey" "https://www.digikey.com/en/products/detail/yageo/RC0402FR-0710KL/726523"
+		(property "DigiKey" "https://www.digikey.com/en/products/detail/yageo/RC0603FR-0710KL/726880"
 			(at 106.68 204.47 0)
 			(hide yes)
 			(show_name no)
@@ -13045,7 +13221,7 @@
 				)
 			)
 		)
-		(property "MPN" "RC0402FR-0710KL"
+		(property "MPN" "RC0603FR-0710KL"
 			(at 106.68 204.47 0)
 			(hide yes)
 			(show_name no)
@@ -13066,7 +13242,7 @@
 				)
 			)
 		)
-		(property "Voltage" "50V"
+		(property "Voltage" "75V"
 			(at 106.68 204.47 0)
 			(hide yes)
 			(show_name no)
@@ -13269,7 +13445,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.yageogroup.com/component-documentation/download/specsheet/RC0603FR-0710KL"
 			(at 228.6 104.14 0)
 			(hide yes)
 			(show_name no)
@@ -13288,6 +13464,28 @@
 			(effects
 				(font
 					(size 1 1)
+				)
+			)
+		)
+		(property "Power" "0.1W"
+			(at 228.6 104.14 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" "Yageo"
+			(at 228.6 104.14 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
 				)
 			)
 		)
@@ -13313,7 +13511,7 @@
 				)
 			)
 		)
-		(property "DigiKey" "https://www.digikey.com/en/products/detail/yageo/RC0402FR-0710KL/726523"
+		(property "DigiKey" "https://www.digikey.com/en/products/detail/yageo/RC0603FR-0710KL/726880"
 			(at 228.6 104.14 0)
 			(hide yes)
 			(show_name no)
@@ -13324,7 +13522,7 @@
 				)
 			)
 		)
-		(property "MPN" "RC0402FR-0710KL"
+		(property "MPN" "RC0603FR-0710KL"
 			(at 228.6 104.14 0)
 			(hide yes)
 			(show_name no)
@@ -13345,7 +13543,7 @@
 				)
 			)
 		)
-		(property "Voltage" "50V"
+		(property "Voltage" "75V"
 			(at 228.6 104.14 0)
 			(hide yes)
 			(show_name no)
@@ -13425,7 +13623,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.yageogroup.com/component-documentation/download/specsheet/RC0603FR-0710KL"
 			(at 36.83 101.6 0)
 			(hide yes)
 			(show_name no)
@@ -13444,6 +13642,28 @@
 			(effects
 				(font
 					(size 1 1)
+				)
+			)
+		)
+		(property "Power" "0.1W"
+			(at 36.83 101.6 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" "Yageo"
+			(at 36.83 101.6 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
 				)
 			)
 		)
@@ -13469,7 +13689,7 @@
 				)
 			)
 		)
-		(property "DigiKey" "https://www.digikey.com/en/products/detail/yageo/RC0402FR-0710KL/726523"
+		(property "DigiKey" "https://www.digikey.com/en/products/detail/yageo/RC0603FR-0710KL/726880"
 			(at 36.83 101.6 0)
 			(hide yes)
 			(show_name no)
@@ -13480,7 +13700,7 @@
 				)
 			)
 		)
-		(property "MPN" "RC0402FR-0710KL"
+		(property "MPN" "RC0603FR-0710KL"
 			(at 36.83 101.6 0)
 			(hide yes)
 			(show_name no)
@@ -13501,7 +13721,7 @@
 				)
 			)
 		)
-		(property "Voltage" "50V"
+		(property "Voltage" "75V"
 			(at 36.83 101.6 0)
 			(hide yes)
 			(show_name no)
@@ -13599,6 +13819,17 @@
 			(effects
 				(font
 					(size 1 1)
+				)
+			)
+		)
+		(property "Manufacturer" "TDK"
+			(at 59.69 205.74 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
 				)
 			)
 		)
@@ -13736,7 +13967,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.yageogroup.com/component-documentation/download/specsheet/RC0603FR-0710KL"
 			(at 54.61 101.6 0)
 			(hide yes)
 			(show_name no)
@@ -13755,6 +13986,28 @@
 			(effects
 				(font
 					(size 1 1)
+				)
+			)
+		)
+		(property "Power" "0.1W"
+			(at 54.61 101.6 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" "Yageo"
+			(at 54.61 101.6 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
 				)
 			)
 		)
@@ -13780,7 +14033,7 @@
 				)
 			)
 		)
-		(property "DigiKey" "https://www.digikey.com/en/products/detail/yageo/RC0402FR-0710KL/726523"
+		(property "DigiKey" "https://www.digikey.com/en/products/detail/yageo/RC0603FR-0710KL/726880"
 			(at 54.61 101.6 0)
 			(hide yes)
 			(show_name no)
@@ -13791,7 +14044,7 @@
 				)
 			)
 		)
-		(property "MPN" "RC0402FR-0710KL"
+		(property "MPN" "RC0603FR-0710KL"
 			(at 54.61 101.6 0)
 			(hide yes)
 			(show_name no)
@@ -13812,7 +14065,7 @@
 				)
 			)
 		)
-		(property "Voltage" "50V"
+		(property "Voltage" "75V"
 			(at 54.61 101.6 0)
 			(hide yes)
 			(show_name no)
@@ -14001,6 +14254,17 @@
 				)
 			)
 		)
+		(property "Manufacturer" "TDK"
+			(at 59.69 185.42 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(property "ki_keywords" "capacitor cap"
 			(at 59.69 185.42 0)
 			(hide yes)
@@ -14134,7 +14398,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.yageogroup.com/component-documentation/download/specsheet/RC0603FR-071KL"
 			(at 143.51 100.33 0)
 			(hide yes)
 			(show_name no)
@@ -14156,6 +14420,17 @@
 				)
 			)
 		)
+		(property "Manufacturer" "Yageo"
+			(at 143.51 100.33 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(property "Tolerance" "1%"
 			(at 143.51 98.298 90)
 			(show_name no)
@@ -14166,7 +14441,7 @@
 				)
 			)
 		)
-		(property "MPN" "RC0402FR-071KL"
+		(property "MPN" "RC0603FR-071KL"
 			(at 351.79 144.78 0)
 			(hide yes)
 			(show_name no)
@@ -14177,7 +14452,7 @@
 				)
 			)
 		)
-		(property "DigiKey" "https://www.digikey.com/en/products/detail/yageo/RC0402FR-071KL/726513"
+		(property "DigiKey" "https://www.digikey.com/en/products/detail/yageo/RC0603FR-071KL/726843"
 			(at 351.79 144.78 0)
 			(hide yes)
 			(show_name no)
@@ -14188,7 +14463,7 @@
 				)
 			)
 		)
-		(property "Power" "0.063W"
+		(property "Power" "0.1W"
 			(at 351.79 144.78 0)
 			(hide yes)
 			(show_name no)
@@ -14199,7 +14474,7 @@
 				)
 			)
 		)
-		(property "Voltage" "50V"
+		(property "Voltage" "75V"
 			(at 351.79 144.78 0)
 			(hide yes)
 			(show_name no)
@@ -14462,6 +14737,17 @@
 			(effects
 				(font
 					(size 1 1)
+				)
+			)
+		)
+		(property "Manufacturer" "TDK"
+			(at 106.68 163.83 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
 				)
 			)
 		)
@@ -15020,7 +15306,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
 			(at 106.68 184.15 0)
 			(hide yes)
 			(show_name no)
@@ -15031,7 +15317,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://yageogroup.com/content/datasheet/asset/file/KEM_C1002_X7R_SMD"
 			(at 106.68 184.15 0)
 			(hide yes)
 			(show_name no)
@@ -15050,6 +15336,17 @@
 			(effects
 				(font
 					(size 1 1)
+				)
+			)
+		)
+		(property "Manufacturer" "KEMET"
+			(at 106.68 184.15 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
 				)
 			)
 		)
@@ -15075,7 +15372,7 @@
 				)
 			)
 		)
-		(property "DigiKey" "https://www.digikey.com/en/products/detail/murata-electronics/GRM155R71A104KA01D/3845518"
+		(property "DigiKey" "https://www.digikey.com/en/products/detail/kemet/C0603C104K5RACTU/1465623"
 			(at 106.68 184.15 0)
 			(hide yes)
 			(show_name no)
@@ -15086,7 +15383,7 @@
 				)
 			)
 		)
-		(property "MPN" "GRM155R71A104KA01D"
+		(property "MPN" "C0603C104K5RACTU"
 			(at 106.68 184.15 0)
 			(hide yes)
 			(show_name no)
@@ -15108,7 +15405,7 @@
 				)
 			)
 		)
-		(property "Voltage" "10V"
+		(property "Voltage" "50V"
 			(at 113.03 187.32 0)
 			(show_name no)
 			(do_not_autoplace yes)
@@ -15186,7 +15483,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.yageogroup.com/component-documentation/download/specsheet/RC0603FR-0710KL"
 			(at 290.83 104.14 0)
 			(hide yes)
 			(show_name no)
@@ -15205,6 +15502,28 @@
 			(effects
 				(font
 					(size 1 1)
+				)
+			)
+		)
+		(property "Power" "0.1W"
+			(at 290.83 104.14 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" "Yageo"
+			(at 290.83 104.14 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
 				)
 			)
 		)
@@ -15230,7 +15549,7 @@
 				)
 			)
 		)
-		(property "DigiKey" "https://www.digikey.com/en/products/detail/yageo/RC0402FR-0710KL/726523"
+		(property "DigiKey" "https://www.digikey.com/en/products/detail/yageo/RC0603FR-0710KL/726880"
 			(at 290.83 104.14 0)
 			(hide yes)
 			(show_name no)
@@ -15241,7 +15560,7 @@
 				)
 			)
 		)
-		(property "MPN" "RC0402FR-0710KL"
+		(property "MPN" "RC0603FR-0710KL"
 			(at 290.83 104.14 0)
 			(hide yes)
 			(show_name no)
@@ -15262,7 +15581,7 @@
 				)
 			)
 		)
-		(property "Voltage" "50V"
+		(property "Voltage" "75V"
 			(at 290.83 104.14 0)
 			(hide yes)
 			(show_name no)
@@ -15653,7 +15972,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.yageogroup.com/component-documentation/download/specsheet/RC0603FR-0710KL"
 			(at 328.93 59.69 0)
 			(hide yes)
 			(show_name no)
@@ -15672,6 +15991,28 @@
 			(effects
 				(font
 					(size 1 1)
+				)
+			)
+		)
+		(property "Power" "0.1W"
+			(at 328.93 59.69 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" "Yageo"
+			(at 328.93 59.69 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
 				)
 			)
 		)
@@ -15697,7 +16038,7 @@
 				)
 			)
 		)
-		(property "DigiKey" "https://www.digikey.com/en/products/detail/yageo/RC0402FR-0710KL/726523"
+		(property "DigiKey" "https://www.digikey.com/en/products/detail/yageo/RC0603FR-0710KL/726880"
 			(at 328.93 59.69 0)
 			(hide yes)
 			(show_name no)
@@ -15708,7 +16049,7 @@
 				)
 			)
 		)
-		(property "MPN" "RC0402FR-0710KL"
+		(property "MPN" "RC0603FR-0710KL"
 			(at 328.93 59.69 0)
 			(hide yes)
 			(show_name no)
@@ -15729,7 +16070,7 @@
 				)
 			)
 		)
-		(property "Voltage" "50V"
+		(property "Voltage" "75V"
 			(at 328.93 59.69 0)
 			(hide yes)
 			(show_name no)
@@ -15885,7 +16226,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
 			(at 74.93 163.83 0)
 			(hide yes)
 			(show_name no)
@@ -15896,7 +16237,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://yageogroup.com/content/datasheet/asset/file/KEM_C1002_X7R_SMD"
 			(at 74.93 163.83 0)
 			(hide yes)
 			(show_name no)
@@ -15915,6 +16256,17 @@
 			(effects
 				(font
 					(size 1 1)
+				)
+			)
+		)
+		(property "Manufacturer" "KEMET"
+			(at 74.93 163.83 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
 				)
 			)
 		)
@@ -15940,7 +16292,7 @@
 				)
 			)
 		)
-		(property "DigiKey" "https://www.digikey.com/en/products/detail/murata-electronics/GRM155R71A104KA01D/3845518"
+		(property "DigiKey" "https://www.digikey.com/en/products/detail/kemet/C0603C104K5RACTU/1465623"
 			(at 74.93 163.83 0)
 			(hide yes)
 			(show_name no)
@@ -15951,7 +16303,7 @@
 				)
 			)
 		)
-		(property "MPN" "GRM155R71A104KA01D"
+		(property "MPN" "C0603C104K5RACTU"
 			(at 74.93 163.83 0)
 			(hide yes)
 			(show_name no)
@@ -15973,7 +16325,7 @@
 				)
 			)
 		)
-		(property "Voltage" "10V"
+		(property "Voltage" "50V"
 			(at 81.28 167 0)
 			(show_name no)
 			(do_not_autoplace yes)
@@ -16538,7 +16890,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.yageogroup.com/component-documentation/download/specsheet/RC0603FR-0710KL"
 			(at 63.5 101.6 0)
 			(hide yes)
 			(show_name no)
@@ -16557,6 +16909,28 @@
 			(effects
 				(font
 					(size 1 1)
+				)
+			)
+		)
+		(property "Power" "0.1W"
+			(at 63.5 101.6 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" "Yageo"
+			(at 63.5 101.6 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
 				)
 			)
 		)
@@ -16582,7 +16956,7 @@
 				)
 			)
 		)
-		(property "DigiKey" "https://www.digikey.com/en/products/detail/yageo/RC0402FR-0710KL/726523"
+		(property "DigiKey" "https://www.digikey.com/en/products/detail/yageo/RC0603FR-0710KL/726880"
 			(at 63.5 101.6 0)
 			(hide yes)
 			(show_name no)
@@ -16593,7 +16967,7 @@
 				)
 			)
 		)
-		(property "MPN" "RC0402FR-0710KL"
+		(property "MPN" "RC0603FR-0710KL"
 			(at 63.5 101.6 0)
 			(hide yes)
 			(show_name no)
@@ -16614,7 +16988,7 @@
 				)
 			)
 		)
-		(property "Voltage" "50V"
+		(property "Voltage" "75V"
 			(at 63.5 101.6 0)
 			(hide yes)
 			(show_name no)
@@ -16682,7 +17056,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
 			(at 58.42 163.83 0)
 			(hide yes)
 			(show_name no)
@@ -16693,7 +17067,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://yageogroup.com/content/datasheet/asset/file/KEM_C1002_X7R_SMD"
 			(at 58.42 163.83 0)
 			(hide yes)
 			(show_name no)
@@ -16712,6 +17086,17 @@
 			(effects
 				(font
 					(size 1 1)
+				)
+			)
+		)
+		(property "Manufacturer" "KEMET"
+			(at 58.42 163.83 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
 				)
 			)
 		)
@@ -16737,7 +17122,7 @@
 				)
 			)
 		)
-		(property "DigiKey" "https://www.digikey.com/en/products/detail/murata-electronics/GRM155R71A104KA01D/3845518"
+		(property "DigiKey" "https://www.digikey.com/en/products/detail/kemet/C0603C104K5RACTU/1465623"
 			(at 58.42 163.83 0)
 			(hide yes)
 			(show_name no)
@@ -16748,7 +17133,7 @@
 				)
 			)
 		)
-		(property "MPN" "GRM155R71A104KA01D"
+		(property "MPN" "C0603C104K5RACTU"
 			(at 58.42 163.83 0)
 			(hide yes)
 			(show_name no)
@@ -16770,7 +17155,7 @@
 				)
 			)
 		)
-		(property "Voltage" "10V"
+		(property "Voltage" "50V"
 			(at 64.77 167 0)
 			(show_name no)
 			(do_not_autoplace yes)
@@ -17032,7 +17417,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
 			(at 33.02 57.15 0)
 			(hide yes)
 			(show_name no)
@@ -17043,7 +17428,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://yageogroup.com/content/datasheet/asset/file/KEM_C1003_C0G_SMD"
 			(at 33.02 57.15 0)
 			(hide yes)
 			(show_name no)
@@ -17062,6 +17447,17 @@
 			(effects
 				(font
 					(size 1 1)
+				)
+			)
+		)
+		(property "Manufacturer" "KEMET"
+			(at 33.02 57.15 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
 				)
 			)
 		)
@@ -17087,7 +17483,7 @@
 				)
 			)
 		)
-		(property "DigiKey" "https://www.digikey.com/en/products/detail/kemet/C0402C100J5GACTU/411286"
+		(property "DigiKey" "https://www.digikey.com/en/products/detail/kemet/C0603C100J5GACTU/411051"
 			(at 33.02 57.15 0)
 			(hide yes)
 			(show_name no)
@@ -17098,7 +17494,7 @@
 				)
 			)
 		)
-		(property "MPN" "C0402C100J5GACTU"
+		(property "MPN" "C0603C100J5GACTU"
 			(at 33.02 57.15 0)
 			(hide yes)
 			(show_name no)
