@@ -2299,7 +2299,7 @@
 		)
 		(uuid "9be3c299-1e89-4df4-a439-b6a1607e2dce")
 	)
-	(text "SENSOR DESIGN NOTES\n3.3V, 4-wire SPI; keep all CS high at startup.\nR9-R11: 10k 1% (0.33mA when selected).\nPlace bypass capacitors at each supply pin.\nU10: mode 1, Qvar/analog hub disabled.\nC24 follows ADI tantalum recommendation.\nDigiKey: TAJA105K016RNJ (478-1649-1-ND)\nhttps://www.digikey.com/en/products/detail/kyocera-avx/TAJA105K016RNJ/563757"
+	(text "TODO:\nFind replacement sensors that \nare actually in stock...\n"
 		(exclude_from_sim no)
 		(at 177.038 105.41 0)
 		(effects
