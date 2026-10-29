@@ -39,9 +39,9 @@
         "other_text_thickness": 0.15,
         "other_text_upright": false,
         "pads": {
-          "drill": 0.8,
-          "height": 1.27,
-          "width": 2.54
+          "drill": 0.3,
+          "height": 0.6,
+          "width": 0.6
         },
         "silk_line_width": 0.1,
         "silk_text_italic": false,
@@ -60,17 +60,30 @@
           "hatch_smoothing_level": 0,
           "hatch_smoothing_value": 0.1,
           "hatch_thickness": 1.0,
-          "min_clearance": 0.5,
+          "min_clearance": 0.2,
           "min_island_area": 10.0,
           "min_thickness": 0.25,
-          "pad_connection": 1,
+          "pad_connection": 2,
           "remove_islands": 0,
           "thermal_relief_gap": 0.5,
           "thermal_relief_spoke_width": 0.5
         }
       },
       "diff_pair_dimensions": [],
-      "drc_exclusions": [],
+      "drc_exclusions": [
+        [
+          "annular_width|90087501|53537496|6ea73134-8b35-4dcd-bfd3-0860d6561e09|00000000-0000-0000-0000-000000000000",
+          ""
+        ],
+        [
+          "annular_width|90187501|54437497|91eda119-ce9e-4d05-9d89-dfb671aaa351|00000000-0000-0000-0000-000000000000",
+          ""
+        ],
+        [
+          "annular_width|90187501|55337498|aeb965f7-40ef-4a95-9e32-248ca0aa82c7|00000000-0000-0000-0000-000000000000",
+          ""
+        ]
+      ],
       "meta": {
         "version": 2
       },
@@ -512,6 +525,40 @@
         "via_diameter": 0.6,
         "via_drill": 0.3,
         "wire_width": 6
+      },
+      {
+        "clearance": 0.2,
+        "name": "3v3",
+        "pcb_color": "rgba(0, 0, 0, 0.000)",
+        "priority": 3,
+        "schematic_color": "rgba(0, 0, 0, 0.000)",
+        "track_width": 0.3,
+        "tuning_profile": ""
+      },
+      {
+        "clearance": 0.2,
+        "name": "MAIN_POWER",
+        "pcb_color": "rgba(0, 0, 0, 0.000)",
+        "priority": 2,
+        "schematic_color": "rgba(0, 0, 0, 0.000)",
+        "track_width": 2.0,
+        "tuning_profile": ""
+      },
+      {
+        "name": "pyro_channel",
+        "pcb_color": "rgba(0, 0, 0, 0.000)",
+        "priority": 0,
+        "schematic_color": "rgba(0, 0, 0, 0.000)",
+        "track_width": 0.52,
+        "tuning_profile": ""
+      },
+      {
+        "name": "small_power",
+        "pcb_color": "rgba(0, 0, 0, 0.000)",
+        "priority": 1,
+        "schematic_color": "rgba(0, 0, 0, 0.000)",
+        "track_width": 0.38,
+        "tuning_profile": ""
       }
     ],
     "meta": {
@@ -519,7 +566,44 @@
     },
     "net_colors": null,
     "netclass_assignments": null,
-    "netclass_patterns": []
+    "netclass_patterns": [
+      {
+        "netclass": "small_power",
+        "pattern": "VIN_MAIN_BATT"
+      },
+      {
+        "netclass": "small_power",
+        "pattern": "VIN_PYRO_BATT"
+      },
+      {
+        "netclass": "small_power",
+        "pattern": "VIN_LOGIC"
+      },
+      {
+        "netclass": "MAIN_POWER",
+        "pattern": "PYRO_POWER"
+      },
+      {
+        "netclass": "pyro_channel",
+        "pattern": "PYRO_4_FET"
+      },
+      {
+        "netclass": "pyro_channel",
+        "pattern": "/pyro_channels/PYRO_4_FET"
+      },
+      {
+        "netclass": "pyro_channel",
+        "pattern": "/pyro_channels/PYRO_3_FET"
+      },
+      {
+        "netclass": "pyro_channel",
+        "pattern": "/pyro_channels/PYRO_2_FET"
+      },
+      {
+        "netclass": "pyro_channel",
+        "pattern": "/pyro_channels/PYRO_1_FET"
+      }
+    ]
   },
   "pcbnew": {
     "last_paths": {
@@ -669,7 +753,7 @@
         "uuid": "c491fe45-d2ff-414d-a846-7eed12d2b763"
       }
     ],
-    "used_designators": "",
+    "used_designators": "C17,H1-4",
     "variants": []
   },
   "sheets": [

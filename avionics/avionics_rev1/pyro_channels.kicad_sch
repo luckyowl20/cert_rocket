@@ -2700,7 +2700,7 @@
 					)
 				)
 			)
-			(property "Footprint" "POWERPAK1212-8_VIS"
+			(property "Footprint" "avionics_footprints:SIS932EDN_PowerPAK1212_8_Dual"
 				(at 2.032 -16.764 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -2712,7 +2712,7 @@
 					)
 				)
 			)
-			(property "Datasheet" "https://www.vishay.com/doc?74547"
+			(property "Datasheet" "https://www.vishay.com/docs/74547/sis932edn.pdf"
 				(at 2.54 -14.224 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -2724,7 +2724,95 @@
 					)
 				)
 			)
-			(property "Description" ""
+			(property "Description" "Dual N-channel MOSFET, 30V, PowerPAK 1212-8 Dual; S1=1 G1=2 S2=3 G2=4 D2=5,6 D1=7,8"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "MPN" "SIS932EDN-T1-GE3"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Manufacturer" "Vishay Siliconix"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "DigiKey" "https://www.digikey.com/en/products/detail/vishay-siliconix/SIS932EDN-T1-GE3/7915479"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Package" "PowerPAK 1212-8 Dual"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "VDS" "30V"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "VGS Absolute Maximum" "+/-12V"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "RDS(on) Max" "22mOhm at VGS=4.5V; 26mOhm at VGS=2.5V"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ID Continuous" "6A package limit; see datasheet thermal conditions"
 				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -2756,7 +2844,7 @@
 					)
 				)
 			)
-			(property "ki_fp_filters" "POWERPAK1212-8_VIS"
+			(property "ki_fp_filters" "SIS932EDN_PowerPAK1212_8_Dual"
 				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -4551,6 +4639,12 @@
 		(uuid "1c2cd088-36f9-4414-9f4a-a084d2220d85")
 	)
 	(junction
+		(at 167.64 77.47)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "2210738a-0dfe-42f2-8693-b22a29f51ab9")
+	)
+	(junction
 		(at 54.61 166.37)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -4581,6 +4675,18 @@
 		(uuid "44f1b5e2-1015-4bae-a90f-dd025ca28241")
 	)
 	(junction
+		(at 121.92 81.28)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "4ca7a8f7-b5cc-450f-b787-44505adde6d0")
+	)
+	(junction
+		(at 121.92 41.91)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "4d889ac5-10c2-488f-abd0-3a76db22ddb6")
+	)
+	(junction
 		(at 177.8 81.28)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -4597,6 +4703,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "5eaad182-95dd-462b-bbbe-8a695d4aad57")
+	)
+	(junction
+		(at 167.64 45.72)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "635e0ea7-c11f-4988-a477-48575f2fe449")
 	)
 	(junction
 		(at 123.19 156.21)
@@ -4617,10 +4729,28 @@
 		(uuid "85046f52-4bc6-4970-8a28-4664be91dded")
 	)
 	(junction
+		(at 167.64 41.91)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "8a5f87dc-4017-41e9-abc9-0e4e4f98743a")
+	)
+	(junction
+		(at 121.92 77.47)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "8ccaa967-db09-441f-ace3-e30867213d3b")
+	)
+	(junction
 		(at 45.72 73.66)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "925ed503-cceb-4135-adee-b5ee506a9334")
+	)
+	(junction
+		(at 121.92 45.72)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "93c2a4e4-5171-4022-a030-02a02ee07101")
 	)
 	(junction
 		(at 31.75 135.89)
@@ -4657,6 +4787,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "f808d9f6-8be9-44d4-9649-8626cb12ca7a")
+	)
+	(junction
+		(at 167.64 81.28)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "ffe9f64a-2f7f-4f4e-8028-b582102acde9")
 	)
 	(no_connect
 		(at 100.33 161.29)
@@ -4915,6 +5051,16 @@
 			(type default)
 		)
 		(uuid "441df3ef-ec4f-4268-99f4-31cae53f63aa")
+	)
+	(wire
+		(pts
+			(xy 167.64 77.47) (xy 167.64 81.28)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "44bcd35a-7e59-49b5-af39-262e11babccd")
 	)
 	(wire
 		(pts
@@ -5518,6 +5664,16 @@
 	)
 	(wire
 		(pts
+			(xy 121.92 77.47) (xy 121.92 81.28)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "dbcc762a-8846-404e-97c0-fac24dbf1e49")
+	)
+	(wire
+		(pts
 			(xy 129.54 45.72) (xy 132.08 45.72)
 		)
 		(stroke
@@ -5598,6 +5754,16 @@
 	)
 	(wire
 		(pts
+			(xy 167.64 41.91) (xy 167.64 45.72)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e6b3ea81-587c-4476-8154-50ff7c1b54ef")
+	)
+	(wire
+		(pts
 			(xy 134.62 36.83) (xy 214.63 36.83)
 		)
 		(stroke
@@ -5625,6 +5791,16 @@
 			(type default)
 		)
 		(uuid "ef28cc8e-4783-4863-9347-cc09926e0770")
+	)
+	(wire
+		(pts
+			(xy 121.92 41.91) (xy 121.92 45.72)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f10b5e45-8146-44e3-932b-339be16b41b7")
 	)
 	(wire
 		(pts
@@ -7531,7 +7707,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "POWERPAK1212-8_VIS"
+		(property "Footprint" "avionics_footprints:SIS932EDN_PowerPAK1212_8_Dual"
 			(at 135.382 112.014 0)
 			(hide yes)
 			(show_name no)
@@ -7543,7 +7719,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://www.vishay.com/doc?74547"
+		(property "Datasheet" "https://www.vishay.com/docs/74547/sis932edn.pdf"
 			(at 135.89 109.474 0)
 			(hide yes)
 			(show_name no)
@@ -7555,8 +7731,96 @@
 				)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Dual N-channel MOSFET, 30V, PowerPAK 1212-8 Dual; S1=1 G1=2 S2=3 G2=4 D2=5,6 D1=7,8"
 			(at 133.35 95.25 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "SIS932EDN-T1-GE3"
+			(at 0 0 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" "Vishay Siliconix"
+			(at 0 0 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "DigiKey" "https://www.digikey.com/en/products/detail/vishay-siliconix/SIS932EDN-T1-GE3/7915479"
+			(at 0 0 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Package" "PowerPAK 1212-8 Dual"
+			(at 0 0 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "VDS" "30V"
+			(at 0 0 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "VGS Absolute Maximum" "+/-12V"
+			(at 0 0 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "RDS(on) Max" "22mOhm at VGS=4.5V; 26mOhm at VGS=2.5V"
+			(at 0 0 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "ID Continuous" "6A package limit; see datasheet thermal conditions"
+			(at 0 0 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8518,7 +8782,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "POWERPAK1212-8_VIS"
+		(property "Footprint" "avionics_footprints:SIS932EDN_PowerPAK1212_8_Dual"
 			(at 135.382 76.454 0)
 			(hide yes)
 			(show_name no)
@@ -8530,7 +8794,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://www.vishay.com/doc?74547"
+		(property "Datasheet" "https://www.vishay.com/docs/74547/sis932edn.pdf"
 			(at 135.89 73.914 0)
 			(hide yes)
 			(show_name no)
@@ -8542,8 +8806,96 @@
 				)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Dual N-channel MOSFET, 30V, PowerPAK 1212-8 Dual; S1=1 G1=2 S2=3 G2=4 D2=5,6 D1=7,8"
 			(at 133.35 59.69 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "SIS932EDN-T1-GE3"
+			(at 0 0 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" "Vishay Siliconix"
+			(at 0 0 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "DigiKey" "https://www.digikey.com/en/products/detail/vishay-siliconix/SIS932EDN-T1-GE3/7915479"
+			(at 0 0 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Package" "PowerPAK 1212-8 Dual"
+			(at 0 0 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "VDS" "30V"
+			(at 0 0 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "VGS Absolute Maximum" "+/-12V"
+			(at 0 0 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "RDS(on) Max" "22mOhm at VGS=4.5V; 26mOhm at VGS=2.5V"
+			(at 0 0 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "ID Continuous" "6A package limit; see datasheet thermal conditions"
+			(at 0 0 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)

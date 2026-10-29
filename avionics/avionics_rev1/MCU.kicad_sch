@@ -6430,6 +6430,12 @@
 		(uuid "dc409141-393c-431b-9305-f65473abd0bd")
 	)
 	(junction
+		(at 64.77 181.61)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "ec9d4071-6666-42a2-80d8-25fcb1898055")
+	)
+	(junction
 		(at 52.07 85.09)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -6742,6 +6748,16 @@
 			(type default)
 		)
 		(uuid "0d6b4e9a-2fda-4642-b8cc-f4bd680b6417")
+	)
+	(wire
+		(pts
+			(xy 66.04 179.07) (xy 64.77 179.07)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0efb03a5-06e9-4b4b-8ecc-78243702508b")
 	)
 	(wire
 		(pts
@@ -7112,6 +7128,16 @@
 			(type default)
 		)
 		(uuid "3dc8b196-04b2-4c38-afdc-0e04bf949e25")
+	)
+	(wire
+		(pts
+			(xy 64.77 179.07) (xy 64.77 181.61)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3e5316f4-71b1-461b-830b-05423bb676d4")
 	)
 	(wire
 		(pts
@@ -7685,7 +7711,7 @@
 	)
 	(wire
 		(pts
-			(xy 59.69 181.61) (xy 66.04 181.61)
+			(xy 59.69 181.61) (xy 64.77 181.61)
 		)
 		(stroke
 			(width 0)
@@ -7842,6 +7868,16 @@
 			(type default)
 		)
 		(uuid "a57cf6eb-aea5-4632-b9a8-e51f88f2463d")
+	)
+	(wire
+		(pts
+			(xy 64.77 181.61) (xy 66.04 181.61)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a8807df7-c9f4-4887-a06c-4d3374e224e3")
 	)
 	(wire
 		(pts
@@ -8742,6 +8778,16 @@
 			(justify right bottom)
 		)
 		(uuid "aed3a9ab-4c0d-4bf5-b76e-e541e7001615")
+	)
+	(label "VREF_FILTERED"
+		(at 66.04 179.07 0)
+		(effects
+			(font
+				(size 1 1)
+			)
+			(justify left bottom)
+		)
+		(uuid "b1707097-d8de-4af5-8abe-f24166b3a2ec")
 	)
 	(label "BUZZER_PWM"
 		(at 125.73 97.79 0)
@@ -9744,9 +9790,9 @@
 		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom no)
-		(on_board yes)
+		(on_board no)
 		(in_pos_files yes)
-		(dnp no)
+		(dnp yes)
 		(uuid "05bd5e64-f2bd-409f-ae4c-2114b144162f")
 		(property "Reference" "TP13"
 			(at 61.976 93.98 0)
@@ -11043,9 +11089,9 @@
 		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom no)
-		(on_board yes)
+		(on_board no)
 		(in_pos_files yes)
-		(dnp no)
+		(dnp yes)
 		(uuid "2585bfc5-9b7c-4c2b-b4f9-ec15bc7a4197")
 		(property "Reference" "TP12"
 			(at 53.086 93.98 0)
@@ -11121,9 +11167,9 @@
 		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom yes)
-		(on_board yes)
+		(on_board no)
 		(in_pos_files yes)
-		(dnp no)
+		(dnp yes)
 		(uuid "36ca5d03-08b4-4512-8b0b-e8769268bd9b")
 		(property "Reference" "C51"
 			(at 50.8 204.47 0)
@@ -13765,9 +13811,9 @@
 		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom yes)
-		(on_board yes)
+		(on_board no)
 		(in_pos_files yes)
-		(dnp no)
+		(dnp yes)
 		(uuid "7721b0f8-7079-455d-9ee9-b6a84f7d6ff4")
 		(property "Reference" "C52"
 			(at 66.04 204.47 0)
@@ -14685,7 +14731,7 @@
 		(in_bom yes)
 		(on_board yes)
 		(in_pos_files yes)
-		(dnp no)
+		(dnp yes)
 		(uuid "9360626d-928d-4fe6-a280-ea097f3501f3")
 		(property "Reference" "C11"
 			(at 113.792 162.56 0)
@@ -15148,9 +15194,9 @@
 		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom yes)
-		(on_board yes)
+		(on_board no)
 		(in_pos_files yes)
-		(dnp no)
+		(dnp yes)
 		(uuid "a1953d6a-da72-42cd-83cc-961582dc34bf")
 		(property "Reference" "FB2"
 			(at 36.068 195.834 90)
@@ -16776,9 +16822,9 @@
 		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom no)
-		(on_board yes)
+		(on_board no)
 		(in_pos_files yes)
-		(dnp no)
+		(dnp yes)
 		(uuid "d478c50b-cfe1-4985-a5c6-12d0a592d920")
 		(property "Reference" "TP10"
 			(at 35.306 93.98 0)
@@ -17559,9 +17605,9 @@
 		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom no)
-		(on_board yes)
+		(on_board no)
 		(in_pos_files yes)
-		(dnp no)
+		(dnp yes)
 		(uuid "fec4140c-5a2f-4329-9045-fe54917ab30b")
 		(property "Reference" "TP11"
 			(at 44.196 93.98 0)
